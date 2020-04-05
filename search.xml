@@ -138,10 +138,47 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo添加看板娘</title>
+    <url>/2020/04/05/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/</url>
+    <content><![CDATA[<blockquote>
+<p>源码下载：<a href="/files/hexo添加看板娘/js.zip">点击下载</a> 源码地址：<a href="https://github.com/stevenjoezhang/live2d-widget" target="_blank" rel="noopener">live2d-widget</a></p>
+<p>这是首先感谢原作者的插件，我根据Github上的项目克隆下载自定义的看板娘，在他的基础上添加了拖动效果，同时根据自己的博客自定义了不同的对话。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="用法-Usage"><a href="#用法-Usage" class="headerlink" title="用法 Usage"></a>用法 Usage</h2><ol>
+<li>首先下载上面的源码，这个<code>hexo-bolg</code>表示是我的博客根目录，然后再<code>source\js</code>目录下解压，得到以下的文件。</li>
+</ol>
+<p><img src="/images/post_hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/image-20200405112453987.png" alt="image-20200405112453987"></p>
+<ol start="2">
+<li><p>如果是<code>next</code>主题，请根据目录打开以下文件:</p>
+<p><img src="/images/post_hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/image-20200405112653619.png" alt="image-20200405112653619"></p>
+<p>将代码添加到如图所示的位置：</p>
+<p><img src="/images/post_hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/image-20200405112737704.png" alt="image-20200405112737704"></p>
+</li>
+<li><p>大功告成，将页面启动起来就能看见效果了。不过最好自己去改一下源码的<code>waifu-tips.json</code>的匹配条件，根据自己的博客做出对应的对话效果。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>css实现全站变灰</title>
-    <url>/2020/04/04/%E5%A4%A7%E5%89%8D%E7%AB%AF/css/css%E5%AE%9E%E7%8E%B0%E5%85%A8%E7%AB%99%E5%8F%98%E7%81%B0/</url>
+    <url>/2020/04/04/%E5%A4%A7%E5%89%8D%E7%AB%AF/css%E5%AE%9E%E7%8E%B0%E5%85%A8%E7%AB%99%E5%8F%98%E7%81%B0/</url>
     <content><![CDATA[<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">html</span>&#123;</span><br><span class="line"> <span class="attribute">filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line"> <span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line"> <span class="attribute">-moz-filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line"> <span class="attribute">-ms-filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line"> <span class="attribute">-o-filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line"> <span class="attribute">filter</span>: progid:DXImageTransfrom.Microsoft.<span class="built_in">BasicImage</span>(grayscale=<span class="number">1</span>);</span><br><span class="line"> <span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css</tag>
+      </tags>
   </entry>
 </search>
