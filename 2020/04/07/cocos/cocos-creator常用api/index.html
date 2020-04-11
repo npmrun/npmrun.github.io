@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"npmrun.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="https:&#x2F;&#x2F;blog.csdn.net&#x2F;sotmwhat&#x2F;article&#x2F;details&#x2F;93884076  场景加载123cc.director.loadScene(&#39;场景名称&#39;);&#x2F;&#x2F;场景跳转cc.director.preloadScene(&#39;场景名称&#39;);&#x2F;&#x2F;预加载场景cc.director.getScene();&#x2F;&#x2F;获取当前场景">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cocos creator常用api">
+<meta property="og:url" content="https://npmrun.github.io/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/index.html">
+<meta property="og:site_name" content="Dash">
+<meta property="og:description" content="https:&#x2F;&#x2F;blog.csdn.net&#x2F;sotmwhat&#x2F;article&#x2F;details&#x2F;93884076  场景加载123cc.director.loadScene(&#39;场景名称&#39;);&#x2F;&#x2F;场景跳转cc.director.preloadScene(&#39;场景名称&#39;);&#x2F;&#x2F;预加载场景cc.director.getScene();&#x2F;&#x2F;获取当前场景">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-07T05:41:11.000Z">
+<meta property="article:modified_time" content="2020-04-11T01:49:05.583Z">
+<meta property="article:author" content="Dash King">
+<meta property="article:tag" content="cocos">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://npmrun.github.io/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>cocos creator常用api | Dash</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+ 
+<body itemscope itemtype="http://schema.org/WebPage">
+
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Dash</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-首页">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-标签">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-分类">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-关于">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-归档">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/npmrun" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://npmrun.github.io/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Dash King">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dash">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          cocos creator常用api
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-07 13:41:11" itemprop="dateCreated datePublished" datetime="2020-04-07T13:41:11+08:00">2020-04-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-11 09:49:05" itemprop="dateModified" datetime="2020-04-11T09:49:05+08:00">2020-04-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/cocos/" itemprop="url" rel="index"><span itemprop="name">cocos</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/" class="post-meta-item leancloud_visitors" data-flag-title="cocos creator常用api" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote>
+<p><a href="https://blog.csdn.net/sotmwhat/article/details/93884076" target="_blank" rel="noopener">https://blog.csdn.net/sotmwhat/article/details/93884076</a></p>
+</blockquote>
+<h2 id="场景加载"><a href="#场景加载" class="headerlink" title="场景加载"></a>场景加载</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cc.director.loadScene(<span class="string">'场景名称'</span>);<span class="comment">//场景跳转</span></span><br><span class="line">cc.director.preloadScene(<span class="string">'场景名称'</span>);<span class="comment">//预加载场景</span></span><br><span class="line">cc.director.getScene();<span class="comment">//获取当前场景</span></span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+
+
+<h2 id="获取节点"><a href="#获取节点" class="headerlink" title="获取节点"></a>获取节点</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> node = cc.find(<span class="string">"Canvas/bg"</span>);<span class="comment">//通过访问路径来获取节点</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.getChildByName(<span class="string">'name'</span>);<span class="comment">//通过名字获取子节点</span></span><br><span class="line">node.getComponent(cc.Label).string = <span class="string">'abc'</span>;<span class="comment">//获取节点上的组件值</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = cc.find(<span class="string">"Canvas/bg"</span>).getComponent(cc.Sprite);<span class="comment">//通过访问路径来获取节点，及获取该节点的指定组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">this</span>.node .getChildByName(<span class="string">'节点名称'</span>).getComponent(cc.Label)<span class="comment">//通过节点名获取子节点，获取该节点指定组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node;<span class="comment">//获取当前脚本所在的节点</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.parent;<span class="comment">//获取父节点</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.getChildByTag(<span class="number">1001</span>);<span class="comment">//通过标签获取子节点</span></span><br><span class="line"><span class="keyword">var</span> a = cc.find(<span class="string">"bg/score"</span>,<span class="keyword">this</span>.node);<span class="comment">//通过指定节点下的路径获取节点</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.children;<span class="comment">//获取所有子节点</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.childrenCount;<span class="comment">//获取子节点数量</span></span><br><span class="line"><span class="keyword">var</span> a = cc.director.getScene();<span class="comment">//获取场景主节点</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = cc.instantiate(node);<span class="comment">//克隆节点</span></span><br><span class="line"><span class="keyword">this</span>.node.parent = cc.find(<span class="string">'Canvas'</span>);<span class="comment">//绑定父节点</span></span><br><span class="line"><span class="keyword">this</span>.node.addChild(nodeName,zIndex,tag);<span class="comment">//添加子节点,可设置层级和标签</span></span><br><span class="line"><span class="keyword">this</span>.node.removeChild(nodeName);<span class="comment">//通过名字移除子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.removeChildByTag (nodeTag);<span class="comment">//通过标签移除子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.destroy();<span class="comment">//销毁节点</span></span><br><span class="line"><span class="keyword">this</span>.node.isValid;<span class="comment">//判定节点是否可用</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">this</span>.node.removeChild(newNode);<span class="comment">//移除节点中指定的子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.removeChildByTag(<span class="number">1001</span>);<span class="comment">//通过标签移除节点中指定的子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.removeAllChildren();<span class="comment">//移除所有子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.destroyAllChildren();<span class="comment">//销毁所有子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.cleanup();<span class="comment">//停止所有正在播放的动作和计时器</span></span><br><span class="line"><span class="keyword">var</span> sprites = <span class="keyword">this</span>.node.getComponentsInChildren(cc.Label);<span class="comment">//递归查找自身及所有子节点中指定类型的组件</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="获取节点位置，设置节点"><a href="#获取节点位置，设置节点" class="headerlink" title="获取节点位置，设置节点"></a>获取节点位置，设置节点</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = node.getPositionX();或 getPositionY() <span class="comment">//获取节点的X轴或Y轴坐标</span></span><br><span class="line"><span class="keyword">var</span> a = node.getScaleX(); 或getScaleY() <span class="comment">//获取节点的X轴或Y轴缩放比例</span></span><br><span class="line">node.x = <span class="number">100</span>;<span class="comment">//设置节点x轴坐标</span></span><br><span class="line">node.y = <span class="number">100</span>;<span class="comment">//设置节点y轴坐标</span></span><br><span class="line">node.setPosition(x,y); <span class="comment">//设置节点坐标</span></span><br><span class="line">node.rotation = <span class="number">90</span>; <span class="comment">//设置节点旋转角度</span></span><br><span class="line">node.scaleX = <span class="number">2</span>; <span class="comment">//设置节点x轴缩放倍数</span></span><br><span class="line">node.scaleY = <span class="number">2</span>; <span class="comment">//设置节点y轴缩放倍数</span></span><br><span class="line">node.setScale(<span class="number">2</span>); <span class="comment">//设置节点整体缩放倍数</span></span><br><span class="line">node.width = <span class="number">100</span>; <span class="comment">//设置节点宽度大小</span></span><br><span class="line">node.height = <span class="number">100</span>;  <span class="comment">//设置节点高度大小</span></span><br><span class="line">node.setContentSize(<span class="number">100</span>, <span class="number">100</span>); <span class="comment">//设置节点宽高尺寸大小</span></span><br><span class="line">node.anchorX = <span class="number">1</span>; <span class="comment">//设置节点x轴锚点坐标</span></span><br><span class="line">node.anchorY = <span class="number">0</span>; <span class="comment">//设置节点y轴锚点坐标</span></span><br><span class="line">node.setAnchorPoint(<span class="number">1</span>, <span class="number">0</span>); <span class="comment">//设置节点锚点坐标</span></span><br><span class="line">node.opacity = <span class="number">128</span>; <span class="comment">//设置节点透明度大小（0-255）</span></span><br><span class="line">node.setOpacity(<span class="number">20</span>); <span class="comment">//设置节点透明度（0~255）</span></span><br><span class="line">node.color = <span class="keyword">new</span> cc.color(<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>,<span class="number">255</span>); <span class="comment">//设置节点颜色（R,G,B,透明度）</span></span><br><span class="line"><span class="keyword">if</span> (cc.isValid(<span class="keyword">this</span>.label.node) ) <span class="comment">//判定节点是否存在</span></span><br><span class="line">node.destroy(); <span class="comment">//销毁节点</span></span><br><span class="line"><span class="keyword">this</span>.cannons = [];</span><br><span class="line"><span class="keyword">this</span>.cannons = node.getChildren(); <span class="comment">//获取所有子节点</span></span><br><span class="line"><span class="keyword">this</span>.cannons = node.getChildrenCount(); <span class="comment">//获取子节点数量</span></span><br><span class="line">node.active = <span class="literal">false</span>; <span class="comment">//关闭节点(隐藏节点)</span></span><br><span class="line">cc.game.addPersistRootNode(myNode); <span class="comment">//常驻节点（全局变量）</span></span><br><span class="line">cc.game.removePersistRootNode(myNode); <span class="comment">//取消常驻节点</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="动作操作"><a href="#动作操作" class="headerlink" title="动作操作"></a>动作操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">cc.show()&#x2F;&#x2F;立即显示</span><br><span class="line">cc.hide ()&#x2F;&#x2F;立即隐藏</span><br><span class="line">cc.toggleVisibility()&#x2F;&#x2F;显隐切换</span><br><span class="line">cc.fadeIn(1)&#x2F;&#x2F;渐显效果</span><br><span class="line">cc.fadeOut(1)&#x2F;&#x2F;渐隐效果</span><br><span class="line">cc.delayTime(1)&#x2F;&#x2F;等待1秒</span><br><span class="line">node.runAction(cc.moveTo(1,0,0)); &#x2F;&#x2F;移动到当前节点（时间（s），X轴坐标，Y 轴坐标）</span><br><span class="line">node.runAction(cc.scaleTo(1,0.7,0.8));&#x2F;&#x2F;缩放到当前倍数节点（时间（s），X轴倍数，Y 轴倍数）</span><br><span class="line">node.runAction(cc.rotateTo(1,160,160));&#x2F;&#x2F;旋转到指定角度（时间（s），X轴角度，Y 轴角度）</span><br><span class="line">node.runAction(cc.skewTo(1,5,-5));&#x2F;&#x2F;变化节点倾斜度（时间（s），X轴倾斜度，Y 轴倾斜度）</span><br><span class="line"></span><br><span class="line">node.runAction(cc.fadeTo(2,0));&#x2F;&#x2F;变化当前节点的透明度（时间（s），透明度）</span><br><span class="line"></span><br><span class="line">node.runAction(cc.tintTo(2,255,255,0));&#x2F;&#x2F;变化当前节点颜色（时间，R,G,B）</span><br><span class="line">node.stopAllActions();&#x2F;&#x2F;停止所有动作</span><br><span class="line">&#x2F;&#x2F;自定义动作</span><br><span class="line">var action &#x3D; cc.moveTo(2, 100, 100);&#x2F;&#x2F; 创建一个移动动作</span><br><span class="line">node.runAction(action);&#x2F;&#x2F; 执行动作</span><br><span class="line">node.stopAction(action);&#x2F;&#x2F; 停止一个动作</span><br><span class="line"></span><br><span class="line">cc.sequence(action1,action2); &#x2F;&#x2F;按顺序连续执行，先action1，后action2</span><br><span class="line"></span><br><span class="line">cc.spawn(action1，action2); &#x2F;&#x2F;同时执行，action1和action2一起执行</span><br><span class="line"></span><br><span class="line">cc.repeatForever(cc.sequence(action1,action2)); &#x2F;&#x2F;一直重复括号里的动作</span><br></pre></td></tr></table></figure>
+
+<h2 id="计时器"><a href="#计时器" class="headerlink" title="计时器"></a>计时器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;只用1次的计时器,2秒后执行</span><br><span class="line">        this.scheduleOnce(function()&#123;</span><br><span class="line">            &#x2F;&#x2F;一条或多条执行语句  </span><br><span class="line"></span><br><span class="line">        &#125;,2); &#x2F;&#x2F;(function()&#123;&#125;,时间（s）)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;每隔5秒执行1次</span><br><span class="line">        this.schedule(function()&#123;</span><br><span class="line">            &#x2F;&#x2F;一条或多条执行语句  </span><br><span class="line"></span><br><span class="line">        &#125;,5);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;计算多次的计时器（1秒后，以0.1秒的执行间隔，执行10次）</span><br><span class="line">        this.schedule(function()&#123;</span><br><span class="line">            &#x2F;&#x2F;一条或多条执行语句</span><br><span class="line"></span><br><span class="line">        &#125;,0.1,10,1); &#x2F;&#x2F;(function()&#123;&#125;,间隔时间，次数，多久后开始)</span><br><span class="line"></span><br><span class="line">this.unscheduleAllCallbacks(this);&#x2F;&#x2F;停止某组件的所有计时器</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;自定义定时器执行内容（相比常规使用的定时器优势是：方便随时开启或关闭）</span><br><span class="line">var cb&#x3D; function()&#123;</span><br><span class="line">    &#x2F;&#x2F;do something</span><br><span class="line">&#125;;</span><br><span class="line">this.schedule(cb,1);&#x2F;&#x2F;启动定时器</span><br><span class="line">this.unschedule(cb);&#x2F;&#x2F;取消定时器</span><br></pre></td></tr></table></figure>
+
+<h2 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a>事件监听</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">(开始：&#39;touchstart&#39;，移动：&#39;touchmove&#39;，结束：&#39;touchend&#39;，取消：&#39;touchcancel&#39;)</span><br><span class="line">node.on(&#39;touchstart&#39;,function(event)&#123;</span><br><span class="line">    this.doSomething();</span><br><span class="line">&#125;,this);  </span><br><span class="line">var a &#x3D; event.getID();&#x2F;&#x2F;获取触点的ID</span><br><span class="line">var a &#x3D; event.getLocationX();&#x2F;&#x2F;获取触摸点的坐标X</span><br><span class="line">var b &#x3D; event.getLocationY();&#x2F;&#x2F;获取触摸点的坐标Y</span><br><span class="line"></span><br><span class="line">cc.eventManager.addListener(&#123;</span><br><span class="line">            event: cc.EventListener.KEYBOARD&#x2F;TOUCH_ONE_BY_ONE,myfunction&#125;,self.node);</span><br></pre></td></tr></table></figure>
+
+<h2 id="分辨率"><a href="#分辨率" class="headerlink" title="分辨率"></a>分辨率</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;获得设备分辨率</span><br><span class="line">var b &#x3D; cc.director.getWinSizeInPixels()</span><br><span class="line">var bx &#x3D; b.width</span><br><span class="line">var by &#x3D; b.height</span><br><span class="line"></span><br><span class="line">cc.view.getCanvasSize().width;&#x2F;&#x2F;获得设备分辨率的宽度</span><br><span class="line">cc.view.getCanvasSize().height;&#x2F;&#x2F;获得设备分辨率的高度</span><br><span class="line">cc.director.setDisplayStats(true);&#x2F;&#x2F;显示帧数信息</span><br></pre></td></tr></table></figure>
+
+<h2 id="音频控制"><a href="#音频控制" class="headerlink" title="音频控制"></a>音频控制</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cc.audioEngine.playMusic(this.BGAudio,true);&#x2F;&#x2F;播放音乐（true代表循环）</span><br><span class="line">cc.audioEngine.stopMusic()&#x2F;&#x2F;停止播放背景音乐</span><br><span class="line">cc.audioEngine.playEffect(this.ClickAudio,false);&#x2F;&#x2F;播放音效（false代表只播放一次）</span><br><span class="line">cc.audioEngine.stopEffect(音效变量名);&#x2F;&#x2F;停止指定音效（需要先把音效赋值给变量）</span><br><span class="line">cc.audioEngine.AllEffects();&#x2F;&#x2F;停止所有音效</span><br><span class="line">cc.audioEngine.setMusicVolume(参数);  &#x2F;&#x2F;设置背景音乐的音量（该参数范围是0到1）</span><br><span class="line">cc.audioEngine.setEffectsVolume(参数);  &#x2F;&#x2F;设置音效的音量（该参数范围是0到1）</span><br></pre></td></tr></table></figure>
+
+<h2 id="存档操作"><a href="#存档操作" class="headerlink" title="存档操作"></a>存档操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cc.sys.localStorage.setItem(&#39;存储标识名&#39;,变量名);&#x2F;&#x2F;存储存档数据</span><br><span class="line">var a &#x3D; cc.sys.localStorage.getItem(&#39;存储标识名&#39;);&#x2F;&#x2F;读取存档数据</span><br><span class="line">cc.sys.localStorage.removeItem(&#39;存储标识名&#39;);&#x2F;&#x2F;擦除存档数据</span><br><span class="line">userData &#x3D; &#123;</span><br><span class="line">    name: &#39;Tracer&#39;,</span><br><span class="line">    level: 1,</span><br><span class="line">    gold: 100</span><br><span class="line">&#125;;</span><br><span class="line">cc.sys.localStorage.setItem(&#39;userData&#39;, JSON.stringify(userData));&#x2F;&#x2F;存取复杂对象数据</span><br><span class="line">var userData &#x3D; JSON.parse(cc.sys.localStorage.getItem(&#39;userData&#39;));&#x2F;&#x2F;读取复杂对象数据</span><br></pre></td></tr></table></figure>
+
+<h2 id="判断平台"><a href="#判断平台" class="headerlink" title="判断平台"></a>判断平台</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cc.sys.isNative  &#x2F;&#x2F;是否是本地</span><br><span class="line">cc.sys.isBrowser  &#x2F;&#x2F;是否是网页</span><br><span class="line">cc.sys.isMobile  &#x2F;&#x2F;是否是移动系统</span><br><span class="line">cc.sys.platform  &#x2F;&#x2F;正在运行的平台</span><br><span class="line">cc.sys.language  &#x2F;&#x2F;当前运行系统的语言</span><br><span class="line">cc.sys.os  &#x2F;&#x2F;当前正在运行的系统</span><br><span class="line">cc.sys.OS_IOS  &#x2F;&#x2F;是否是IOS系统</span><br><span class="line">cc.sys.OS_ANDROID  &#x2F;&#x2F;是否是android系统</span><br><span class="line">cc.sys.OS_WINDOWS  &#x2F;&#x2F;是否是windows系统</span><br><span class="line">cc.sys.openURL(&#39;Http:&#x2F;&#x2F;www.baidu.com&#39;);  &#x2F;&#x2F;打开网页</span><br></pre></td></tr></table></figure>
+
+<h2 id="监听和发射事件"><a href="#监听和发射事件" class="headerlink" title="监听和发射事件"></a>监听和发射事件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">this.node.pauseSystemEvents(true);&#x2F;&#x2F;暂停节点系统事件</span><br><span class="line">this.node.resumeSystemEvents(true);&#x2F;&#x2F;恢复节点系统事件</span><br><span class="line">this.node.targetOff(this);&#x2F;&#x2F;移除所有注册事件</span><br><span class="line"></span><br><span class="line">触摸监听：开始&#39;touchstart&#39;,移动&#39;touchmove&#39;,结束&#39;touchend&#39;,取消&#39;touchcancel&#39;</span><br><span class="line">var pos &#x3D; event.getLocation();&#x2F;&#x2F;获取触摸点的坐标(包含X和Y)</span><br><span class="line">var x &#x3D; event.getLocationX();&#x2F;&#x2F;获取触摸点的X坐标</span><br><span class="line">var y &#x3D; event.getLocationY();&#x2F;&#x2F;获取触摸点的Y坐标</span><br><span class="line">var a &#x3D; event.getID();&#x2F;&#x2F;获取触点的ID</span><br><span class="line"></span><br><span class="line">鼠标监听：鼠标按下&#39;mousedown&#39;,移入节点&#39;mouseenter&#39;,节点中移动&#39;mousemove&#39;,移出节点&#39;mouseleave,&#39;松开鼠标&#39;mouseup&#39;</span><br><span class="line">var a &#x3D; event.getScrollY();&#x2F;&#x2F;获取滚轮滚动的 Y 轴距离，只有滚动时才有效</span><br><span class="line">var a &#x3D; event.getLocation();&#x2F;&#x2F;获取鼠标位置对象，对象包含 x 和 y 属性</span><br><span class="line"></span><br><span class="line">输入框监听：获得焦点&#39;editing-did-began&#39;,文字变化&#39;text-changed&#39;,失去焦点&#39;editing-did-ended&#39;,按下回车&#39;editing-return&#39;</span><br><span class="line"></span><br><span class="line">属性变化监听：位置&#39;position-changed&#39;,宽高 &#39;size-changed&#39;,旋转&#39;rotation-changed&#39;,缩放&#39;scale-changed&#39;</span><br><span class="line"></span><br><span class="line">ScrollView控件监听：滚动中&#39;scrolling&#39;,停止滚动&#39;scroll-ended&#39;</span><br><span class="line"></span><br><span class="line">用户自定义事件:</span><br><span class="line">this.node.on(&#39;事件名&#39;,function,this);&#x2F;&#x2F;注册监听</span><br><span class="line">this.node.emit(&#39;事件名&#39;);&#x2F;&#x2F;发送监听广播</span><br><span class="line">this.node.off(&#39;事件名&#39;,function,this);&#x2F;&#x2F;关闭监听</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;注册带参数监听</span><br><span class="line">this.node.on(&#39;事件名&#39;,function(event)&#123;</span><br><span class="line"></span><br><span class="line">“具体方法函数内容”</span><br><span class="line"></span><br><span class="line">&#125;,this);</span><br><span class="line">&#x2F;&#x2F;发送带参数的监听</span><br><span class="line">this.node.emit(&#39;事件名&#39;,&#123;id:1001&#125;);</span><br><span class="line">cc.eventManager.addListener(listener, node);&#x2F;&#x2F;添加事件</span><br><span class="line">cc.eventManager.removeListener((listener);&#x2F;&#x2F;移除事件</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">cc.director.pause();&#x2F;&#x2F;暂停</span><br><span class="line">cc.director.resume();&#x2F;&#x2F;继续</span><br><span class="line">cc.director.end();&#x2F;&#x2F;退出整个应用</span><br><span class="line">cc.log(变量)  或 console.log(something);&#x2F;&#x2F;输出想要的信息</span><br><span class="line">let self &#x3D; this;&#x2F;&#x2F;锁定当前使用的this指向</span><br><span class="line">node.getLocalZOrder();&#x2F;&#x2F;层级获取</span><br><span class="line">node.setLocalZOrder(1);&#x2F;&#x2F;层级改变</span><br><span class="line">cc.find(&#39;canvas&#x2F;map&#39; + num)&#x2F;&#x2F;读取带变量的路径</span><br><span class="line">cc.sys.openURL(&#39;Http:&#x2F;&#x2F;www.baidu.com&#39;);&#x2F;&#x2F;打开网页</span><br></pre></td></tr></table></figure>
+
+
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/cocos/" rel="tag"># cocos</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/07/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/" rel="prev" title="spriteAltas精灵图集使用方式">
+      <i class="fa fa-chevron-left"></i> spriteAltas精灵图集使用方式
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#场景加载"><span class="nav-number">1.</span> <span class="nav-text">场景加载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取节点"><span class="nav-number">2.</span> <span class="nav-text">获取节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取节点位置，设置节点"><span class="nav-number">3.</span> <span class="nav-text">获取节点位置，设置节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动作操作"><span class="nav-number">4.</span> <span class="nav-text">动作操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计时器"><span class="nav-number">5.</span> <span class="nav-text">计时器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件监听"><span class="nav-number">6.</span> <span class="nav-text">事件监听</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分辨率"><span class="nav-number">7.</span> <span class="nav-text">分辨率</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#音频控制"><span class="nav-number">8.</span> <span class="nav-text">音频控制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#存档操作"><span class="nav-number">9.</span> <span class="nav-text">存档操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#判断平台"><span class="nav-number">10.</span> <span class="nav-text">判断平台</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#监听和发射事件"><span class="nav-number">11.</span> <span class="nav-text">监听和发射事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他操作"><span class="nav-number">12.</span> <span class="nav-text">其他操作</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Dash King"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Dash King</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/npmrun" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;npmrun" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      旗下链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://npmrun.github.io/way/" title="https:&#x2F;&#x2F;npmrun.github.io&#x2F;way&#x2F;">导航</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://wp.poorman.top/" title="https:&#x2F;&#x2F;wp.poorman.top" rel="noopener" target="_blank">wordpress</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dash King</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('https://cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : true,
+      appId      : 'SHKlfabtBk0G5s81GDlGrARE-gzGzoHsz',
+      appKey     : 'IAErCIs5wHwsnWwm2fdhQSnt',
+      placeholder: "说点什么呢？",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+    </div>
+ <script src="/plugins/myjs/autoload.js"></script>
+</body>
+</html>
