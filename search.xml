@@ -640,4 +640,18 @@
         <tag>前端</tag>
       </tags>
   </entry>
+  <entry>
+    <title>node生成文件模板</title>
+    <url>/2020/04/06/node/node%E7%94%9F%E6%88%90%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<blockquote>
+<p>主要用作生成文件模板，方便之后的一系列开发，能够快速的制作类似结构的复杂页面。</p>
+<p><a href="https://www.npmjs.com/package/plop" target="_blank" rel="noopener">plop npm</a></p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i plop -D</span><br></pre></td></tr></table></figure>
+
+<p>源码下载: <a href="./files/plop.zip">Hexo文章页面模板下载</a></p>
+]]></content>
+  </entry>
 </search>
