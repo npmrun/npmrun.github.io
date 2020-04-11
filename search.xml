@@ -182,12 +182,12 @@
 <h2 id="用法-Usage"><a href="#用法-Usage" class="headerlink" title="用法 Usage"></a>用法 Usage</h2><ol>
 <li>首先下载上面的源码，这个<code>hexo-bolg</code>表示是我的博客根目录，然后再<code>source\js</code>目录下解压，得到以下的文件。</li>
 </ol>
-<p><img src="./images/image-20200405112453987.png" alt="image-20200405112453987"></p>
+<p><img src="images/image-20200405112453987.png" alt="image-20200405112453987"></p>
 <ol start="2">
 <li><p>如果是<code>next</code>主题，请根据目录打开以下文件:</p>
-<p><img src="./images/image-20200405112653619.png" alt="image-20200405112653619"></p>
+<p><img src="images/image-20200405112653619.png" alt="image-20200405112653619"></p>
 <p>将代码添加到如图所示的位置：</p>
-<p><img src="./images/image-20200405112737704.png" alt="image-20200405112737704"></p>
+<p><img src="images/image-20200405112737704.png" alt="image-20200405112737704"></p>
 </li>
 <li><p>大功告成，将页面启动起来就能看见效果了。不过最好自己去改一下源码的<code>waifu-tips.json</code>的匹配条件，根据自己的博客做出对应的对话效果。</p>
 </li>
@@ -210,13 +210,13 @@
 
 <ol>
 <li><p>新加一个属性:</p>
-<p><img src="./images/image-20200407114816545.png" alt="image-20200407114816545"></p>
+<p><img src="images/image-20200407114816545.png" alt="image-20200407114816545"></p>
 </li>
 <li><p>我们用图集打包出来的是这样的文件：</p>
-<p><img src="./images/image-20200407114923862.png" alt="image-20200407114923862"></p>
+<p><img src="images/image-20200407114923862.png" alt="image-20200407114923862"></p>
 </li>
 <li><p>在<code>cocos</code>上将<code>plist</code>拖进属性中。</p>
-<p><img src="./images/image-20200407115004375.png" alt="image-20200407115004375"></p>
+<p><img src="images/image-20200407115004375.png" alt="image-20200407115004375"></p>
 </li>
 <li><p>编写代码动态修改精灵图：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">setAtlasImg(node,spAtlas,spriteName)&#123;</span><br><span class="line">  <span class="keyword">let</span> sprite = node.getComponent(cc.Sprite);</span><br><span class="line">  <span class="keyword">if</span> (!sprite) &#123;</span><br><span class="line">    sprite = node.addComponent(cc.Sprite);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> mySprite =  spAtlas.getSpriteFrame(spriteName)</span><br><span class="line">  sprite.spriteFrame = mySprite;</span><br><span class="line">  <span class="keyword">return</span> mySprite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 节点，图集组件，图集中文件名字</span></span><br><span class="line">setAtlasImg(<span class="keyword">this</span>.node, <span class="keyword">this</span>.spAtlas, <span class="string">"11"</span>);</span><br></pre></td></tr></table></figure>
