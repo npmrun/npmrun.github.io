@@ -710,6 +710,10 @@
 <p><em>记住，只设置</em> <code>NODE_ENV</code><em>，则不会自动设置</em> <code>mode</code>。</p>
 </blockquote>
 </li>
+</ul>
+<a id="more"></a>
+
+<ul>
 <li><p><code>entry</code></p>
 <p>可以是数组或者对象</p>
 <ul>
@@ -754,5 +758,11 @@
     <title>webpack的几种导入导出方式</title>
     <url>/2020/04/13/webpack/webpack%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%96%B9%E5%BC%8F/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>webpack</category>
+      </categories>
+      <tags>
+        <tag>webpack</tag>
+      </tags>
   </entry>
 </search>

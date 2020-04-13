@@ -516,7 +516,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-13 15:06:34" itemprop="dateModified" datetime="2020-04-13T15:06:34+08:00">2020-04-13</time>
+                <time title="修改时间：2020-04-13 15:08:44" itemprop="dateModified" datetime="2020-04-13T15:08:44+08:00">2020-04-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -583,39 +583,15 @@
 <p><em>记住，只设置</em> <code>NODE_ENV</code><em>，则不会自动设置</em> <code>mode</code>。</p>
 </blockquote>
 </li>
-<li><p><code>entry</code></p>
-<p>可以是数组或者对象</p>
-<ul>
-<li><p>数组</p>
-<p>数组中表示的所有文件都将打包成一个文件，对应的是对象中键的<code>main</code>。也就是说</p>
-<p>如果值是<code>[&#39;src/index.js&#39;]</code>的话，跟<code>{main:&#39;src/index.js&#39;}</code>效果是一样的。</p>
-</li>
-<li><p>对象</p>
-<p>如果存在多个键值的话表示的就是多个入口，<code>webpack</code>将会从多个入口进入开始打包。例如：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="string">"entry"</span>:&#123;</span><br><span class="line">   <span class="string">"main"</span>:[<span class="string">"src/index.js"</span>],</span><br><span class="line">   <span class="string">"react"</span>:<span class="string">"react"</span>,</span><br><span class="line">   <span class="string">"vue"</span>:[<span class="string">"vue"</span>,<span class="string">"vue-router"</span>,<span class="string">"vuex"</span>]</span><br><span class="line">&#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
-<p>如上的话就会打包出三个文件出来，分别是<code>main</code>,<code>react</code>,<code>vue</code>名字可以再输出的时候自定义。</p>
-</li>
 </ul>
-</li>
-<li><p><code>output</code></p>
-<p>对象。作为此配置的最低要求，我们需要提供两个参数：1. <code>filename</code>表示将要输出的文件名字。2. <code>path</code>将要输出的路径</p>
-<ul>
-<li><p>单入口文件</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> config = &#123;</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: <span class="string">'bundle.js'</span>,</span><br><span class="line">    path: <span class="string">'/home/proj/public/assets'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = config;</span><br></pre></td></tr></table></figure>
-
-<p>此配置将一个单独的 <code>bundle.js</code> 文件输出到 <code>/home/proj/public/assets</code> 目录中。</p>
-</li>
-<li><p>多入口文件</p>
-<p>多入口不能单独的指定一个具体的文件名，而是需要提供一个占位符，由<code>webpack</code>提供各个文件的一些参数，但是具体的名字仍旧可以自己定义。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: &#39;.&#x2F;src&#x2F;app.js&#39;,</span><br><span class="line">    search: &#39;.&#x2F;src&#x2F;search.js&#39;</span><br><span class="line">  &#125;,</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: &#39;[name].js&#39;,</span><br><span class="line">    path: __dirname + &#39;&#x2F;dist&#39;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; 写入到硬盘：.&#x2F;dist&#x2F;app.js, .&#x2F;dist&#x2F;search.js</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><a href="https://www.webpackjs.com/concepts/output/" target="_blank" rel="noopener">publicPath</a>  (这个参数尚未用过)</p>
-</li>
-</ul>
-</li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/04/webpack/webpack%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86%E7%82%B9/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
