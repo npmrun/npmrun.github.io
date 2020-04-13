@@ -1,40 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo+typora 博客中插入图片</title>
-    <url>/2020/04/04/hexo/hexo-typora-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</url>
+    <title>readme</title>
+    <url>/2020/04/05/readme/</url>
+    <content><![CDATA[<p>新建页面:<code>npm run new</code></p>
+<p>部署:<code>npm run build</code></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>cocos creator常用api</title>
+    <url>/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/</url>
     <content><![CDATA[<blockquote>
-<p>在使用了hexo搭建了博客后，最大的问题便是如何使用一款markdown工具来编辑博客了，我采取的就是Typora，这工具免费简单易用没广告，而且把图片保存到本地还是很方便的，因此大家只要稍微了解点markdown语法就可以上手使用了。</p>
+<p><a href="https://blog.csdn.net/sotmwhat/article/details/93884076" target="_blank" rel="noopener">https://blog.csdn.net/sotmwhat/article/details/93884076</a></p>
+</blockquote>
+<h2 id="场景加载"><a href="#场景加载" class="headerlink" title="场景加载"></a>场景加载</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cc.director.loadScene(<span class="string">'场景名称'</span>);<span class="comment">//场景跳转</span></span><br><span class="line">cc.director.preloadScene(<span class="string">'场景名称'</span>);<span class="comment">//预加载场景</span></span><br><span class="line">cc.director.getScene();<span class="comment">//获取当前场景</span></span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+
+
+<h2 id="获取节点"><a href="#获取节点" class="headerlink" title="获取节点"></a>获取节点</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> node = cc.find(<span class="string">"Canvas/bg"</span>);<span class="comment">//通过访问路径来获取节点</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.getChildByName(<span class="string">'name'</span>);<span class="comment">//通过名字获取子节点</span></span><br><span class="line">node.getComponent(cc.Label).string = <span class="string">'abc'</span>;<span class="comment">//获取节点上的组件值</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = cc.find(<span class="string">"Canvas/bg"</span>).getComponent(cc.Sprite);<span class="comment">//通过访问路径来获取节点，及获取该节点的指定组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">this</span>.node .getChildByName(<span class="string">'节点名称'</span>).getComponent(cc.Label)<span class="comment">//通过节点名获取子节点，获取该节点指定组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node;<span class="comment">//获取当前脚本所在的节点</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.parent;<span class="comment">//获取父节点</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.getChildByTag(<span class="number">1001</span>);<span class="comment">//通过标签获取子节点</span></span><br><span class="line"><span class="keyword">var</span> a = cc.find(<span class="string">"bg/score"</span>,<span class="keyword">this</span>.node);<span class="comment">//通过指定节点下的路径获取节点</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.children;<span class="comment">//获取所有子节点</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.childrenCount;<span class="comment">//获取子节点数量</span></span><br><span class="line"><span class="keyword">var</span> a = cc.director.getScene();<span class="comment">//获取场景主节点</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = cc.instantiate(node);<span class="comment">//克隆节点</span></span><br><span class="line"><span class="keyword">this</span>.node.parent = cc.find(<span class="string">'Canvas'</span>);<span class="comment">//绑定父节点</span></span><br><span class="line"><span class="keyword">this</span>.node.addChild(nodeName,zIndex,tag);<span class="comment">//添加子节点,可设置层级和标签</span></span><br><span class="line"><span class="keyword">this</span>.node.removeChild(nodeName);<span class="comment">//通过名字移除子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.removeChildByTag (nodeTag);<span class="comment">//通过标签移除子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.destroy();<span class="comment">//销毁节点</span></span><br><span class="line"><span class="keyword">this</span>.node.isValid;<span class="comment">//判定节点是否可用</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">this</span>.node.removeChild(newNode);<span class="comment">//移除节点中指定的子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.removeChildByTag(<span class="number">1001</span>);<span class="comment">//通过标签移除节点中指定的子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.removeAllChildren();<span class="comment">//移除所有子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.destroyAllChildren();<span class="comment">//销毁所有子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.cleanup();<span class="comment">//停止所有正在播放的动作和计时器</span></span><br><span class="line"><span class="keyword">var</span> sprites = <span class="keyword">this</span>.node.getComponentsInChildren(cc.Label);<span class="comment">//递归查找自身及所有子节点中指定类型的组件</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="获取节点位置，设置节点"><a href="#获取节点位置，设置节点" class="headerlink" title="获取节点位置，设置节点"></a>获取节点位置，设置节点</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = node.getPositionX();或 getPositionY() <span class="comment">//获取节点的X轴或Y轴坐标</span></span><br><span class="line"><span class="keyword">var</span> a = node.getScaleX(); 或getScaleY() <span class="comment">//获取节点的X轴或Y轴缩放比例</span></span><br><span class="line">node.x = <span class="number">100</span>;<span class="comment">//设置节点x轴坐标</span></span><br><span class="line">node.y = <span class="number">100</span>;<span class="comment">//设置节点y轴坐标</span></span><br><span class="line">node.setPosition(x,y); <span class="comment">//设置节点坐标</span></span><br><span class="line">node.rotation = <span class="number">90</span>; <span class="comment">//设置节点旋转角度</span></span><br><span class="line">node.scaleX = <span class="number">2</span>; <span class="comment">//设置节点x轴缩放倍数</span></span><br><span class="line">node.scaleY = <span class="number">2</span>; <span class="comment">//设置节点y轴缩放倍数</span></span><br><span class="line">node.setScale(<span class="number">2</span>); <span class="comment">//设置节点整体缩放倍数</span></span><br><span class="line">node.width = <span class="number">100</span>; <span class="comment">//设置节点宽度大小</span></span><br><span class="line">node.height = <span class="number">100</span>;  <span class="comment">//设置节点高度大小</span></span><br><span class="line">node.setContentSize(<span class="number">100</span>, <span class="number">100</span>); <span class="comment">//设置节点宽高尺寸大小</span></span><br><span class="line">node.anchorX = <span class="number">1</span>; <span class="comment">//设置节点x轴锚点坐标</span></span><br><span class="line">node.anchorY = <span class="number">0</span>; <span class="comment">//设置节点y轴锚点坐标</span></span><br><span class="line">node.setAnchorPoint(<span class="number">1</span>, <span class="number">0</span>); <span class="comment">//设置节点锚点坐标</span></span><br><span class="line">node.opacity = <span class="number">128</span>; <span class="comment">//设置节点透明度大小（0-255）</span></span><br><span class="line">node.setOpacity(<span class="number">20</span>); <span class="comment">//设置节点透明度（0~255）</span></span><br><span class="line">node.color = <span class="keyword">new</span> cc.color(<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>,<span class="number">255</span>); <span class="comment">//设置节点颜色（R,G,B,透明度）</span></span><br><span class="line"><span class="keyword">if</span> (cc.isValid(<span class="keyword">this</span>.label.node) ) <span class="comment">//判定节点是否存在</span></span><br><span class="line">node.destroy(); <span class="comment">//销毁节点</span></span><br><span class="line"><span class="keyword">this</span>.cannons = [];</span><br><span class="line"><span class="keyword">this</span>.cannons = node.getChildren(); <span class="comment">//获取所有子节点</span></span><br><span class="line"><span class="keyword">this</span>.cannons = node.getChildrenCount(); <span class="comment">//获取子节点数量</span></span><br><span class="line">node.active = <span class="literal">false</span>; <span class="comment">//关闭节点(隐藏节点)</span></span><br><span class="line">cc.game.addPersistRootNode(myNode); <span class="comment">//常驻节点（全局变量）</span></span><br><span class="line">cc.game.removePersistRootNode(myNode); <span class="comment">//取消常驻节点</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="动作操作"><a href="#动作操作" class="headerlink" title="动作操作"></a>动作操作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cc.show()&#x2F;&#x2F;立即显示</span><br><span class="line">cc.hide ()&#x2F;&#x2F;立即隐藏</span><br><span class="line">cc.toggleVisibility()&#x2F;&#x2F;显隐切换</span><br><span class="line">cc.fadeIn(1)&#x2F;&#x2F;渐显效果</span><br><span class="line">cc.fadeOut(1)&#x2F;&#x2F;渐隐效果</span><br><span class="line">cc.delayTime(1)&#x2F;&#x2F;等待1秒</span><br><span class="line">node.runAction(cc.moveTo(1,0,0)); &#x2F;&#x2F;移动到当前节点（时间（s），X轴坐标，Y 轴坐标）</span><br><span class="line">node.runAction(cc.scaleTo(1,0.7,0.8));&#x2F;&#x2F;缩放到当前倍数节点（时间（s），X轴倍数，Y 轴倍数）</span><br><span class="line">node.runAction(cc.rotateTo(1,160,160));&#x2F;&#x2F;旋转到指定角度（时间（s），X轴角度，Y 轴角度）</span><br><span class="line">node.runAction(cc.skewTo(1,5,-5));&#x2F;&#x2F;变化节点倾斜度（时间（s），X轴倾斜度，Y 轴倾斜度）</span><br><span class="line"></span><br><span class="line">node.runAction(cc.fadeTo(2,0));&#x2F;&#x2F;变化当前节点的透明度（时间（s），透明度）</span><br><span class="line"></span><br><span class="line">node.runAction(cc.tintTo(2,255,255,0));&#x2F;&#x2F;变化当前节点颜色（时间，R,G,B）</span><br><span class="line">node.stopAllActions();&#x2F;&#x2F;停止所有动作</span><br><span class="line">&#x2F;&#x2F;自定义动作</span><br><span class="line">var action &#x3D; cc.moveTo(2, 100, 100);&#x2F;&#x2F; 创建一个移动动作</span><br><span class="line">node.runAction(action);&#x2F;&#x2F; 执行动作</span><br><span class="line">node.stopAction(action);&#x2F;&#x2F; 停止一个动作</span><br><span class="line"></span><br><span class="line">cc.sequence(action1,action2); &#x2F;&#x2F;按顺序连续执行，先action1，后action2</span><br><span class="line"></span><br><span class="line">cc.spawn(action1，action2); &#x2F;&#x2F;同时执行，action1和action2一起执行</span><br><span class="line"></span><br><span class="line">cc.repeatForever(cc.sequence(action1,action2)); &#x2F;&#x2F;一直重复括号里的动作</span><br></pre></td></tr></table></figure>
+
+<h2 id="计时器"><a href="#计时器" class="headerlink" title="计时器"></a>计时器</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;只用1次的计时器,2秒后执行</span><br><span class="line">        this.scheduleOnce(function()&#123;</span><br><span class="line">            &#x2F;&#x2F;一条或多条执行语句  </span><br><span class="line"></span><br><span class="line">        &#125;,2); &#x2F;&#x2F;(function()&#123;&#125;,时间（s）)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;每隔5秒执行1次</span><br><span class="line">        this.schedule(function()&#123;</span><br><span class="line">            &#x2F;&#x2F;一条或多条执行语句  </span><br><span class="line"></span><br><span class="line">        &#125;,5);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;计算多次的计时器（1秒后，以0.1秒的执行间隔，执行10次）</span><br><span class="line">        this.schedule(function()&#123;</span><br><span class="line">            &#x2F;&#x2F;一条或多条执行语句</span><br><span class="line"></span><br><span class="line">        &#125;,0.1,10,1); &#x2F;&#x2F;(function()&#123;&#125;,间隔时间，次数，多久后开始)</span><br><span class="line"></span><br><span class="line">this.unscheduleAllCallbacks(this);&#x2F;&#x2F;停止某组件的所有计时器</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;自定义定时器执行内容（相比常规使用的定时器优势是：方便随时开启或关闭）</span><br><span class="line">var cb&#x3D; function()&#123;</span><br><span class="line">    &#x2F;&#x2F;do something</span><br><span class="line">&#125;;</span><br><span class="line">this.schedule(cb,1);&#x2F;&#x2F;启动定时器</span><br><span class="line">this.unschedule(cb);&#x2F;&#x2F;取消定时器</span><br></pre></td></tr></table></figure>
+
+<h2 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a>事件监听</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(开始：&#39;touchstart&#39;，移动：&#39;touchmove&#39;，结束：&#39;touchend&#39;，取消：&#39;touchcancel&#39;)</span><br><span class="line">node.on(&#39;touchstart&#39;,function(event)&#123;</span><br><span class="line">    this.doSomething();</span><br><span class="line">&#125;,this);  </span><br><span class="line">var a &#x3D; event.getID();&#x2F;&#x2F;获取触点的ID</span><br><span class="line">var a &#x3D; event.getLocationX();&#x2F;&#x2F;获取触摸点的坐标X</span><br><span class="line">var b &#x3D; event.getLocationY();&#x2F;&#x2F;获取触摸点的坐标Y</span><br><span class="line"></span><br><span class="line">cc.eventManager.addListener(&#123;</span><br><span class="line">            event: cc.EventListener.KEYBOARD&#x2F;TOUCH_ONE_BY_ONE,myfunction&#125;,self.node);</span><br></pre></td></tr></table></figure>
+
+<h2 id="分辨率"><a href="#分辨率" class="headerlink" title="分辨率"></a>分辨率</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;获得设备分辨率</span><br><span class="line">var b &#x3D; cc.director.getWinSizeInPixels()</span><br><span class="line">var bx &#x3D; b.width</span><br><span class="line">var by &#x3D; b.height</span><br><span class="line"></span><br><span class="line">cc.view.getCanvasSize().width;&#x2F;&#x2F;获得设备分辨率的宽度</span><br><span class="line">cc.view.getCanvasSize().height;&#x2F;&#x2F;获得设备分辨率的高度</span><br><span class="line">cc.director.setDisplayStats(true);&#x2F;&#x2F;显示帧数信息</span><br></pre></td></tr></table></figure>
+
+<h2 id="音频控制"><a href="#音频控制" class="headerlink" title="音频控制"></a>音频控制</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cc.audioEngine.playMusic(this.BGAudio,true);&#x2F;&#x2F;播放音乐（true代表循环）</span><br><span class="line">cc.audioEngine.stopMusic()&#x2F;&#x2F;停止播放背景音乐</span><br><span class="line">cc.audioEngine.playEffect(this.ClickAudio,false);&#x2F;&#x2F;播放音效（false代表只播放一次）</span><br><span class="line">cc.audioEngine.stopEffect(音效变量名);&#x2F;&#x2F;停止指定音效（需要先把音效赋值给变量）</span><br><span class="line">cc.audioEngine.AllEffects();&#x2F;&#x2F;停止所有音效</span><br><span class="line">cc.audioEngine.setMusicVolume(参数);  &#x2F;&#x2F;设置背景音乐的音量（该参数范围是0到1）</span><br><span class="line">cc.audioEngine.setEffectsVolume(参数);  &#x2F;&#x2F;设置音效的音量（该参数范围是0到1）</span><br></pre></td></tr></table></figure>
+
+<h2 id="存档操作"><a href="#存档操作" class="headerlink" title="存档操作"></a>存档操作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cc.sys.localStorage.setItem(&#39;存储标识名&#39;,变量名);&#x2F;&#x2F;存储存档数据</span><br><span class="line">var a &#x3D; cc.sys.localStorage.getItem(&#39;存储标识名&#39;);&#x2F;&#x2F;读取存档数据</span><br><span class="line">cc.sys.localStorage.removeItem(&#39;存储标识名&#39;);&#x2F;&#x2F;擦除存档数据</span><br><span class="line">userData &#x3D; &#123;</span><br><span class="line">    name: &#39;Tracer&#39;,</span><br><span class="line">    level: 1,</span><br><span class="line">    gold: 100</span><br><span class="line">&#125;;</span><br><span class="line">cc.sys.localStorage.setItem(&#39;userData&#39;, JSON.stringify(userData));&#x2F;&#x2F;存取复杂对象数据</span><br><span class="line">var userData &#x3D; JSON.parse(cc.sys.localStorage.getItem(&#39;userData&#39;));&#x2F;&#x2F;读取复杂对象数据</span><br></pre></td></tr></table></figure>
+
+<h2 id="判断平台"><a href="#判断平台" class="headerlink" title="判断平台"></a>判断平台</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cc.sys.isNative  &#x2F;&#x2F;是否是本地</span><br><span class="line">cc.sys.isBrowser  &#x2F;&#x2F;是否是网页</span><br><span class="line">cc.sys.isMobile  &#x2F;&#x2F;是否是移动系统</span><br><span class="line">cc.sys.platform  &#x2F;&#x2F;正在运行的平台</span><br><span class="line">cc.sys.language  &#x2F;&#x2F;当前运行系统的语言</span><br><span class="line">cc.sys.os  &#x2F;&#x2F;当前正在运行的系统</span><br><span class="line">cc.sys.OS_IOS  &#x2F;&#x2F;是否是IOS系统</span><br><span class="line">cc.sys.OS_ANDROID  &#x2F;&#x2F;是否是android系统</span><br><span class="line">cc.sys.OS_WINDOWS  &#x2F;&#x2F;是否是windows系统</span><br><span class="line">cc.sys.openURL(&#39;Http:&#x2F;&#x2F;www.baidu.com&#39;);  &#x2F;&#x2F;打开网页</span><br></pre></td></tr></table></figure>
+
+<h2 id="监听和发射事件"><a href="#监听和发射事件" class="headerlink" title="监听和发射事件"></a>监听和发射事件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">this.node.pauseSystemEvents(true);&#x2F;&#x2F;暂停节点系统事件</span><br><span class="line">this.node.resumeSystemEvents(true);&#x2F;&#x2F;恢复节点系统事件</span><br><span class="line">this.node.targetOff(this);&#x2F;&#x2F;移除所有注册事件</span><br><span class="line"></span><br><span class="line">触摸监听：开始&#39;touchstart&#39;,移动&#39;touchmove&#39;,结束&#39;touchend&#39;,取消&#39;touchcancel&#39;</span><br><span class="line">var pos &#x3D; event.getLocation();&#x2F;&#x2F;获取触摸点的坐标(包含X和Y)</span><br><span class="line">var x &#x3D; event.getLocationX();&#x2F;&#x2F;获取触摸点的X坐标</span><br><span class="line">var y &#x3D; event.getLocationY();&#x2F;&#x2F;获取触摸点的Y坐标</span><br><span class="line">var a &#x3D; event.getID();&#x2F;&#x2F;获取触点的ID</span><br><span class="line"></span><br><span class="line">鼠标监听：鼠标按下&#39;mousedown&#39;,移入节点&#39;mouseenter&#39;,节点中移动&#39;mousemove&#39;,移出节点&#39;mouseleave,&#39;松开鼠标&#39;mouseup&#39;</span><br><span class="line">var a &#x3D; event.getScrollY();&#x2F;&#x2F;获取滚轮滚动的 Y 轴距离，只有滚动时才有效</span><br><span class="line">var a &#x3D; event.getLocation();&#x2F;&#x2F;获取鼠标位置对象，对象包含 x 和 y 属性</span><br><span class="line"></span><br><span class="line">输入框监听：获得焦点&#39;editing-did-began&#39;,文字变化&#39;text-changed&#39;,失去焦点&#39;editing-did-ended&#39;,按下回车&#39;editing-return&#39;</span><br><span class="line"></span><br><span class="line">属性变化监听：位置&#39;position-changed&#39;,宽高 &#39;size-changed&#39;,旋转&#39;rotation-changed&#39;,缩放&#39;scale-changed&#39;</span><br><span class="line"></span><br><span class="line">ScrollView控件监听：滚动中&#39;scrolling&#39;,停止滚动&#39;scroll-ended&#39;</span><br><span class="line"></span><br><span class="line">用户自定义事件:</span><br><span class="line">this.node.on(&#39;事件名&#39;,function,this);&#x2F;&#x2F;注册监听</span><br><span class="line">this.node.emit(&#39;事件名&#39;);&#x2F;&#x2F;发送监听广播</span><br><span class="line">this.node.off(&#39;事件名&#39;,function,this);&#x2F;&#x2F;关闭监听</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;注册带参数监听</span><br><span class="line">this.node.on(&#39;事件名&#39;,function(event)&#123;</span><br><span class="line"></span><br><span class="line">“具体方法函数内容”</span><br><span class="line"></span><br><span class="line">&#125;,this);</span><br><span class="line">&#x2F;&#x2F;发送带参数的监听</span><br><span class="line">this.node.emit(&#39;事件名&#39;,&#123;id:1001&#125;);</span><br><span class="line">cc.eventManager.addListener(listener, node);&#x2F;&#x2F;添加事件</span><br><span class="line">cc.eventManager.removeListener((listener);&#x2F;&#x2F;移除事件</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cc.director.pause();&#x2F;&#x2F;暂停</span><br><span class="line">cc.director.resume();&#x2F;&#x2F;继续</span><br><span class="line">cc.director.end();&#x2F;&#x2F;退出整个应用</span><br><span class="line">cc.log(变量)  或 console.log(something);&#x2F;&#x2F;输出想要的信息</span><br><span class="line">let self &#x3D; this;&#x2F;&#x2F;锁定当前使用的this指向</span><br><span class="line">node.getLocalZOrder();&#x2F;&#x2F;层级获取</span><br><span class="line">node.setLocalZOrder(1);&#x2F;&#x2F;层级改变</span><br><span class="line">cc.find(&#39;canvas&#x2F;map&#39; + num)&#x2F;&#x2F;读取带变量的路径</span><br><span class="line">cc.sys.openURL(&#39;Http:&#x2F;&#x2F;www.baidu.com&#39;);&#x2F;&#x2F;打开网页</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>cocos</category>
+      </categories>
+      <tags>
+        <tag>cocos</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>spriteAltas精灵图集使用方式</title>
+    <url>/2020/04/07/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<blockquote>
+<p>之前，对于扑克牌的加载一直是散装加载，用<code>loadRes</code>动态的添加到游戏中，这样的缺陷是在动画的时候会闪一下，在网慢的情况下也许扑克牌不会加载出来而动画就执行了。因此，改用图集加载方式，将整幅扑克牌一起加载出来，用那种加载哪张就行了。</p>
 </blockquote>
 <a id="more"></a>
 
-<p>关于图片和图片路径的设置，有以下教程。</p>
-<blockquote>
-<p> 所有博客文件均保存在 <code>hexo/_posts/</code>文件夹下</p>
-</blockquote>
 <ol>
-<li><p><code>hexo &gt; source</code>目录下建一个文件夹叫images，用来保存博客中的图片。</p>
+<li><p>新加一个属性:</p>
+<p><img src="./images/image-20200407114816545.png" alt="image-20200407114816545"></p>
 </li>
-<li><p>打开<code>Typora</code>的 <code>文件 &gt; 偏好设置</code>，进行如下设置。</p>
-<p><img src="./images/image-20200411092155916.png" alt="image-20200411092155916"></p>
-<p>这样的话所有的博客中的图片都将会保存到 <code>/source/images/该博客md文件名/图片名称</code></p>
-<p>但是仅仅这样设置还不够，这样设置在typora中倒是能看图片了，但是使用的却是相对于当前md文件的相对路径，可是如果启动hexo，是要用服务器访问的，而服务器显然无法根据这个相对路径正确访问到图片，因此还需要在typora中进行进一步设置。</p>
+<li><p>我们用图集打包出来的是这样的文件：</p>
+<p><img src="./images/image-20200407114923862.png" alt="image-20200407114923862"></p>
 </li>
-<li><p>在typora菜单栏点击 <code>格式-&gt;图像-&gt;设置图片根目录</code>，将<code>hexo/source</code>作为其根目录即可。<strong>一定要先设置了图片根目录后再插入图片，否则图片路径会不正确喔！</strong></p>
-<p>之后再该<code>md</code>文件头部会出现:<code>typora-root-url: ..\..\source</code>这样的代码，我们将这行代码复制进模板文件中</p>
+<li><p>在<code>cocos</code>上将<code>plist</code>拖进属性中。</p>
+<p><img src="images/image-20200407115004375.png" alt="image-20200407115004375"></p>
 </li>
-<li><p>以下这三个都可以添加</p>
-<p><img src="./images/image-20200411092141854.png" alt="image-20200411092141854"></p>
-<p>只要在第一个<code>---</code>下添加<code>typora-root-url: ..\..\source</code>就行了，这样<code>Typora</code>就能识别而不用每次都自己手动设置了。</p>
+<li><p>编写代码动态修改精灵图：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">setAtlasImg(node,spAtlas,spriteName)&#123;</span><br><span class="line">  <span class="keyword">let</span> sprite = node.getComponent(cc.Sprite);</span><br><span class="line">  <span class="keyword">if</span> (!sprite) &#123;</span><br><span class="line">    sprite = node.addComponent(cc.Sprite);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> mySprite =  spAtlas.getSpriteFrame(spriteName)</span><br><span class="line">  sprite.spriteFrame = mySprite;</span><br><span class="line">  <span class="keyword">return</span> mySprite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 节点，图集组件，图集中文件名字</span></span><br><span class="line">setAtlasImg(<span class="keyword">this</span>.node, <span class="keyword">this</span>.spAtlas, <span class="string">"11"</span>);</span><br></pre></td></tr></table></figure>
+
 </li>
 </ol>
 ]]></content>
       <categories>
-        <category>hexo</category>
+        <category>cocos</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-        <tag>typora</tag>
+        <tag>cocos</tag>
       </tags>
   </entry>
   <entry>
@@ -127,47 +172,40 @@
       </tags>
   </entry>
   <entry>
-    <title>cocos creator常用api</title>
-    <url>/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/</url>
+    <title>hexo+typora 博客中插入图片</title>
+    <url>/2020/04/04/hexo/hexo-typora-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<blockquote>
-<p><a href="https://blog.csdn.net/sotmwhat/article/details/93884076" target="_blank" rel="noopener">https://blog.csdn.net/sotmwhat/article/details/93884076</a></p>
+<p>在使用了hexo搭建了博客后，最大的问题便是如何使用一款markdown工具来编辑博客了，我采取的就是Typora，这工具免费简单易用没广告，而且把图片保存到本地还是很方便的，因此大家只要稍微了解点markdown语法就可以上手使用了。</p>
 </blockquote>
-<h2 id="场景加载"><a href="#场景加载" class="headerlink" title="场景加载"></a>场景加载</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cc.director.loadScene(<span class="string">'场景名称'</span>);<span class="comment">//场景跳转</span></span><br><span class="line">cc.director.preloadScene(<span class="string">'场景名称'</span>);<span class="comment">//预加载场景</span></span><br><span class="line">cc.director.getScene();<span class="comment">//获取当前场景</span></span><br></pre></td></tr></table></figure>
-
 <a id="more"></a>
 
-
-
-<h2 id="获取节点"><a href="#获取节点" class="headerlink" title="获取节点"></a>获取节点</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> node = cc.find(<span class="string">"Canvas/bg"</span>);<span class="comment">//通过访问路径来获取节点</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.getChildByName(<span class="string">'name'</span>);<span class="comment">//通过名字获取子节点</span></span><br><span class="line">node.getComponent(cc.Label).string = <span class="string">'abc'</span>;<span class="comment">//获取节点上的组件值</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = cc.find(<span class="string">"Canvas/bg"</span>).getComponent(cc.Sprite);<span class="comment">//通过访问路径来获取节点，及获取该节点的指定组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">this</span>.node .getChildByName(<span class="string">'节点名称'</span>).getComponent(cc.Label)<span class="comment">//通过节点名获取子节点，获取该节点指定组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node;<span class="comment">//获取当前脚本所在的节点</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.parent;<span class="comment">//获取父节点</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.getChildByTag(<span class="number">1001</span>);<span class="comment">//通过标签获取子节点</span></span><br><span class="line"><span class="keyword">var</span> a = cc.find(<span class="string">"bg/score"</span>,<span class="keyword">this</span>.node);<span class="comment">//通过指定节点下的路径获取节点</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.children;<span class="comment">//获取所有子节点</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.childrenCount;<span class="comment">//获取子节点数量</span></span><br><span class="line"><span class="keyword">var</span> a = cc.director.getScene();<span class="comment">//获取场景主节点</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = cc.instantiate(node);<span class="comment">//克隆节点</span></span><br><span class="line"><span class="keyword">this</span>.node.parent = cc.find(<span class="string">'Canvas'</span>);<span class="comment">//绑定父节点</span></span><br><span class="line"><span class="keyword">this</span>.node.addChild(nodeName,zIndex,tag);<span class="comment">//添加子节点,可设置层级和标签</span></span><br><span class="line"><span class="keyword">this</span>.node.removeChild(nodeName);<span class="comment">//通过名字移除子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.removeChildByTag (nodeTag);<span class="comment">//通过标签移除子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.destroy();<span class="comment">//销毁节点</span></span><br><span class="line"><span class="keyword">this</span>.node.isValid;<span class="comment">//判定节点是否可用</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">this</span>.node.removeChild(newNode);<span class="comment">//移除节点中指定的子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.removeChildByTag(<span class="number">1001</span>);<span class="comment">//通过标签移除节点中指定的子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.removeAllChildren();<span class="comment">//移除所有子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.destroyAllChildren();<span class="comment">//销毁所有子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.cleanup();<span class="comment">//停止所有正在播放的动作和计时器</span></span><br><span class="line"><span class="keyword">var</span> sprites = <span class="keyword">this</span>.node.getComponentsInChildren(cc.Label);<span class="comment">//递归查找自身及所有子节点中指定类型的组件</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="获取节点位置，设置节点"><a href="#获取节点位置，设置节点" class="headerlink" title="获取节点位置，设置节点"></a>获取节点位置，设置节点</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = node.getPositionX();或 getPositionY() <span class="comment">//获取节点的X轴或Y轴坐标</span></span><br><span class="line"><span class="keyword">var</span> a = node.getScaleX(); 或getScaleY() <span class="comment">//获取节点的X轴或Y轴缩放比例</span></span><br><span class="line">node.x = <span class="number">100</span>;<span class="comment">//设置节点x轴坐标</span></span><br><span class="line">node.y = <span class="number">100</span>;<span class="comment">//设置节点y轴坐标</span></span><br><span class="line">node.setPosition(x,y); <span class="comment">//设置节点坐标</span></span><br><span class="line">node.rotation = <span class="number">90</span>; <span class="comment">//设置节点旋转角度</span></span><br><span class="line">node.scaleX = <span class="number">2</span>; <span class="comment">//设置节点x轴缩放倍数</span></span><br><span class="line">node.scaleY = <span class="number">2</span>; <span class="comment">//设置节点y轴缩放倍数</span></span><br><span class="line">node.setScale(<span class="number">2</span>); <span class="comment">//设置节点整体缩放倍数</span></span><br><span class="line">node.width = <span class="number">100</span>; <span class="comment">//设置节点宽度大小</span></span><br><span class="line">node.height = <span class="number">100</span>;  <span class="comment">//设置节点高度大小</span></span><br><span class="line">node.setContentSize(<span class="number">100</span>, <span class="number">100</span>); <span class="comment">//设置节点宽高尺寸大小</span></span><br><span class="line">node.anchorX = <span class="number">1</span>; <span class="comment">//设置节点x轴锚点坐标</span></span><br><span class="line">node.anchorY = <span class="number">0</span>; <span class="comment">//设置节点y轴锚点坐标</span></span><br><span class="line">node.setAnchorPoint(<span class="number">1</span>, <span class="number">0</span>); <span class="comment">//设置节点锚点坐标</span></span><br><span class="line">node.opacity = <span class="number">128</span>; <span class="comment">//设置节点透明度大小（0-255）</span></span><br><span class="line">node.setOpacity(<span class="number">20</span>); <span class="comment">//设置节点透明度（0~255）</span></span><br><span class="line">node.color = <span class="keyword">new</span> cc.color(<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>,<span class="number">255</span>); <span class="comment">//设置节点颜色（R,G,B,透明度）</span></span><br><span class="line"><span class="keyword">if</span> (cc.isValid(<span class="keyword">this</span>.label.node) ) <span class="comment">//判定节点是否存在</span></span><br><span class="line">node.destroy(); <span class="comment">//销毁节点</span></span><br><span class="line"><span class="keyword">this</span>.cannons = [];</span><br><span class="line"><span class="keyword">this</span>.cannons = node.getChildren(); <span class="comment">//获取所有子节点</span></span><br><span class="line"><span class="keyword">this</span>.cannons = node.getChildrenCount(); <span class="comment">//获取子节点数量</span></span><br><span class="line">node.active = <span class="literal">false</span>; <span class="comment">//关闭节点(隐藏节点)</span></span><br><span class="line">cc.game.addPersistRootNode(myNode); <span class="comment">//常驻节点（全局变量）</span></span><br><span class="line">cc.game.removePersistRootNode(myNode); <span class="comment">//取消常驻节点</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="动作操作"><a href="#动作操作" class="headerlink" title="动作操作"></a>动作操作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cc.show()&#x2F;&#x2F;立即显示</span><br><span class="line">cc.hide ()&#x2F;&#x2F;立即隐藏</span><br><span class="line">cc.toggleVisibility()&#x2F;&#x2F;显隐切换</span><br><span class="line">cc.fadeIn(1)&#x2F;&#x2F;渐显效果</span><br><span class="line">cc.fadeOut(1)&#x2F;&#x2F;渐隐效果</span><br><span class="line">cc.delayTime(1)&#x2F;&#x2F;等待1秒</span><br><span class="line">node.runAction(cc.moveTo(1,0,0)); &#x2F;&#x2F;移动到当前节点（时间（s），X轴坐标，Y 轴坐标）</span><br><span class="line">node.runAction(cc.scaleTo(1,0.7,0.8));&#x2F;&#x2F;缩放到当前倍数节点（时间（s），X轴倍数，Y 轴倍数）</span><br><span class="line">node.runAction(cc.rotateTo(1,160,160));&#x2F;&#x2F;旋转到指定角度（时间（s），X轴角度，Y 轴角度）</span><br><span class="line">node.runAction(cc.skewTo(1,5,-5));&#x2F;&#x2F;变化节点倾斜度（时间（s），X轴倾斜度，Y 轴倾斜度）</span><br><span class="line"></span><br><span class="line">node.runAction(cc.fadeTo(2,0));&#x2F;&#x2F;变化当前节点的透明度（时间（s），透明度）</span><br><span class="line"></span><br><span class="line">node.runAction(cc.tintTo(2,255,255,0));&#x2F;&#x2F;变化当前节点颜色（时间，R,G,B）</span><br><span class="line">node.stopAllActions();&#x2F;&#x2F;停止所有动作</span><br><span class="line">&#x2F;&#x2F;自定义动作</span><br><span class="line">var action &#x3D; cc.moveTo(2, 100, 100);&#x2F;&#x2F; 创建一个移动动作</span><br><span class="line">node.runAction(action);&#x2F;&#x2F; 执行动作</span><br><span class="line">node.stopAction(action);&#x2F;&#x2F; 停止一个动作</span><br><span class="line"></span><br><span class="line">cc.sequence(action1,action2); &#x2F;&#x2F;按顺序连续执行，先action1，后action2</span><br><span class="line"></span><br><span class="line">cc.spawn(action1，action2); &#x2F;&#x2F;同时执行，action1和action2一起执行</span><br><span class="line"></span><br><span class="line">cc.repeatForever(cc.sequence(action1,action2)); &#x2F;&#x2F;一直重复括号里的动作</span><br></pre></td></tr></table></figure>
-
-<h2 id="计时器"><a href="#计时器" class="headerlink" title="计时器"></a>计时器</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;只用1次的计时器,2秒后执行</span><br><span class="line">        this.scheduleOnce(function()&#123;</span><br><span class="line">            &#x2F;&#x2F;一条或多条执行语句  </span><br><span class="line"></span><br><span class="line">        &#125;,2); &#x2F;&#x2F;(function()&#123;&#125;,时间（s）)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;每隔5秒执行1次</span><br><span class="line">        this.schedule(function()&#123;</span><br><span class="line">            &#x2F;&#x2F;一条或多条执行语句  </span><br><span class="line"></span><br><span class="line">        &#125;,5);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;计算多次的计时器（1秒后，以0.1秒的执行间隔，执行10次）</span><br><span class="line">        this.schedule(function()&#123;</span><br><span class="line">            &#x2F;&#x2F;一条或多条执行语句</span><br><span class="line"></span><br><span class="line">        &#125;,0.1,10,1); &#x2F;&#x2F;(function()&#123;&#125;,间隔时间，次数，多久后开始)</span><br><span class="line"></span><br><span class="line">this.unscheduleAllCallbacks(this);&#x2F;&#x2F;停止某组件的所有计时器</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;自定义定时器执行内容（相比常规使用的定时器优势是：方便随时开启或关闭）</span><br><span class="line">var cb&#x3D; function()&#123;</span><br><span class="line">    &#x2F;&#x2F;do something</span><br><span class="line">&#125;;</span><br><span class="line">this.schedule(cb,1);&#x2F;&#x2F;启动定时器</span><br><span class="line">this.unschedule(cb);&#x2F;&#x2F;取消定时器</span><br></pre></td></tr></table></figure>
-
-<h2 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a>事件监听</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(开始：&#39;touchstart&#39;，移动：&#39;touchmove&#39;，结束：&#39;touchend&#39;，取消：&#39;touchcancel&#39;)</span><br><span class="line">node.on(&#39;touchstart&#39;,function(event)&#123;</span><br><span class="line">    this.doSomething();</span><br><span class="line">&#125;,this);  </span><br><span class="line">var a &#x3D; event.getID();&#x2F;&#x2F;获取触点的ID</span><br><span class="line">var a &#x3D; event.getLocationX();&#x2F;&#x2F;获取触摸点的坐标X</span><br><span class="line">var b &#x3D; event.getLocationY();&#x2F;&#x2F;获取触摸点的坐标Y</span><br><span class="line"></span><br><span class="line">cc.eventManager.addListener(&#123;</span><br><span class="line">            event: cc.EventListener.KEYBOARD&#x2F;TOUCH_ONE_BY_ONE,myfunction&#125;,self.node);</span><br></pre></td></tr></table></figure>
-
-<h2 id="分辨率"><a href="#分辨率" class="headerlink" title="分辨率"></a>分辨率</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;获得设备分辨率</span><br><span class="line">var b &#x3D; cc.director.getWinSizeInPixels()</span><br><span class="line">var bx &#x3D; b.width</span><br><span class="line">var by &#x3D; b.height</span><br><span class="line"></span><br><span class="line">cc.view.getCanvasSize().width;&#x2F;&#x2F;获得设备分辨率的宽度</span><br><span class="line">cc.view.getCanvasSize().height;&#x2F;&#x2F;获得设备分辨率的高度</span><br><span class="line">cc.director.setDisplayStats(true);&#x2F;&#x2F;显示帧数信息</span><br></pre></td></tr></table></figure>
-
-<h2 id="音频控制"><a href="#音频控制" class="headerlink" title="音频控制"></a>音频控制</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cc.audioEngine.playMusic(this.BGAudio,true);&#x2F;&#x2F;播放音乐（true代表循环）</span><br><span class="line">cc.audioEngine.stopMusic()&#x2F;&#x2F;停止播放背景音乐</span><br><span class="line">cc.audioEngine.playEffect(this.ClickAudio,false);&#x2F;&#x2F;播放音效（false代表只播放一次）</span><br><span class="line">cc.audioEngine.stopEffect(音效变量名);&#x2F;&#x2F;停止指定音效（需要先把音效赋值给变量）</span><br><span class="line">cc.audioEngine.AllEffects();&#x2F;&#x2F;停止所有音效</span><br><span class="line">cc.audioEngine.setMusicVolume(参数);  &#x2F;&#x2F;设置背景音乐的音量（该参数范围是0到1）</span><br><span class="line">cc.audioEngine.setEffectsVolume(参数);  &#x2F;&#x2F;设置音效的音量（该参数范围是0到1）</span><br></pre></td></tr></table></figure>
-
-<h2 id="存档操作"><a href="#存档操作" class="headerlink" title="存档操作"></a>存档操作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cc.sys.localStorage.setItem(&#39;存储标识名&#39;,变量名);&#x2F;&#x2F;存储存档数据</span><br><span class="line">var a &#x3D; cc.sys.localStorage.getItem(&#39;存储标识名&#39;);&#x2F;&#x2F;读取存档数据</span><br><span class="line">cc.sys.localStorage.removeItem(&#39;存储标识名&#39;);&#x2F;&#x2F;擦除存档数据</span><br><span class="line">userData &#x3D; &#123;</span><br><span class="line">    name: &#39;Tracer&#39;,</span><br><span class="line">    level: 1,</span><br><span class="line">    gold: 100</span><br><span class="line">&#125;;</span><br><span class="line">cc.sys.localStorage.setItem(&#39;userData&#39;, JSON.stringify(userData));&#x2F;&#x2F;存取复杂对象数据</span><br><span class="line">var userData &#x3D; JSON.parse(cc.sys.localStorage.getItem(&#39;userData&#39;));&#x2F;&#x2F;读取复杂对象数据</span><br></pre></td></tr></table></figure>
-
-<h2 id="判断平台"><a href="#判断平台" class="headerlink" title="判断平台"></a>判断平台</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cc.sys.isNative  &#x2F;&#x2F;是否是本地</span><br><span class="line">cc.sys.isBrowser  &#x2F;&#x2F;是否是网页</span><br><span class="line">cc.sys.isMobile  &#x2F;&#x2F;是否是移动系统</span><br><span class="line">cc.sys.platform  &#x2F;&#x2F;正在运行的平台</span><br><span class="line">cc.sys.language  &#x2F;&#x2F;当前运行系统的语言</span><br><span class="line">cc.sys.os  &#x2F;&#x2F;当前正在运行的系统</span><br><span class="line">cc.sys.OS_IOS  &#x2F;&#x2F;是否是IOS系统</span><br><span class="line">cc.sys.OS_ANDROID  &#x2F;&#x2F;是否是android系统</span><br><span class="line">cc.sys.OS_WINDOWS  &#x2F;&#x2F;是否是windows系统</span><br><span class="line">cc.sys.openURL(&#39;Http:&#x2F;&#x2F;www.baidu.com&#39;);  &#x2F;&#x2F;打开网页</span><br></pre></td></tr></table></figure>
-
-<h2 id="监听和发射事件"><a href="#监听和发射事件" class="headerlink" title="监听和发射事件"></a>监听和发射事件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">this.node.pauseSystemEvents(true);&#x2F;&#x2F;暂停节点系统事件</span><br><span class="line">this.node.resumeSystemEvents(true);&#x2F;&#x2F;恢复节点系统事件</span><br><span class="line">this.node.targetOff(this);&#x2F;&#x2F;移除所有注册事件</span><br><span class="line"></span><br><span class="line">触摸监听：开始&#39;touchstart&#39;,移动&#39;touchmove&#39;,结束&#39;touchend&#39;,取消&#39;touchcancel&#39;</span><br><span class="line">var pos &#x3D; event.getLocation();&#x2F;&#x2F;获取触摸点的坐标(包含X和Y)</span><br><span class="line">var x &#x3D; event.getLocationX();&#x2F;&#x2F;获取触摸点的X坐标</span><br><span class="line">var y &#x3D; event.getLocationY();&#x2F;&#x2F;获取触摸点的Y坐标</span><br><span class="line">var a &#x3D; event.getID();&#x2F;&#x2F;获取触点的ID</span><br><span class="line"></span><br><span class="line">鼠标监听：鼠标按下&#39;mousedown&#39;,移入节点&#39;mouseenter&#39;,节点中移动&#39;mousemove&#39;,移出节点&#39;mouseleave,&#39;松开鼠标&#39;mouseup&#39;</span><br><span class="line">var a &#x3D; event.getScrollY();&#x2F;&#x2F;获取滚轮滚动的 Y 轴距离，只有滚动时才有效</span><br><span class="line">var a &#x3D; event.getLocation();&#x2F;&#x2F;获取鼠标位置对象，对象包含 x 和 y 属性</span><br><span class="line"></span><br><span class="line">输入框监听：获得焦点&#39;editing-did-began&#39;,文字变化&#39;text-changed&#39;,失去焦点&#39;editing-did-ended&#39;,按下回车&#39;editing-return&#39;</span><br><span class="line"></span><br><span class="line">属性变化监听：位置&#39;position-changed&#39;,宽高 &#39;size-changed&#39;,旋转&#39;rotation-changed&#39;,缩放&#39;scale-changed&#39;</span><br><span class="line"></span><br><span class="line">ScrollView控件监听：滚动中&#39;scrolling&#39;,停止滚动&#39;scroll-ended&#39;</span><br><span class="line"></span><br><span class="line">用户自定义事件:</span><br><span class="line">this.node.on(&#39;事件名&#39;,function,this);&#x2F;&#x2F;注册监听</span><br><span class="line">this.node.emit(&#39;事件名&#39;);&#x2F;&#x2F;发送监听广播</span><br><span class="line">this.node.off(&#39;事件名&#39;,function,this);&#x2F;&#x2F;关闭监听</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;注册带参数监听</span><br><span class="line">this.node.on(&#39;事件名&#39;,function(event)&#123;</span><br><span class="line"></span><br><span class="line">“具体方法函数内容”</span><br><span class="line"></span><br><span class="line">&#125;,this);</span><br><span class="line">&#x2F;&#x2F;发送带参数的监听</span><br><span class="line">this.node.emit(&#39;事件名&#39;,&#123;id:1001&#125;);</span><br><span class="line">cc.eventManager.addListener(listener, node);&#x2F;&#x2F;添加事件</span><br><span class="line">cc.eventManager.removeListener((listener);&#x2F;&#x2F;移除事件</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cc.director.pause();&#x2F;&#x2F;暂停</span><br><span class="line">cc.director.resume();&#x2F;&#x2F;继续</span><br><span class="line">cc.director.end();&#x2F;&#x2F;退出整个应用</span><br><span class="line">cc.log(变量)  或 console.log(something);&#x2F;&#x2F;输出想要的信息</span><br><span class="line">let self &#x3D; this;&#x2F;&#x2F;锁定当前使用的this指向</span><br><span class="line">node.getLocalZOrder();&#x2F;&#x2F;层级获取</span><br><span class="line">node.setLocalZOrder(1);&#x2F;&#x2F;层级改变</span><br><span class="line">cc.find(&#39;canvas&#x2F;map&#39; + num)&#x2F;&#x2F;读取带变量的路径</span><br><span class="line">cc.sys.openURL(&#39;Http:&#x2F;&#x2F;www.baidu.com&#39;);&#x2F;&#x2F;打开网页</span><br></pre></td></tr></table></figure>
-
-
-
+<p>关于图片和图片路径的设置，有以下教程。</p>
+<blockquote>
+<p> 所有博客文件均保存在 <code>hexo/_posts/</code>文件夹下</p>
+</blockquote>
+<ol>
+<li><p><code>hexo &gt; source</code>目录下建一个文件夹叫images，用来保存博客中的图片。</p>
+</li>
+<li><p>打开<code>Typora</code>的 <code>文件 &gt; 偏好设置</code>，进行如下设置。</p>
+<p><img src="./images/image-20200411092155916.png" alt="image-20200411092155916"></p>
+<p>这样的话所有的博客中的图片都将会保存到 <code>/source/images/该博客md文件名/图片名称</code></p>
+<p>但是仅仅这样设置还不够，这样设置在typora中倒是能看图片了，但是使用的却是相对于当前md文件的相对路径，可是如果启动hexo，是要用服务器访问的，而服务器显然无法根据这个相对路径正确访问到图片，因此还需要在typora中进行进一步设置。</p>
+</li>
+<li><p>在typora菜单栏点击 <code>格式-&gt;图像-&gt;设置图片根目录</code>，将<code>hexo/source</code>作为其根目录即可。<strong>一定要先设置了图片根目录后再插入图片，否则图片路径会不正确喔！</strong></p>
+<p>之后再该<code>md</code>文件头部会出现:<code>typora-root-url: ..\..\source</code>这样的代码，我们将这行代码复制进模板文件中</p>
+</li>
+<li><p>以下这三个都可以添加</p>
+<p><img src="./images/image-20200411092141854.png" alt="image-20200411092141854"></p>
+<p>只要在第一个<code>---</code>下添加<code>typora-root-url: ..\..\source</code>就行了，这样<code>Typora</code>就能识别而不用每次都自己手动设置了。</p>
+</li>
+</ol>
 ]]></content>
       <categories>
-        <category>cocos</category>
+        <category>hexo</category>
       </categories>
       <tags>
-        <tag>cocos</tag>
+        <tag>hexo</tag>
+        <tag>typora</tag>
       </tags>
   </entry>
   <entry>
@@ -201,48 +239,146 @@
       </tags>
   </entry>
   <entry>
-    <title>spriteAltas精灵图集使用方式</title>
-    <url>/2020/04/07/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/</url>
+    <title>node生成文件模板</title>
+    <url>/2020/04/06/node/node%E7%94%9F%E6%88%90%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<blockquote>
-<p>之前，对于扑克牌的加载一直是散装加载，用<code>loadRes</code>动态的添加到游戏中，这样的缺陷是在动画的时候会闪一下，在网慢的情况下也许扑克牌不会加载出来而动画就执行了。因此，改用图集加载方式，将整幅扑克牌一起加载出来，用那种加载哪张就行了。</p>
+<p>主要用作生成文件模板，方便之后的一系列开发，能够快速的制作类似结构的复杂页面。</p>
+<p><a href="https://www.npmjs.com/package/plop" target="_blank" rel="noopener">plop npm</a></p>
 </blockquote>
 <a id="more"></a>
 
-<ol>
-<li><p>新加一个属性:</p>
-<p><img src="./images/image-20200407114816545.png" alt="image-20200407114816545"></p>
-</li>
-<li><p>我们用图集打包出来的是这样的文件：</p>
-<p><img src="./images/image-20200407114923862.png" alt="image-20200407114923862"></p>
-</li>
-<li><p>在<code>cocos</code>上将<code>plist</code>拖进属性中。</p>
-<p><img src="images/image-20200407115004375.png" alt="image-20200407115004375"></p>
-</li>
-<li><p>编写代码动态修改精灵图：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">setAtlasImg(node,spAtlas,spriteName)&#123;</span><br><span class="line">  <span class="keyword">let</span> sprite = node.getComponent(cc.Sprite);</span><br><span class="line">  <span class="keyword">if</span> (!sprite) &#123;</span><br><span class="line">    sprite = node.addComponent(cc.Sprite);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> mySprite =  spAtlas.getSpriteFrame(spriteName)</span><br><span class="line">  sprite.spriteFrame = mySprite;</span><br><span class="line">  <span class="keyword">return</span> mySprite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 节点，图集组件，图集中文件名字</span></span><br><span class="line">setAtlasImg(<span class="keyword">this</span>.node, <span class="keyword">this</span>.spAtlas, <span class="string">"11"</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i plop -D</span><br></pre></td></tr></table></figure>
 
-</li>
-</ol>
+<p>源码下载: <a href="./files/plop.zip">Hexo文章页面模板下载</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>npm库个人常用整合</title>
+    <url>/2020/04/01/node/npm%E5%BA%93%E4%B8%AA%E4%BA%BA%E5%B8%B8%E7%94%A8%E6%95%B4%E5%90%88/</url>
+    <content><![CDATA[<h3 id="生成文件模板"><a href="#生成文件模板" class="headerlink" title="生成文件模板"></a>生成文件模板</h3><ul>
+<li><a href="https://www.npmjs.com/package/plop" target="_blank" rel="noopener">plop</a> （用于快速生成模板文件，可提供变量定制化输出）</li>
+</ul>
+<h3 id="打包工具"><a href="#打包工具" class="headerlink" title="打包工具"></a>打包工具</h3><ul>
+<li><code>webpack</code> (大名鼎鼎的模块打包工具)</li>
+</ul>
+<h2 id="Webpack常用库"><a href="#Webpack常用库" class="headerlink" title="Webpack常用库"></a>Webpack常用库</h2><ul>
+<li><code>html-webpack-plugin</code> 打包<code>html</code>，提供脚本样式注入等功能</li>
+<li></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>有关用node开发websocket多人聊天程序的后台</title>
+    <url>/2020/04/06/node/%E6%9C%89%E5%85%B3%E7%94%A8node%E5%BC%80%E5%8F%91websocket%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%90%8E%E5%8F%B0/</url>
+    <content><![CDATA[<h2 id="知识储备"><a href="#知识储备" class="headerlink" title="知识储备"></a>知识储备</h2><p>（开发过程中积累）</p>
+<ul>
+<li><code>ws</code>库的使用方法</li>
+<li><code>node</code>的语言熟悉度</li>
+<li>数据库增删改查的基础语法</li>
+<li>明确的流程分析与功能</li>
+</ul>
 ]]></content>
       <categories>
-        <category>cocos</category>
+        <category>node</category>
       </categories>
       <tags>
-        <tag>cocos</tag>
+        <tag>node</tag>
       </tags>
   </entry>
   <entry>
-    <title>css实现全站变灰</title>
-    <url>/2020/04/04/%E5%89%8D%E7%AB%AF/css%E5%AE%9E%E7%8E%B0%E5%85%A8%E7%AB%99%E5%8F%98%E7%81%B0/</url>
-    <content><![CDATA[<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">html</span>&#123;</span><br><span class="line">     <span class="attribute">filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line">     <span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line">     <span class="attribute">-moz-filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line">     <span class="attribute">-ms-filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line">     <span class="attribute">-o-filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line">     <span class="attribute">filter</span>: progid:DXImageTransfrom.Microsoft.<span class="built_in">BasicImage</span>(grayscale=<span class="number">1</span>);</span><br><span class="line">     <span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>lerna使用方法</title>
+    <url>/2020/03/31/lerna/lerna%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<blockquote>
+<p><code>lerna</code>主要用于分模块管理<code>js</code>的依赖库，对于库项目开发者非常有友好，它可以将一个大的库项目分离成一个个独立的项目，但又不是完全独立的，而是全部由<code>lerna</code>进行管理。它的类似目录结构如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">my-lerna-repo/</span><br><span class="line">  package.json</span><br><span class="line">  packages/</span><br><span class="line">    package<span class="number">-1</span>/</span><br><span class="line">      package.json</span><br><span class="line">    package<span class="number">-2</span>/</span><br><span class="line">      package.json</span><br></pre></td></tr></table></figure>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 全局安装</span><br><span class="line">npm i -g lerna</span><br><span class="line">&#x2F;&#x2F; 局部安装</span><br><span class="line">npm i -D lerna</span><br></pre></td></tr></table></figure>
+
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd 你的项目根目录</span><br><span class="line">&#x2F;&#x2F;全局安装的话执行下面这个</span><br><span class="line">lerna init</span><br><span class="line">&#x2F;&#x2F;局部安装的话执行下面这个</span><br><span class="line">npx lerna init</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+  </entry>
+  <entry>
+    <title>webpack的几种导入导出方式</title>
+    <url>/2020/04/13/webpack/webpack%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[]]></content>
       <categories>
-        <category>前端</category>
+        <category>webpack</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>css</tag>
+        <tag>webpack</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>webpack零散知识点</title>
+    <url>/2020/04/04/webpack/webpack%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
+    <content><![CDATA[<h3 id="参数解析"><a href="#参数解析" class="headerlink" title="参数解析"></a>参数解析</h3><ul>
+<li><p><code>mode</code></p>
+<p>主要区分为：<code>development</code>和<code>production</code></p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>development</code></td>
+<td>会将 <code>process.env.NODE_ENV</code> 的值设为 <code>development</code>。启用 <code>NamedChunksPlugin</code> 和 <code>NamedModulesPlugin</code>。</td>
+</tr>
+<tr>
+<td><code>production</code></td>
+<td>会将 <code>process.env.NODE_ENV</code> 的值设为 <code>production</code>。启用 <code>FlagDependencyUsagePlugin</code>, <code>FlagIncludedChunksPlugin</code>, <code>ModuleConcatenationPlugin</code>, <code>NoEmitOnErrorsPlugin</code>, <code>OccurrenceOrderPlugin</code>, <code>SideEffectsFlagPlugin</code> 和 <code>UglifyJsPlugin</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><em>记住，只设置</em> <code>NODE_ENV</code><em>，则不会自动设置</em> <code>mode</code>。</p>
+</blockquote>
+</li>
+</ul>
+<a id="more"></a>
+
+<ul>
+<li><p><code>entry</code></p>
+<p>可以是数组或者对象</p>
+<ul>
+<li><p>数组</p>
+<p>数组中表示的所有文件都将打包成一个文件，对应的是对象中键的<code>main</code>。也就是说</p>
+<p>如果值是<code>[&#39;src/index.js&#39;]</code>的话，跟<code>{main:&#39;src/index.js&#39;}</code>效果是一样的。</p>
+</li>
+<li><p>对象</p>
+<p>如果存在多个键值的话表示的就是多个入口，<code>webpack</code>将会从多个入口进入开始打包。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="string">"entry"</span>:&#123;</span><br><span class="line">   <span class="string">"main"</span>:[<span class="string">"src/index.js"</span>],</span><br><span class="line">   <span class="string">"react"</span>:<span class="string">"react"</span>,</span><br><span class="line">   <span class="string">"vue"</span>:[<span class="string">"vue"</span>,<span class="string">"vue-router"</span>,<span class="string">"vuex"</span>]</span><br><span class="line">&#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>如上的话就会打包出三个文件出来，分别是<code>main</code>,<code>react</code>,<code>vue</code>名字可以再输出的时候自定义。</p>
+</li>
+</ul>
+</li>
+<li><p><code>output</code></p>
+<p>对象。作为此配置的最低要求，我们需要提供两个参数：1. <code>filename</code>表示将要输出的文件名字。2. <code>path</code>将要输出的路径</p>
+<ul>
+<li><p>单入口文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> config = &#123;</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: <span class="string">'bundle.js'</span>,</span><br><span class="line">    path: <span class="string">'/home/proj/public/assets'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = config;</span><br></pre></td></tr></table></figure>
+
+<p>此配置将一个单独的 <code>bundle.js</code> 文件输出到 <code>/home/proj/public/assets</code> 目录中。</p>
+</li>
+<li><p>多入口文件</p>
+<p>多入口不能单独的指定一个具体的文件名，而是需要提供一个占位符，由<code>webpack</code>提供各个文件的一些参数，但是具体的名字仍旧可以自己定义。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: &#39;.&#x2F;src&#x2F;app.js&#39;,</span><br><span class="line">    search: &#39;.&#x2F;src&#x2F;search.js&#39;</span><br><span class="line">  &#125;,</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: &#39;[name].js&#39;,</span><br><span class="line">    path: __dirname + &#39;&#x2F;dist&#39;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; 写入到硬盘：.&#x2F;dist&#x2F;app.js, .&#x2F;dist&#x2F;search.js</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><a href="https://www.webpackjs.com/concepts/output/" target="_blank" rel="noopener">publicPath</a>  (这个参数尚未用过)</p>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>webpack</category>
+      </categories>
+      <tags>
+        <tag>webpack</tag>
       </tags>
   </entry>
   <entry>
@@ -260,6 +396,20 @@
       </categories>
       <tags>
         <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>css实现全站变灰</title>
+    <url>/2020/04/04/%E5%89%8D%E7%AB%AF/css%E5%AE%9E%E7%8E%B0%E5%85%A8%E7%AB%99%E5%8F%98%E7%81%B0/</url>
+    <content><![CDATA[<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">html</span>&#123;</span><br><span class="line">     <span class="attribute">filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line">     <span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line">     <span class="attribute">-moz-filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line">     <span class="attribute">-ms-filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line">     <span class="attribute">-o-filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line">     <span class="attribute">filter</span>: progid:DXImageTransfrom.Microsoft.<span class="built_in">BasicImage</span>(grayscale=<span class="number">1</span>);</span><br><span class="line">     <span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css</tag>
       </tags>
   </entry>
   <entry>
@@ -613,156 +763,6 @@
       </categories>
       <tags>
         <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>node生成文件模板</title>
-    <url>/2020/04/06/node/node%E7%94%9F%E6%88%90%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<blockquote>
-<p>主要用作生成文件模板，方便之后的一系列开发，能够快速的制作类似结构的复杂页面。</p>
-<p><a href="https://www.npmjs.com/package/plop" target="_blank" rel="noopener">plop npm</a></p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i plop -D</span><br></pre></td></tr></table></figure>
-
-<p>源码下载: <a href="./files/plop.zip">Hexo文章页面模板下载</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>有关用node开发websocket多人聊天程序的后台</title>
-    <url>/2020/04/06/node/%E6%9C%89%E5%85%B3%E7%94%A8node%E5%BC%80%E5%8F%91websocket%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%90%8E%E5%8F%B0/</url>
-    <content><![CDATA[<h2 id="知识储备"><a href="#知识储备" class="headerlink" title="知识储备"></a>知识储备</h2><p>（开发过程中积累）</p>
-<ul>
-<li><code>ws</code>库的使用方法</li>
-<li><code>node</code>的语言熟悉度</li>
-<li>数据库增删改查的基础语法</li>
-<li>明确的流程分析与功能</li>
-</ul>
-]]></content>
-      <categories>
-        <category>node</category>
-      </categories>
-      <tags>
-        <tag>node</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>readme</title>
-    <url>/2020/04/05/readme/</url>
-    <content><![CDATA[<p>新建页面:<code>npm run new</code></p>
-<p>部署:<code>npm run build</code></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>npm库个人常用整合</title>
-    <url>/2020/04/01/node/npm%E5%BA%93%E4%B8%AA%E4%BA%BA%E5%B8%B8%E7%94%A8%E6%95%B4%E5%90%88/</url>
-    <content><![CDATA[<h3 id="生成文件模板"><a href="#生成文件模板" class="headerlink" title="生成文件模板"></a>生成文件模板</h3><ul>
-<li><a href="https://www.npmjs.com/package/plop" target="_blank" rel="noopener">plop</a> （用于快速生成模板文件，可提供变量定制化输出）</li>
-</ul>
-<h3 id="打包工具"><a href="#打包工具" class="headerlink" title="打包工具"></a>打包工具</h3><ul>
-<li><code>webpack</code> (大名鼎鼎的模块打包工具)</li>
-</ul>
-<h2 id="Webpack常用库"><a href="#Webpack常用库" class="headerlink" title="Webpack常用库"></a>Webpack常用库</h2><ul>
-<li><code>html-webpack-plugin</code> 打包<code>html</code>，提供脚本样式注入等功能</li>
-<li></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>lerna使用方法</title>
-    <url>/2020/03/31/lerna/lerna%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<blockquote>
-<p><code>lerna</code>主要用于分模块管理<code>js</code>的依赖库，对于库项目开发者非常有友好，它可以将一个大的库项目分离成一个个独立的项目，但又不是完全独立的，而是全部由<code>lerna</code>进行管理。它的类似目录结构如下：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">my-lerna-repo/</span><br><span class="line">  package.json</span><br><span class="line">  packages/</span><br><span class="line">    package<span class="number">-1</span>/</span><br><span class="line">      package.json</span><br><span class="line">    package<span class="number">-2</span>/</span><br><span class="line">      package.json</span><br></pre></td></tr></table></figure>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 全局安装</span><br><span class="line">npm i -g lerna</span><br><span class="line">&#x2F;&#x2F; 局部安装</span><br><span class="line">npm i -D lerna</span><br></pre></td></tr></table></figure>
-
-<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd 你的项目根目录</span><br><span class="line">&#x2F;&#x2F;全局安装的话执行下面这个</span><br><span class="line">lerna init</span><br><span class="line">&#x2F;&#x2F;局部安装的话执行下面这个</span><br><span class="line">npx lerna init</span><br></pre></td></tr></table></figure>
-
-]]></content>
-  </entry>
-  <entry>
-    <title>webpack零散知识点</title>
-    <url>/2020/04/04/webpack/webpack%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
-    <content><![CDATA[<h3 id="参数解析"><a href="#参数解析" class="headerlink" title="参数解析"></a>参数解析</h3><ul>
-<li><p><code>mode</code></p>
-<p>主要区分为：<code>development</code>和<code>production</code></p>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th><strong>描述</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>development</code></td>
-<td>会将 <code>process.env.NODE_ENV</code> 的值设为 <code>development</code>。启用 <code>NamedChunksPlugin</code> 和 <code>NamedModulesPlugin</code>。</td>
-</tr>
-<tr>
-<td><code>production</code></td>
-<td>会将 <code>process.env.NODE_ENV</code> 的值设为 <code>production</code>。启用 <code>FlagDependencyUsagePlugin</code>, <code>FlagIncludedChunksPlugin</code>, <code>ModuleConcatenationPlugin</code>, <code>NoEmitOnErrorsPlugin</code>, <code>OccurrenceOrderPlugin</code>, <code>SideEffectsFlagPlugin</code> 和 <code>UglifyJsPlugin</code></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p><em>记住，只设置</em> <code>NODE_ENV</code><em>，则不会自动设置</em> <code>mode</code>。</p>
-</blockquote>
-</li>
-</ul>
-<a id="more"></a>
-
-<ul>
-<li><p><code>entry</code></p>
-<p>可以是数组或者对象</p>
-<ul>
-<li><p>数组</p>
-<p>数组中表示的所有文件都将打包成一个文件，对应的是对象中键的<code>main</code>。也就是说</p>
-<p>如果值是<code>[&#39;src/index.js&#39;]</code>的话，跟<code>{main:&#39;src/index.js&#39;}</code>效果是一样的。</p>
-</li>
-<li><p>对象</p>
-<p>如果存在多个键值的话表示的就是多个入口，<code>webpack</code>将会从多个入口进入开始打包。例如：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="string">"entry"</span>:&#123;</span><br><span class="line">   <span class="string">"main"</span>:[<span class="string">"src/index.js"</span>],</span><br><span class="line">   <span class="string">"react"</span>:<span class="string">"react"</span>,</span><br><span class="line">   <span class="string">"vue"</span>:[<span class="string">"vue"</span>,<span class="string">"vue-router"</span>,<span class="string">"vuex"</span>]</span><br><span class="line">&#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
-<p>如上的话就会打包出三个文件出来，分别是<code>main</code>,<code>react</code>,<code>vue</code>名字可以再输出的时候自定义。</p>
-</li>
-</ul>
-</li>
-<li><p><code>output</code></p>
-<p>对象。作为此配置的最低要求，我们需要提供两个参数：1. <code>filename</code>表示将要输出的文件名字。2. <code>path</code>将要输出的路径</p>
-<ul>
-<li><p>单入口文件</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> config = &#123;</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: <span class="string">'bundle.js'</span>,</span><br><span class="line">    path: <span class="string">'/home/proj/public/assets'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = config;</span><br></pre></td></tr></table></figure>
-
-<p>此配置将一个单独的 <code>bundle.js</code> 文件输出到 <code>/home/proj/public/assets</code> 目录中。</p>
-</li>
-<li><p>多入口文件</p>
-<p>多入口不能单独的指定一个具体的文件名，而是需要提供一个占位符，由<code>webpack</code>提供各个文件的一些参数，但是具体的名字仍旧可以自己定义。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: &#39;.&#x2F;src&#x2F;app.js&#39;,</span><br><span class="line">    search: &#39;.&#x2F;src&#x2F;search.js&#39;</span><br><span class="line">  &#125;,</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: &#39;[name].js&#39;,</span><br><span class="line">    path: __dirname + &#39;&#x2F;dist&#39;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; 写入到硬盘：.&#x2F;dist&#x2F;app.js, .&#x2F;dist&#x2F;search.js</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><a href="https://www.webpackjs.com/concepts/output/" target="_blank" rel="noopener">publicPath</a>  (这个参数尚未用过)</p>
-</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>webpack</category>
-      </categories>
-      <tags>
-        <tag>webpack</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>webpack的几种导入导出方式</title>
-    <url>/2020/04/13/webpack/webpack%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>webpack</category>
-      </categories>
-      <tags>
-        <tag>webpack</tag>
       </tags>
   </entry>
 </search>
