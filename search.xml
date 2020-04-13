@@ -280,20 +280,6 @@
       </tags>
   </entry>
   <entry>
-    <title>cocos creator心得</title>
-    <url>/2020/04/11/cocos/cocos-creator%E5%BF%83%E5%BE%97/</url>
-    <content><![CDATA[<blockquote>
-<p><code>cocos creator</code> 作为一个游戏引擎来说，虽然复制了<code>unity</code>的一套操作，但是确实使得游戏开发变得方便</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>cocos</category>
-      </categories>
-      <tags>
-        <tag>cocos</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>正则表达式</title>
     <url>/2020/04/11/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
     <content><![CDATA[<p>正则表达式</p>
@@ -524,17 +510,6 @@
       </tags>
   </entry>
   <entry>
-    <title>webpack基础知识</title>
-    <url>/2020/04/04/webpack/webpack%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>webpack</category>
-      </categories>
-      <tags>
-        <tag>webpack</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>各种标签说明</title>
     <url>/2020/04/04/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/HTML/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/</url>
     <content><![CDATA[<p><strong>New</strong> : HTML5 中的新标签。</p>
@@ -653,5 +628,131 @@
 
 <p>源码下载: <a href="./files/plop.zip">Hexo文章页面模板下载</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>有关用node开发websocket多人聊天程序的后台</title>
+    <url>/2020/04/06/node/%E6%9C%89%E5%85%B3%E7%94%A8node%E5%BC%80%E5%8F%91websocket%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%90%8E%E5%8F%B0/</url>
+    <content><![CDATA[<h2 id="知识储备"><a href="#知识储备" class="headerlink" title="知识储备"></a>知识储备</h2><p>（开发过程中积累）</p>
+<ul>
+<li><code>ws</code>库的使用方法</li>
+<li><code>node</code>的语言熟悉度</li>
+<li>数据库增删改查的基础语法</li>
+<li>明确的流程分析与功能</li>
+</ul>
+]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>readme</title>
+    <url>/2020/04/05/readme/</url>
+    <content><![CDATA[<p>新建页面:<code>npm run new</code></p>
+<p>部署:<code>npm run build</code></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>npm库个人常用整合</title>
+    <url>/2020/04/01/node/npm%E5%BA%93%E4%B8%AA%E4%BA%BA%E5%B8%B8%E7%94%A8%E6%95%B4%E5%90%88/</url>
+    <content><![CDATA[<h3 id="生成文件模板"><a href="#生成文件模板" class="headerlink" title="生成文件模板"></a>生成文件模板</h3><ul>
+<li><a href="https://www.npmjs.com/package/plop" target="_blank" rel="noopener">plop</a> （用于快速生成模板文件，可提供变量定制化输出）</li>
+</ul>
+<h3 id="打包工具"><a href="#打包工具" class="headerlink" title="打包工具"></a>打包工具</h3><ul>
+<li><code>webpack</code> (大名鼎鼎的模块打包工具)</li>
+</ul>
+<h2 id="Webpack常用库"><a href="#Webpack常用库" class="headerlink" title="Webpack常用库"></a>Webpack常用库</h2><ul>
+<li><code>html-webpack-plugin</code> 打包<code>html</code>，提供脚本样式注入等功能</li>
+<li></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>lerna使用方法</title>
+    <url>/2020/03/31/lerna/lerna%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<blockquote>
+<p><code>lerna</code>主要用于分模块管理<code>js</code>的依赖库，对于库项目开发者非常有友好，它可以将一个大的库项目分离成一个个独立的项目，但又不是完全独立的，而是全部由<code>lerna</code>进行管理。它的类似目录结构如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">my-lerna-repo/</span><br><span class="line">  package.json</span><br><span class="line">  packages/</span><br><span class="line">    package<span class="number">-1</span>/</span><br><span class="line">      package.json</span><br><span class="line">    package<span class="number">-2</span>/</span><br><span class="line">      package.json</span><br></pre></td></tr></table></figure>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 全局安装</span><br><span class="line">npm i -g lerna</span><br><span class="line">&#x2F;&#x2F; 局部安装</span><br><span class="line">npm i -D lerna</span><br></pre></td></tr></table></figure>
+
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd 你的项目根目录</span><br><span class="line">&#x2F;&#x2F;全局安装的话执行下面这个</span><br><span class="line">lerna init</span><br><span class="line">&#x2F;&#x2F;局部安装的话执行下面这个</span><br><span class="line">npx lerna init</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>webpack零散知识点</title>
+    <url>/2020/04/04/webpack/webpack%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
+    <content><![CDATA[<h3 id="参数解析"><a href="#参数解析" class="headerlink" title="参数解析"></a>参数解析</h3><ul>
+<li><p><code>mode</code></p>
+<p>主要区分为：<code>development</code>和<code>production</code></p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>development</code></td>
+<td>会将 <code>process.env.NODE_ENV</code> 的值设为 <code>development</code>。启用 <code>NamedChunksPlugin</code> 和 <code>NamedModulesPlugin</code>。</td>
+</tr>
+<tr>
+<td><code>production</code></td>
+<td>会将 <code>process.env.NODE_ENV</code> 的值设为 <code>production</code>。启用 <code>FlagDependencyUsagePlugin</code>, <code>FlagIncludedChunksPlugin</code>, <code>ModuleConcatenationPlugin</code>, <code>NoEmitOnErrorsPlugin</code>, <code>OccurrenceOrderPlugin</code>, <code>SideEffectsFlagPlugin</code> 和 <code>UglifyJsPlugin</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><em>记住，只设置</em> <code>NODE_ENV</code><em>，则不会自动设置</em> <code>mode</code>。</p>
+</blockquote>
+</li>
+<li><p><code>entry</code></p>
+<p>可以是数组或者对象</p>
+<ul>
+<li><p>数组</p>
+<p>数组中表示的所有文件都将打包成一个文件，对应的是对象中键的<code>main</code>。也就是说</p>
+<p>如果值是<code>[&#39;src/index.js&#39;]</code>的话，跟<code>{main:&#39;src/index.js&#39;}</code>效果是一样的。</p>
+</li>
+<li><p>对象</p>
+<p>如果存在多个键值的话表示的就是多个入口，<code>webpack</code>将会从多个入口进入开始打包。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="string">"entry"</span>:&#123;</span><br><span class="line">   <span class="string">"main"</span>:[<span class="string">"src/index.js"</span>],</span><br><span class="line">   <span class="string">"react"</span>:<span class="string">"react"</span>,</span><br><span class="line">   <span class="string">"vue"</span>:[<span class="string">"vue"</span>,<span class="string">"vue-router"</span>,<span class="string">"vuex"</span>]</span><br><span class="line">&#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>如上的话就会打包出三个文件出来，分别是<code>main</code>,<code>react</code>,<code>vue</code>名字可以再输出的时候自定义。</p>
+</li>
+</ul>
+</li>
+<li><p><code>output</code></p>
+<p>对象。作为此配置的最低要求，我们需要提供两个参数：1. <code>filename</code>表示将要输出的文件名字。2. <code>path</code>将要输出的路径</p>
+<ul>
+<li><p>单入口文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> config = &#123;</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: <span class="string">'bundle.js'</span>,</span><br><span class="line">    path: <span class="string">'/home/proj/public/assets'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = config;</span><br></pre></td></tr></table></figure>
+
+<p>此配置将一个单独的 <code>bundle.js</code> 文件输出到 <code>/home/proj/public/assets</code> 目录中。</p>
+</li>
+<li><p>多入口文件</p>
+<p>多入口不能单独的指定一个具体的文件名，而是需要提供一个占位符，由<code>webpack</code>提供各个文件的一些参数，但是具体的名字仍旧可以自己定义。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: &#39;.&#x2F;src&#x2F;app.js&#39;,</span><br><span class="line">    search: &#39;.&#x2F;src&#x2F;search.js&#39;</span><br><span class="line">  &#125;,</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: &#39;[name].js&#39;,</span><br><span class="line">    path: __dirname + &#39;&#x2F;dist&#39;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; 写入到硬盘：.&#x2F;dist&#x2F;app.js, .&#x2F;dist&#x2F;search.js</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><a href="https://www.webpackjs.com/concepts/output/" target="_blank" rel="noopener">publicPath</a>  (这个参数尚未用过)</p>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>webpack</category>
+      </categories>
+      <tags>
+        <tag>webpack</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>webpack的几种导入导出方式</title>
+    <url>/2020/04/13/webpack/webpack%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
