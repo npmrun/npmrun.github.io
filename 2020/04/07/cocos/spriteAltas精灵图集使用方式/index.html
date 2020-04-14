@@ -28,15 +28,15 @@
 <meta property="og:site_name" content="Dash">
 <meta property="og:description" content="之前，对于扑克牌的加载一直是散装加载，用loadRes动态的添加到游戏中，这样的缺陷是在动画的时候会闪一下，在网慢的情况下也许扑克牌不会加载出来而动画就执行了。因此，改用图集加载方式，将整幅扑克牌一起加载出来，用那种加载哪张就行了。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://npmrun.github.io/2020/04/07/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114816545.png">
-<meta property="og:image" content="https://npmrun.github.io/2020/04/07/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114923862.png">
-<meta property="og:image" content="https://npmrun.github.io/2020/04/07/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407115004375.png">
+<meta property="og:image" content="https://npmrun.github.io/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114816545.png">
+<meta property="og:image" content="https://npmrun.github.io/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114923862.png">
+<meta property="og:image" content="https://npmrun.github.io/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407115004375.png">
 <meta property="article:published_time" content="2020-04-07T03:43:23.000Z">
-<meta property="article:modified_time" content="2020-04-11T07:48:58.802Z">
+<meta property="article:modified_time" content="2020-04-13T10:39:07.261Z">
 <meta property="article:author" content="Dash King">
 <meta property="article:tag" content="cocos">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://npmrun.github.io/2020/04/07/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114816545.png">
+<meta name="twitter:image" content="https://npmrun.github.io/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114816545.png">
 
 <link rel="canonical" href="https://npmrun.github.io/2020/04/07/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/">
 
@@ -205,7 +205,7 @@
     <link itemprop="mainEntityOfPage" href="https://npmrun.github.io/2020/04/07/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="image" content="/static/avatar.jpg">
       <meta itemprop="name" content="Dash King">
       <meta itemprop="description" content="">
     </span>
@@ -232,7 +232,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-11 15:48:58" itemprop="dateModified" datetime="2020-04-11T15:48:58+08:00">2020-04-11</time>
+                <time title="修改时间：2020-04-13 18:39:07" itemprop="dateModified" datetime="2020-04-13T18:39:07+08:00">2020-04-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -283,13 +283,13 @@
 
 <ol>
 <li><p>新加一个属性:</p>
-<p><img src="./images/image-20200407114816545.png" alt="image-20200407114816545"></p>
+<p><img src="/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114816545.png" alt="image-20200407114816545"></p>
 </li>
 <li><p>我们用图集打包出来的是这样的文件：</p>
-<p><img src="./images/image-20200407114923862.png" alt="image-20200407114923862"></p>
+<p><img src="/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114923862.png" alt="image-20200407114923862"></p>
 </li>
 <li><p>在<code>cocos</code>上将<code>plist</code>拖进属性中。</p>
-<p><img src="images/image-20200407115004375.png" alt="image-20200407115004375"></p>
+<p><img src="/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407115004375.png" alt="image-20200407115004375"></p>
 </li>
 <li><p>编写代码动态修改精灵图：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">setAtlasImg(node,spAtlas,spriteName)&#123;</span><br><span class="line">  <span class="keyword">let</span> sprite = node.getComponent(cc.Sprite);</span><br><span class="line">  <span class="keyword">if</span> (!sprite) &#123;</span><br><span class="line">    sprite = node.addComponent(cc.Sprite);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> mySprite =  spAtlas.getSpriteFrame(spriteName)</span><br><span class="line">  sprite.spriteFrame = mySprite;</span><br><span class="line">  <span class="keyword">return</span> mySprite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 节点，图集组件，图集中文件名字</span></span><br><span class="line">setAtlasImg(<span class="keyword">this</span>.node, <span class="keyword">this</span>.spAtlas, <span class="string">"11"</span>);</span><br></pre></td></tr></table></figure>
@@ -386,7 +386,7 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="Dash King"
-      src="/images/avatar.jpg">
+      src="/static/avatar.jpg">
   <p class="site-author-name" itemprop="name">Dash King</p>
   <div class="site-description" itemprop="description"></div>
 </div>

@@ -2,9 +2,10 @@
 <search>
   <entry>
     <title>readme</title>
-    <url>/2020/04/05/readme/</url>
+    <url>/2020/04/13/readme/</url>
     <content><![CDATA[<p>新建页面:<code>npm run new</code></p>
 <p>部署:<code>npm run build</code></p>
+<p>首页缩略图无法查看，文件无法下载，请进入文章里面才能正常使用</p>
 ]]></content>
   </entry>
   <entry>
@@ -61,13 +62,13 @@
 
 <ol>
 <li><p>新加一个属性:</p>
-<p><img src="./images/image-20200407114816545.png" alt="image-20200407114816545"></p>
+<p><img src="/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114816545.png" alt="image-20200407114816545"></p>
 </li>
 <li><p>我们用图集打包出来的是这样的文件：</p>
-<p><img src="./images/image-20200407114923862.png" alt="image-20200407114923862"></p>
+<p><img src="/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114923862.png" alt="image-20200407114923862"></p>
 </li>
 <li><p>在<code>cocos</code>上将<code>plist</code>拖进属性中。</p>
-<p><img src="images/image-20200407115004375.png" alt="image-20200407115004375"></p>
+<p><img src="/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407115004375.png" alt="image-20200407115004375"></p>
 </li>
 <li><p>编写代码动态修改精灵图：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">setAtlasImg(node,spAtlas,spriteName)&#123;</span><br><span class="line">  <span class="keyword">let</span> sprite = node.getComponent(cc.Sprite);</span><br><span class="line">  <span class="keyword">if</span> (!sprite) &#123;</span><br><span class="line">    sprite = node.addComponent(cc.Sprite);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> mySprite =  spAtlas.getSpriteFrame(spriteName)</span><br><span class="line">  sprite.spriteFrame = mySprite;</span><br><span class="line">  <span class="keyword">return</span> mySprite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 节点，图集组件，图集中文件名字</span></span><br><span class="line">setAtlasImg(<span class="keyword">this</span>.node, <span class="keyword">this</span>.spAtlas, <span class="string">"11"</span>);</span><br></pre></td></tr></table></figure>
@@ -187,7 +188,7 @@
 <li><p><code>hexo &gt; source</code>目录下建一个文件夹叫images，用来保存博客中的图片。</p>
 </li>
 <li><p>打开<code>Typora</code>的 <code>文件 &gt; 偏好设置</code>，进行如下设置。</p>
-<p><img src="./images/image-20200411092155916.png" alt="image-20200411092155916"></p>
+<p><img src="/static/hexo/hexo-typora-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/images/image-20200411092155916.png" alt="image-20200411092155916"></p>
 <p>这样的话所有的博客中的图片都将会保存到 <code>/source/images/该博客md文件名/图片名称</code></p>
 <p>但是仅仅这样设置还不够，这样设置在typora中倒是能看图片了，但是使用的却是相对于当前md文件的相对路径，可是如果启动hexo，是要用服务器访问的，而服务器显然无法根据这个相对路径正确访问到图片，因此还需要在typora中进行进一步设置。</p>
 </li>
@@ -195,7 +196,7 @@
 <p>之后再该<code>md</code>文件头部会出现:<code>typora-root-url: ..\..\source</code>这样的代码，我们将这行代码复制进模板文件中</p>
 </li>
 <li><p>以下这三个都可以添加</p>
-<p><img src="./images/image-20200411092141854.png" alt="image-20200411092141854"></p>
+<p><img src="/static/hexo/hexo-typora-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/images/image-20200411092141854.png" alt="image-20200411092141854"></p>
 <p>只要在第一个<code>---</code>下添加<code>typora-root-url: ..\..\source</code>就行了，这样<code>Typora</code>就能识别而不用每次都自己手动设置了。</p>
 </li>
 </ol>
@@ -212,7 +213,7 @@
     <title>hexo添加看板娘</title>
     <url>/2020/04/05/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/</url>
     <content><![CDATA[<blockquote>
-<p>源码下载：<a href="./files/hexo添加看板娘.zip">点击下载</a> 源码地址：<a href="https://github.com/stevenjoezhang/live2d-widget" target="_blank" rel="noopener">live2d-widget</a></p>
+<p>源码下载：<a href="/static/hexo/hexo添加看板娘/files/hexo添加看板娘.zip">点击下载</a> 源码地址：<a href="https://github.com/stevenjoezhang/live2d-widget" target="_blank" rel="noopener">live2d-widget</a></p>
 <p>这是首先感谢原作者的插件，我根据Github上的项目克隆下载自定义的看板娘，在他的基础上添加了拖动效果，同时根据自己的博客自定义了不同的对话。</p>
 </blockquote>
 <a id="more"></a>
@@ -220,12 +221,12 @@
 <h2 id="用法-Usage"><a href="#用法-Usage" class="headerlink" title="用法 Usage"></a>用法 Usage</h2><ol>
 <li>首先下载上面的源码，这个<code>hexo-bolg</code>表示是我的博客根目录，然后再<code>source\js</code>目录下解压，得到以下的文件。</li>
 </ol>
-<p><img src="images/image-20200405112453987.png" alt="image-20200405112453987"></p>
+<p><img src="/static/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/images/image-20200405112453987.png" alt="image-20200405112453987"></p>
 <ol start="2">
 <li><p>如果是<code>next</code>主题，请根据目录打开以下文件:</p>
-<p><img src="images/image-20200405112653619.png" alt="image-20200405112653619"></p>
+<p><img src="/static/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/images/image-20200405112653619.png" alt="image-20200405112653619"></p>
 <p>将代码添加到如图所示的位置：</p>
-<p><img src="images/image-20200405112737704.png" alt="image-20200405112737704"></p>
+<p><img src="/static/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/images/image-20200405112737704.png" alt="image-20200405112737704"></p>
 </li>
 <li><p>大功告成，将页面启动起来就能看见效果了。不过最好自己去改一下源码的<code>waifu-tips.json</code>的匹配条件，根据自己的博客做出对应的对话效果。</p>
 </li>
@@ -249,7 +250,7 @@
 
 <h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i plop -D</span><br></pre></td></tr></table></figure>
 
-<p>源码下载: <a href="./files/plop.zip">Hexo文章页面模板下载</a></p>
+<p>源码下载: <a href="/static/node/node生成文件模板/files/plop.zip">Hexo文章页面模板下载</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -389,7 +390,7 @@
 </blockquote>
 <a id="more"></a>
 
-<p>,<img src="./images/image-20200405183952644.png" alt="image-20200405183952644"></p>
+<p><img src="/static/%E5%89%8D%E7%AB%AF/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%BC%AB%E6%B8%B8/images/image-20200405183952644.png" alt="image-20200405183952644"></p>
 ]]></content>
       <categories>
         <category>前端</category>
@@ -416,7 +417,7 @@
     <title>支付宝免签支付</title>
     <url>/2020/04/06/%E5%89%8D%E7%AB%AF/%E6%94%AF%E4%BB%98%E5%AE%9D%E5%85%8D%E7%AD%BE%E6%94%AF%E4%BB%98/</url>
     <content><![CDATA[<blockquote>
-<p> 源码下载：<a href="./files/支付宝免签支付.zip">点击下载</a></p>
+<p> 源码下载：<a href="/static/前端/支付宝免签支付/files/支付宝免签支付.zip">点击下载</a></p>
 <p>在最近的公司业务中，需要用到灰色地带的支付，因此不能使用正规的支付宝流程，经过一段事件的调查与研究，发现了有关支付宝的免签支付，不过也存在着几种方式，有些方式并不适用，都存在着一些无法避免的限制。</p>
 </blockquote>
 <a id="more"></a>
@@ -715,19 +716,19 @@
 <td></td>
 </tr>
 <tr>
-<td><code>&lt;article&gt;</code><img src="./images/table_bg_html5.png" alt="img"></td>
+<td><code>&lt;article&gt;</code><img src="/static/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/HTML/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/images/table_bg_html5.png" alt="img"></td>
 <td>定义文章。</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><code>&lt;aside&gt;</code><img src="./images/table_bg_html5.png" alt="img"></td>
+<td><code>&lt;aside&gt;</code><img src="/static/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/HTML/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/images/table_bg_html5.png" alt="img"></td>
 <td>定义页面内容之外的内容。</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><code>&lt;audio&gt;</code><img src="./images/table_bg_html5.png" alt="img"></td>
+<td><code>&lt;audio&gt;</code><img src="/static/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/HTML/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/images/table_bg_html5.png" alt="img"></td>
 <td>定义声音内容</td>
 <td><audio></audio></td>
 <td>基本都可以用</td>
