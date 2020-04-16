@@ -13,6 +13,10 @@ function replaceMD() {
             let pp = this.file.relative.replace(/\\/gi,"/").replace(".md","");
             return match.replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.png\\)", 'gi'), `![$1](/static/${pp}$2/images/$3.png)`) 
         }))
+        .pipe(replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.webp\\)", 'gi'),function(match){
+            let pp = this.file.relative.replace(/\\/gi,"/").replace(".md","");
+            return match.replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.webp\\)", 'gi'), `![$1](/static/${pp}$2/images/$3.webp)`) 
+        }))
         .pipe(replace(new RegExp("\\[(.*?)\\]\\(\/(.*?)files/(.*?)\\.zip\\)", 'gi'),function(match){
             let pp = this.file.relative.replace(/\\/gi,"/").replace(".md","");
             return match.replace(new RegExp("\\[(.*?)\\]\\(\/(.*?)files/(.*?)\\.zip\\)", 'gi'), `[$1](/static/${pp}$2/files/$3.zip)`) 
@@ -20,7 +24,7 @@ function replaceMD() {
         .pipe(dest(`./source/_posts`))
 }
 function movepng() {
-    return src([`./articles/**/*.{png,jpg}`])
+    return src([`./articles/**/*.{png,jpg,webp}`])
         .pipe(dest(`./source/static`))
 }
 function movezip() {
