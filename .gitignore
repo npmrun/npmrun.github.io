@@ -8,5 +8,5 @@ public/
 .idea/
 
 source/_posts/
-source/static/
+source/static/*.png
 !source/static/avatar.jpg
