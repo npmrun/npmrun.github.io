@@ -19,12 +19,12 @@ jobs:
         npx gulp
         npx hexo clean
     - name: Cache node modules
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
     - uses: yrpang/github-actions-hexo@master
       with:
         deploykey: ${{secrets.ACCESS_TOKEN}}
-        username: YOUR_USER_NAME
-        email: YOUR_EMAIL_ADDRESS
+        username: npmrun
+        email: kk1549469775@gmail.com
