@@ -19,6 +19,8 @@ jobs:
         npx gulp
         npx hexo clean
         npx hexo generate
+      run: sudo cp /usr/bin/git-lfs /usr/lib/git-core
+      shell: bash
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@master
       env:
