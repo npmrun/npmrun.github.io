@@ -21,6 +21,8 @@ $ npm i egg --save
 $ npm i egg-bin --save-dev
 ```
 
+<!--more-->
+
 添加 `npm scripts` 到 `package.json`：
 
 ```
