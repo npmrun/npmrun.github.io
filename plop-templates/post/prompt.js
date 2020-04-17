@@ -1,4 +1,4 @@
-const fs = require("fs")
+//const fs = require("fs")
 module.exports = {
   description: '生成一个页面',
   prompts: [{
@@ -48,9 +48,9 @@ module.exports = {
         comment: data.comment
       }
     })
-	fs.mkdir(rootPath +`${name}`, (err) => {
-	  if (err) throw err;
-	});
+	//fs.mkdir(rootPath +`${name}`, (err) => {
+	//  if (err) throw err;
+	//});
     return actions
   }
 }

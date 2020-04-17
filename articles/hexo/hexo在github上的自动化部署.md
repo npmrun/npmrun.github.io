@@ -54,9 +54,9 @@ jobs:
         FOLDER: public
 ```
 
-上面的`JamesIves/github-pages-deploy-action@master`根本不支持``
+上面的`JamesIves/github-pages-deploy-action@master`根本不支持`lfs`
 
-lfs，结果我傻傻的搞了差不多一天。
+，结果我傻傻的搞了差不多一天。
 
 ### 改变之后的`Action`
 
