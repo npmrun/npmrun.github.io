@@ -8,7 +8,7 @@ const replace = require('gulp-replace');
 const del = require('del');
 function replaceMD() {
     // , `!${sourceDir}/**/${ignoreDir}/*`
-    return src([`./articles/**/*.md`])
+    return src([`./articles/**/*.md`,`!unpublish/**/*.md`])
         .pipe(replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.png\\)", 'gi'),function(match){
             let pp = this.file.relative.replace(/\\/gi,"/").replace(".md","");
             return match.replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.png\\)", 'gi'), `![$1](/static/${pp}$2/images/$3.png)`) 
@@ -24,11 +24,11 @@ function replaceMD() {
         .pipe(dest(`./source/_posts`))
 }
 function movepng() {
-    return src([`./articles/**/*.{png,jpg,webp}`])
+    return src([`./articles/**/*.{png,jpg,webp}`,`!unpublish/**/*.{png,jpg,webp}`])
         .pipe(dest(`./source/static`))
 }
 function movezip() {
-    return src([`./articles/**/*.{zip,rar}`])
+    return src([`./articles/**/*.{zip,rar}`,`!unpublish/**/*.{zip,rar}`])
         .pipe(dest(`./source/static`))
 }
 

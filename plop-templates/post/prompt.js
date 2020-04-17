@@ -21,6 +21,11 @@ module.exports = {
     name: 'comment',
     default:true,
     message: '是否允许评论（默认：是）:'
+  }, {
+    type: 'confirm',
+    name: 'publish',
+    default:true,
+    message: '是否发布（默认：是）:'
   }],
   actions: (data) => {
     // const name = '{{name}}';
@@ -29,8 +34,9 @@ module.exports = {
     var actions = []
     let date  = new Date()
     let rootPath = 'articles/'
+	let publish = data.publish?'':'unpublish/'
     if (fpath) {
-      rootPath = rootPath + fpath + '/'
+      rootPath = rootPath + publish + fpath + '/'
     }
     let year = date.getFullYear()
     let month = (date.getMonth()+1)<10?('0'+(date.getMonth()+1)):(date.getMonth()+1)
