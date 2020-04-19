@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+    <h1>clipboard.js</h1>
+    <main>
+        <h3>Demo1: 从另一个元素复制文本</h3>
+        <input id="foo" value="https://github.com/zenorocha/clipboard.js.git">
+        <button class="btn1" data-clipboard-target="#foo">
+            <img src="assets/clippy.svg" alt="Copy to clipboard">
+        </button>
+        <script>
+            new ClipboardJS('.btn1');
+        </script>
+        <hr>
+        <h3>Demo2: 从另一个元素剪切文本</h3>
+        <textarea id="bar">Mussum ipsum cacilds...</textarea>
+        <button class="btn2" data-clipboard-action="cut" data-clipboard-target="#bar">
+            Cut to clipboard
+        </button>
+        <script>
+            new ClipboardJS('.btn2');
+        </script>
+        <hr>
+        <h3>Demo3: 从属性复制文本</h3>
+        <button class="btn3" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">
+            Copy to clipboard
+        </button>
+        <script>
+            new ClipboardJS('.btn3');
+        </script>
+        <hr>
+        <h3>Demo4: 复制的回调事件</h3>
+        <button class="btn4" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">
+            Copy to clipboard
+        </button>
+        <script>
+            var clipboard4 = new ClipboardJS('.btn4');
+            clipboard4.on('success', function (e) {
+                console.info('Action:', e.action);
+                console.info('Text:', e.text);
+                console.info('Trigger:', e.trigger);
+
+                e.clearSelection();
+            });
+
+            clipboard4.on('error', function (e) {
+                console.error('Action:', e.action);
+                console.error('Trigger:', e.trigger);
+            });
+        </script>
+        <hr>
+        <h3>Demo5: 高级用法</h3>
+        <div class="btn5">fdsfs <span>asda</span> </div>
+        <script>
+            let btn5 = document.querySelector('.btn5');
+            btn5.addEventListener('click', function(){
+                new ClipboardJS('.btn5', {
+                    target: function (trigger) {
+                        return btn5;
+                    },
+                    isSupported:function(){
+                        return btn5;
+                    }
+                });
+            })
+        </script>
+        <hr>
+    </main>
+</body>
+
+</html>

@@ -71,7 +71,7 @@ comments: true
 
     多入口不能单独的指定一个具体的文件名，而是需要提供一个占位符，由`webpack`提供各个文件的一些参数，但是具体的名字仍旧可以自己定义。
 
-    ```
+    ```javascript
     {
       entry: {
         app: './src/app.js',
