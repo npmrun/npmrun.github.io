@@ -202,7 +202,8 @@ links_settings:
   # Available values: block | inline
   layout: inline
 
-links:
+links: 
+  ONESTAR: https://onestar.newstar.net.cn/
   导航: https://npmrun.github.io/way/
   wordpress: https://wp.poorman.top
 
