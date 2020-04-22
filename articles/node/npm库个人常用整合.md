@@ -24,5 +24,3 @@ comments: true
 ## Webpack常用库
 
 * `html-webpack-plugin` 打包`html`，提供脚本样式注入等功能
-* 
-
