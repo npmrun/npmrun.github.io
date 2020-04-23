@@ -80,7 +80,7 @@ dashboard_pwd = admin
 
 如果是`uniapp`项目，进行如下配置：
 
-![image-20200423134020787](/images/image-20200423134020787.png)
+![image-20200423140150925](/images/image-20200423140150925.png)
 
 
 
