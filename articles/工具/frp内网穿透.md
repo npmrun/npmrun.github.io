@@ -1,0 +1,97 @@
+---
+stypora-root-url: frp内网穿透
+title: frp内网穿透
+date: 2020-04-23 13:32:36
+tags: 工具
+categories: 工具
+comments: true
+---
+
+
+
+[frp](https://github.com/fatedier/frp/blob/master/README_zh.md)国人开发的免费开源工具
+
+### 准备
+
+* 公网服务器 IP 140.140.192.192
+
+* 域名 www.good.com 解析至上面的服务器
+* 本地运行的服务
+
+<!--more-->
+
+### 效果
+
+利用`frp`，可以实现任何人都可以通过配置的端口如 `www.good.com:7001` 访问我本机的`hbuilder`网页应用
+
+### 方法
+
+服务器和内网本机分别[下载](https://github.com/fatedier/frp/releases)对应系统平台的frp，
+这里ubuntu服务器需要下载linux_arm_64， mac本机是frp_0.32.1_windows_amd64.zip
+
+* 先配服务端
+
+  linux_arm_64文件包在服务器上下载解压，编辑 `frps.ini`， 然后启动 `./frps -c ./frps.ini`，放后台启动命令 `nohup ./frps -c ./frps.ini &`，配置修改如下
+
+  ```csharp
+  [common]
+  bind_port = 7000
+  # 客户端定义的端口
+  vhost_http_port = 7001
+  ```
+
+* 配置客户端
+
+  frp_0.32.1_windows_amd64.zip文件包解压，编辑 `frpc.ini`,然后启动 `./frpc -c ./frpsc.ini`,可以自己放在后台执行，配置如下：
+
+  ```csharp
+  [common]
+  server_addr = 140.140.192.192   #公网服务器ip
+  server_port = 7001                       #与服务端bind_port一致
+   
+  #公网访问内部web服务器以http方式
+  [web]
+  type = http         #访问协议
+  local_port = 4200   #内网web服务的端口号
+  custom_domains = www.good.com   #所绑定的公网服务器域名，一级、二级域名都可以
+  ```
+
+#### 配置服务端面板
+
+修改服务端的 `frps.ini`， 添加 dashboard 信息，重启启动后可以通过`140.140.192.192:7500`打开控制面板
+
+```csharp
+[common]
+bind_port = 7000
+# 客户端定义的端口
+vhost_http_port = 7001
+
+dashboard_port = 7500
+# dashboard 用户名密码，默认都为 admin
+dashboard_user = admin
+dashboard_pwd = admin
+```
+
+### 注意
+
+>  Invalid Host header
+
+如果本机的web项目用了webpack server(目前vue cli, react cli, angular 本地开发用的都是这个) , 这个是webpack server的安全策略，如果是angular项目，需要在启动配置中加上 `--disable-host-check` 类似 `ng serve --open --host $IP --port $PORT --disable-host-check`。
+
+如果是`uniapp`项目，进行如下配置：
+
+![image-20200423134020787](frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/images/image-20200423134020787.png)
+
+
+
+> 参考文档
+>
+> https://github.com/fatedier/frp/blob/master/README_zh.md#%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81
+>
+> https://www.jianshu.com/p/d579c2156311
+>
+> https://www.kuke365.com/2019/09/19/uniapp%E4%B8%8Bh5%E7%AB%AF%E5%92%8Cvuejs%E4%B8%8B%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8Finvalid-host-header/
+>
+> https://www.it72.com/12580-1.htm
+>
+> 
