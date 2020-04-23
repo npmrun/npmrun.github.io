@@ -1,5 +1,5 @@
 ---
-stypora-root-url: frp内网穿透
+typora-root-url: frp内网穿透
 title: frp内网穿透
 date: 2020-04-23 13:32:36
 tags: 工具
@@ -80,7 +80,7 @@ dashboard_pwd = admin
 
 如果是`uniapp`项目，进行如下配置：
 
-![image-20200423134020787](frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/images/image-20200423134020787.png)
+![image-20200423134020787](/images/image-20200423134020787.png)
 
 
 
