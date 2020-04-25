@@ -33,10 +33,14 @@ function replaceMD() {
             let pp = this.file.relative.replace(/\\/gi,"/").replace(".md","");
             return match.replace(new RegExp("\\[(.*?)\\]\\(\/(.*?)files/(.*?)\\.zip\\)", 'gi'), `[$1](/static/${pp}$2/files/$3.zip)`) 
         }))
+        .pipe(replace(new RegExp("\\[(.*?)\\]\\(\/(.*?)files/(.*?)\\.rar\\)", 'gi'),function(match){
+            let pp = this.file.relative.replace(/\\/gi,"/").replace(".md","");
+            return match.replace(new RegExp("\\[(.*?)\\]\\(\/(.*?)files/(.*?)\\.rar\\)", 'gi'), `[$1](/static/${pp}$2/files/$3.rar)`) 
+        }))
         .pipe(dest(`./source/_posts`))
 }
 function movepng() {
-    return src([`./articles/**/*.{png,jpg,webp}`,`!./articles/unpublish/**/*.{png,jpg,webp}`])
+    return src([`./articles/**/*.{png,jpg,webp,jpeg,gif}`,`!./articles/unpublish/**/*.{png,jpg,webp}`])
         .pipe(dest(`./source/static`))
 }
 function movezip() {

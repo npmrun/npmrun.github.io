@@ -54,6 +54,7 @@ window.addEventListener('message', function(event) {
     store.state.isHideAll = true
   }
 }, false)
+//判断是不是被iframe引用了
 if (window.self !== window.top) {
   store.state.isHideAll = true
 }
