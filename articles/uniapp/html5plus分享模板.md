@@ -6,3 +6,5 @@ tags:
 categories:
 comments: true
 ---
+
+微信公众号的分享链接在vue，hash模式下不要带/#/，会有问题

@@ -17,6 +17,18 @@ function replaceMD() {
             let pp = this.file.relative.replace(/\\/gi,"/").replace(".md","");
             return match.replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.webp\\)", 'gi'), `![$1](/static/${pp}$2/images/$3.webp)`) 
         }))
+		.pipe(replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.gif\\)", 'gi'),function(match){
+            let pp = this.file.relative.replace(/\\/gi,"/").replace(".md","");
+            return match.replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.gif\\)", 'gi'), `![$1](/static/${pp}$2/images/$3.gif)`) 
+        }))
+		.pipe(replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.jpg\\)", 'gi'),function(match){
+            let pp = this.file.relative.replace(/\\/gi,"/").replace(".md","");
+            return match.replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.jpg\\)", 'gi'), `![$1](/static/${pp}$2/images/$3.jpg)`) 
+        }))
+		.pipe(replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.jpeg\\)", 'gi'),function(match){
+            let pp = this.file.relative.replace(/\\/gi,"/").replace(".md","");
+            return match.replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.jpeg\\)", 'gi'), `![$1](/static/${pp}$2/images/$3.jpeg)`) 
+        }))
         .pipe(replace(new RegExp("\\[(.*?)\\]\\(\/(.*?)files/(.*?)\\.zip\\)", 'gi'),function(match){
             let pp = this.file.relative.replace(/\\/gi,"/").replace(".md","");
             return match.replace(new RegExp("\\[(.*?)\\]\\(\/(.*?)files/(.*?)\\.zip\\)", 'gi'), `[$1](/static/${pp}$2/files/$3.zip)`) 
