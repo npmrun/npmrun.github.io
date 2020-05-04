@@ -1,6 +1,6 @@
 ---
-typora-root-url: vue+ifram通信于判断是否被引用
-title: vue+ifram通信于判断是否被引用
+typora-root-url: vue+iframe通信于判断是否被引用
+title: vue+iframe通信于判断是否被引用
 date: 2020-04-25 11:58:02
 tags:
 categories:
