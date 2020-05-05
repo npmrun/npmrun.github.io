@@ -24,6 +24,8 @@ https://zhuanlan.zhihu.com/p/50655841
 
 https://tieba.baidu.com/p/5882990363?red_tag=1551058192
 
+<!--more-->
+
 ![image-20200501114203764](/images/image-20200501114203764.png)
 
 改成兼容性最佳可以直接播放
