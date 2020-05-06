@@ -202,11 +202,11 @@ links_settings:
   # Available values: block | inline
   layout: inline
 
-links: 
+links:
   ONESTAR: https://onestar.newstar.net.cn/
-  导航: https://npmrun.github.io/way/
-  wordpress: https://wp.poorman.top
-  奇淫巧计: http://x.poorman.top
+  # 导航: https://npmrun.github.io/way/
+  # wordpress: https://wp.poorman.top
+  # 奇淫巧计: http://x.poorman.top
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
@@ -625,7 +625,7 @@ valine:
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
   language: zh-cn # Language, available values: en, zh-cn
-  visitor: true # Article reading statistic
+  visitor: false # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   recordIP: true # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
