@@ -35,7 +35,9 @@ module.exports = {
     let date  = new Date()
     let rootPath = 'articles/'
 	let publish = data.publish?'':'unpublish/'
+	let category = '';
     if (fpath) {
+	  category = fpath.split("/")[0];
       rootPath = rootPath + publish + fpath + '/'
     }
     let year = date.getFullYear()
@@ -50,6 +52,7 @@ module.exports = {
       templateFile: 'plop-templates/post/index.hbs',
       data: {
         name: name,
+		category: category,
         time: `${year}-${month}-${day} ${hour}:${minute}:${second}`,
         comment: data.comment
       }
