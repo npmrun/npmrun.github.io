@@ -619,7 +619,7 @@ valine:
   appid: SHKlfabtBk0G5s81GDlGrARE-gzGzoHsz # Your leancloud application appid
   appkey: IAErCIs5wHwsnWwm2fdhQSnt  # Your leancloud application appkey
   notify: true # Mail notifier
-  verify: true # Verification code
+  verify: false # Verification code
   placeholder: 说点什么呢？ # Comment box placeholder
   avatar: mm # Gravatar style
   guest_info: nick,mail,link # Custom comment header
