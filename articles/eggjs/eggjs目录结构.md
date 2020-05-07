@@ -3,7 +3,7 @@ typora-root-url: eggjs目录结构
 title: eggjs目录结构
 date: 2020-04-15 09:38:44
 tags:
-categories:
+categories: eggjs
 comments: true
 ---
 

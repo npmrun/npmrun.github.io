@@ -3,7 +3,7 @@ typora-root-url: commander使用方法
 title: commander使用方法
 date: 2020-04-27 09:44:53
 tags:
-categories:
+categories: npm
 comments: true
 ---
 

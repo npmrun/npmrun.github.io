@@ -3,7 +3,7 @@ typora-root-url: leetcode算法题
 title: leetcode算法题
 date: 2020-04-22 14:01:15
 tags:
-categories:
+categories: leetcode
 comments: true
 ---
 

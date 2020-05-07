@@ -3,7 +3,7 @@ typora-root-url: npm库个人常用整合
 title: npm库个人常用整合
 date: 2020-4-1 11:16:24
 tags:
-categories:
+categories: npm
 comments: true
 ---
 

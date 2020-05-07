@@ -3,7 +3,7 @@ typora-root-url: node创建文件
 title: node创建文件
 date: 2020-04-22 11:03:17
 tags:
-categories:
+categories: node
 comments: true
 ---
 

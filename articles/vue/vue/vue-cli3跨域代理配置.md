@@ -3,7 +3,7 @@ typora-root-url: vue-cli3跨域代理配置
 title: vue-cli3跨域代理配置
 date: 2020-04-25 14:08:22
 tags:
-categories:
+categories: vue
 comments: true
 ---
 

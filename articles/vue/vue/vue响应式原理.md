@@ -1,9 +1,9 @@
 ---
-typora-root-url: vu响应式原理
-title: vu响应式原理
+typora-root-url: vue响应式原理
+title: vue响应式原理
 date: 2020-04-29 09:31:00
 tags:
-categories:
+categories: vue
 comments: true
 ---
 

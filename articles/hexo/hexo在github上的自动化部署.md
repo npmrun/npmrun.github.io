@@ -3,7 +3,7 @@ typora-root-url: hexo在github上的自动化部署
 title: hexo在github上的自动化部署
 date: 2020-04-17 00:03:50
 tags:
-categories:
+categories: hexo
 comments: true
 ---
 

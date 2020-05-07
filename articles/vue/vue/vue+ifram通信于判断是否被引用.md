@@ -3,7 +3,7 @@ typora-root-url: vue+iframe通信于判断是否被引用
 title: vue+iframe通信于判断是否被引用
 date: 2020-04-25 11:58:02
 tags:
-categories:
+categories: vue
 comments: true
 ---
 

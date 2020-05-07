@@ -3,7 +3,7 @@ typora-root-url: cocos适配心得
 title: cocos适配心得
 date: 2020-04-14 11:12:36
 tags:
-categories:
+categories: cocos
 comments: true
 ---
 

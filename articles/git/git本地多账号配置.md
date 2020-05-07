@@ -3,7 +3,7 @@ typora-root-url: git本地多账号配置
 title: git本地多账号配置
 date: 2020-04-20 10:59:02
 tags:
-categories:
+categories: git
 comments: true
 ---
 

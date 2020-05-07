@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "publish": "node ./publish.js publish",
+    "unpublish": "node ./publish.js unpublish",
     "new": "plop",
     "g": "gulp clean && gulp",
     "c": "gulp clean",
