@@ -23,6 +23,11 @@ module.exports = {
     message: '是否允许评论（默认：是）:'
   }, {
     type: 'confirm',
+    name: 'top',
+    default:false,
+    message: '是否置顶（默认：否）:'
+  }, {
+    type: 'confirm',
     name: 'publish',
     default:true,
     message: '是否发布（默认：是）:'
@@ -54,7 +59,8 @@ module.exports = {
         name: name,
 		category: category,
         time: `${year}-${month}-${day} ${hour}:${minute}:${second}`,
-        comment: data.comment
+        comment: data.comment,
+		top: data.top
       }
     })
 	//fs.mkdir(rootPath +`${name}`, (err) => {
