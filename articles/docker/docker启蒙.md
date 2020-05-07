@@ -1,6 +1,6 @@
 ---
-typora-root-url: dockerq启蒙
-title: dockerq启蒙
+typora-root-url: docker启蒙
+title: docker启蒙
 date: 2020-04-26 21:41:29
 tags:
 categories:
@@ -18,7 +18,9 @@ $ docker run ubuntu:15.10 /bin/echo "Hello world"
 $ Hello world
 ```
 
-* `docker`: Docker的二进制执行文件
+<!--more-->
+
+* docker`: Docker的二进制执行文件
 * `run`：与前面的docker组合来运行一个容器
 * `ubuntu:15.10` 指定要运行的镜像，Docker首先从本地主机上查找镜像是否存在，如果不存在，Docker就会从镜像仓库DockerHub下载公共镜像。
 * `/bin/echo "Hello world"`：在启动的容器中执行的命令

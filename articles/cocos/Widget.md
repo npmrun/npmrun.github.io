@@ -15,6 +15,8 @@ comments: true
 
 立刻执行 widget 对齐操作。这个接口一般不需要手工调用。 只有当你需要在当前帧结束前获得 widget 对齐后的最新结果时才需要手动调用这个方法。
 
+<!--more-->
+
 ##### 示例
 
 ```js
@@ -27,3 +29,4 @@ cc.log(widget.node.y); // changed
 > 可能会遇见的问题
 >
 > https://blog.csdn.net/u013654125/article/details/83379765
+
