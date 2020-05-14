@@ -19,7 +19,9 @@ comments: true
 
 * `webpack` (大名鼎鼎的模块打包工具)
 
+### 发布订阅库
 
+[PubSubJS](https://github.com/mroderick/PubSubJS)，[@types/pubsub-js](https://www.npmjs.com/package/@types/pubsub-js)
 
 ## Webpack常用库
 
