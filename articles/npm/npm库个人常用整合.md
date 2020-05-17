@@ -21,7 +21,7 @@ comments: true
 
 ### 发布订阅库
 
-[PubSubJS](https://github.com/mroderick/PubSubJS)，[@types/pubsub-js](https://www.npmjs.com/package/@types/pubsub-js)
+[PubSubJS](https://github.com/mroderick/PubSubJS)，[@types/pubsub-js](https://www.npmjs.com/package/@types/pubsub-js)，[events](https://github.com/Gozala/events)
 
 ## Webpack常用库
 
