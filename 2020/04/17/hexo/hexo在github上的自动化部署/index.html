@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <meta charset="utf-8">
+    
+    <title>hexo在github上的自动化部署 | Dash</title>
+    
+    
+        <meta name="keywords" content="hexo在github上的自动化部署" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="这几天被GithubActions和git-lfs坑的不轻啊，在使用Actions进行自动化部署的时候，我用的百度出来的那个Actions部署库，由于不支持lfs的功能，一直就失败。经过多次尝试，我终于找到了一个能够用的库了。谢天谢地，不然真得抑郁死。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo在github上的自动化部署">
+<meta property="og:url" content="https://npmrun.github.io/2020/04/17/hexo/hexo%E5%9C%A8github%E4%B8%8A%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/index.html">
+<meta property="og:site_name" content="Dash">
+<meta property="og:description" content="这几天被GithubActions和git-lfs坑的不轻啊，在使用Actions进行自动化部署的时候，我用的百度出来的那个Actions部署库，由于不支持lfs的功能，一直就失败。经过多次尝试，我终于找到了一个能够用的库了。谢天谢地，不然真得抑郁死。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-16T16:03:50.000Z">
+<meta property="article:modified_time" content="2020-05-07T06:10:58.635Z">
+<meta property="article:author" content="Dash King">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="Dash" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/favicon.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                
+                <span class="site-title">Dash</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>分类</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            3D
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/23/3D/3D%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/">3D前置知识</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            cocos
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/07/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/">spriteAltas精灵图集使用方式</a></li>  <li class="file"><a href="/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/">cocos creator常用api</a></li>  <li class="file"><a href="/2020/04/14/cocos/cocos%E9%80%82%E9%85%8D%E5%BF%83%E5%BE%97/">cocos适配心得</a></li>  <li class="file"><a href="/2020/04/14/cocos/cocos%E5%8A%A8%E6%80%81%E9%BE%99%E9%AA%A8/">cocos动态龙骨</a></li>  <li class="file"><a href="/2020/05/06/cocos/Widget/">Widget</a></li>  <li class="file"><a href="/2020/05/16/cocos/cocos%E9%BE%99%E9%AA%A8%E5%B1%80%E9%83%A8%E6%8D%A2%E8%A3%85/">cocos龙骨局部换装</a></li>  <li class="file"><a href="/2020/05/21/cocos/cocos%E4%B8%A4%E7%82%B9%E4%B9%8B%E9%97%B4%E7%9A%84%E8%B7%9D%E7%A6%BB/">cocos两点之间的距离</a></li>  <li class="file"><a href="/2020/05/25/cocos/cocos%20Web%E6%9E%84%E5%BB%BA%E6%A8%A1%E6%9D%BF/">cocos Web构建模板</a></li>  <li class="file"><a href="/2020/05/27/cocos/cocos%E4%B8%ADgetLocation%E4%BB%A5%E5%B7%A6%E4%B8%8B%E8%A7%92%E4%B8%BA%E5%9D%90%E6%A0%87%E5%8E%9F%E7%82%B9%E9%97%AE%E9%A2%98/">cocos中getLocation以左下角为坐标原点问题</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            css
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/05/25/css/%E7%9F%A5%E8%AF%86/css%E6%9D%83%E9%87%8D%E7%AE%80%E8%BF%B0/">css权重简述</a></li>  <li class="file"><a href="/2020/05/25/css/%E7%9F%A5%E8%AF%86/%E6%A0%B7%E5%BC%8F%E7%BB%9F%E4%B8%80%E5%8C%96/">样式统一化</a></li>  <li class="file"><a href="/2020/05/25/css/%E7%9F%A5%E8%AF%86/animation%E5%8A%A8%E7%94%BB%E7%BB%93%E6%9D%9F%E5%90%8Ecss%E6%A0%B7%E5%BC%8F%E6%80%8E%E4%B9%88%E4%BF%9D%E7%95%99%E6%9C%80%E5%90%8E%E7%8A%B6%E6%80%81/">animation动画结束后css样式怎么保留最后状态</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            docker
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/26/docker/docker%E5%90%AF%E8%92%99/">docker启蒙</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            eggjs
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/14/eggjs/egg.js%E5%AE%98%E6%96%B9%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BA/">egg.js官方手动搭建</a></li>  <li class="file"><a href="/2020/04/15/eggjs/eggjs%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/">eggjs目录结构</a></li>  <li class="file"><a href="/2020/04/15/eggjs/eggjs%E9%94%99%E8%AF%AF%E6%90%9C%E9%9B%86/">eggjs错误搜集</a></li>  <li class="file"><a href="/2020/04/19/eggjs/eggJS%E8%B7%AF%E7%94%B1/">eggJS路由</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            git
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/16/git/gitfls%E5%A4%A7%E6%96%87%E4%BB%B6/">gitfls大文件</a></li>  <li class="file"><a href="/2020/04/16/git/%E5%A6%82%E4%BD%95%E7%BB%99git%E4%BB%93%E5%BA%93%E7%98%A6%E8%BA%AB,%E5%88%A0%E9%99%A4%E5%A4%A7%E6%96%87%E4%BB%B6/">如何给git仓库瘦身,删除大文件</a></li>  <li class="file"><a href="/2020/04/20/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/">git本地多账号配置</a></li>  <li class="file"><a href="/2020/04/24/git/git-rebase%E8%AF%A6%E8%A7%A3/">git-rebase详解</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            github
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/14/github/github-actions%E8%AF%A6%E8%A7%A3/">github-actions详解</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            hexo
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/03/hexo/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Hexo常用命令</a></li>  <li class="file"><a href="/2020/04/04/hexo/hexo-typora-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/">hexo+typora 博客中插入图片</a></li>  <li class="file"><a href="/2020/04/05/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/">hexo添加看板娘</a></li>  <li class="file active"><a href="/2020/04/17/hexo/hexo%E5%9C%A8github%E4%B8%8A%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/">hexo在github上的自动化部署</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            lerna
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/03/31/lerna/lerna%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">lerna使用方法</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            mysql
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/15/mysql/mysql%E5%AE%89%E8%A3%85/">mysql安装</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            node
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/06/node/node%E7%94%9F%E6%88%90%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF/">node生成文件模板</a></li>  <li class="file"><a href="/2020/04/06/node/%E6%9C%89%E5%85%B3%E7%94%A8node%E5%BC%80%E5%8F%91websocket%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%90%8E%E5%8F%B0/">有关用node开发websocket多人聊天程序的后台</a></li>  <li class="file"><a href="/2020/04/22/node/node%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6/">node创建文件</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            npm
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/01/npm/npm%E5%BA%93%E4%B8%AA%E4%BA%BA%E5%B8%B8%E7%94%A8%E6%95%B4%E5%90%88/">npm库个人常用整合</a></li>  <li class="file"><a href="/2020/04/27/npm/commander%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">commander使用方法</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            ts
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/24/ts/ts%E4%BD%BF%E7%94%A8paths%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E5%88%AB%E5%90%8D/">ts使用paths配置路径别名</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            uniapp
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/21/uniapp/html5plus%E5%88%86%E4%BA%AB%E6%A8%A1%E6%9D%BF/">html5plus分享模板</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            v2ray
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/15/v2ray/v2rayn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/">v2rayn的使用方式</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            vue
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/25/vue/vue/vue+ifram%E9%80%9A%E4%BF%A1%E4%BA%8E%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E8%A2%AB%E5%BC%95%E7%94%A8/">vue+iframe通信于判断是否被引用</a></li>  <li class="file"><a href="/2020/04/25/vue/vue/vue-cli3%E8%B7%A8%E5%9F%9F%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">vue-cli3跨域代理配置</a></li>  <li class="file"><a href="/2020/04/29/vue/vue/vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/">vue响应式原理</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            webpack
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/04/webpack/webpack%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86%E7%82%B9/">webpack零散知识点</a></li>  <li class="file"><a href="/2020/04/13/webpack/webpack%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%96%B9%E5%BC%8F/">webpack的几种导入导出方式</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            前端
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/04/%E5%89%8D%E7%AB%AF/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%BC%AB%E6%B8%B8/">前端知识漫游</a></li>  <li class="file"><a href="/2020/04/04/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/">各种标签说明</a></li>  <li class="file"><a href="/2020/04/04/%E5%89%8D%E7%AB%AF/css%E5%AE%9E%E7%8E%B0%E5%85%A8%E7%AB%99%E5%8F%98%E7%81%B0/">css实现全站变灰</a></li>  <li class="file"><a href="/2020/04/06/%E5%89%8D%E7%AB%AF/%E4%B8%9A%E5%8A%A1%E7%9B%B8%E5%85%B3/%E6%94%AF%E4%BB%98%E5%AE%9D%E5%85%8D%E7%AD%BE%E6%94%AF%E4%BB%98/">支付宝免签支付</a></li>  <li class="file"><a href="/2020/04/16/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E6%95%88%E6%9E%9C%E6%A1%86%E6%9E%B6/">常用效果框架</a></li>  <li class="file"><a href="/2020/05/01/%E5%89%8D%E7%AB%AF/%E4%B8%9A%E5%8A%A1%E7%9B%B8%E5%85%B3/%E8%8B%B9%E6%9E%9C%E5%BD%95%E5%83%8F%E6%9C%89%E5%85%B3hevc%E6%A0%BC%E5%BC%8F%E8%A7%86%E9%A2%91%E7%9A%84%E7%BD%91%E9%A1%B5%E6%92%AD%E6%94%BE/">苹果录像有关hevc格式视频的网页播放</a></li>  <li class="file"><a href="/2020/05/09/%E5%89%8D%E7%AB%AF/%E5%AE%9E%E6%88%98/%E4%B8%80%E9%95%9C%E5%88%B0%E5%BA%95/">一镜到底</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            工具
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/23/%E5%B7%A5%E5%85%B7/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">frp内网穿透</a></li>  <li class="file"><a href="/2020/04/29/%E5%B7%A5%E5%85%B7/%E4%BB%A3%E7%A0%81%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%8E%A8%E8%8D%90/">代码笔记本推荐</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            收集
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/05/07/%E6%94%B6%E9%9B%86/%E7%BD%91%E5%9D%80/">网址</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            正则表达式
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/11/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            跨域
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/25/%E8%B7%A8%E5%9F%9F/node%E5%90%8E%E7%AB%AF%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/">node后端解决跨域</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/2020/04/14/cocos/%E5%8A%A8%E7%94%BB/cocos%E7%9A%84%E5%87%A0%E7%A7%8D%E5%8A%A8%E7%94%BB%E6%96%B9%E5%BC%8F/">cocos的几种动画方式</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-hexo/hexo在github上的自动化部署" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/hexo/">hexo</a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2020/04/17/hexo/hexo%E5%9C%A8github%E4%B8%8A%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/">
+            <time datetime="2020-04-16T16:03:50.000Z" itemprop="datePublished">2020-04-17</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            hexo在github上的自动化部署
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <blockquote>
+<p>这几天被GithubActions和git-lfs坑的不轻啊，在使用Actions进行自动化部署的时候，我用的百度出来的那个Actions部署库，由于不支持lfs的功能，一直就失败。经过多次尝试，我终于找到了一个能够用的库了。谢天谢地，不然真得抑郁死。</p>
+</blockquote>
+<a id="more"></a>
+
+<h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>我是添加了对仓库的<code>git-lfs</code>的支持，使得能够存储大文件，而且<code>.git</code>文件也会小很多。</p>
+<p><code>git lfs track &quot;*.zip&quot;</code>,执行这个命令之后提交的<code>zip</code>文件才会被记录。</p>
+<h3 id="原有Actions"><a href="#原有Actions" class="headerlink" title="原有Actions"></a>原有<code>Actions</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">name: GitHub Actions Build and Deploy Hexo</span><br><span class="line">on:</span><br><span class="line">  push:</span><br><span class="line">    branches:</span><br><span class="line">      - source</span><br><span class="line">jobs:</span><br><span class="line">  build-and-deploy:</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line">    steps:</span><br><span class="line">    - name: Checkout</span><br><span class="line">      uses: actions&#x2F;checkout@master</span><br><span class="line">      with:</span><br><span class="line">        ref: source</span><br><span class="line">        lfs: true</span><br><span class="line">    - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the &#39;build&#39; folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.</span><br><span class="line">      run: |</span><br><span class="line">        npm install</span><br><span class="line">        npx gulp clean</span><br><span class="line">        npx gulp</span><br><span class="line">        npx hexo clean</span><br><span class="line">        npx hexo generate</span><br><span class="line">    - name: Build and Deploy</span><br><span class="line">      uses: JamesIves&#x2F;github-pages-deploy-action@master</span><br><span class="line">      env:</span><br><span class="line">        ACCESS_TOKEN: $&#123;&#123; secrets.ACCESS_TOKEN &#125;&#125;</span><br><span class="line">        BASE_BRANCH: source</span><br><span class="line">        BRANCH: master</span><br><span class="line">        FOLDER: public</span><br></pre></td></tr></table></figure>
+
+<p>上面的<code>JamesIves/github-pages-deploy-action@master</code>根本不支持<code>lfs</code></p>
+<p>，结果我傻傻的搞了差不多一天。</p>
+<h3 id="改变之后的Action"><a href="#改变之后的Action" class="headerlink" title="改变之后的Action"></a>改变之后的<code>Action</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">name: GitHub Actions Build and Deploy Hexo</span><br><span class="line">on:</span><br><span class="line">  push:</span><br><span class="line">    branches:</span><br><span class="line">      - source</span><br><span class="line">jobs:</span><br><span class="line">  build-and-deploy:</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line">    steps:</span><br><span class="line">    - name: Checkout</span><br><span class="line">      uses: actions&#x2F;checkout@master</span><br><span class="line">      with:</span><br><span class="line">        submodules: true</span><br><span class="line">        lfs: true</span><br><span class="line">    - name: Install and BuildA 🔧 # This example project is built using npm and outputs the result to the &#39;build&#39; folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.</span><br><span class="line">      run: |</span><br><span class="line">        npm install</span><br><span class="line">        npx gulp clean</span><br><span class="line">        npx gulp</span><br><span class="line">        npx hexo clean</span><br><span class="line">        npx hexo generate</span><br><span class="line">    - name: Deploy</span><br><span class="line">      uses: alex-page&#x2F;blazing-fast-gh-pages-deploy@v1.1.0</span><br><span class="line">      with:</span><br><span class="line">        repo-token: $&#123;&#123; secrets.ACCESS_TOKEN &#125;&#125;</span><br><span class="line">        site-directory: .&#x2F;public</span><br><span class="line">        commit-message: fuck</span><br><span class="line">        deploy-branch: master</span><br></pre></td></tr></table></figure>
+
+<p>Fuck,齐活！！！</p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/2020/04/19/eggjs/eggJS%E8%B7%AF%E7%94%B1/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    eggJS路由
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2020/04/16/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E6%95%88%E6%9E%9C%E6%A1%86%E6%9E%B6/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">常用效果框架</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Dash King &copy; 2020
+<!--            <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>-->
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten" target="_blank" rel="noopener">wikitten</a>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>

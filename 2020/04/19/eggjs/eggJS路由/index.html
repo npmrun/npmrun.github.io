@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <meta charset="utf-8">
+    
+    <title>eggJS路由 | Dash</title>
+    
+    
+        <meta name="keywords" content="eggJS路由" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="路由（Router）Router 主要用来描述请求 URL 和具体承担执行动作的 Controller 的对应关系， 框架约定了 app&#x2F;router.js 文件用于统一所有路由规则。 通过统一的配置，我们可以避免路由规则逻辑散落在多个地方，从而出现未知的冲突，集中在一起我们可以更方便的来查看全局的路由规则。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="eggJS路由">
+<meta property="og:url" content="https://npmrun.github.io/2020/04/19/eggjs/eggJS%E8%B7%AF%E7%94%B1/index.html">
+<meta property="og:site_name" content="Dash">
+<meta property="og:description" content="路由（Router）Router 主要用来描述请求 URL 和具体承担执行动作的 Controller 的对应关系， 框架约定了 app&#x2F;router.js 文件用于统一所有路由规则。 通过统一的配置，我们可以避免路由规则逻辑散落在多个地方，从而出现未知的冲突，集中在一起我们可以更方便的来查看全局的路由规则。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-19T09:47:32.000Z">
+<meta property="article:modified_time" content="2020-05-07T06:10:58.555Z">
+<meta property="article:author" content="Dash King">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="Dash" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/favicon.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                
+                <span class="site-title">Dash</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>分类</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            3D
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/23/3D/3D%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/">3D前置知识</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            cocos
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/07/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/">spriteAltas精灵图集使用方式</a></li>  <li class="file"><a href="/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/">cocos creator常用api</a></li>  <li class="file"><a href="/2020/04/14/cocos/cocos%E9%80%82%E9%85%8D%E5%BF%83%E5%BE%97/">cocos适配心得</a></li>  <li class="file"><a href="/2020/04/14/cocos/cocos%E5%8A%A8%E6%80%81%E9%BE%99%E9%AA%A8/">cocos动态龙骨</a></li>  <li class="file"><a href="/2020/05/06/cocos/Widget/">Widget</a></li>  <li class="file"><a href="/2020/05/16/cocos/cocos%E9%BE%99%E9%AA%A8%E5%B1%80%E9%83%A8%E6%8D%A2%E8%A3%85/">cocos龙骨局部换装</a></li>  <li class="file"><a href="/2020/05/21/cocos/cocos%E4%B8%A4%E7%82%B9%E4%B9%8B%E9%97%B4%E7%9A%84%E8%B7%9D%E7%A6%BB/">cocos两点之间的距离</a></li>  <li class="file"><a href="/2020/05/25/cocos/cocos%20Web%E6%9E%84%E5%BB%BA%E6%A8%A1%E6%9D%BF/">cocos Web构建模板</a></li>  <li class="file"><a href="/2020/05/27/cocos/cocos%E4%B8%ADgetLocation%E4%BB%A5%E5%B7%A6%E4%B8%8B%E8%A7%92%E4%B8%BA%E5%9D%90%E6%A0%87%E5%8E%9F%E7%82%B9%E9%97%AE%E9%A2%98/">cocos中getLocation以左下角为坐标原点问题</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            css
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/05/25/css/%E7%9F%A5%E8%AF%86/css%E6%9D%83%E9%87%8D%E7%AE%80%E8%BF%B0/">css权重简述</a></li>  <li class="file"><a href="/2020/05/25/css/%E7%9F%A5%E8%AF%86/%E6%A0%B7%E5%BC%8F%E7%BB%9F%E4%B8%80%E5%8C%96/">样式统一化</a></li>  <li class="file"><a href="/2020/05/25/css/%E7%9F%A5%E8%AF%86/animation%E5%8A%A8%E7%94%BB%E7%BB%93%E6%9D%9F%E5%90%8Ecss%E6%A0%B7%E5%BC%8F%E6%80%8E%E4%B9%88%E4%BF%9D%E7%95%99%E6%9C%80%E5%90%8E%E7%8A%B6%E6%80%81/">animation动画结束后css样式怎么保留最后状态</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            docker
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/26/docker/docker%E5%90%AF%E8%92%99/">docker启蒙</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            eggjs
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/14/eggjs/egg.js%E5%AE%98%E6%96%B9%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BA/">egg.js官方手动搭建</a></li>  <li class="file"><a href="/2020/04/15/eggjs/eggjs%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/">eggjs目录结构</a></li>  <li class="file"><a href="/2020/04/15/eggjs/eggjs%E9%94%99%E8%AF%AF%E6%90%9C%E9%9B%86/">eggjs错误搜集</a></li>  <li class="file active"><a href="/2020/04/19/eggjs/eggJS%E8%B7%AF%E7%94%B1/">eggJS路由</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            git
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/16/git/gitfls%E5%A4%A7%E6%96%87%E4%BB%B6/">gitfls大文件</a></li>  <li class="file"><a href="/2020/04/16/git/%E5%A6%82%E4%BD%95%E7%BB%99git%E4%BB%93%E5%BA%93%E7%98%A6%E8%BA%AB,%E5%88%A0%E9%99%A4%E5%A4%A7%E6%96%87%E4%BB%B6/">如何给git仓库瘦身,删除大文件</a></li>  <li class="file"><a href="/2020/04/20/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/">git本地多账号配置</a></li>  <li class="file"><a href="/2020/04/24/git/git-rebase%E8%AF%A6%E8%A7%A3/">git-rebase详解</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            github
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/14/github/github-actions%E8%AF%A6%E8%A7%A3/">github-actions详解</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            hexo
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/03/hexo/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Hexo常用命令</a></li>  <li class="file"><a href="/2020/04/04/hexo/hexo-typora-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/">hexo+typora 博客中插入图片</a></li>  <li class="file"><a href="/2020/04/05/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/">hexo添加看板娘</a></li>  <li class="file"><a href="/2020/04/17/hexo/hexo%E5%9C%A8github%E4%B8%8A%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/">hexo在github上的自动化部署</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            lerna
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/03/31/lerna/lerna%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">lerna使用方法</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            mysql
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/15/mysql/mysql%E5%AE%89%E8%A3%85/">mysql安装</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            node
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/06/node/node%E7%94%9F%E6%88%90%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF/">node生成文件模板</a></li>  <li class="file"><a href="/2020/04/06/node/%E6%9C%89%E5%85%B3%E7%94%A8node%E5%BC%80%E5%8F%91websocket%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%90%8E%E5%8F%B0/">有关用node开发websocket多人聊天程序的后台</a></li>  <li class="file"><a href="/2020/04/22/node/node%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6/">node创建文件</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            npm
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/01/npm/npm%E5%BA%93%E4%B8%AA%E4%BA%BA%E5%B8%B8%E7%94%A8%E6%95%B4%E5%90%88/">npm库个人常用整合</a></li>  <li class="file"><a href="/2020/04/27/npm/commander%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">commander使用方法</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            ts
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/24/ts/ts%E4%BD%BF%E7%94%A8paths%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E5%88%AB%E5%90%8D/">ts使用paths配置路径别名</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            uniapp
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/21/uniapp/html5plus%E5%88%86%E4%BA%AB%E6%A8%A1%E6%9D%BF/">html5plus分享模板</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            v2ray
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/15/v2ray/v2rayn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/">v2rayn的使用方式</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            vue
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/25/vue/vue/vue+ifram%E9%80%9A%E4%BF%A1%E4%BA%8E%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E8%A2%AB%E5%BC%95%E7%94%A8/">vue+iframe通信于判断是否被引用</a></li>  <li class="file"><a href="/2020/04/25/vue/vue/vue-cli3%E8%B7%A8%E5%9F%9F%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">vue-cli3跨域代理配置</a></li>  <li class="file"><a href="/2020/04/29/vue/vue/vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/">vue响应式原理</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            webpack
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/04/webpack/webpack%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86%E7%82%B9/">webpack零散知识点</a></li>  <li class="file"><a href="/2020/04/13/webpack/webpack%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%96%B9%E5%BC%8F/">webpack的几种导入导出方式</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            前端
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/04/%E5%89%8D%E7%AB%AF/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%BC%AB%E6%B8%B8/">前端知识漫游</a></li>  <li class="file"><a href="/2020/04/04/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/">各种标签说明</a></li>  <li class="file"><a href="/2020/04/04/%E5%89%8D%E7%AB%AF/css%E5%AE%9E%E7%8E%B0%E5%85%A8%E7%AB%99%E5%8F%98%E7%81%B0/">css实现全站变灰</a></li>  <li class="file"><a href="/2020/04/06/%E5%89%8D%E7%AB%AF/%E4%B8%9A%E5%8A%A1%E7%9B%B8%E5%85%B3/%E6%94%AF%E4%BB%98%E5%AE%9D%E5%85%8D%E7%AD%BE%E6%94%AF%E4%BB%98/">支付宝免签支付</a></li>  <li class="file"><a href="/2020/04/16/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E6%95%88%E6%9E%9C%E6%A1%86%E6%9E%B6/">常用效果框架</a></li>  <li class="file"><a href="/2020/05/01/%E5%89%8D%E7%AB%AF/%E4%B8%9A%E5%8A%A1%E7%9B%B8%E5%85%B3/%E8%8B%B9%E6%9E%9C%E5%BD%95%E5%83%8F%E6%9C%89%E5%85%B3hevc%E6%A0%BC%E5%BC%8F%E8%A7%86%E9%A2%91%E7%9A%84%E7%BD%91%E9%A1%B5%E6%92%AD%E6%94%BE/">苹果录像有关hevc格式视频的网页播放</a></li>  <li class="file"><a href="/2020/05/09/%E5%89%8D%E7%AB%AF/%E5%AE%9E%E6%88%98/%E4%B8%80%E9%95%9C%E5%88%B0%E5%BA%95/">一镜到底</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            工具
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/23/%E5%B7%A5%E5%85%B7/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">frp内网穿透</a></li>  <li class="file"><a href="/2020/04/29/%E5%B7%A5%E5%85%B7/%E4%BB%A3%E7%A0%81%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%8E%A8%E8%8D%90/">代码笔记本推荐</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            收集
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/05/07/%E6%94%B6%E9%9B%86/%E7%BD%91%E5%9D%80/">网址</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            正则表达式
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/11/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            跨域
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/25/%E8%B7%A8%E5%9F%9F/node%E5%90%8E%E7%AB%AF%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/">node后端解决跨域</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/2020/04/14/cocos/%E5%8A%A8%E7%94%BB/cocos%E7%9A%84%E5%87%A0%E7%A7%8D%E5%8A%A8%E7%94%BB%E6%96%B9%E5%BC%8F/">cocos的几种动画方式</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-eggjs/eggJS路由" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/eggjs/">eggjs</a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2020/04/19/eggjs/eggJS%E8%B7%AF%E7%94%B1/">
+            <time datetime="2020-04-19T09:47:32.000Z" itemprop="datePublished">2020-04-19</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            eggJS路由
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <h1 id="路由（Router）"><a href="#路由（Router）" class="headerlink" title="路由（Router）"></a>路由（Router）</h1><p>Router 主要用来描述请求 URL 和具体承担执行动作的 Controller 的对应关系， 框架约定了 <code>app/router.js</code> 文件用于统一所有路由规则。</p>
+<p>通过统一的配置，我们可以避免路由规则逻辑散落在多个地方，从而出现未知的冲突，集中在一起我们可以更方便的来查看全局的路由规则。</p>
+<a id="more"></a>
+
+<h2 id="如何定义-Router"><a href="#如何定义-Router" class="headerlink" title="如何定义 Router"></a>如何定义 Router</h2><ul>
+<li><p><code>app/router.js</code> 里面定义 URL 路由规则</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  const &#123; router, controller &#125; &#x3D; app;</span><br><span class="line">  router.get(&#39;&#x2F;user&#x2F;:id&#39;, controller.user.info);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>app/controller</code> 目录下面实现 Controller</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;user.js</span><br><span class="line">class UserController extends Controller &#123;</span><br><span class="line">  async info() &#123;</span><br><span class="line">    const &#123; ctx &#125; &#x3D; this;</span><br><span class="line">    ctx.body &#x3D; &#123;</span><br><span class="line">      name: &#96;hello $&#123;ctx.params.id&#125;&#96;,</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>这样就完成了一个最简单的 Router 定义，当用户执行 <code>GET /user/123</code>，<code>user.js</code> 这个里面的 info 方法就会执行。</p>
+<h2 id="Router-详细定义说明"><a href="#Router-详细定义说明" class="headerlink" title="Router 详细定义说明"></a>Router 详细定义说明</h2><p>下面是路由的完整定义，参数可以根据场景的不同，自由选择：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">router.verb(&#39;path-match&#39;, app.controller.action);</span><br><span class="line">router.verb(&#39;router-name&#39;, &#39;path-match&#39;, app.controller.action);</span><br><span class="line">router.verb(&#39;path-match&#39;, middleware1, ..., middlewareN, app.controller.action);</span><br><span class="line">router.verb(&#39;router-name&#39;, &#39;path-match&#39;, middleware1, ..., middlewareN, app.controller.action);</span><br></pre></td></tr></table></figure>
+
+<p>路由完整定义主要包括5个主要部分:</p>
+<ul>
+<li><p>verb - 用户触发动作，支持 get，post 等所有 HTTP 方法，后面会通过示例详细说明。</p>
+<ul>
+<li>router.head - HEAD</li>
+<li>router.options - OPTIONS</li>
+<li>router.get - GET</li>
+<li>router.put - PUT</li>
+<li>router.post - POST</li>
+<li>router.patch - PATCH</li>
+<li>router.delete - DELETE</li>
+<li>router.del - 由于 delete 是一个保留字，所以提供了一个 delete 方法的别名。</li>
+<li>router.redirect - 可以对 URL 进行重定向处理，比如我们最经常使用的可以把用户访问的根目录路由到某个主页。</li>
+</ul>
+<p>router-name 给路由设定一个别名，可以通过 Helper 提供的辅助函数 <code>pathFor</code> 和 <code>urlFor</code> 来生成 URL。(可选)</p>
+</li>
+<li><p>router-name 给路由设定一个别名，可以通过 Helper 提供的辅助函数 <code>pathFor</code> 和 <code>urlFor</code> 来生成 URL。(可选)</p>
+</li>
+<li><p>path-match - 路由 URL 路径。</p>
+</li>
+<li><p>middleware1 - 在 Router 里面可以配置多个 Middleware。(可选)</p>
+</li>
+<li><p>controller - 指定路由映射到的具体的 controller 上，controller 可以有两种写法：</p>
+<ul>
+<li><code>app.controller.user.fetch</code> - 直接指定一个具体的 controller</li>
+<li><code>&#39;user.fetch&#39;</code> - 可以简写为字符串形式</li>
+</ul>
+</li>
+</ul>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li>在 Router 定义中， 可以支持多个 Middleware 串联执行</li>
+<li>Controller 必须定义在 <code>app/controller</code> 目录中。</li>
+<li>一个文件里面也可以包含多个 Controller 定义，在定义路由的时候，可以通过 <code>${fileName}.${functionName}</code> 的方式指定对应的 Controller。</li>
+<li>Controller 支持子目录，在定义路由的时候，可以通过 <code>${directoryName}.${fileName}.${functionName}</code> 的方式制定对应的 Controller。</li>
+</ul>
+<p>下面是一些路由定义的方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  const &#123; router, controller &#125; &#x3D; app;</span><br><span class="line">  router.get(&#39;&#x2F;home&#39;, controller.home);</span><br><span class="line">  router.get(&#39;&#x2F;user&#x2F;:id&#39;, controller.user.page);</span><br><span class="line">  router.post(&#39;&#x2F;admin&#39;, isAdmin, controller.admin);</span><br><span class="line">  router.post(&#39;&#x2F;user&#39;, isLoginUser, hasAdminPermission, controller.user.create);</span><br><span class="line">  router.post(&#39;&#x2F;api&#x2F;v1&#x2F;comments&#39;, controller.v1.comments.create); &#x2F;&#x2F; app&#x2F;controller&#x2F;v1&#x2F;comments.js</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="RESTful-风格的-URL-定义"><a href="#RESTful-风格的-URL-定义" class="headerlink" title="RESTful 风格的 URL 定义"></a>RESTful 风格的 URL 定义</h3><p>如果想通过 RESTful 的方式来定义路由， 我们提供了 <code>app.router.resources(&#39;routerName&#39;, &#39;pathMatch&#39;, controller)</code> 快速在一个路径上生成 <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank" rel="noopener">CRUD</a> 路由结构。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  const &#123; router, controller &#125; &#x3D; app;</span><br><span class="line">  router.resources(&#39;posts&#39;, &#39;&#x2F;api&#x2F;posts&#39;, controller.posts);</span><br><span class="line">  router.resources(&#39;users&#39;, &#39;&#x2F;api&#x2F;v1&#x2F;users&#39;, controller.v1.users); &#x2F;&#x2F; app&#x2F;controller&#x2F;v1&#x2F;users.js</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码就在 <code>/posts</code> 路径上部署了一组 CRUD 路径结构，对应的 Controller 为 <code>app/controller/posts.js</code> 接下来， 你只需要在 <code>posts.js</code> 里面实现对应的函数就可以了。</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Route Name</th>
+<th>Controller.Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GET</td>
+<td>/posts</td>
+<td>posts</td>
+<td>app.controllers.posts.index</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/posts/new</td>
+<td>new_post</td>
+<td>app.controllers.posts.new</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/posts/:id</td>
+<td>post</td>
+<td>app.controllers.posts.show</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/posts/:id/edit</td>
+<td>edit_post</td>
+<td>app.controllers.posts.edit</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>/posts</td>
+<td>posts</td>
+<td>app.controllers.posts.create</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>/posts/:id</td>
+<td>post</td>
+<td>app.controllers.posts.update</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>/posts/:id</td>
+<td>post</td>
+<td>app.controllers.posts.destroy</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;posts.js</span><br><span class="line">exports.index &#x3D; async () &#x3D;&gt; &#123;&#125;;</span><br><span class="line"></span><br><span class="line">exports.new &#x3D; async () &#x3D;&gt; &#123;&#125;;</span><br><span class="line"></span><br><span class="line">exports.create &#x3D; async () &#x3D;&gt; &#123;&#125;;</span><br><span class="line"></span><br><span class="line">exports.show &#x3D; async () &#x3D;&gt; &#123;&#125;;</span><br><span class="line"></span><br><span class="line">exports.edit &#x3D; async () &#x3D;&gt; &#123;&#125;;</span><br><span class="line"></span><br><span class="line">exports.update &#x3D; async () &#x3D;&gt; &#123;&#125;;</span><br><span class="line"></span><br><span class="line">exports.destroy &#x3D; async () &#x3D;&gt; &#123;&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>如果我们不需要其中的某几个方法，可以不用在 <code>posts.js</code> 里面实现，这样对应 URL 路径也不会注册到 Router。</p>
+<h2 id="router-实战"><a href="#router-实战" class="headerlink" title="router 实战"></a>router 实战</h2><p>下面通过更多实际的例子，来说明 router 的用法。</p>
+<h3 id="参数获取"><a href="#参数获取" class="headerlink" title="参数获取"></a>参数获取</h3><h4 id="Query-String-方式"><a href="#Query-String-方式" class="headerlink" title="Query String 方式"></a>Query String 方式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.get(&#39;&#x2F;search&#39;, app.controller.search.index);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;search.js</span><br><span class="line">exports.index &#x3D; async ctx &#x3D;&gt; &#123;</span><br><span class="line">  ctx.body &#x3D; &#96;search: $&#123;ctx.query.name&#125;&#96;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; curl http:&#x2F;&#x2F;127.0.0.1:7001&#x2F;search?name&#x3D;egg</span><br></pre></td></tr></table></figure>
+
+<h4 id="参数命名方式"><a href="#参数命名方式" class="headerlink" title="参数命名方式"></a>参数命名方式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.get(&#39;&#x2F;user&#x2F;:id&#x2F;:name&#39;, app.controller.user.info);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;user.js</span><br><span class="line">exports.info &#x3D; async ctx &#x3D;&gt; &#123;</span><br><span class="line">  ctx.body &#x3D; &#96;user: $&#123;ctx.params.id&#125;, $&#123;ctx.params.name&#125;&#96;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; curl http:&#x2F;&#x2F;127.0.0.1:7001&#x2F;user&#x2F;123&#x2F;xiaoming</span><br></pre></td></tr></table></figure>
+
+<h4 id="复杂参数的获取"><a href="#复杂参数的获取" class="headerlink" title="复杂参数的获取"></a>复杂参数的获取</h4><p>路由里面也支持定义正则，可以更加灵活的获取参数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.get(&#x2F;^\&#x2F;package\&#x2F;([\w-.]+\&#x2F;[\w-.]+)$&#x2F;, app.controller.package.detail);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;package.js</span><br><span class="line">exports.detail &#x3D; async ctx &#x3D;&gt; &#123;</span><br><span class="line">  &#x2F;&#x2F; 如果请求 URL 被正则匹配， 可以按照捕获分组的顺序，从 ctx.params 中获取。</span><br><span class="line">  &#x2F;&#x2F; 按照下面的用户请求，&#96;ctx.params[0]&#96; 的 内容就是 &#96;egg&#x2F;1.0.0&#96;</span><br><span class="line">  ctx.body &#x3D; &#96;package:$&#123;ctx.params[0]&#125;&#96;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; curl http:&#x2F;&#x2F;127.0.0.1:7001&#x2F;package&#x2F;egg&#x2F;1.0.0</span><br></pre></td></tr></table></figure>
+
+<h3 id="表单内容的获取"><a href="#表单内容的获取" class="headerlink" title="表单内容的获取"></a>表单内容的获取</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.post(&#39;&#x2F;form&#39;, app.controller.form.post);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;form.js</span><br><span class="line">exports.post &#x3D; async ctx &#x3D;&gt; &#123;</span><br><span class="line">  ctx.body &#x3D; &#96;body: $&#123;JSON.stringify(ctx.request.body)&#125;&#96;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 模拟发起 post 请求。</span><br><span class="line">&#x2F;&#x2F; curl -X POST http:&#x2F;&#x2F;127.0.0.1:7001&#x2F;form --data &#39;&#123;&quot;name&quot;:&quot;controller&quot;&#125;&#39; --header &#39;Content-Type:application&#x2F;json&#39;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>附：</p>
+</blockquote>
+<blockquote>
+<p>这里直接发起 POST 请求会<strong>报错</strong>：’secret is missing’。错误信息来自 <a href="https://github.com/koajs/csrf/blob/2.5.0/index.js#L69" target="_blank" rel="noopener">koa-csrf/index.js#L69</a> 。</p>
+</blockquote>
+<blockquote>
+<p><strong>原因</strong>：框架内部针对表单 POST 请求均会验证 CSRF 的值，因此我们在表单提交时，请带上 CSRF key 进行提交，可参考<a href="https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范" target="_blank" rel="noopener">安全威胁csrf的防范</a></p>
+</blockquote>
+<blockquote>
+<p><strong>注意</strong>：上面的校验是因为框架中内置了安全插件 <a href="https://github.com/eggjs/egg-security" target="_blank" rel="noopener">egg-security</a>，提供了一些默认的安全实践，并且框架的安全插件是默认开启的，如果需要关闭其中一些安全防范，直接设置该项的 enable 属性为 false 即可。</p>
+</blockquote>
+<blockquote>
+<p>「除非清楚的确认后果，否则不建议擅自关闭安全插件提供的功能。」</p>
+</blockquote>
+<blockquote>
+<p>这里在写例子的话可临时在 <code>config/config.default.js</code> 中设置</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">exports.security &#x3D; &#123;</span><br><span class="line">  csrf: false</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="表单校验"><a href="#表单校验" class="headerlink" title="表单校验"></a>表单校验</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.post(&#39;&#x2F;user&#39;, app.controller.user);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;user.js</span><br><span class="line">const createRule &#x3D; &#123;</span><br><span class="line">  username: &#123;</span><br><span class="line">    type: &#39;email&#39;,</span><br><span class="line">  &#125;,</span><br><span class="line">  password: &#123;</span><br><span class="line">    type: &#39;password&#39;,</span><br><span class="line">    compare: &#39;re-password&#39;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">exports.create &#x3D; async ctx &#x3D;&gt; &#123;</span><br><span class="line">  &#x2F;&#x2F; 如果校验报错，会抛出异常</span><br><span class="line">  ctx.validate(createRule);</span><br><span class="line">  ctx.body &#x3D; ctx.request.body;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; curl -X POST http:&#x2F;&#x2F;127.0.0.1:7001&#x2F;user --data &#39;username&#x3D;abc@abc.com&amp;password&#x3D;111111&amp;re-password&#x3D;111111&#39;</span><br></pre></td></tr></table></figure>
+
+<h3 id="重定向"><a href="#重定向" class="headerlink" title="重定向"></a>重定向</h3><h4 id="内部重定向"><a href="#内部重定向" class="headerlink" title="内部重定向"></a>内部重定向</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.get(&#39;index&#39;, &#39;&#x2F;home&#x2F;index&#39;, app.controller.home.index);</span><br><span class="line">  app.router.redirect(&#39;&#x2F;&#39;, &#39;&#x2F;home&#x2F;index&#39;, 302);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;home.js</span><br><span class="line">exports.index &#x3D; async ctx &#x3D;&gt; &#123;</span><br><span class="line">  ctx.body &#x3D; &#39;hello controller&#39;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; curl -L http:&#x2F;&#x2F;localhost:7001</span><br></pre></td></tr></table></figure>
+
+<h4 id="外部重定向"><a href="#外部重定向" class="headerlink" title="外部重定向"></a>外部重定向</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.get(&#39;&#x2F;search&#39;, app.controller.search.index);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;search.js</span><br><span class="line">exports.index &#x3D; async ctx &#x3D;&gt; &#123;</span><br><span class="line">  const type &#x3D; ctx.query.type;</span><br><span class="line">  const q &#x3D; ctx.query.q || &#39;nodejs&#39;;</span><br><span class="line"></span><br><span class="line">  if (type &#x3D;&#x3D;&#x3D; &#39;bing&#39;) &#123;</span><br><span class="line">    ctx.redirect(&#96;http:&#x2F;&#x2F;cn.bing.com&#x2F;search?q&#x3D;$&#123;q&#125;&#96;);</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">    ctx.redirect(&#96;https:&#x2F;&#x2F;www.google.co.kr&#x2F;search?q&#x3D;$&#123;q&#125;&#96;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; curl http:&#x2F;&#x2F;localhost:7001&#x2F;search?type&#x3D;bing&amp;q&#x3D;node.js</span><br><span class="line">&#x2F;&#x2F; curl http:&#x2F;&#x2F;localhost:7001&#x2F;search?q&#x3D;node.js</span><br></pre></td></tr></table></figure>
+
+<h3 id="中间件的使用"><a href="#中间件的使用" class="headerlink" title="中间件的使用"></a>中间件的使用</h3><p>如果我们想把用户某一类请求的参数都大写，可以通过中间件来实现。 这里我们只是简单说明下如何使用中间件，更多请查看 <a href="https://eggjs.org/zh-cn/basics/middleware.html" target="_blank" rel="noopener">中间件</a>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;search.js</span><br><span class="line">exports.index &#x3D; async ctx &#x3D;&gt; &#123;</span><br><span class="line">  ctx.body &#x3D; &#96;search: $&#123;ctx.query.name&#125;&#96;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;middleware&#x2F;uppercase.js</span><br><span class="line">module.exports &#x3D; () &#x3D;&gt; &#123;</span><br><span class="line">  return async function uppercase(ctx, next) &#123;</span><br><span class="line">    ctx.query.name &#x3D; ctx.query.name &amp;&amp; ctx.query.name.toUpperCase();</span><br><span class="line">    await next();</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.get(&#39;s&#39;, &#39;&#x2F;search&#39;, app.middleware.uppercase(), app.controller.search)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; curl http:&#x2F;&#x2F;localhost:7001&#x2F;search?name&#x3D;egg</span><br></pre></td></tr></table></figure>
+
+<h3 id="太多路由映射？"><a href="#太多路由映射？" class="headerlink" title="太多路由映射？"></a>太多路由映射？</h3><p>如上所述，我们并不建议把路由规则逻辑散落在多个地方，会给排查问题带来困扰。</p>
+<p>若确实有需求，可以如下拆分：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  require(&#39;.&#x2F;router&#x2F;news&#39;)(app);</span><br><span class="line">  require(&#39;.&#x2F;router&#x2F;admin&#39;)(app);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;router&#x2F;news.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.get(&#39;&#x2F;news&#x2F;list&#39;, app.controller.news.list);</span><br><span class="line">  app.router.get(&#39;&#x2F;news&#x2F;detail&#39;, app.controller.news.detail);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;router&#x2F;admin.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.get(&#39;&#x2F;admin&#x2F;user&#39;, app.controller.admin.user);</span><br><span class="line">  app.router.get(&#39;&#x2F;admin&#x2F;log&#39;, app.controller.admin.log);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>也可直接使用 <a href="https://github.com/eggjs/egg-router-plus" target="_blank" rel="noopener">egg-router-plus</a>。</p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/2020/04/20/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    git本地多账号配置
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2020/04/17/hexo/hexo%E5%9C%A8github%E4%B8%8A%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">hexo在github上的自动化部署</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Dash King &copy; 2020
+<!--            <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>-->
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten" target="_blank" rel="noopener">wikitten</a>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>

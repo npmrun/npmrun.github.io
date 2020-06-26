@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <meta charset="utf-8">
+    
+    <title>egg.js官方手动搭建 | Dash</title>
+    
+    
+        <meta name="keywords" content="egg.js官方手动搭建" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="初始化项目先按以下步骤一步步初始化 12345$ mkdir egg-example$ cd egg-example$ npm init$ npm i egg --save$ npm i egg-bin --save-dev">
+<meta property="og:type" content="article">
+<meta property="og:title" content="egg.js官方手动搭建">
+<meta property="og:url" content="https://npmrun.github.io/2020/04/14/eggjs/egg.js%E5%AE%98%E6%96%B9%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BA/index.html">
+<meta property="og:site_name" content="Dash">
+<meta property="og:description" content="初始化项目先按以下步骤一步步初始化 12345$ mkdir egg-example$ cd egg-example$ npm init$ npm i egg --save$ npm i egg-bin --save-dev">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-14T09:04:09.000Z">
+<meta property="article:modified_time" content="2020-05-07T06:10:58.540Z">
+<meta property="article:author" content="Dash King">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="Dash" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/favicon.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                
+                <span class="site-title">Dash</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>分类</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            3D
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/23/3D/3D%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/">3D前置知识</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            cocos
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/07/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/">spriteAltas精灵图集使用方式</a></li>  <li class="file"><a href="/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/">cocos creator常用api</a></li>  <li class="file"><a href="/2020/04/14/cocos/cocos%E9%80%82%E9%85%8D%E5%BF%83%E5%BE%97/">cocos适配心得</a></li>  <li class="file"><a href="/2020/04/14/cocos/cocos%E5%8A%A8%E6%80%81%E9%BE%99%E9%AA%A8/">cocos动态龙骨</a></li>  <li class="file"><a href="/2020/05/06/cocos/Widget/">Widget</a></li>  <li class="file"><a href="/2020/05/16/cocos/cocos%E9%BE%99%E9%AA%A8%E5%B1%80%E9%83%A8%E6%8D%A2%E8%A3%85/">cocos龙骨局部换装</a></li>  <li class="file"><a href="/2020/05/21/cocos/cocos%E4%B8%A4%E7%82%B9%E4%B9%8B%E9%97%B4%E7%9A%84%E8%B7%9D%E7%A6%BB/">cocos两点之间的距离</a></li>  <li class="file"><a href="/2020/05/25/cocos/cocos%20Web%E6%9E%84%E5%BB%BA%E6%A8%A1%E6%9D%BF/">cocos Web构建模板</a></li>  <li class="file"><a href="/2020/05/27/cocos/cocos%E4%B8%ADgetLocation%E4%BB%A5%E5%B7%A6%E4%B8%8B%E8%A7%92%E4%B8%BA%E5%9D%90%E6%A0%87%E5%8E%9F%E7%82%B9%E9%97%AE%E9%A2%98/">cocos中getLocation以左下角为坐标原点问题</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            css
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/05/25/css/%E7%9F%A5%E8%AF%86/css%E6%9D%83%E9%87%8D%E7%AE%80%E8%BF%B0/">css权重简述</a></li>  <li class="file"><a href="/2020/05/25/css/%E7%9F%A5%E8%AF%86/%E6%A0%B7%E5%BC%8F%E7%BB%9F%E4%B8%80%E5%8C%96/">样式统一化</a></li>  <li class="file"><a href="/2020/05/25/css/%E7%9F%A5%E8%AF%86/animation%E5%8A%A8%E7%94%BB%E7%BB%93%E6%9D%9F%E5%90%8Ecss%E6%A0%B7%E5%BC%8F%E6%80%8E%E4%B9%88%E4%BF%9D%E7%95%99%E6%9C%80%E5%90%8E%E7%8A%B6%E6%80%81/">animation动画结束后css样式怎么保留最后状态</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            docker
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/26/docker/docker%E5%90%AF%E8%92%99/">docker启蒙</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            eggjs
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/2020/04/14/eggjs/egg.js%E5%AE%98%E6%96%B9%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BA/">egg.js官方手动搭建</a></li>  <li class="file"><a href="/2020/04/15/eggjs/eggjs%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/">eggjs目录结构</a></li>  <li class="file"><a href="/2020/04/15/eggjs/eggjs%E9%94%99%E8%AF%AF%E6%90%9C%E9%9B%86/">eggjs错误搜集</a></li>  <li class="file"><a href="/2020/04/19/eggjs/eggJS%E8%B7%AF%E7%94%B1/">eggJS路由</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            git
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/16/git/gitfls%E5%A4%A7%E6%96%87%E4%BB%B6/">gitfls大文件</a></li>  <li class="file"><a href="/2020/04/16/git/%E5%A6%82%E4%BD%95%E7%BB%99git%E4%BB%93%E5%BA%93%E7%98%A6%E8%BA%AB,%E5%88%A0%E9%99%A4%E5%A4%A7%E6%96%87%E4%BB%B6/">如何给git仓库瘦身,删除大文件</a></li>  <li class="file"><a href="/2020/04/20/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/">git本地多账号配置</a></li>  <li class="file"><a href="/2020/04/24/git/git-rebase%E8%AF%A6%E8%A7%A3/">git-rebase详解</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            github
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/14/github/github-actions%E8%AF%A6%E8%A7%A3/">github-actions详解</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            hexo
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/03/hexo/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Hexo常用命令</a></li>  <li class="file"><a href="/2020/04/04/hexo/hexo-typora-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/">hexo+typora 博客中插入图片</a></li>  <li class="file"><a href="/2020/04/05/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/">hexo添加看板娘</a></li>  <li class="file"><a href="/2020/04/17/hexo/hexo%E5%9C%A8github%E4%B8%8A%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/">hexo在github上的自动化部署</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            lerna
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/03/31/lerna/lerna%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">lerna使用方法</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            mysql
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/15/mysql/mysql%E5%AE%89%E8%A3%85/">mysql安装</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            node
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/06/node/node%E7%94%9F%E6%88%90%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF/">node生成文件模板</a></li>  <li class="file"><a href="/2020/04/06/node/%E6%9C%89%E5%85%B3%E7%94%A8node%E5%BC%80%E5%8F%91websocket%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%90%8E%E5%8F%B0/">有关用node开发websocket多人聊天程序的后台</a></li>  <li class="file"><a href="/2020/04/22/node/node%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6/">node创建文件</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            npm
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/01/npm/npm%E5%BA%93%E4%B8%AA%E4%BA%BA%E5%B8%B8%E7%94%A8%E6%95%B4%E5%90%88/">npm库个人常用整合</a></li>  <li class="file"><a href="/2020/04/27/npm/commander%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">commander使用方法</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            ts
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/24/ts/ts%E4%BD%BF%E7%94%A8paths%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E5%88%AB%E5%90%8D/">ts使用paths配置路径别名</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            uniapp
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/21/uniapp/html5plus%E5%88%86%E4%BA%AB%E6%A8%A1%E6%9D%BF/">html5plus分享模板</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            v2ray
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/15/v2ray/v2rayn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/">v2rayn的使用方式</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            vue
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/25/vue/vue/vue+ifram%E9%80%9A%E4%BF%A1%E4%BA%8E%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E8%A2%AB%E5%BC%95%E7%94%A8/">vue+iframe通信于判断是否被引用</a></li>  <li class="file"><a href="/2020/04/25/vue/vue/vue-cli3%E8%B7%A8%E5%9F%9F%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">vue-cli3跨域代理配置</a></li>  <li class="file"><a href="/2020/04/29/vue/vue/vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/">vue响应式原理</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            webpack
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/04/webpack/webpack%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86%E7%82%B9/">webpack零散知识点</a></li>  <li class="file"><a href="/2020/04/13/webpack/webpack%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%96%B9%E5%BC%8F/">webpack的几种导入导出方式</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            前端
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/04/%E5%89%8D%E7%AB%AF/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%BC%AB%E6%B8%B8/">前端知识漫游</a></li>  <li class="file"><a href="/2020/04/04/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/">各种标签说明</a></li>  <li class="file"><a href="/2020/04/04/%E5%89%8D%E7%AB%AF/css%E5%AE%9E%E7%8E%B0%E5%85%A8%E7%AB%99%E5%8F%98%E7%81%B0/">css实现全站变灰</a></li>  <li class="file"><a href="/2020/04/06/%E5%89%8D%E7%AB%AF/%E4%B8%9A%E5%8A%A1%E7%9B%B8%E5%85%B3/%E6%94%AF%E4%BB%98%E5%AE%9D%E5%85%8D%E7%AD%BE%E6%94%AF%E4%BB%98/">支付宝免签支付</a></li>  <li class="file"><a href="/2020/04/16/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E6%95%88%E6%9E%9C%E6%A1%86%E6%9E%B6/">常用效果框架</a></li>  <li class="file"><a href="/2020/05/01/%E5%89%8D%E7%AB%AF/%E4%B8%9A%E5%8A%A1%E7%9B%B8%E5%85%B3/%E8%8B%B9%E6%9E%9C%E5%BD%95%E5%83%8F%E6%9C%89%E5%85%B3hevc%E6%A0%BC%E5%BC%8F%E8%A7%86%E9%A2%91%E7%9A%84%E7%BD%91%E9%A1%B5%E6%92%AD%E6%94%BE/">苹果录像有关hevc格式视频的网页播放</a></li>  <li class="file"><a href="/2020/05/09/%E5%89%8D%E7%AB%AF/%E5%AE%9E%E6%88%98/%E4%B8%80%E9%95%9C%E5%88%B0%E5%BA%95/">一镜到底</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            工具
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/23/%E5%B7%A5%E5%85%B7/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">frp内网穿透</a></li>  <li class="file"><a href="/2020/04/29/%E5%B7%A5%E5%85%B7/%E4%BB%A3%E7%A0%81%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%8E%A8%E8%8D%90/">代码笔记本推荐</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            收集
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/05/07/%E6%94%B6%E9%9B%86/%E7%BD%91%E5%9D%80/">网址</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            正则表达式
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/11/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            跨域
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/04/25/%E8%B7%A8%E5%9F%9F/node%E5%90%8E%E7%AB%AF%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/">node后端解决跨域</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/2020/04/14/cocos/%E5%8A%A8%E7%94%BB/cocos%E7%9A%84%E5%87%A0%E7%A7%8D%E5%8A%A8%E7%94%BB%E6%96%B9%E5%BC%8F/">cocos的几种动画方式</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-eggjs/egg.js官方手动搭建" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/eggjs/">eggjs</a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2020/04/14/eggjs/egg.js%E5%AE%98%E6%96%B9%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BA/">
+            <time datetime="2020-04-14T09:04:09.000Z" itemprop="datePublished">2020-04-14</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            egg.js官方手动搭建
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <h2 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h2><p>先按以下步骤一步步初始化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir egg-example</span><br><span class="line">$ cd egg-example</span><br><span class="line">$ npm init</span><br><span class="line">$ npm i egg --save</span><br><span class="line">$ npm i egg-bin --save-dev</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>添加 <code>npm scripts</code> 到 <code>package.json</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;egg-example&quot;,</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;dev&quot;: &quot;egg-bin dev&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="编写-Controller"><a href="#编写-Controller" class="headerlink" title="编写 Controller"></a>编写 Controller</h3><p>如果你熟悉 Web 开发或 MVC，肯定猜到我们第一步需要编写的是 <a href="https://eggjs.org/zh-cn/basics/controller.html" target="_blank" rel="noopener">Controller</a> 和 <a href="https://eggjs.org/zh-cn/basics/router.html" target="_blank" rel="noopener">Router</a>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;home.js</span><br><span class="line">const Controller &#x3D; require(&#39;egg&#39;).Controller;</span><br><span class="line"></span><br><span class="line">class HomeController extends Controller &#123;</span><br><span class="line">  async index() &#123;</span><br><span class="line">    this.ctx.body &#x3D; &#39;Hello world&#39;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; HomeController;</span><br></pre></td></tr></table></figure>
+
+<p>配置路由映射：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  const &#123; router, controller &#125; &#x3D; app;</span><br><span class="line">  router.get(&#39;&#x2F;&#39;, controller.home.index);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>加一个<a href="https://eggjs.org/zh-cn/basics/config.html" target="_blank" rel="noopener">配置文件</a>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; config&#x2F;config.default.js</span><br><span class="line">exports.keys &#x3D; &lt;此处改为你自己的 Cookie 安全字符串&gt;;</span><br></pre></td></tr></table></figure>
+
+<p>此时目录结构如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">egg-example</span><br><span class="line">├── app</span><br><span class="line">│   ├── controller</span><br><span class="line">│   │   └── home.js</span><br><span class="line">│   └── router.js</span><br><span class="line">├── config</span><br><span class="line">│   └── config.default.js</span><br><span class="line">└── package.json</span><br></pre></td></tr></table></figure>
+
+<p>完整的目录结构规范参见<a href="https://eggjs.org/zh-cn/basics/structure.html" target="_blank" rel="noopener">目录结构</a>。</p>
+<p>好，现在可以启动应用来体验下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm run dev</span><br><span class="line">$ open http:&#x2F;&#x2F;localhost:7001</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：</p>
+<ul>
+<li>Controller 有 <code>class</code> 和 <code>exports</code> 两种编写方式，本文示范的是前者，你可能需要参考 <a href="https://eggjs.org/zh-cn/basics/controller.html" target="_blank" rel="noopener">Controller</a> 文档。</li>
+<li>Config 也有 <code>module.exports</code> 和 <code>exports</code> 的写法，具体参考 <a href="https://nodejs.org/api/modules.html#modules_exports_shortcut" target="_blank" rel="noopener">Node.js modules 文档</a>。</li>
+</ul>
+</blockquote>
+<h3 id="静态资源"><a href="#静态资源" class="headerlink" title="静态资源"></a>静态资源</h3><p>Egg 内置了 <a href="https://github.com/eggjs/egg-static" target="_blank" rel="noopener">static</a> 插件，线上环境建议部署到 CDN，无需该插件。</p>
+<p>static 插件默认映射 <code>/public/* -&gt; app/public/*</code> 目录</p>
+<p>此处，我们把静态资源都放到 <code>app/public</code> 目录即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">app&#x2F;public</span><br><span class="line">├── css</span><br><span class="line">│   └── news.css</span><br><span class="line">└── js</span><br><span class="line">    ├── lib.js</span><br><span class="line">    └── news.js</span><br></pre></td></tr></table></figure>
+
+<h3 id="模板渲染"><a href="#模板渲染" class="headerlink" title="模板渲染"></a>模板渲染</h3><p>绝大多数情况，我们都需要读取数据后渲染模板，然后呈现给用户。故我们需要引入对应的模板引擎。</p>
+<p>框架并不强制你使用某种模板引擎，只是约定了 <a href="https://eggjs.org/zh-cn/advanced/view-plugin.html" target="_blank" rel="noopener">View 插件开发规范</a>，开发者可以引入不同的插件来实现差异化定制。</p>
+<p>更多用法参见 <a href="https://eggjs.org/zh-cn/core/view.html" target="_blank" rel="noopener">View</a>。</p>
+<p>在本例中，我们使用 <a href="https://mozilla.github.io/nunjucks/" target="_blank" rel="noopener">Nunjucks</a> 来渲染，先安装对应的插件 <a href="https://github.com/eggjs/egg-view-nunjucks" target="_blank" rel="noopener">egg-view-nunjucks</a> ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i egg-view-nunjucks --save</span><br></pre></td></tr></table></figure>
+
+<p>开启插件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; config&#x2F;plugin.js</span><br><span class="line">exports.nunjucks &#x3D; &#123;</span><br><span class="line">  enable: true,</span><br><span class="line">  package: &#39;egg-view-nunjucks&#39;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; config&#x2F;config.default.js</span><br><span class="line">exports.keys &#x3D; &lt;此处改为你自己的 Cookie 安全字符串&gt;;</span><br><span class="line">&#x2F;&#x2F; 添加 view 配置</span><br><span class="line">exports.view &#x3D; &#123;</span><br><span class="line">  defaultViewEngine: &#39;nunjucks&#39;,</span><br><span class="line">  mapping: &#123;</span><br><span class="line">    &#39;.tpl&#39;: &#39;nunjucks&#39;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：是 <code>config</code> 目录，不是 <code>app/config</code>!</strong></p>
+<p>为列表页编写模板文件，一般放置在 <code>app/view</code> 目录下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- app&#x2F;view&#x2F;news&#x2F;list.tpl --&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;title&gt;Hacker News&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;&#x2F;public&#x2F;css&#x2F;news.css&quot; &#x2F;&gt;</span><br><span class="line">  &lt;&#x2F;head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;ul class&#x3D;&quot;news-view view&quot;&gt;</span><br><span class="line">      &#123;% for item in list %&#125;</span><br><span class="line">        &lt;li class&#x3D;&quot;item&quot;&gt;</span><br><span class="line">          &lt;a href&#x3D;&quot;&#123;&#123; item.url &#125;&#125;&quot;&gt;&#123;&#123; item.title &#125;&#125;&lt;&#x2F;a&gt;</span><br><span class="line">        &lt;&#x2F;li&gt;</span><br><span class="line">      &#123;% endfor %&#125;</span><br><span class="line">    &lt;&#x2F;ul&gt;</span><br><span class="line">  &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>添加 Controller 和 Router</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;news.js</span><br><span class="line">const Controller &#x3D; require(&#39;egg&#39;).Controller;</span><br><span class="line"></span><br><span class="line">class NewsController extends Controller &#123;</span><br><span class="line">  async list() &#123;</span><br><span class="line">    const dataList &#x3D; &#123;</span><br><span class="line">      list: [</span><br><span class="line">        &#123; id: 1, title: &#39;this is news 1&#39;, url: &#39;&#x2F;news&#x2F;1&#39; &#125;,</span><br><span class="line">        &#123; id: 2, title: &#39;this is news 2&#39;, url: &#39;&#x2F;news&#x2F;2&#39; &#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;;</span><br><span class="line">    await this.ctx.render(&#39;news&#x2F;list.tpl&#39;, dataList);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; NewsController;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  const &#123; router, controller &#125; &#x3D; app;</span><br><span class="line">  router.get(&#39;&#x2F;&#39;, controller.home.index);</span><br><span class="line">  router.get(&#39;&#x2F;news&#39;, controller.news.list);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>启动浏览器，访问 <a href="http://localhost:7001/news" target="_blank" rel="noopener">http://localhost:7001/news</a> 即可看到渲染后的页面。</p>
+<p><strong>提示：开发期默认开启了 <a href="https://github.com/eggjs/egg-development" target="_blank" rel="noopener">development</a> 插件，修改后端代码后，会自动重启 Worker 进程。</strong></p>
+<h3 id="编写-service"><a href="#编写-service" class="headerlink" title="编写 service"></a>编写 service</h3><p>在实际应用中，Controller 一般不会自己产出数据，也不会包含复杂的逻辑，复杂的过程应抽象为业务逻辑层 <a href="https://eggjs.org/zh-cn/basics/service.html" target="_blank" rel="noopener">Service</a>。</p>
+<p>我们来添加一个 Service 抓取 <a href="https://github.com/HackerNews/API" target="_blank" rel="noopener">Hacker News</a> 的数据 ，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;service&#x2F;news.js</span><br><span class="line">const Service &#x3D; require(&#39;egg&#39;).Service;</span><br><span class="line"></span><br><span class="line">class NewsService extends Service &#123;</span><br><span class="line">  async list(page &#x3D; 1) &#123;</span><br><span class="line">    &#x2F;&#x2F; read config</span><br><span class="line">    const &#123; serverUrl, pageSize &#125; &#x3D; this.config.news;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; use build-in http client to GET hacker-news api</span><br><span class="line">    const &#123; data: idList &#125; &#x3D; await this.ctx.curl(&#96;$&#123;serverUrl&#125;&#x2F;topstories.json&#96;, &#123;</span><br><span class="line">      data: &#123;</span><br><span class="line">        orderBy: &#39;&quot;$key&quot;&#39;,</span><br><span class="line">        startAt: &#96;&quot;$&#123;pageSize * (page - 1)&#125;&quot;&#96;,</span><br><span class="line">        endAt: &#96;&quot;$&#123;pageSize * page - 1&#125;&quot;&#96;,</span><br><span class="line">      &#125;,</span><br><span class="line">      dataType: &#39;json&#39;,</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; parallel GET detail</span><br><span class="line">    const newsList &#x3D; await Promise.all(</span><br><span class="line">      Object.keys(idList).map(key &#x3D;&gt; &#123;</span><br><span class="line">        const url &#x3D; &#96;$&#123;serverUrl&#125;&#x2F;item&#x2F;$&#123;idList[key]&#125;.json&#96;;</span><br><span class="line">        return this.ctx.curl(url, &#123; dataType: &#39;json&#39; &#125;);</span><br><span class="line">      &#125;)</span><br><span class="line">    );</span><br><span class="line">    return newsList.map(res &#x3D;&gt; res.data);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; NewsService;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>框架提供了内置的 <a href="https://eggjs.org/zh-cn/core/httpclient.html" target="_blank" rel="noopener">HttpClient</a> 来方便开发者使用 HTTP 请求。</p>
+</blockquote>
+<p>然后稍微修改下之前的 Controller：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;news.js</span><br><span class="line">const Controller &#x3D; require(&#39;egg&#39;).Controller;</span><br><span class="line"></span><br><span class="line">class NewsController extends Controller &#123;</span><br><span class="line">  async list() &#123;</span><br><span class="line">    const ctx &#x3D; this.ctx;</span><br><span class="line">    const page &#x3D; ctx.query.page || 1;</span><br><span class="line">    const newsList &#x3D; await ctx.service.news.list(page);</span><br><span class="line">    await ctx.render(&#39;news&#x2F;list.tpl&#39;, &#123; list: newsList &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; NewsController;</span><br></pre></td></tr></table></figure>
+
+<p>还需增加 <code>app/service/news.js</code> 中读取到的配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; config&#x2F;config.default.js</span><br><span class="line">&#x2F;&#x2F; 添加 news 的配置项</span><br><span class="line">exports.news &#x3D; &#123;</span><br><span class="line">  pageSize: 5,</span><br><span class="line">  serverUrl: &#39;https:&#x2F;&#x2F;hacker-news.firebaseio.com&#x2F;v0&#39;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="编写扩展"><a href="#编写扩展" class="headerlink" title="编写扩展"></a>编写扩展</h3><p>遇到一个小问题，我们的资讯时间的数据是 UnixTime 格式的，我们希望显示为便于阅读的格式。</p>
+<p>框架提供了一种快速扩展的方式，只需在 <code>app/extend</code> 目录下提供扩展脚本即可，具体参见<a href="https://eggjs.org/zh-cn/basics/extend.html" target="_blank" rel="noopener">扩展</a>。</p>
+<p>在这里，我们可以使用 View 插件支持的 Helper 来实现：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i moment --save</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;extend&#x2F;helper.js</span><br><span class="line">const moment &#x3D; require(&#39;moment&#39;);</span><br><span class="line">exports.relativeTime &#x3D; time &#x3D;&gt; moment(new Date(time * 1000)).fromNow();</span><br></pre></td></tr></table></figure>
+
+<p>在模板里面使用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- app&#x2F;view&#x2F;news&#x2F;list.tpl --&gt;</span><br><span class="line">&#123;&#123; helper.relativeTime(item.time) &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="编写-Middleware"><a href="#编写-Middleware" class="headerlink" title="编写 Middleware"></a>编写 Middleware</h3><p>假设有个需求：我们的新闻站点，禁止百度爬虫访问。</p>
+<p>聪明的同学们一定很快能想到可以通过 <a href="https://eggjs.org/zh-cn/basics/middleware.html" target="_blank" rel="noopener">Middleware</a> 判断 User-Agent，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;middleware&#x2F;robot.js</span><br><span class="line">&#x2F;&#x2F; options &#x3D;&#x3D;&#x3D; app.config.robot</span><br><span class="line">module.exports &#x3D; (options, app) &#x3D;&gt; &#123;</span><br><span class="line">  return async function robotMiddleware(ctx, next) &#123;</span><br><span class="line">    const source &#x3D; ctx.get(&#39;user-agent&#39;) || &#39;&#39;;</span><br><span class="line">    const match &#x3D; options.ua.some(ua &#x3D;&gt; ua.test(source));</span><br><span class="line">    if (match) &#123;</span><br><span class="line">      ctx.status &#x3D; 403;</span><br><span class="line">      ctx.message &#x3D; &#39;Go away, robot.&#39;;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      await next();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; config&#x2F;config.default.js</span><br><span class="line">&#x2F;&#x2F; add middleware robot</span><br><span class="line">exports.middleware &#x3D; [</span><br><span class="line">  &#39;robot&#39;</span><br><span class="line">];</span><br><span class="line">&#x2F;&#x2F; robot&#39;s configurations</span><br><span class="line">exports.robot &#x3D; &#123;</span><br><span class="line">  ua: [</span><br><span class="line">    &#x2F;Baiduspider&#x2F;i,</span><br><span class="line">  ]</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>现在可以使用 <code>curl http://localhost:7001/news -A &quot;Baiduspider&quot;</code> 看看效果。</p>
+<p>更多参见<a href="https://eggjs.org/zh-cn/basics/middleware.html" target="_blank" rel="noopener">中间件</a>文档。</p>
+<h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>写业务的时候，不可避免的需要有配置文件，框架提供了强大的配置合并管理功能：</p>
+<ul>
+<li>支持按环境变量加载不同的配置文件，如 <code>config.local.js</code>， <code>config.prod.js</code> 等等。</li>
+<li>应用/插件/框架都可以配置自己的配置文件，框架将按顺序合并加载。</li>
+<li>具体合并逻辑可参见<a href="https://eggjs.org/zh-cn/basics/config.html#配置加载顺序" target="_blank" rel="noopener">配置文件</a>。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; config&#x2F;config.default.js</span><br><span class="line">exports.robot &#x3D; &#123;</span><br><span class="line">  ua: [</span><br><span class="line">    &#x2F;curl&#x2F;i,</span><br><span class="line">    &#x2F;Baiduspider&#x2F;i,</span><br><span class="line">  ],</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; config&#x2F;config.local.js</span><br><span class="line">&#x2F;&#x2F; only read at development mode, will override default</span><br><span class="line">exports.robot &#x3D; &#123;</span><br><span class="line">  ua: [</span><br><span class="line">    &#x2F;Baiduspider&#x2F;i,</span><br><span class="line">  ],</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;service&#x2F;some.js</span><br><span class="line">const Service &#x3D; require(&#39;egg&#39;).Service;</span><br><span class="line"></span><br><span class="line">class SomeService extends Service &#123;</span><br><span class="line">  async list() &#123;</span><br><span class="line">    const rule &#x3D; this.config.robot.ua;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; SomeService;</span><br></pre></td></tr></table></figure>
+
+<h3 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h3><p>单元测试非常重要，框架也提供了 <a href="https://github.com/eggjs/egg-bin" target="_blank" rel="noopener">egg-bin</a> 来帮开发者无痛的编写测试。</p>
+<p>测试文件应该放在项目根目录下的 test 目录下，并以 <code>test.js</code> 为后缀名，即 <code>{app_root}/test/**/*.test.js</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; test&#x2F;app&#x2F;middleware&#x2F;robot.test.js</span><br><span class="line">const &#123; app, mock, assert &#125; &#x3D; require(&#39;egg-mock&#x2F;bootstrap&#39;);</span><br><span class="line"></span><br><span class="line">describe(&#39;test&#x2F;app&#x2F;middleware&#x2F;robot.test.js&#39;, () &#x3D;&gt; &#123;</span><br><span class="line">  it(&#39;should block robot&#39;, () &#x3D;&gt; &#123;</span><br><span class="line">    return app.httpRequest()</span><br><span class="line">      .get(&#39;&#x2F;&#39;)</span><br><span class="line">      .set(&#39;User-Agent&#39;, &quot;Baiduspider&quot;)</span><br><span class="line">      .expect(403);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>然后配置依赖和 <code>npm scripts</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;test&quot;: &quot;egg-bin test&quot;,</span><br><span class="line">    &quot;cov&quot;: &quot;egg-bin cov&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i egg-mock --save-dev</span><br></pre></td></tr></table></figure>
+
+<p>执行测试:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm test</span><br></pre></td></tr></table></figure>
+
+<p>就这么简单，更多请参见 <a href="https://eggjs.org/zh-cn/core/unittest.html" target="_blank" rel="noopener">单元测试</a>。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>短短几章内容，只能讲 Egg 的冰山一角，我们建议开发者继续阅读其他章节：</p>
+<ul>
+<li>关于骨架类型，参见<a href="https://eggjs.org/zh-cn/tutorials/index.html" target="_blank" rel="noopener">骨架说明</a></li>
+<li>提供了强大的扩展机制，参见<a href="https://eggjs.org/zh-cn/basics/plugin.html" target="_blank" rel="noopener">插件</a>。</li>
+<li>一个大规模的团队需要遵循一定的约束和约定，在 Egg 里我们建议封装适合自己团队的上层框架，参见 <a href="https://eggjs.org/zh-cn/advanced/framework.html" target="_blank" rel="noopener">框架开发</a>。</li>
+<li>这是一个渐进式的框架，代码的共建，复用和下沉，竟然可以这么的无痛，建议阅读 <a href="https://eggjs.org/zh-cn/tutorials/progressive.html" target="_blank" rel="noopener">渐进式开发</a>。</li>
+<li>写单元测试其实很简单的事，Egg 也提供了非常多的配套辅助，我们强烈建议大家测试驱动开发，具体参见 <a href="https://eggjs.org/zh-cn/core/unittest.html" target="_blank" rel="noopener">单元测试</a>。</li>
+</ul>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/2020/04/15/eggjs/eggjs%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    eggjs目录结构
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2020/04/14/cocos/cocos%E5%8A%A8%E6%80%81%E9%BE%99%E9%AA%A8/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">cocos动态龙骨</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Dash King &copy; 2020
+<!--            <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>-->
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten" target="_blank" rel="noopener">wikitten</a>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>
