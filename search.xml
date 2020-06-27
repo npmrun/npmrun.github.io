@@ -55,6 +55,19 @@
   </entry>
   <entry>
     <title></title>
+    <url>/2020/06/27/%E9%9A%8F%E6%83%B3/as/</url>
+    <content><![CDATA[<p>这是一个导航网站项目，旨在收集网络资源。为了提供更好的体验，必须提供后台，用于对网站数据的编辑</p>
+<p>整理需求，功能列举</p>
+<p>设计页面，配色，主题</p>
+<p>后台数据库设计，接口开发</p>
+<p>前端页面实现</p>
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+  </entry>
+  <entry>
+    <title></title>
     <url>/2020/06/27/%E9%9A%8F%E6%83%B3/readme/</url>
     <content><![CDATA[<p>这是一个electron项目，属于聚合项目，集合多种功能，方便我的使用</p>
 <ol>
@@ -63,19 +76,6 @@
 <li><p>提供markdown项目部署</p>
 </li>
 </ol>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2020/06/27/%E9%9A%8F%E6%83%B3/as/</url>
-    <content><![CDATA[<p>这是一个导航网站项目，旨在收集网络资源。为了提供更好的体验，必须提供后台，用于对网站数据的编辑</p>
-<p>整理需求，功能列举</p>
-<p>设计页面，配色，主题</p>
-<p>后台数据库设计，接口开发</p>
-<p>前端页面实现</p>
 ]]></content>
       <categories>
         <category>随想</category>
@@ -143,40 +143,40 @@
 <h4 id="input"><a href="#input" class="headerlink" title="input"></a>input</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &#39;input&#39;,</span><br><span class="line">    message: &#39;设置一个用户名:&#39;,</span><br><span class="line">    name: &#39;name&#39;,</span><br><span class="line">    default: &quot;test_user&quot; &#x2F;&#x2F; 默认值</span><br><span class="line">&#125;,&#123;</span><br><span class="line">    type: &#39;input&#39;,</span><br><span class="line">    message: &#39;请输入手机号:&#39;,</span><br><span class="line">    name: &#39;phone&#39;,</span><br><span class="line">    validate: function(val) &#123;</span><br><span class="line">        if(val.match(&#x2F;\d&#123;11&#125;&#x2F;g)) &#123; &#x2F;&#x2F; 校验位数</span><br><span class="line">            return val;</span><br><span class="line">        &#125;</span><br><span class="line">        return &quot;请输入11位数字&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/20180526163529495" alt="input"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526163529495.jpg" alt="input"></p>
 <h4 id="confirm"><a href="#confirm" class="headerlink" title="confirm"></a>confirm</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;confirm&quot;,</span><br><span class="line">    message: &quot;是否使用监听？&quot;,</span><br><span class="line">    name: &quot;watch&quot;,</span><br><span class="line">    prefix: &quot;前缀&quot;</span><br><span class="line">&#125;,&#123;</span><br><span class="line">    type: &quot;confirm&quot;,</span><br><span class="line">    message: &quot;是否进行文件过滤？&quot;,</span><br><span class="line">    name: &quot;filter&quot;,</span><br><span class="line">    suffix: &quot;后缀&quot;,</span><br><span class="line">    when: function(answers) &#123; &#x2F;&#x2F; 当watch为true的时候才会提问当前问题</span><br><span class="line">        return answers.watch</span><br><span class="line">    &#125;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/20180526171059692" alt="confirm_y"></p>
-<p><img src="/images/20180526171118828" alt="confirm_n"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171059692.jpg" alt="confirm_y"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171118828.jpg" alt="confirm_n"></p>
 <h4 id="list"><a href="#list" class="headerlink" title="list"></a>list</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &#39;list&#39;,</span><br><span class="line">    message: &#39;请选择一种水果:&#39;,</span><br><span class="line">    name: &#39;fruit&#39;,</span><br><span class="line">    choices: [</span><br><span class="line">        &quot;Apple&quot;,</span><br><span class="line">        &quot;Pear&quot;,</span><br><span class="line">        &quot;Banana&quot;</span><br><span class="line">    ],</span><br><span class="line">    filter: function (val) &#123; &#x2F;&#x2F; 使用filter将回答变为小写</span><br><span class="line">        return val.toLowerCase();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/20180526171358697" alt="list_1"></p>
-<p><img src="/images/20180526171252867" alt="list"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171358697.jpg" alt="list_1"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171252867.jpg" alt="list"></p>
 <h4 id="rawlist"><a href="#rawlist" class="headerlink" title="rawlist"></a>rawlist</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &#39;rawlist&#39;,</span><br><span class="line">    message: &#39;请选择一种水果:&#39;,</span><br><span class="line">    name: &#39;fruit&#39;,</span><br><span class="line">    choices: [</span><br><span class="line">        &quot;Apple&quot;,</span><br><span class="line">        &quot;Pear&quot;,</span><br><span class="line">        &quot;Banana&quot;</span><br><span class="line">    ]</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/20180526171501268" alt="rawlist"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171501268.jpg" alt="rawlist"></p>
 <h4 id="expand"><a href="#expand" class="headerlink" title="expand"></a>expand</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;expand&quot;,</span><br><span class="line">    message: &quot;请选择一种水果：&quot;,</span><br><span class="line">    name: &quot;fruit&quot;,</span><br><span class="line">    choices: [</span><br><span class="line">        &#123;</span><br><span class="line">            key: &quot;a&quot;,</span><br><span class="line">            name: &quot;Apple&quot;,</span><br><span class="line">            value: &quot;apple&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            key: &quot;O&quot;,</span><br><span class="line">            name: &quot;Orange&quot;,</span><br><span class="line">            value: &quot;orange&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            key: &quot;p&quot;,</span><br><span class="line">            name: &quot;Pear&quot;,</span><br><span class="line">            value: &quot;pear&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/2018052617182848" alt="expend_1"></p>
-<p><img src="/images/2018052617184757" alt="expend_2"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/2018052617182848.jpg" alt="expend_1"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/2018052617184757.jpg" alt="expend_2"></p>
 <h4 id="checkbox"><a href="#checkbox" class="headerlink" title="checkbox"></a>checkbox</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;checkbox&quot;,</span><br><span class="line">    message: &quot;选择颜色:&quot;,</span><br><span class="line">    name: &quot;color&quot;,</span><br><span class="line">    choices: [</span><br><span class="line">        &#123;</span><br><span class="line">            name: &quot;red&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        new inquirer.Separator(), &#x2F;&#x2F; 添加分隔符</span><br><span class="line">        &#123;</span><br><span class="line">            name: &quot;blur&quot;,</span><br><span class="line">            checked: true &#x2F;&#x2F; 默认选中</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            name: &quot;green&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        new inquirer.Separator(&quot;--- 分隔符 ---&quot;), &#x2F;&#x2F; 自定义分隔符</span><br><span class="line">        &#123;</span><br><span class="line">            name: &quot;yellow&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;];</span><br><span class="line">&#x2F;&#x2F; 或者下面这样</span><br><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;checkbox&quot;,</span><br><span class="line">    message: &quot;选择颜色:&quot;,</span><br><span class="line">    name: &quot;color&quot;,</span><br><span class="line">    choices: [</span><br><span class="line">        &quot;red&quot;,</span><br><span class="line">        &quot;blur&quot;,</span><br><span class="line">        &quot;green&quot;,</span><br><span class="line">        &quot;yellow&quot;</span><br><span class="line">    ],</span><br><span class="line">    pageSize: 2 &#x2F;&#x2F; 设置行数</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/20180526172231673" alt="checkbox_sep"></p>
-<p><img src="/images/20180526172246307" alt="checkbox_size"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526172231673.jpg" alt="checkbox_sep"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526172246307.jpg" alt="checkbox_size"></p>
 <h4 id="password"><a href="#password" class="headerlink" title="password"></a>password</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;password&quot;, &#x2F;&#x2F; 密码为密文输入</span><br><span class="line">    message: &quot;请输入密码：&quot;,</span><br><span class="line">    name: &quot;pwd&quot;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/2018052617241416" alt="pwd"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/2018052617241416.jpg" alt="pwd"></p>
 <h4 id="editor"><a href="#editor" class="headerlink" title="editor"></a>editor</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;editor&quot;,</span><br><span class="line">    message: &quot;请输入备注：&quot;,</span><br><span class="line">    name: &quot;editor&quot;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/20180526172640212" alt="editor_inset"></p>
-<p><img src="/images/20180526172652359" alt="editor_res"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526172640212.jpg" alt="editor_inset"></p>
+<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526172652359.jpg" alt="editor_res"></p>
 ]]></content>
       <categories>
         <category>npm</category>
