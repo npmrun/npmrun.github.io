@@ -29,7 +29,7 @@
 <meta property="og:description" content="解释在 CSS 中，可替换元素（replaced element）的展现效果不是由 CSS 来控制的。这些元素是一种外部对象，它们外观的渲染，是独立于 CSS 的。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-06-14T18:34:12.000Z">
-<meta property="article:modified_time" content="2020-06-26T17:26:59.252Z">
+<meta property="article:modified_time" content="2020-06-27T06:51:48.200Z">
 <meta property="article:author" content="Dash King">
 <meta name="twitter:card" content="summary">
 
@@ -77,6 +77,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="Dash" type="application/atom+xml">
 </head>
  
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -156,9 +157,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" placeholder="搜索..." spellcheck="false" type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -182,7 +181,7 @@
     <span>0%</span>
   </div>
 
-  <a href="https://github.com/npmrun" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+  <a href="https://github.com/npmrun" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="external nofollow noopener noreferrer" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
 
 
     <main class="main">
@@ -202,7 +201,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/static/avatar.jpg">
       <meta itemprop="name" content="Dash King">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -228,7 +227,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-26 17:26:59" itemprop="dateModified" datetime="2020-06-26T17:26:59+00:00">2020-06-26</time>
+                <time title="修改时间：2020-06-27 06:51:48" itemprop="dateModified" datetime="2020-06-27T06:51:48+00:00">2020-06-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -265,47 +264,47 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>在 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank" rel="noopener">CSS</a> 中，<strong>可替换元素</strong>（<strong>replaced element</strong>）的展现效果不是由 CSS 来控制的。这些元素是一种外部对象，它们外观的渲染，是独立于 CSS 的。</p>
+        <h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>在 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank" rel="external nofollow noopener noreferrer">CSS</a> 中，<strong>可替换元素</strong>（<strong>replaced element</strong>）的展现效果不是由 CSS 来控制的。这些元素是一种外部对象，它们外观的渲染，是独立于 CSS 的。</p>
 <a id="more"></a>
 
 <p>简单来说，它们的内容不受当前文档的样式的影响。CSS 可以影响可替换元素的位置，但不会影响到可替换元素自身的内容。某些可替换元素，例如 <code>[&lt;iframe&gt;](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe)</code>元素，可能具有自己的样式表，但它们不会继承父文档的样式。</p>
-<p>CSS 能对可替换元素产生的唯一影响在于，部分属性支持控制元素内容在其框中的位置或定位方式。有关详细信息，请参阅本文下面的<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element#控制内容框中的对象位置" target="_blank" rel="noopener">控制内容框中的对象位置</a>。</p>
+<p>CSS 能对可替换元素产生的唯一影响在于，部分属性支持控制元素内容在其框中的位置或定位方式。有关详细信息，请参阅本文下面的<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element#控制内容框中的对象位置" target="_blank" rel="external nofollow noopener noreferrer">控制内容框中的对象位置</a>。</p>
 <h2 id="可替换元素"><a href="#可替换元素" class="headerlink" title="可替换元素"></a>可替换元素</h2><p>典型的可替换元素有：</p>
 <ul>
-<li><p><code>&lt;iframe&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe</a></p>
+<li><p><code>&lt;iframe&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe</a></p>
 </li>
-<li><p><code>&lt;video&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video</a></p>
+<li><p><code>&lt;video&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video</a></p>
 </li>
-<li><p><code>&lt;embed&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/embed" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/embed</a></p>
+<li><p><code>&lt;embed&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/embed" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/embed</a></p>
 </li>
-<li><p><code>&lt;img&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img</a></p>
+<li><p><code>&lt;img&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img</a></p>
 </li>
 </ul>
 <p>有些元素仅在特定情况下被作为可替换元素处理，例如：</p>
 <ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/option" target="_blank" rel="noopener"><code>&lt;option&gt;</code></a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio" target="_blank" rel="noopener"><code>audio</code></a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/canvas" target="_blank" rel="noopener"><code>canvas</code></a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/object" target="_blank" rel="noopener"><code>object</code></a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/applet" target="_blank" rel="noopener"><code>applet</code></a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/option" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;option&gt;</code></a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio" target="_blank" rel="external nofollow noopener noreferrer"><code>audio</code></a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/canvas" target="_blank" rel="external nofollow noopener noreferrer"><code>canvas</code></a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/object" target="_blank" rel="external nofollow noopener noreferrer"><code>object</code></a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/applet" target="_blank" rel="external nofollow noopener noreferrer"><code>applet</code></a></li>
 </ul>
-<p>HTML 规范也说了 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="noopener"><code>&lt;input&gt;</code></a> 元素可替换，因为 <code>&quot;image&quot;</code> 类型的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="noopener"><code>&lt;input&gt;</code></a> 元素就像<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" target="_blank" rel="noopener"><code>&lt;img&gt;</code></a>一样被替换。但是其他形式的控制元素，包括其他类型的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="noopener"><code>&lt;input&gt;</code></a> 元素，被明确地列为非可替换元素（non-replaced elements）。该规范用术语小挂件（Widgets）来描述它们默认的限定平台的渲染行为。</p>
-<p>用 CSS <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/content" target="_blank" rel="noopener"><code>content</code></a> 属性插入的对象是匿名的可替换元素。它们并不存在于 HTML 标记中，因此是“匿名的”。</p>
-<h2 id="CSS-与可替换元素"><a href="#CSS-与可替换元素" class="headerlink" title="CSS 与可替换元素"></a>CSS 与可替换元素</h2><p>CSS 在某些情况下会对可替换元素做一些特殊处理，比如计算外边距（<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin" target="_blank" rel="noopener"><code>margin</code></a>）和一些 <code>auto</code> 的具体值。</p>
-<p>需要注意的是，一部分（并非全部）可替换元素，其本身具有的尺寸和基线（baseline）会被一些 CSS 属性用到，加入计算之中，例如 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/vertical-align" target="_blank" rel="noopener"><code>vertical-align</code></a>。只有可替换元素才能具有这种自带值。</p>
+<p>HTML 规范也说了 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;input&gt;</code></a> 元素可替换，因为 <code>&quot;image&quot;</code> 类型的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;input&gt;</code></a> 元素就像<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;img&gt;</code></a>一样被替换。但是其他形式的控制元素，包括其他类型的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;input&gt;</code></a> 元素，被明确地列为非可替换元素（non-replaced elements）。该规范用术语小挂件（Widgets）来描述它们默认的限定平台的渲染行为。</p>
+<p>用 CSS <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/content" target="_blank" rel="external nofollow noopener noreferrer"><code>content</code></a> 属性插入的对象是匿名的可替换元素。它们并不存在于 HTML 标记中，因此是“匿名的”。</p>
+<h2 id="CSS-与可替换元素"><a href="#CSS-与可替换元素" class="headerlink" title="CSS 与可替换元素"></a>CSS 与可替换元素</h2><p>CSS 在某些情况下会对可替换元素做一些特殊处理，比如计算外边距（<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin" target="_blank" rel="external nofollow noopener noreferrer"><code>margin</code></a>）和一些 <code>auto</code> 的具体值。</p>
+<p>需要注意的是，一部分（并非全部）可替换元素，其本身具有的尺寸和基线（baseline）会被一些 CSS 属性用到，加入计算之中，例如 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/vertical-align" target="_blank" rel="external nofollow noopener noreferrer"><code>vertical-align</code></a>。只有可替换元素才能具有这种自带值。</p>
 <blockquote>
 <p> 控制内容框中的对象位置</p>
 </blockquote>
-<p>某些CSS属性可用于指定 可替换元素中包含的内容对象 在该元素的盒区域内的位置或定位方式。这些属性的具体定义可以在 <a href="https://drafts.csswg.org/css-images-3/" target="_blank" rel="noopener">CSS Images Module Level 3</a> 和 <a href="https://drafts.csswg.org/css-images-4/" target="_blank" rel="noopener">CSS Images Module Level 4</a> 规范中找到：</p>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit" target="_blank" rel="noopener"><code>object-fit</code></a></p>
-<p>指定可替换元素的内容对象在元素盒区域中的填充方式。（有些类似于 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-size" target="_blank" rel="noopener"><code>background-size</code></a> ）</p>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-position" target="_blank" rel="noopener"><code>object-position</code></a></p>
-<p>指定可替换元素的内容对象在元素盒区域中的位置。（类似于 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-position" target="_blank" rel="noopener"><code>background-position</code></a> ）</p>
+<p>某些CSS属性可用于指定 可替换元素中包含的内容对象 在该元素的盒区域内的位置或定位方式。这些属性的具体定义可以在 <a href="https://drafts.csswg.org/css-images-3/" target="_blank" rel="external nofollow noopener noreferrer">CSS Images Module Level 3</a> 和 <a href="https://drafts.csswg.org/css-images-4/" target="_blank" rel="external nofollow noopener noreferrer">CSS Images Module Level 4</a> 规范中找到：</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit" target="_blank" rel="external nofollow noopener noreferrer"><code>object-fit</code></a></p>
+<p>指定可替换元素的内容对象在元素盒区域中的填充方式。（有些类似于 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-size" target="_blank" rel="external nofollow noopener noreferrer"><code>background-size</code></a> ）</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-position" target="_blank" rel="external nofollow noopener noreferrer"><code>object-position</code></a></p>
+<p>指定可替换元素的内容对象在元素盒区域中的位置。（类似于 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-position" target="_blank" rel="external nofollow noopener noreferrer"><code>background-position</code></a> ）</p>
 <blockquote>
 <h2 id="参见"><a href="#参见" class="headerlink" title="参见"></a>参见</h2><ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element</a></li>
-<li>可替换元素的 <a href="https://html.spec.whatwg.org/multipage/rendering.html#replaced-elements" target="_blank" rel="noopener">HTML 规范</a></li>
-<li>CSS Key Concepts: <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Syntax" target="_blank" rel="noopener">CSS 语法</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/At-rule" target="_blank" rel="noopener">@规则</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Comments" target="_blank" rel="noopener">注释</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity" target="_blank" rel="noopener">优先级</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/inheritance" target="_blank" rel="noopener">继承</a>, the <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank" rel="noopener">盒模型</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Layout_mode" target="_blank" rel="noopener">布局模式</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Visual_formatting_model" target="_blank" rel="noopener">视觉格式化模型</a>，以及<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing" target="_blank" rel="noopener">外边距合并</a>，或者<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/initial_value" target="_blank" rel="noopener">初始</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/computed_value" target="_blank" rel="noopener">计算</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/resolved_value" target="_blank" rel="noopener">解析</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/specified_value" target="_blank" rel="noopener">指定</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/used_value" target="_blank" rel="noopener">使用</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/actual_value" target="_blank" rel="noopener">实际</a>值。 Definitions of <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Value_definition_syntax" target="_blank" rel="noopener">值语法</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Shorthand_properties" target="_blank" rel="noopener">简写属性</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="noopener">可替换元素</a>。</li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element</a></li>
+<li>可替换元素的 <a href="https://html.spec.whatwg.org/multipage/rendering.html#replaced-elements" target="_blank" rel="external nofollow noopener noreferrer">HTML 规范</a></li>
+<li>CSS Key Concepts: <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Syntax" target="_blank" rel="external nofollow noopener noreferrer">CSS 语法</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/At-rule" target="_blank" rel="external nofollow noopener noreferrer">@规则</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Comments" target="_blank" rel="external nofollow noopener noreferrer">注释</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity" target="_blank" rel="external nofollow noopener noreferrer">优先级</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/inheritance" target="_blank" rel="external nofollow noopener noreferrer">继承</a>, the <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank" rel="external nofollow noopener noreferrer">盒模型</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Layout_mode" target="_blank" rel="external nofollow noopener noreferrer">布局模式</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Visual_formatting_model" target="_blank" rel="external nofollow noopener noreferrer">视觉格式化模型</a>，以及<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing" target="_blank" rel="external nofollow noopener noreferrer">外边距合并</a>，或者<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/initial_value" target="_blank" rel="external nofollow noopener noreferrer">初始</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/computed_value" target="_blank" rel="external nofollow noopener noreferrer">计算</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/resolved_value" target="_blank" rel="external nofollow noopener noreferrer">解析</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/specified_value" target="_blank" rel="external nofollow noopener noreferrer">指定</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/used_value" target="_blank" rel="external nofollow noopener noreferrer">使用</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/actual_value" target="_blank" rel="external nofollow noopener noreferrer">实际</a>值。 Definitions of <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Value_definition_syntax" target="_blank" rel="external nofollow noopener noreferrer">值语法</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Shorthand_properties" target="_blank" rel="external nofollow noopener noreferrer">简写属性</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="external nofollow noopener noreferrer">可替换元素</a>。</li>
 </ul>
 </blockquote>
 
@@ -395,8 +394,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Dash King"
-      src="/static/avatar.jpg">
+    <img class="site-author-image" itemprop="image" alt="Dash King" src="/static/avatar.jpg">
   <p class="site-author-name" itemprop="name">Dash King</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -410,7 +408,7 @@
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-        <span class="site-state-item-count">24</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -422,7 +420,7 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/npmrun" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;npmrun" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+        <a href="https://github.com/npmrun" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;npmrun" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fw fa-github"></i></a>
       </span>
   </div>
 
@@ -434,7 +432,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <a href="https://onestar.newstar.net.cn/" title="https:&#x2F;&#x2F;onestar.newstar.net.cn&#x2F;" rel="noopener" target="_blank">ONESTAR</a>
+          <a href="https://onestar.newstar.net.cn/" title="https:&#x2F;&#x2F;onestar.newstar.net.cn&#x2F;" rel="external nofollow noopener noreferrer" target="_blank">ONESTAR</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://wiki.poorman.top/" title="http:&#x2F;&#x2F;wiki.poorman.top" rel="external nofollow noopener noreferrer" target="_blank">wiki版</a>
         </li>
     </ul>
   </div>
@@ -464,7 +465,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Dash King</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="external nofollow noopener noreferrer" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="external nofollow noopener noreferrer" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
         

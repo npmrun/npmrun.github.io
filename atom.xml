@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Dash</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://npmrun.github.io/"/>
+  <updated>2020-06-27T06:51:48.216Z</updated>
+  <id>https://npmrun.github.io/</id>
+  
+  <author>
+    <name>Dash King</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://npmrun.github.io/2020/06/27/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/%E5%90%8C%E6%BA%90%E4%B8%8E%E8%B7%A8%E5%9F%9F/%E7%BB%86%E8%AF%B4%E5%90%8C%E5%9F%9F-%E5%90%8C%E7%88%B6%E5%9F%9F-%E8%B7%A8%E5%9F%9F/"/>
+    <id>https://npmrun.github.io/2020/06/27/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/%E5%90%8C%E6%BA%90%E4%B8%8E%E8%B7%A8%E5%9F%9F/%E7%BB%86%E8%AF%B4%E5%90%8C%E5%9F%9F-%E5%90%8C%E7%88%B6%E5%9F%9F-%E8%B7%A8%E5%9F%9F/</id>
+    <published>2020-06-27T06:52:11.828Z</published>
+    <updated>2020-06-27T06:51:48.216Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>一、域名级别</strong></p><p><strong>域名</strong>级别是网址分类的一个标准，包括顶级域名、二级域名等。一个完整的域名由二个或二个以上部分组成，各部分之间用英文的句号”.”来分隔，倒数第一个”.”的右边部分称为<strong>顶级域名</strong>（TLD，也称为一级域名，包含一个合法字符串和一个域名后缀），顶级域名的左边部分字符串到下个”.”为止称为二级域名（SLD），二级域名的左边部分称为三级域名，以此类推，每一级的域名控制它下一级域名的分配。</p><p><strong>二、域名组成</strong></p><p>域名组成方式是由一下域名级别类型构成的</p><ol><li>顶级域名</li><li>二级域名</li><li>三级域名</li><li>国家代码域名</li></ol><p><strong>顶级域名</strong>：分为两类：　一是国家顶级域名（nationaltop-leveldomainnames，简称nTLDs），目前200多个国家都按照ISO3166国家代码分配了顶级域名，例如中国是cn，美国是us，日本是jp等；二是国际顶级域名（internationaltop-leveldomainnames，简称iTDs），例如表示工商企业的.com，表示网络提供商的.net，表示非盈利组织的.org等。目前大多数域名争议都发生在com的顶级域名下，因为多数公司上网的目的都是为了赢利。为加强域名管理，解决域名资源的紧张，Internet协会、Internet分址机构及世界知识产权组织（WIPO）等国际组织经过广泛协商，在原来三个国际通用顶级域名：（com）的基础上，新增加了7个国际通用顶级域名：firm（公司企业）、store（销售公司或企业）、Web（突出WWW活动的单位）、arts（突出文化、娱乐活动的单位）、rec(突出消遣、娱乐活动的单位）、info(提供信息服务的单位）、nom(个人），并在世界范围内选择新的注册机构来受理域名注册申请。</p><p><strong>二级域名：</strong>是指顶级域名之下的域名，在国际顶级域名下，它是指域名注册人的网上名称，例如ibm，yahoo，microsoft等；在国家顶级域名下，它是表示注册企业类别的符号，例如com，edu，gov，net等。　中国在国际互联网络信息中心（InterNIC）正式注册并运行的顶级域名是cn，这也是中国的一级域名。在顶级域名之下，中国的二级域名又分为类别域名和行政区域名两类。类别域名共6个，包括用于科研机构的ac；用于工商金融企业的com；用于教育机构的edu；用于政府部门的gov；用于互联网络信息中心和运行中心的net；用于非盈利组织的org。而行政区域名有34个，分别对应于中国各省、自治区和直辖市。</p><p><strong>三级域名</strong>：用字母（A～Z，a～z，大小写等）、数字（0～9）和连接符（－）组成，各级域名之间用实点（.）连接，三级域名的长度不能超过20个字符。如无特殊原因，建议采用申请人的英文名（或者缩写）或者汉语拼音名（或者缩写）作为三级域名，以保持域名的清晰性和简洁性。</p><p><strong>国家代码</strong>：由两个字母组成的顶级域名如.cn,.uk,.de和.jp称为国家代码顶级域名（ccTLDs),其中.cn是中国专用的顶级域名，其注册归CNNIC管理，以.cn结尾的二级域名我们简称为国内域名。注册国家代码顶级域名下的二级域名的规则和政策与不同的国家的政策有关。您在注册时应咨询域名注册机构，问清相关的注册条件及与注册相关的条款。某些域名注册商除了提供以.com,.net和.org结尾的域名的注册服务之外，还提供国家代码顶级域名的注册。ICANN并没有特别授权注册商提供国家代码顶级域名的注册服务。</p><p><strong>三、同域-同父域-跨域区分</strong></p><p><strong>同域</strong>：即同源，所谓同源，指的是协议、域名、端口号都必须完全相同。这里同源既是同域。</p><p><strong>同父域</strong>：即存在父域相同。例如，Http：<a href="http://www.baidu.com/" target="_blank" rel="external nofollow noopener noreferrer">www.baidu.com/</a> 与Http：ww.baidu.com/ 就是同父域。</p><p><strong>跨域</strong>：所谓跨域，就是不同源（IP地址相同，但域名不同也是跨域）。那这里的同父域你就懂得了？</p><blockquote><p>原文链接：</p><p><a href="https://www.cnblogs.com/julygift/p/8535825.html" target="_blank" rel="external nofollow noopener noreferrer">https://www.cnblogs.com/julygift/p/8535825.html</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;一、域名级别&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;域名&lt;/strong&gt;级别是网址分类的一个标准，包括顶级域名、二级域名等。一个完整的域名由二个或二个以上部分组成，各部分之间用英文的句号”.”来分隔，倒数第一个”.”的右边部分称为&lt;strong&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="知识" scheme="https://npmrun.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="前端" scheme="https://npmrun.github.io/categories/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="同源与跨域" scheme="https://npmrun.github.io/categories/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/%E5%90%8C%E6%BA%90%E4%B8%8E%E8%B7%A8%E5%9F%9F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://npmrun.github.io/2020/06/27/%E9%9A%8F%E6%83%B3/readme/"/>
+    <id>https://npmrun.github.io/2020/06/27/%E9%9A%8F%E6%83%B3/readme/</id>
+    <published>2020-06-27T06:52:11.768Z</published>
+    <updated>2020-06-27T06:51:48.216Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是一个electron项目，属于聚合项目，集合多种功能，方便我的使用</p><ol><li><p>用于开发一个代码笔记项目。记录灵感释放的瞬间。</p></li><li><p>提供markdown项目部署</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这是一个electron项目，属于聚合项目，集合多种功能，方便我的使用&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;用于开发一个代码笔记项目。记录灵感释放的瞬间。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;提供markdown项目部署&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="随想" scheme="https://npmrun.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://npmrun.github.io/2020/06/27/%E9%9A%8F%E6%83%B3/as/"/>
+    <id>https://npmrun.github.io/2020/06/27/%E9%9A%8F%E6%83%B3/as/</id>
+    <published>2020-06-27T06:52:11.764Z</published>
+    <updated>2020-06-27T06:51:48.216Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是一个导航网站项目，旨在收集网络资源。为了提供更好的体验，必须提供后台，用于对网站数据的编辑</p><p>整理需求，功能列举</p><p>设计页面，配色，主题</p><p>后台数据库设计，接口开发</p><p>前端页面实现</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这是一个导航网站项目，旨在收集网络资源。为了提供更好的体验，必须提供后台，用于对网站数据的编辑&lt;/p&gt;
+&lt;p&gt;整理需求，功能列举&lt;/p&gt;
+&lt;p&gt;设计页面，配色，主题&lt;/p&gt;
+&lt;p&gt;后台数据库设计，接口开发&lt;/p&gt;
+&lt;p&gt;前端页面实现&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="随想" scheme="https://npmrun.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>西风颂---灵感</title>
+    <link href="https://npmrun.github.io/2020/06/23/%E5%B0%8F%E8%AF%B4/%E8%A5%BF%E9%A3%8E%E9%A2%82---%E7%81%B5%E6%84%9F/"/>
+    <id>https://npmrun.github.io/2020/06/23/%E5%B0%8F%E8%AF%B4/%E8%A5%BF%E9%A3%8E%E9%A2%82---%E7%81%B5%E6%84%9F/</id>
+    <published>2020-06-23T12:30:49.000Z</published>
+    <updated>2020-06-27T06:51:48.212Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="墟城"><a href="#墟城" class="headerlink" title="墟城"></a>墟城</h2><h3 id="废墟城"><a href="#废墟城" class="headerlink" title="废墟城"></a>废墟城</h3><p>主角生活在废墟城城郊，主要工作是一个企业的小职员，大学毕业就来到了这个城市，然后准备干一番事业。这个世界是力量与科技的结合，修仙者吸收天地源力，凡人追寻科技进步。又力量的差距，必定存在着等级的差距，现在凡人的科技尚弱，但是表现的威力开始引起了修仙者的注意，也是此时，修仙者开始入世。</p><p>主角所在的是一个小公司，主要靠接客户的订单完成相应的任务赚取酬劳。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;墟城&quot;&gt;&lt;a href=&quot;#墟城&quot; class=&quot;headerlink&quot; title=&quot;墟城&quot;&gt;&lt;/a&gt;墟城&lt;/h2&gt;&lt;h3 id=&quot;废墟城&quot;&gt;&lt;a href=&quot;#废墟城&quot; class=&quot;headerlink&quot; title=&quot;废墟城&quot;&gt;&lt;/a&gt;废墟城&lt;/h3&gt;&lt;p
+      
+    
+    </summary>
+    
+    
+      <category term="小说" scheme="https://npmrun.github.io/categories/%E5%B0%8F%E8%AF%B4/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>西风颂</title>
+    <link href="https://npmrun.github.io/2020/06/23/%E5%B0%8F%E8%AF%B4/%E8%A5%BF%E9%A3%8E%E9%A2%82/"/>
+    <id>https://npmrun.github.io/2020/06/23/%E5%B0%8F%E8%AF%B4/%E8%A5%BF%E9%A3%8E%E9%A2%82/</id>
+    <published>2020-06-23T12:27:49.000Z</published>
+    <updated>2020-06-27T06:51:48.212Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>知道吗？修炼乃逆天而为，想要攀上至强的高峰，所付出的一定是你的一切。问题是，你愿意赌上你的一切去追寻那虚无缥缈的未来吗？会么？</p></blockquote><h2 id="远方的来客"><a href="#远方的来客" class="headerlink" title="远方的来客"></a>远方的来客</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;知道吗？修炼乃逆天而为，想要攀上至强的高峰，所付出的一定是你的一切。问题是，你愿意赌上你的一切去追寻那虚无缥缈的未来吗？会么？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;远方的来客&quot;&gt;&lt;a href=&quot;#远方的来客&quot; class=&quot;hea
+      
+    
+    </summary>
+    
+    
+      <category term="小说" scheme="https://npmrun.github.io/categories/%E5%B0%8F%E8%AF%B4/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>inquirer的试用</title>
+    <link href="https://npmrun.github.io/2020/06/23/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/"/>
+    <id>https://npmrun.github.io/2020/06/23/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/</id>
+    <published>2020-06-23T10:31:48.000Z</published>
+    <updated>2020-06-27T06:51:48.136Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>开始通过npm init 创建package.json的时候就有大量与用户的交互(当然也可以通过参数来忽略输入)；而现在大多数工程都是通过脚手架来创建的，使用脚手架的时候最明显的就是与命令行的交互，如果想自己做一个脚手架或者在某些时候要与用户进行交互，这个时候就不得不提到inquirer.js了。</p></blockquote><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>由于交互的问题种类不同，<code>inquirer</code>为每个问题提供很多参数：</p><ul><li><p>type：表示提问的类型，包括：<code>input</code>, <code>confirm</code>, <code>list</code>, <code>rawlist</code>, <code>expand</code>, <code>checkbox</code>, <code>password</code>, <code>editor</code>；</p></li><li><p>name: 存储当前问题回答的变量；</p></li><li><p>message：问题的描述；</p></li><li><p>default：默认值；</p></li><li><p>choices：列表选项，在某些<code>type</code>下可用，并且包含一个分隔符(separator)；</p></li><li><p>validate：对用户的回答进行校验；</p></li><li><p>filter：对用户的回答进行过滤处理，返回处理后的值；</p></li><li><p>transformer：对用户回答的显示效果进行处理(如：修改回答的字体或背景颜色)，但不会影响最终的答案的内容；</p></li><li><p>when：根据前面问题的回答，判断当前问题是否需要被回答；</p></li><li><p>pageSize：修改某些type类型下的渲染行数；</p></li><li><p>prefix：修改message默认前缀；</p></li><li><p>suffix：修改message默认后缀</p></li></ul><blockquote><p>上面的属性(除<code>transformer</code>外)在下面都有对应使用。</p></blockquote><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><h4 id="语法结构"><a href="#语法结构" class="headerlink" title="语法结构"></a>语法结构</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const inquirer &#x3D; require(&#39;inquirer&#39;);</span><br><span class="line"></span><br><span class="line">const promptList &#x3D; [</span><br><span class="line">    &#x2F;&#x2F; 具体交互内容</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">inquirer.prompt(promptList).then(answers &#x3D;&gt; &#123;</span><br><span class="line">    console.log(answers); &#x2F;&#x2F; 返回的结果</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h4 id="input"><a href="#input" class="headerlink" title="input"></a>input</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &#39;input&#39;,</span><br><span class="line">    message: &#39;设置一个用户名:&#39;,</span><br><span class="line">    name: &#39;name&#39;,</span><br><span class="line">    default: &quot;test_user&quot; &#x2F;&#x2F; 默认值</span><br><span class="line">&#125;,&#123;</span><br><span class="line">    type: &#39;input&#39;,</span><br><span class="line">    message: &#39;请输入手机号:&#39;,</span><br><span class="line">    name: &#39;phone&#39;,</span><br><span class="line">    validate: function(val) &#123;</span><br><span class="line">        if(val.match(&#x2F;\d&#123;11&#125;&#x2F;g)) &#123; &#x2F;&#x2F; 校验位数</span><br><span class="line">            return val;</span><br><span class="line">        &#125;</span><br><span class="line">        return &quot;请输入11位数字&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure><p>效果：</p><p><img src="/images/20180526163529495" alt="input"></p><h4 id="confirm"><a href="#confirm" class="headerlink" title="confirm"></a>confirm</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;confirm&quot;,</span><br><span class="line">    message: &quot;是否使用监听？&quot;,</span><br><span class="line">    name: &quot;watch&quot;,</span><br><span class="line">    prefix: &quot;前缀&quot;</span><br><span class="line">&#125;,&#123;</span><br><span class="line">    type: &quot;confirm&quot;,</span><br><span class="line">    message: &quot;是否进行文件过滤？&quot;,</span><br><span class="line">    name: &quot;filter&quot;,</span><br><span class="line">    suffix: &quot;后缀&quot;,</span><br><span class="line">    when: function(answers) &#123; &#x2F;&#x2F; 当watch为true的时候才会提问当前问题</span><br><span class="line">        return answers.watch</span><br><span class="line">    &#125;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure><p>效果：</p><p><img src="/images/20180526171059692" alt="confirm_y"></p><p><img src="/images/20180526171118828" alt="confirm_n"></p><h4 id="list"><a href="#list" class="headerlink" title="list"></a>list</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &#39;list&#39;,</span><br><span class="line">    message: &#39;请选择一种水果:&#39;,</span><br><span class="line">    name: &#39;fruit&#39;,</span><br><span class="line">    choices: [</span><br><span class="line">        &quot;Apple&quot;,</span><br><span class="line">        &quot;Pear&quot;,</span><br><span class="line">        &quot;Banana&quot;</span><br><span class="line">    ],</span><br><span class="line">    filter: function (val) &#123; &#x2F;&#x2F; 使用filter将回答变为小写</span><br><span class="line">        return val.toLowerCase();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure><p>效果：</p><p><img src="/images/20180526171358697" alt="list_1"></p><p><img src="/images/20180526171252867" alt="list"></p><h4 id="rawlist"><a href="#rawlist" class="headerlink" title="rawlist"></a>rawlist</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &#39;rawlist&#39;,</span><br><span class="line">    message: &#39;请选择一种水果:&#39;,</span><br><span class="line">    name: &#39;fruit&#39;,</span><br><span class="line">    choices: [</span><br><span class="line">        &quot;Apple&quot;,</span><br><span class="line">        &quot;Pear&quot;,</span><br><span class="line">        &quot;Banana&quot;</span><br><span class="line">    ]</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure><p>效果：</p><p><img src="/images/20180526171501268" alt="rawlist"></p><h4 id="expand"><a href="#expand" class="headerlink" title="expand"></a>expand</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;expand&quot;,</span><br><span class="line">    message: &quot;请选择一种水果：&quot;,</span><br><span class="line">    name: &quot;fruit&quot;,</span><br><span class="line">    choices: [</span><br><span class="line">        &#123;</span><br><span class="line">            key: &quot;a&quot;,</span><br><span class="line">            name: &quot;Apple&quot;,</span><br><span class="line">            value: &quot;apple&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            key: &quot;O&quot;,</span><br><span class="line">            name: &quot;Orange&quot;,</span><br><span class="line">            value: &quot;orange&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            key: &quot;p&quot;,</span><br><span class="line">            name: &quot;Pear&quot;,</span><br><span class="line">            value: &quot;pear&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure><p>效果：</p><p><img src="/images/2018052617182848" alt="expend_1"></p><p><img src="/images/2018052617184757" alt="expend_2"></p><h4 id="checkbox"><a href="#checkbox" class="headerlink" title="checkbox"></a>checkbox</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;checkbox&quot;,</span><br><span class="line">    message: &quot;选择颜色:&quot;,</span><br><span class="line">    name: &quot;color&quot;,</span><br><span class="line">    choices: [</span><br><span class="line">        &#123;</span><br><span class="line">            name: &quot;red&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        new inquirer.Separator(), &#x2F;&#x2F; 添加分隔符</span><br><span class="line">        &#123;</span><br><span class="line">            name: &quot;blur&quot;,</span><br><span class="line">            checked: true &#x2F;&#x2F; 默认选中</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            name: &quot;green&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        new inquirer.Separator(&quot;--- 分隔符 ---&quot;), &#x2F;&#x2F; 自定义分隔符</span><br><span class="line">        &#123;</span><br><span class="line">            name: &quot;yellow&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;];</span><br><span class="line">&#x2F;&#x2F; 或者下面这样</span><br><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;checkbox&quot;,</span><br><span class="line">    message: &quot;选择颜色:&quot;,</span><br><span class="line">    name: &quot;color&quot;,</span><br><span class="line">    choices: [</span><br><span class="line">        &quot;red&quot;,</span><br><span class="line">        &quot;blur&quot;,</span><br><span class="line">        &quot;green&quot;,</span><br><span class="line">        &quot;yellow&quot;</span><br><span class="line">    ],</span><br><span class="line">    pageSize: 2 &#x2F;&#x2F; 设置行数</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure><p>效果：</p><p><img src="/images/20180526172231673" alt="checkbox_sep"></p><p><img src="/images/20180526172246307" alt="checkbox_size"></p><h4 id="password"><a href="#password" class="headerlink" title="password"></a>password</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;password&quot;, &#x2F;&#x2F; 密码为密文输入</span><br><span class="line">    message: &quot;请输入密码：&quot;,</span><br><span class="line">    name: &quot;pwd&quot;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure><p>效果：</p><p><img src="/images/2018052617241416" alt="pwd"></p><h4 id="editor"><a href="#editor" class="headerlink" title="editor"></a>editor</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;editor&quot;,</span><br><span class="line">    message: &quot;请输入备注：&quot;,</span><br><span class="line">    name: &quot;editor&quot;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure><p>效果：</p><p><img src="/images/20180526172640212" alt="editor_inset"></p><p><img src="/images/20180526172652359" alt="editor_res"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;开始通过npm init 创建package.json的时候就有大量与用户的交互(当然也可以通过参数来忽略输入)；而现在大多数工程都是通过脚手架来创建的，使用脚手架的时候最明显的就是与命令行的交互，如果想自己做一个脚手架或者在某些时候要与用户进行交
+      
+    
+    </summary>
+    
+    
+      <category term="npm" scheme="https://npmrun.github.io/categories/npm/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>npm库</title>
+    <link href="https://npmrun.github.io/2020/06/23/npm/npm%E5%BA%93/"/>
+    <id>https://npmrun.github.io/2020/06/23/npm/npm%E5%BA%93/</id>
+    <published>2020-06-23T10:29:31.000Z</published>
+    <updated>2020-06-27T06:51:48.136Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="命令行相关"><a href="#命令行相关" class="headerlink" title="命令行相关"></a>命令行相关</h3><ul><li><p><code>commander.js</code></p><p>node.js命令行开发工具开发库，使node.js开发CLI工具变得简单，允许快捷的定义形如<code>&lt;command&gt; [options]</code>的命令。</p></li><li><p><code>inquirer.js</code></p><p>node.js 交互式命令行界面开发库，允许方便的定义使用上下左右进行列表选择等交互式命令。</p></li><li><p><code>ora</code></p><p>优雅的命令行<code>Loading</code>动画。</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;命令行相关&quot;&gt;&lt;a href=&quot;#命令行相关&quot; class=&quot;headerlink&quot; title=&quot;命令行相关&quot;&gt;&lt;/a&gt;命令行相关&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;commander.js&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;node.js命令行开发工具开发
+      
+    
+    </summary>
+    
+    
+      <category term="npm" scheme="https://npmrun.github.io/categories/npm/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CSS可替换元素</title>
+    <link href="https://npmrun.github.io/2020/06/14/%E5%89%8D%E7%AB%AF/css/CSS%E5%8F%AF%E6%9B%BF%E6%8D%A2%E5%85%83%E7%B4%A0/"/>
+    <id>https://npmrun.github.io/2020/06/14/%E5%89%8D%E7%AB%AF/css/CSS%E5%8F%AF%E6%9B%BF%E6%8D%A2%E5%85%83%E7%B4%A0/</id>
+    <published>2020-06-14T18:34:12.000Z</published>
+    <updated>2020-06-27T06:51:48.200Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>在 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank" rel="external nofollow noopener noreferrer">CSS</a> 中，<strong>可替换元素</strong>（<strong>replaced element</strong>）的展现效果不是由 CSS 来控制的。这些元素是一种外部对象，它们外观的渲染，是独立于 CSS 的。</p><a id="more"></a><p>简单来说，它们的内容不受当前文档的样式的影响。CSS 可以影响可替换元素的位置，但不会影响到可替换元素自身的内容。某些可替换元素，例如 <code>[&lt;iframe&gt;](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe)</code>元素，可能具有自己的样式表，但它们不会继承父文档的样式。</p><p>CSS 能对可替换元素产生的唯一影响在于，部分属性支持控制元素内容在其框中的位置或定位方式。有关详细信息，请参阅本文下面的<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element#控制内容框中的对象位置" target="_blank" rel="external nofollow noopener noreferrer">控制内容框中的对象位置</a>。</p><h2 id="可替换元素"><a href="#可替换元素" class="headerlink" title="可替换元素"></a>可替换元素</h2><p>典型的可替换元素有：</p><ul><li><p><code>&lt;iframe&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe</a></p></li><li><p><code>&lt;video&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video</a></p></li><li><p><code>&lt;embed&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/embed" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/embed</a></p></li><li><p><code>&lt;img&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img</a></p></li></ul><p>有些元素仅在特定情况下被作为可替换元素处理，例如：</p><ul><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/option" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;option&gt;</code></a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio" target="_blank" rel="external nofollow noopener noreferrer"><code>audio</code></a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/canvas" target="_blank" rel="external nofollow noopener noreferrer"><code>canvas</code></a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/object" target="_blank" rel="external nofollow noopener noreferrer"><code>object</code></a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/applet" target="_blank" rel="external nofollow noopener noreferrer"><code>applet</code></a></li></ul><p>HTML 规范也说了 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;input&gt;</code></a> 元素可替换，因为 <code>&quot;image&quot;</code> 类型的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;input&gt;</code></a> 元素就像<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;img&gt;</code></a>一样被替换。但是其他形式的控制元素，包括其他类型的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;input&gt;</code></a> 元素，被明确地列为非可替换元素（non-replaced elements）。该规范用术语小挂件（Widgets）来描述它们默认的限定平台的渲染行为。</p><p>用 CSS <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/content" target="_blank" rel="external nofollow noopener noreferrer"><code>content</code></a> 属性插入的对象是匿名的可替换元素。它们并不存在于 HTML 标记中，因此是“匿名的”。</p><h2 id="CSS-与可替换元素"><a href="#CSS-与可替换元素" class="headerlink" title="CSS 与可替换元素"></a>CSS 与可替换元素</h2><p>CSS 在某些情况下会对可替换元素做一些特殊处理，比如计算外边距（<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin" target="_blank" rel="external nofollow noopener noreferrer"><code>margin</code></a>）和一些 <code>auto</code> 的具体值。</p><p>需要注意的是，一部分（并非全部）可替换元素，其本身具有的尺寸和基线（baseline）会被一些 CSS 属性用到，加入计算之中，例如 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/vertical-align" target="_blank" rel="external nofollow noopener noreferrer"><code>vertical-align</code></a>。只有可替换元素才能具有这种自带值。</p><blockquote><p> 控制内容框中的对象位置</p></blockquote><p>某些CSS属性可用于指定 可替换元素中包含的内容对象 在该元素的盒区域内的位置或定位方式。这些属性的具体定义可以在 <a href="https://drafts.csswg.org/css-images-3/" target="_blank" rel="external nofollow noopener noreferrer">CSS Images Module Level 3</a> 和 <a href="https://drafts.csswg.org/css-images-4/" target="_blank" rel="external nofollow noopener noreferrer">CSS Images Module Level 4</a> 规范中找到：</p><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit" target="_blank" rel="external nofollow noopener noreferrer"><code>object-fit</code></a></p><p>指定可替换元素的内容对象在元素盒区域中的填充方式。（有些类似于 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-size" target="_blank" rel="external nofollow noopener noreferrer"><code>background-size</code></a> ）</p><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-position" target="_blank" rel="external nofollow noopener noreferrer"><code>object-position</code></a></p><p>指定可替换元素的内容对象在元素盒区域中的位置。（类似于 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-position" target="_blank" rel="external nofollow noopener noreferrer"><code>background-position</code></a> ）</p><blockquote><h2 id="参见"><a href="#参见" class="headerlink" title="参见"></a>参见</h2><ul><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element</a></li><li>可替换元素的 <a href="https://html.spec.whatwg.org/multipage/rendering.html#replaced-elements" target="_blank" rel="external nofollow noopener noreferrer">HTML 规范</a></li><li>CSS Key Concepts: <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Syntax" target="_blank" rel="external nofollow noopener noreferrer">CSS 语法</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/At-rule" target="_blank" rel="external nofollow noopener noreferrer">@规则</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Comments" target="_blank" rel="external nofollow noopener noreferrer">注释</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity" target="_blank" rel="external nofollow noopener noreferrer">优先级</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/inheritance" target="_blank" rel="external nofollow noopener noreferrer">继承</a>, the <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank" rel="external nofollow noopener noreferrer">盒模型</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Layout_mode" target="_blank" rel="external nofollow noopener noreferrer">布局模式</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Visual_formatting_model" target="_blank" rel="external nofollow noopener noreferrer">视觉格式化模型</a>，以及<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing" target="_blank" rel="external nofollow noopener noreferrer">外边距合并</a>，或者<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/initial_value" target="_blank" rel="external nofollow noopener noreferrer">初始</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/computed_value" target="_blank" rel="external nofollow noopener noreferrer">计算</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/resolved_value" target="_blank" rel="external nofollow noopener noreferrer">解析</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/specified_value" target="_blank" rel="external nofollow noopener noreferrer">指定</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/used_value" target="_blank" rel="external nofollow noopener noreferrer">使用</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/actual_value" target="_blank" rel="external nofollow noopener noreferrer">实际</a>值。 Definitions of <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Value_definition_syntax" target="_blank" rel="external nofollow noopener noreferrer">值语法</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Shorthand_properties" target="_blank" rel="external nofollow noopener noreferrer">简写属性</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="external nofollow noopener noreferrer">可替换元素</a>。</li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;解释&quot;&gt;&lt;a href=&quot;#解释&quot; class=&quot;headerlink&quot; title=&quot;解释&quot;&gt;&lt;/a&gt;解释&lt;/h2&gt;&lt;p&gt;在 &lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/CSS&quot; target=&quot;_blank&quot; rel=&quot;external nofollow noopener noreferrer&quot;&gt;CSS&lt;/a&gt; 中，&lt;strong&gt;可替换元素&lt;/strong&gt;（&lt;strong&gt;replaced element&lt;/strong&gt;）的展现效果不是由 CSS 来控制的。这些元素是一种外部对象，它们外观的渲染，是独立于 CSS 的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://npmrun.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>前端SVG库</title>
+    <link href="https://npmrun.github.io/2020/06/14/%E6%94%B6%E9%9B%86/%E5%89%8D%E7%AB%AFSVG%E5%BA%93/"/>
+    <id>https://npmrun.github.io/2020/06/14/%E6%94%B6%E9%9B%86/%E5%89%8D%E7%AB%AFSVG%E5%BA%93/</id>
+    <published>2020-06-14T12:20:31.000Z</published>
+    <updated>2020-06-27T06:51:48.212Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Vivus"><a href="#Vivus" class="headerlink" title="Vivus"></a><a href="http://maxwellito.github.io/vivus/" target="_blank" rel="external nofollow noopener noreferrer">Vivus</a></h3><p>Vivus 是一个能动画js类库，它能够给SVG图像显示出被画出来的过程。Vivus是没有其他类库依赖的（比如jQuery)。你仅仅需要在页面中加入这个.js文件，然后传入需要被用来动画的SVG部分就行。同时通过指定一些配置，它能够在页面加载后直接显示动画效果</p><h3 id="Bonsai"><a href="#Bonsai" class="headerlink" title="Bonsai"></a><a href="http://bonsaijs.org/" target="_blank" rel="external nofollow noopener noreferrer">Bonsai</a></h3><p>Bonsai 是一个功能丰富的 JS 类库，你能够用它来画和 animate 动态内容在网站上。这些内容包括了 HTML5 video、变化的 Canvas 和 SVG。通过 Bonsai 框架，你能画一个简单的矩形、甚至一段矩形，如果你喜欢甚至可以画一个丰富的多人卡通游戏进去。</p><h3 id="Velocity"><a href="#Velocity" class="headerlink" title="Velocity"></a><a href="http://julian.com/research/velocity/" target="_blank" rel="external nofollow noopener noreferrer">Velocity</a></h3><p>Velocity 是一个 JS 类库，它是用来做频繁动画用的。Velocity 的 js 动画“速度”是非常快的。它比JQuery 快，甚至比 CSS 动画还要快。Velocity 的 API 和 $.fn.animate 很像，都是通过$()来操作。velocity()是另一种方法，相比 $().animate()。总而言之，你应该使用一致的animate效果，包括 fadeIn 和 fadeOut 方法（译者：Velocity 提供了 fadeIn 和 fadeOut 方法）。</p><h3 id="Raphael"><a href="#Raphael" class="headerlink" title="Raphael"></a><a href="http://raphaeljs.com/" target="_blank" rel="external nofollow noopener noreferrer">Raphael</a></h3><p>RaphaelJS 也通常是用来在网页上画SVG图和动画的。它兼容各种windows浏览器一直到IE6，因为如此，Raphael成为了市面上最受信赖的js（svg）类库。有了它，你可以制作分析图表、地图、游戏就像在厨房做饭一样。</p><h3 id="Snap"><a href="#Snap" class="headerlink" title="Snap"></a><a href="http://snapsvg.io/" target="_blank" rel="external nofollow noopener noreferrer">Snap</a></h3><p>SnapSVG 是另一个知名 JS 类库，它是由 Dmitry Baranovskiy 开发的（Raphael 同样也是）。同样它也是 Adobe Web Software Group 来维护。和 Raphael 不同的是，它只提供了 ie 最新版支持。这使得 SnapSVG 在体积上小了许多（相比 Raphel）以实现相同的功能（比如 trim）和支持最新的功能。</p><h3 id="Lazy-Line-Painter"><a href="#Lazy-Line-Painter" class="headerlink" title="Lazy Line Painter"></a><a href="http://lazylinepainter.info/" target="_blank" rel="external nofollow noopener noreferrer">Lazy Line Painter</a></h3><p>Laid back Range Painter 是一个 jQuery 插件，通常被用来作绘制图集，有点像 Vivus。通常你会吐槽的是它的也就只有这么一个特殊的功能。让我来解释下，如果你是用Illustrator 或者Inkscape制作的SVG图像，而且SVG图像没有任何颜色上的变化，仅仅是轨迹的变化，可以用它。</p><h3 id="SVG-js"><a href="#SVG-js" class="headerlink" title="SVG.js"></a><a href="http://svgjs.com/" target="_blank" rel="external nofollow noopener noreferrer">SVG.js</a></h3><p>SVG.js 是一个轻量级的操作和动画 SVG 类库。你能够操作变化方向、位置和颜色。这还没完，你甚至可以自己实现插件等一些其他功能。这个实例可以attach一些插件，比如svg.filter.js，他可以为你的图片实现 Gaussian blur, desaturase, compare, sepia 等等功能。</p><h3 id="Walkway"><a href="#Walkway" class="headerlink" title="Walkway"></a><a href="https://github.com/ConnorAtherton/walkway" target="_blank" rel="external nofollow noopener noreferrer">Walkway</a></h3><p>Walkway 支持3种方式, path, line 和 用polyline来画的svg线。它提供了一个很好的例子，绘制了一个PlayStation 的集合动画。</p><h3 id="Progressbar-js"><a href="#Progressbar-js" class="headerlink" title="Progressbar.js"></a><a href="http://kimmobrunfeldt.github.io/progressbar.js/" target="_blank" rel="external nofollow noopener noreferrer">Progressbar.js</a></h3><p>ProgressBar.js 是一个可爱的和易于接受的增长曲线图用来绘制卡通SVG线条。有了它，各种形状都可以用作增长曲线。它集成了一些实用的形状如Range,Circle和Block，你甚至可以自行开发一个增长图通过Illustrator或者其他的矢量图绘制工具。 ProgressBar.js 是轻量级，MIT许可的而且支持IE9+。你可以通过它修改大型柱状增长图。你还可以改变属性生成动画，比如stroke breadth, load opacity, load coloring等等。</p><h3 id="Chartlist-js"><a href="#Chartlist-js" class="headerlink" title="Chartlist.js"></a><a href="http://gionkunz.github.io/chartist-js/" target="_blank" rel="external nofollow noopener noreferrer">Chartlist.js</a></h3><p>Chartist.js 是一个简单的容易被接受的图标库，它是通过SVG绘制的。Chartist的宗旨是提供一个简单的，轻量级的，非侵入式的图表库。你需要提供一些javascript配置对象做一些自定义配置，要不然它会使用默认的配置，即已经默认是排序过后的。</p><p>Chartist是通过 inline-SVG绘制的，所以它对DOM操作影响很小，相对于它提供的功能来说。而且意味着Chartist不会提供个人控制、水印、行为等等一些你能够通过简单的HTML, JavaScript and CSS实现的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Vivus&quot;&gt;&lt;a href=&quot;#Vivus&quot; class=&quot;headerlink&quot; title=&quot;Vivus&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://maxwellito.github.io/vivus/&quot; target=&quot;_blank&quot; rel=&quot;exter
+      
+    
+    </summary>
+    
+    
+      <category term="收集" scheme="https://npmrun.github.io/categories/%E6%94%B6%E9%9B%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>前端Canvas库</title>
+    <link href="https://npmrun.github.io/2020/06/14/%E6%94%B6%E9%9B%86/%E5%89%8D%E7%AB%AFCanvas%E5%BA%93/"/>
+    <id>https://npmrun.github.io/2020/06/14/%E6%94%B6%E9%9B%86/%E5%89%8D%E7%AB%AFCanvas%E5%BA%93/</id>
+    <published>2020-06-14T12:18:47.000Z</published>
+    <updated>2020-06-27T06:51:48.212Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="开源-JavaScript-Canvas-库"><a href="#开源-JavaScript-Canvas-库" class="headerlink" title="开源 JavaScript Canvas 库"></a>开源 JavaScript Canvas 库</h2><ul><li>Processing.js Processing.js是一个开放的编程语言，在不使用Flash或Java小程序的前提下，可以实现程序图像、动画和互动的应用。Processing.js是轻量，易于了解掌握的理想工具，可用于可视化的数据，创建用户界面和开发基于Web的游戏。</li><li>FABRIC.JS FABRIC.JS是一款简单而强大的JavaScript Canvas 库，提供了互动的对象模型，同时还包含 Canvas-to-SVG 解析器。</li><li>oCanvas oCanvas是一个JavaScript框架，用于简化HTML5 Canvas标签的使用，可以利用对象来代替像素。 oCanvas 可以帮助你很容易的在 HTML5 的 Canvas 标签上创建对象，并且创建这些对象的动画</li><li>jCanvas jCanvas 就是一个 jQuery 的绘图插件，它封装了一些绘制图形的方法，只需编写几行代码即可生成图形。</li><li>RGraph RGraph是一个使用HTML5 Canvas标签实现的图表制作Library。利用该Library生成的Chart具有可交互性，当鼠标点击或移过时会显示相应的信息，可以动态加载Chart或对特殊点进行缩放。</li><li>Two.js Two.js 是面向现代 Web 浏览器的一个二维绘图 API。Two.js 可以用于多个场合：SVG，Canvas 和 WebGL，旨在使平面形状和动画的创建更方便，更简洁。</li><li>Paper.js Paper.js是一款开源的矢量图形脚本框架，基于 HTML5 Canvas 开发，提供清晰的场景图、DOM和大量强大的功能用来创建各种向量图和贝塞尔曲线。</li><li>EaselJS EaselJS 是一个封装了 HTML5 画布(Canvas) 元素的 JavaScript 库。</li><li>Kinetic.JS Kinetic.JS 是一个封装了 HTML5 Canvas的JavaScript 库，能为桌面和移动应用提供高性能动画，转场效果，节点嵌套，分层，滤镜，缓存，事件处理以及更多功能。</li><li>Pixi.js Pixi.js 是一个 2D webGL 渲染器，提供无缝 Canvas 回退，支持主流浏览器，包括桌面和移动。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;开源-JavaScript-Canvas-库&quot;&gt;&lt;a href=&quot;#开源-JavaScript-Canvas-库&quot; class=&quot;headerlink&quot; title=&quot;开源 JavaScript Canvas 库&quot;&gt;&lt;/a&gt;开源 JavaScript Canvas
+      
+    
+    </summary>
+    
+    
+      <category term="收集" scheme="https://npmrun.github.io/categories/%E6%94%B6%E9%9B%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>前端动画库</title>
+    <link href="https://npmrun.github.io/2020/06/14/%E6%94%B6%E9%9B%86/%E5%89%8D%E7%AB%AF%E5%8A%A8%E7%94%BB%E5%BA%93/"/>
+    <id>https://npmrun.github.io/2020/06/14/%E6%94%B6%E9%9B%86/%E5%89%8D%E7%AB%AF%E5%8A%A8%E7%94%BB%E5%BA%93/</id>
+    <published>2020-06-14T12:17:46.000Z</published>
+    <updated>2020-06-27T06:51:48.212Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.uisdc.com/10-best-free-animation-libraries" target="_blank" rel="external nofollow noopener noreferrer">https://www.uisdc.com/10-best-free-animation-libraries</a></p><ul><li><p>GSAP <a href="https://greensock.com/gsap" target="_blank" rel="external nofollow noopener noreferrer">https://greensock.com/gsap</a></p></li><li><p>Anime.js <a href="http://animejs.com/" target="_blank" rel="external nofollow noopener noreferrer">http://animejs.com/</a></p></li><li><p>Wicked CSS</p></li><li><p>Animate CSS</p></li><li><p>Tuesday</p></li><li><p>CSShake <a href="http://csshake.surge.sh/" target="_blank" rel="external nofollow noopener noreferrer">http://csshake.surge.sh/</a></p></li><li><p>Mo.js <a href="http://mojs.io/" target="_blank" rel="external nofollow noopener noreferrer">http://mojs.io/</a></p></li><li><p>Animate Plus</p></li><li><p>Bounce.js</p></li><li><p>Magic</p></li><li><p>wow.js <a href="https://www.delac.io/wow/" target="_blank" rel="external nofollow noopener noreferrer">https://www.delac.io/wow/</a></p></li><li><p>GreenSock <a href="https://www.tweenmax.com.cn/" target="_blank" rel="external nofollow noopener noreferrer">https://www.tweenmax.com.cn/</a> 可以用作一镜到底的动画制作</p></li><li><p>fullPage.js <a href="http://www.dowebok.com/demo/2014/77/" target="_blank" rel="external nofollow noopener noreferrer">http://www.dowebok.com/demo/2014/77/</a></p></li><li><p>视差动画库 <a href="http://matthew.wagerfield.com/parallax/" target="_blank" rel="external nofollow noopener noreferrer">http://matthew.wagerfield.com/parallax/</a></p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.uisdc.com/10-best-free-animation-libraries&quot; target=&quot;_blank&quot; rel=&quot;external nofollow noopener noreferrer&quot;&gt;https://www.
+      
+    
+    </summary>
+    
+    
+      <category term="收集" scheme="https://npmrun.github.io/categories/%E6%94%B6%E9%9B%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx中server_name 参数详解</title>
+    <link href="https://npmrun.github.io/2020/06/11/%E7%9F%A5%E8%AF%86/nginx/Nginx%E4%B8%ADserver_name%20%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://npmrun.github.io/2020/06/11/%E7%9F%A5%E8%AF%86/nginx/Nginx%E4%B8%ADserver_name%20%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3/</id>
+    <published>2020-06-11T12:01:02.000Z</published>
+    <updated>2020-06-27T06:51:48.212Z</updated>
+    
+    <content type="html"><![CDATA[<p>Nginx中的<code>server_name</code>指令主要用于配置基于名称的虚拟主机，<code>server_name</code>指令在接到请求后的匹配顺序分别为：</p><p>1、准确的server_name匹配，例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">     listen       80;</span><br><span class="line">     server_name  domain.com  www.domain.com;</span><br><span class="line">     ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>2、以*通配符开始的字符串：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">     listen       80;</span><br><span class="line">     server_name  *.domain.com;     ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>3、以*通配符结束的字符串：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">     listen       80;</span><br><span class="line">     server_name  www.*;</span><br><span class="line">     ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>4、匹配正则表达式：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">     listen       80;</span><br><span class="line">     server_name  ~^(?.+)\.domain\.com$;     ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><code>nginx</code>将按照1,2,3,4的顺序对<code>server name</code>进行匹配，只有有一项匹配以后就会停止搜索，所以我们在使用这个指令的时候一定要分清楚它的匹配顺序（类似于<code>location</code>指令）。</p><p><code>server_name</code>指令一项很实用的功能便是可以在使用正则表达式的捕获功能，这样可以尽量精简配置文件，毕竟太长的配置文件日常维护也很不方便。下面是2个具体的应用：</p><p>1、在一个server块中配置多个站点：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">server</span><br><span class="line">   &#123;</span><br><span class="line">     listen       80;</span><br><span class="line">     server_name  ~^(www\.)?(.+)$;</span><br><span class="line">     index index.php index.html;</span><br><span class="line">     root  &#x2F;data&#x2F;wwwsite&#x2F;$2;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure><p>站点的主目录应该类似于这样的结构：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;data&#x2F;wwwsite&#x2F;domain.com</span><br><span class="line">&#x2F;data&#x2F;wwwsite&#x2F;nginx.org</span><br><span class="line">&#x2F;data&#x2F;wwwsite&#x2F;baidu.com</span><br><span class="line">&#x2F;data&#x2F;wwwsite&#x2F;google.com</span><br></pre></td></tr></table></figure><p>这样就可以只使用一个server块来完成多个站点的配置。</p><p>2、在一个server块中为一个站点配置多个二级域名。</p><p>实际网站目录结构中我们通常会为站点的二级域名独立创建一个目录，同样我们可以使用正则的捕获来实现在一个server块中配置多个二级域名：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">server</span><br><span class="line">   &#123;</span><br><span class="line">     listen       80;</span><br><span class="line">     server_name  ~^(.+)?\.domain\.com$;     </span><br><span class="line">     index index.html;</span><br><span class="line">     if ($host &#x3D; domain.com)&#123;         </span><br><span class="line">     rewrite ^ http:&#x2F;&#x2F;www.domain.com permanent;     </span><br><span class="line">     &#125;</span><br><span class="line">     root  &#x2F;data&#x2F;wwwsite&#x2F;domain.com&#x2F;$1&#x2F;;   </span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure><p>站点的目录结构应该如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;data&#x2F;wwwsite&#x2F;domain.com&#x2F;www&#x2F;</span><br><span class="line">&#x2F;data&#x2F;wwwsite&#x2F;domain.com&#x2F;nginx&#x2F;</span><br></pre></td></tr></table></figure><p>这样访问<a href="http://www.domain.com时root目录为/data/wwwsite/domain.com/www/，nginx.domain.com时为/data/wwwsite/domain.com/nginx/，以此类推。" target="_blank" rel="external nofollow noopener noreferrer">www.domain.com时root目录为/data/wwwsite/domain.com/www/，nginx.domain.com时为/data/wwwsite/domain.com/nginx/，以此类推。</a></p><p>后面if语句的作用是将domain.com的方位重定向到<a href="http://www.domain.com，这样既解决了网站的主目录访问，又可以增加seo中对www.domain.com的域名权重。" target="_blank" rel="external nofollow noopener noreferrer">www.domain.com，这样既解决了网站的主目录访问，又可以增加seo中对www.domain.com的域名权重。</a></p><p><code>server_name</code>同样也可以使用 ip进行匹配，以下是自己使用IP进行配置单的：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"> upstream web_app &#123;</span><br><span class="line">  server 127.0.0.1:8080 weight&#x3D;1 max_fails&#x3D;2 fail_timeout&#x3D;30s;</span><br><span class="line">  server 127.0.0.1:8081 weight&#x3D;1 max_fails&#x3D;2 fail_timeout&#x3D;30s;</span><br><span class="line">&#125;</span><br><span class="line"> server&#123;</span><br><span class="line"> listen 8093;</span><br><span class="line"> \#server_name 127.0.0.1:8093;</span><br><span class="line"> server_name 192.168.47.128:8093</span><br><span class="line"> access_log  logs&#x2F;host.access.log  main;</span><br><span class="line"> location &#x2F;</span><br><span class="line"> &#123;</span><br><span class="line"> proxy_next_upstream http_502 http_504 error timeout invalid_header;</span><br><span class="line"> proxy_set_header Host  $host;</span><br><span class="line"> proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line"> proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line"> proxy_pass http:&#x2F;&#x2F;web_app;</span><br><span class="line"> expires    3d;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure><p>以上配置的为用两个tomcat做负载均衡，分别为8080、8081，当通过 192.168.47.128:8093 访问时会随机分配到这两个tomcat上,但是在配置时我把 listen 换成 80 就会访问不到，原因还没弄清楚，有知道原因的还请留言告知，不胜感激！！！！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Nginx中的&lt;code&gt;server_name&lt;/code&gt;指令主要用于配置基于名称的虚拟主机，&lt;code&gt;server_name&lt;/code&gt;指令在接到请求后的匹配顺序分别为：&lt;/p&gt;
+&lt;p&gt;1、准确的server_name匹配，例如：&lt;/p&gt;
+&lt;figure clas
+      
+    
+    </summary>
+    
+    
+      <category term="知识" scheme="https://npmrun.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="nginx" scheme="https://npmrun.github.io/categories/%E7%9F%A5%E8%AF%86/nginx/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript与有限状态机</title>
+    <link href="https://npmrun.github.io/2020/06/09/%E7%9F%A5%E8%AF%86/JavaScript%E4%B8%8E%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/"/>
+    <id>https://npmrun.github.io/2020/06/09/%E7%9F%A5%E8%AF%86/JavaScript%E4%B8%8E%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/</id>
+    <published>2020-06-09T10:38:54.000Z</published>
+    <updated>2020-06-27T06:51:48.212Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://zh.wikipedia.org/wiki/有限状态机" target="_blank" rel="external nofollow noopener noreferrer">有限状态机</a>（Finite-state machine）是一个非常有用的模型，可以模拟世界上大部分事物。</p><p><img src="/static/%E7%9F%A5%E8%AF%86/JavaScript%E4%B8%8E%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/images/bg2013090201.png" alt="img"></p><p>简单说，它有三个特征：</p><blockquote><p>　　* 状态总数（state）是有限的。<br>　　* 任一时刻，只处在一种状态之中。<br>　　* 某种条件下，会从一种状态转变（transition）到另一种状态。</p></blockquote><p>它对JavaScript的意义在于，很多对象可以写成有限状态机。</p><p>举例来说，网页上有一个菜单元素。鼠标悬停的时候，菜单显示；鼠标移开的时候，菜单隐藏。如果使用有限状态机描述，就是这个菜单只有两种状态（显示和隐藏），鼠标会引发状态转变。</p><p>代码可以写成下面这样：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">　var menu &#x3D; &#123;</span><br><span class="line">　　　　&#x2F;&#x2F; 当前状态</span><br><span class="line">　　　　currentState: &#39;hide&#39;,</span><br><span class="line">　　　　&#x2F;&#x2F; 绑定事件</span><br><span class="line">　　　　initialize: function() &#123;</span><br><span class="line">　　　　　　var self &#x3D; this;</span><br><span class="line">　　　　　　self.on(&quot;hover&quot;, self.transition);</span><br><span class="line">　　　　&#125;,</span><br><span class="line">　　　　&#x2F;&#x2F; 状态转换</span><br><span class="line">　　　　transition: function(event)&#123;</span><br><span class="line">　　　　　　switch(this.currentState) &#123;</span><br><span class="line">　　　　　　　　case &quot;hide&quot;:</span><br><span class="line">　　　　　　　　　　this.currentState &#x3D; &#39;show&#39;;</span><br><span class="line">　　　　　　　　　　doSomething();</span><br><span class="line">　　　　　　　　　　break;</span><br><span class="line">　　　　　　　　case &quot;show&quot;:</span><br><span class="line">　　　　　　　　　　this.currentState &#x3D; &#39;hide&#39;;</span><br><span class="line">　　　　　　　　　　doSomething();</span><br><span class="line">　　　　　　　　　　break;</span><br><span class="line">　　　　　　　　default:</span><br><span class="line">　　　　　　　　　　console.log(&#39;Invalid State!&#39;);</span><br><span class="line">　　　　　　　　　　break;</span><br><span class="line">　　　　　　&#125;</span><br><span class="line">　　　　&#125;</span><br><span class="line">　　&#125;;</span><br></pre></td></tr></table></figure><p>可以看到，有限状态机的写法，逻辑清晰，表达力强，有利于封装事件。一个对象的状态越多、发生的事件越多，就越适合采用有限状态机的写法。</p><p>另外，JavaScript语言是一种<a href="http://www.ruanyifeng.com/blog/2012/12/asynchronous＿javascript.html" target="_blank" rel="external nofollow noopener noreferrer">异步操作</a>特别多的语言，常用的解决方法是指定回调函数，但这样会造成代码结构混乱、难以测试和除错等问题。有限状态机提供了<a href="http://tech.pro/blog/1402/five-patterns-to-help-you-tame-asynchronous-javascript" target="_blank" rel="external nofollow noopener noreferrer">更好的办法</a>：把异步操作与对象的状态改变挂钩，当异步操作结束的时候，发生相应的状态改变，由此再触发其他操作。这要比回调函数、事件监听、发布/订阅等解决方案，在逻辑上更合理，更易于降低代码的复杂度。</p><p>下面介绍一个有限状态机的函数库<a href="https://github.com/jakesgordon/javascript-state-machine" target="_blank" rel="external nofollow noopener noreferrer">Javascript Finite State Machine</a>。这个库非常好懂，可以帮助我们加深理解，而且功能一点都不弱。</p><p>该库提供一个全局对象StateMachine，使用该对象的create方法，可以生成有限状态机的实例。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var fsm &#x3D; StateMachine.create();</span><br></pre></td></tr></table></figure><p>生成的时候，需要提供一个参数对象，用来描述实例的性质。比如，交通信号灯（红绿灯）可以这样描述：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">　　var fsm &#x3D; StateMachine.create(&#123;</span><br><span class="line">　　　　initial: &#39;green&#39;,</span><br><span class="line">　　　　events: [</span><br><span class="line">　　　　　　&#123; name: &#39;warn&#39;,  from: &#39;green&#39;,  to: &#39;yellow&#39; &#125;,</span><br><span class="line">　　　　　　&#123; name: &#39;stop&#39;, from: &#39;yellow&#39;, to: &#39;red&#39; &#125;,</span><br><span class="line">　　　　　　&#123; name: &#39;ready&#39;,  from: &#39;red&#39;,    to: &#39;yellow&#39; &#125;,</span><br><span class="line">　　　　　　&#123; name: &#39;go&#39;, from: &#39;yellow&#39;, to: &#39;green&#39; &#125;</span><br><span class="line">　　　　]</span><br><span class="line">　　</span><br><span class="line">　　&#125;);</span><br></pre></td></tr></table></figure><p>交通信号灯的初始状态（initial）为green，events属性是触发状态改变的各种事件，比如warn事件使得green状态变成yellow状态，stop事件使得yellow状态变成red状态等等。</p><p>生成实例以后，就可以随时查询当前状态。</p><blockquote><ul><li>fsm.current ：返回当前状态。</li><li>fsm.is(s) ：返回一个布尔值，表示状态s是否为当前状态。</li><li>fsm.can(e) ：返回一个布尔值，表示事件e是否能在当前状态触发。</li><li>fsm.cannot(e) ：返回一个布尔值，表示事件e是否不能在当前状态触发。</li></ul></blockquote><p>Javascript Finite State Machine允许为每个事件指定两个回调函数，以warn事件为例：</p><blockquote><ul><li>onbefore<strong>warn</strong>：在warn事件发生之前触发。</li><li>onafter<strong>warn</strong>（可简写成onwarn） ：在warn事件发生之后触发。</li></ul></blockquote><p>同时，它也允许为每个状态指定两个回调函数，以green状态为例：</p><blockquote><ul><li>onleave<strong>green</strong> ：在离开green状态时触发。</li><li>onenter<strong>green</strong>（可简写成ongreen） ：在进入green状态时触发。</li></ul></blockquote><p>假定warn事件使得状态从green变为yellow，上面四类回调函数的发生顺序如下：onbefore<strong>warn</strong> → onleave<strong>green</strong> → onenter<strong>yellow</strong> → onafter<strong>warn</strong>。</p><p>除了为每个事件和状态单独指定回调函数，还可以为所有的事件和状态指定通用的回调函数。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* onbeforeevent ：任一事件发生之前触发。</span><br><span class="line">* onleavestate ：离开任一状态时触发。</span><br><span class="line">* onenterstate ：进入任一状态时触发。</span><br><span class="line">* onafterevent ：任一事件结束后触发。</span><br></pre></td></tr></table></figure><p>如果事件的回调函数里面有异步操作（比如与服务器进行Ajax通信），这时我们可能希望等到异步操作结束，再发生状态改变。这就要用到transition方法。</p><blockquote><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">fsm.onleavegreen = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">　　　　light.fadeOut(<span class="string">'slow'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">　　　　　　fsm.transition();</span><br><span class="line">　　　　&#125;);</span><br><span class="line">　　　　<span class="keyword">return</span> StateMachine.ASYNC;</span><br><span class="line">　　&#125;;</span><br></pre></td></tr></table></figure></blockquote><p>上面代码的回调函数里面，有一个异步操作（light.fadeOut）。如果不希望状态立即改变，就要让回调函数返回StateMachine.ASYNC，表示状态暂时不改变；等到异步操作结束，再调用transition方法，使得状态发生改变。</p><p>Javascript Finite State Machine还允许指定错误处理函数，当发生了当前状态不可能发生的事件时自动触发。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var fsm &#x3D; StateMachine.create(&#123;</span><br><span class="line">　　　　&#x2F;&#x2F; ...</span><br><span class="line">　　　　error: function(eventName, from, to, args, errorCode, errorMessage) &#123;</span><br><span class="line">　　　　　　return &#39;event &#39; + eventName + &#39;: &#39; + errorMessage;</span><br><span class="line">　　　　&#125;,</span><br><span class="line">　　　　&#x2F;&#x2F; ... </span><br><span class="line">　　&#125;);</span><br></pre></td></tr></table></figure><p>比如，当前状态是green，理论上这时只可能发生warn事件。要是这时发生了stop事件，就会触发上面的错误处理函数。</p><p>Javascript Finite State Machine的基本用法就是上面这些，更详细的介绍可以参见它的<a href="https://github.com/jakesgordon/javascript-state-machine" target="_blank" rel="external nofollow noopener noreferrer">主页</a>。</p><p>（完）</p><blockquote><p>参考文献： </p><p><a href="https://github.com/yhanwen/fsm" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/yhanwen/fsm</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://zh.wikipedia.org/wiki/有限状态机&quot; target=&quot;_blank&quot; rel=&quot;external nofollow noopener noreferrer&quot;&gt;有限状态机&lt;/a&gt;（Finite-state machine）是
+      
+    
+    </summary>
+    
+    
+      <category term="知识" scheme="https://npmrun.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>tsconfig.json模板文件</title>
+    <link href="https://npmrun.github.io/2020/06/09/ts/tsconfig.json%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/"/>
+    <id>https://npmrun.github.io/2020/06/09/ts/tsconfig.json%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/</id>
+    <published>2020-06-09T09:14:43.000Z</published>
+    <updated>2020-06-27T06:51:48.140Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;compilerOptions&quot;: &#123;</span><br><span class="line">    &quot;module&quot;: &quot;commonjs&quot;,</span><br><span class="line">    &quot;target&quot;: &quot;es5&quot;,</span><br><span class="line">    &quot;sourceMap&quot;: true,</span><br><span class="line">    &quot;outDir&quot;: &quot;.&#x2F;dist&quot;,</span><br><span class="line">    &quot;baseUrl&quot;: &quot;.&quot;,</span><br><span class="line">    &quot;paths&quot;: &#123;</span><br><span class="line">      &quot;@&#x2F;*&quot;: [&quot;.&#x2F;source&#x2F;*&quot;]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;exclude&quot;: [</span><br><span class="line">    &quot;node_modules&quot;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
+      
+    
+    </summary>
+    
+    
+      <category term="ts" scheme="https://npmrun.github.io/categories/ts/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>捕鱼轨迹的心路历程</title>
+    <link href="https://npmrun.github.io/2020/06/08/%E9%9A%8F%E6%83%B3/%E6%8D%95%E9%B1%BC%E8%BD%A8%E8%BF%B9%E7%9A%84%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/"/>
+    <id>https://npmrun.github.io/2020/06/08/%E9%9A%8F%E6%83%B3/%E6%8D%95%E9%B1%BC%E8%BD%A8%E8%BF%B9%E7%9A%84%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/</id>
+    <published>2020-06-08T15:05:30.000Z</published>
+    <updated>2020-06-27T06:51:48.216Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>新的任务需求，要求上手一款捕鱼进行定制化修改，好在这款产品仍然处于初期状态，这样也就有了足够的时间来进行代码的梳理以及结构的调整。其中主要运用的是观察者发布者模式，其中提供一个中央事件总线进行管理。这些都是比较简单的，逻辑思维没啥比较绕的部分，不过在实现中，考虑到一些原因，现在记录下市面上一些捕鱼的轨迹实现，主要是为了能够方面的实现界面重绘。</p></blockquote><p>前提：</p><p>鱼的路线是一段一段的路径点，是一个一个点之间移动的。单条鱼的路径不需要特别的说明，比较难的是鱼阵的实现方式，考虑到鱼阵需要重新绘制，因此如果采用计时器方法周期性出鱼的话就会导致无法比较精确的重绘鱼，而且也会使得不知道当前需要出第几条鱼，除非服务器端有非常详细的出鱼时间。当前暂没有服务器端配合，我考虑的是一次性绘制出所有的鱼群，这样就能直接移动偏移就行了.</p><p>思路:</p><p>A-&gt;B-&gt;C-&gt;D-&gt;F…….鱼是按照这样一个一个点的走,中间AB间的过度采用的是匀速直线前进(有些人采用的是中间用内塞尔算法平滑过渡,但是这样我暂时没有办法让他匀速.控制不了速度感觉就如脱缰的野马一样).</p><p>我们先绘制出鱼阵的路线,编上号,在让每一条鱼根据对应的编号走就行了.</p><p>demo暂缓</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;新的任务需求，要求上手一款捕鱼进行定制化修改，好在这款产品仍然处于初期状态，这样也就有了足够的时间来进行代码的梳理以及结构的调整。其中主要运用的是观察者发布者模式，其中提供一个中央事件总线进行管理。这些都是比较简单的，逻辑思维没啥比较绕的部分，不过
+      
+    
+    </summary>
+    
+    
+      <category term="随想" scheme="https://npmrun.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JS中自定义事件的使用与触发</title>
+    <link href="https://npmrun.github.io/2020/06/01/%E5%89%8D%E7%AB%AF/javascript/JS%E4%B8%AD%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E8%A7%A6%E5%8F%91/"/>
+    <id>https://npmrun.github.io/2020/06/01/%E5%89%8D%E7%AB%AF/javascript/JS%E4%B8%AD%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E8%A7%A6%E5%8F%91/</id>
+    <published>2020-06-01T11:09:33.000Z</published>
+    <updated>2020-06-27T06:51:48.200Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-事件的创建"><a href="#1-事件的创建" class="headerlink" title="1. 事件的创建"></a>1. 事件的创建</h3><p>JS中，最简单的创建事件方法，是使用Event构造器：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var myEvent &#x3D; new Event(&#39;event_name&#39;);</span><br></pre></td></tr></table></figure><p>但是为了能够传递数据，就需要使用 CustomEvent 构造器：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var myEvent &#x3D; new CustomEvent(&#39;event_name&#39;, &#123;</span><br><span class="line">    detail:&#123;</span><br><span class="line">        &#x2F;&#x2F; 将需要传递的数据写在detail中，以便在EventListener中获取</span><br><span class="line">        &#x2F;&#x2F; 数据将会在event.detail中得到</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h3 id="2-事件的监听"><a href="#2-事件的监听" class="headerlink" title="2. 事件的监听"></a>2. 事件的监听</h3><p>JS的EventListener是根据事件的名称来进行监听的，比如我们在上文中已经创建了一个名称为<strong>‘event_name’</strong> 的事件，那么当某个元素需要监听它的时候，就需要创建相应的监听器：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;假设listener注册在window对象上</span><br><span class="line">window.addEventListener(&#39;event_name&#39;, function(event)&#123;</span><br><span class="line">    &#x2F;&#x2F; 如果是CustomEvent，传入的数据在event.detail中</span><br><span class="line">    console.log(&#39;得到数据为：&#39;, event.detail);</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; ...后续相关操作</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>至此，window对象上就有了对<strong>‘event_name’</strong> 这个事件的监听器，当window上触发这个事件的时候，相关的callback就会执行。</p><h3 id="3-事件的触发"><a href="#3-事件的触发" class="headerlink" title="3. 事件的触发"></a>3. 事件的触发</h3><p>对于一些内置（built-in）的事件，通常都是有一些操作去做触发，比如鼠标单击对应MouseEvent的click事件，利用鼠标（ctrl+滚轮上下）去放大缩小页面对应WheelEvent的resize事件。<br>然而，自定义的事件由于不是JS内置的事件，所以我们需要在JS代码中去显式地触发它。方法是使用 <strong>dispatchEvent</strong> 去触发（IE8低版本兼容，使用fireEvent）：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 首先需要提前定义好事件，并且注册相关的EventListener</span><br><span class="line">var myEvent &#x3D; new CustomEvent(&#39;event_name&#39;, &#123; </span><br><span class="line">    detail: &#123; title: &#39;This is title!&#39;&#125;,</span><br><span class="line">&#125;);</span><br><span class="line">window.addEventListener(&#39;event_name&#39;, function(event)&#123;</span><br><span class="line">    console.log(&#39;得到标题为：&#39;, event.detail.title);</span><br><span class="line">&#125;);</span><br><span class="line">&#x2F;&#x2F; 随后在对应的元素上触发该事件</span><br><span class="line">if(window.dispatchEvent) &#123;  </span><br><span class="line">    window.dispatchEvent(myEvent);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    window.fireEvent(myEvent);</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; 根据listener中的callback函数定义，应当会在console中输出 &quot;得到标题为： This is title!&quot;</span><br></pre></td></tr></table></figure><p>需要特别注意的是，当一个事件触发的时候，如果相应的element及其上级元素没有对应的EventListener，就不会有任何回调操作。<br>对于子元素的监听，可以对父元素添加事件托管，让事件在事件冒泡阶段被监听器捕获并执行。这时候，使用event.target就可以获取到具体触发事件的元素。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;1-事件的创建&quot;&gt;&lt;a href=&quot;#1-事件的创建&quot; class=&quot;headerlink&quot; title=&quot;1. 事件的创建&quot;&gt;&lt;/a&gt;1. 事件的创建&lt;/h3&gt;&lt;p&gt;JS中，最简单的创建事件方法，是使用Event构造器：&lt;/p&gt;
+&lt;figure class=&quot;h
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://npmrun.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://npmrun.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cocos中getLocation以左下角为坐标原点问题</title>
+    <link href="https://npmrun.github.io/2020/05/27/cocos/cocos%E4%B8%ADgetLocation%E4%BB%A5%E5%B7%A6%E4%B8%8B%E8%A7%92%E4%B8%BA%E5%9D%90%E6%A0%87%E5%8E%9F%E7%82%B9%E9%97%AE%E9%A2%98/"/>
+    <id>https://npmrun.github.io/2020/05/27/cocos/cocos%E4%B8%ADgetLocation%E4%BB%A5%E5%B7%A6%E4%B8%8B%E8%A7%92%E4%B8%BA%E5%9D%90%E6%A0%87%E5%8E%9F%E7%82%B9%E9%97%AE%E9%A2%98/</id>
+    <published>2020-05-27T16:58:32.000Z</published>
+    <updated>2020-06-27T06:51:48.112Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>参考链接</p><p><a href="https://forum.cocos.org/t/creator/85600" target="_blank" rel="external nofollow noopener noreferrer">https://forum.cocos.org/t/creator/85600</a></p></blockquote><p>按下面这样从世界坐标转化为本地节点坐标就行了</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">this</span>.map.on(cc.Node.EventType.MOUSE_DOWN,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">     <span class="keyword">let</span> pos = <span class="keyword">this</span>.map.convertToNodeSpaceAR(event.getLocation());</span><br><span class="line">     <span class="keyword">this</span>.graphics.fillColor = <span class="keyword">new</span> cc.Color().fromHEX(<span class="string">'#0000ff'</span>);</span><br><span class="line">     <span class="keyword">this</span>.graphics.circle(pos.x,pos.y,<span class="number">10</span>)</span><br><span class="line">     <span class="keyword">this</span>.graphics.fill();</span><br><span class="line">&#125;,<span class="keyword">this</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;参考链接&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forum.cocos.org/t/creator/85600&quot; target=&quot;_blank&quot; rel=&quot;external nofollow noopener noreferrer&quot;&gt;ht
+      
+    
+    </summary>
+    
+    
+      <category term="cocos" scheme="https://npmrun.github.io/categories/cocos/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript项目中锁定npm依赖包版本</title>
+    <link href="https://npmrun.github.io/2020/05/26/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/JavaScript%E9%A1%B9%E7%9B%AE%E4%B8%AD%E9%94%81%E5%AE%9Anpm%E4%BE%9D%E8%B5%96%E5%8C%85%E7%89%88%E6%9C%AC/"/>
+    <id>https://npmrun.github.io/2020/05/26/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/JavaScript%E9%A1%B9%E7%9B%AE%E4%B8%AD%E9%94%81%E5%AE%9Anpm%E4%BE%9D%E8%B5%96%E5%8C%85%E7%89%88%E6%9C%AC/</id>
+    <published>2020-05-26T13:41:59.000Z</published>
+    <updated>2020-06-27T06:51:48.212Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p> <strong>前言：最近使用<code>cnpm</code>安装项目依赖后，运行项目出现样式错乱问题。</strong></p><p>描述：最近升级项目<code>webpack</code>的时候，删除了<code>node_modules</code>，重新安装了，<code>cnpm install</code>，运行项目发现有些地方样式和之前样式不一样，样式变得错乱了，然后就开始找问题,找到运行正常的同事对比了<code>package.json</code>发现版本信息都一样，问题就很奇怪，按理<code>package.json</code>里面一样，<code>node_modules</code>也一样才对。</p></blockquote><p><strong>然后把同事的<code>node_modules</code>拷贝过来，结果运行正常，</strong></p><h4 id="为什么node-modules会不一样？"><a href="#为什么node-modules会不一样？" class="headerlink" title="为什么node_modules会不一样？"></a>为什么<code>node_modules</code>会不一样？</h4><p>和同事对比了依赖的版本，发现还是有差异的，左边是有错误的，右边是正确;</p><p><img src="/static/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/JavaScript%E9%A1%B9%E7%9B%AE%E4%B8%AD%E9%94%81%E5%AE%9Anpm%E4%BE%9D%E8%B5%96%E5%8C%85%E7%89%88%E6%9C%AC/images/image-20200526134440533.png" alt="image-20200526134440533"></p><p>然后我安装成右边正确的版本，发现样式问题都好了。<br>为什么会造成安装的版本不一样？<br>图下是本地项目<code>package.json</code>依赖</p><p>网上找了下 包里面的<code>^</code>是什么意思,示例如下：<br><code>1.2.1</code><br>-匹配指定版本，这里是匹配1.2.1。</p><p><code>^1.0.0</code><br>匹配 &gt;=1.0.0 且 &lt;2.0.0的版本。<br>^ 前缀意为 与指定的版本兼容 。<br>^ 前缀表示最左边的非0段不允许改变，该段之后的段可以为更高版，所以<br>^1.1.0 匹配 &gt;=1.1.0 且 &lt;2.0.0<br>^0.0.3 匹配 &gt;=0.0.3 且 &lt;0.0.4</p><p><code>latest</code><br>当前发布版本。<br>这是一个标记（<code>tag</code>，详见 <code>dist-tag</code> |<code>npm Documentation</code>），默认情况下 npm install 安装的就是这个 <code>latest</code> 标记。 常见的标记还有 <code>next stable beta canary</code> 。</p><p><code>^5.x</code><br>匹配 &gt;=5.0.0 且 &lt;6.0.0。<br>X, x 及 * 为通配符，版本号尾部省略的段等同于通配符，所以<br>匹配 &gt;=0.0.0<br>1 匹配 &gt;=1.0.0 且 &lt;2.0.0<br>1.2 匹配 &gt;=1.2.0 且 &lt;1.3.0</p><p><code>~0.1.1</code><br>匹配 &gt;=0.1.1 且 &lt;0.2.0。</p><p><code>~</code><br>前缀意为 约等于版本<br>如果存在次版本号，则允许修订号为更高版，否则允许次版本号为更高版。</p><p><code>~1</code><br>匹配 &gt;=1.0.0 且 &lt;2.0.0<br>匹配 &gt;=0.0.0</p><p><code>=3.0.0</code><br>同字面意义 &gt;=3.0.0。</p><p><code>&lt; &lt;= &gt; &gt;= =</code><br>多个表达式之间用 空格 分隔表示并集，用 || 分隔交集。</p><p><code>1.30.2 - 2.30.2</code><br>匹配 &gt;=1.30.2 且 &lt;=2.30.2</p><h4 id="原因已经找到了，怎么来解决这个问题？"><a href="#原因已经找到了，怎么来解决这个问题？" class="headerlink" title="原因已经找到了，怎么来解决这个问题？"></a>原因已经找到了，怎么来解决这个问题？</h4><p>我们安装依赖常用的方式有3种<code>cnpm、npm、yarn</code>:</p><ul><li><code>cnpm</code>：优点是速度快，缺点是没办法保证每个同事安装依赖的时候版本一致，就会出现依赖升级不兼容性问题</li><li><code>npm</code>：优点是通过<code>package-lock.json</code>文件能够锁定版本，缺点是安装速度慢。</li><li><code>yarn</code>：优点是速度比<code>npm</code>快、<code>yarn.lock</code>文件能够锁定版本,缺点是学习成本相对高。</li></ul><p>基于团队考虑，还是使用的<code>yarn</code>来控制项目依赖的版本,<code>yarn</code>使用起来和<code>npm</code> 大同小异，学习起来还是比较快的。问题解决了，开心。下面解释下<code>yarn</code>常用方法，</p><h4 id="yarn-使用方法"><a href="#yarn-使用方法" class="headerlink" title="yarn 使用方法"></a>yarn 使用方法</h4><h5 id="安装yarn"><a href="#安装yarn" class="headerlink" title="安装yarn"></a>安装yarn</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install yarn</span><br></pre></td></tr></table></figure><h5 id="安装项目的全部依赖"><a href="#安装项目的全部依赖" class="headerlink" title="安装项目的全部依赖"></a>安装项目的全部依赖</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn || yarn install</span><br></pre></td></tr></table></figure><h5 id="添加依赖包"><a href="#添加依赖包" class="headerlink" title="添加依赖包"></a>添加依赖包</h5><p>分别添加到 <code>devDependencies</code>、<code>peerDependencies</code> 和 <code>optionalDependencies</code> 类别中：<br><code>yarn 类型npm install</code><br><code>yarn add [name] --dev</code><br><code>yarn add [name] --peer</code><br><code>yarn add [name] --optional</code></p><h5 id="更新依赖"><a href="#更新依赖" class="headerlink" title="更新依赖"></a>更新依赖</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yarn upgrade [package] --dev&#96;</span><br><span class="line">&#96;yarn upgrade [package]@[version] --dev&#96;</span><br><span class="line">&#96;yarn upgrade [package]@[tag] --dev</span><br></pre></td></tr></table></figure><h5 id="删除依赖"><a href="#删除依赖" class="headerlink" title="删除依赖"></a>删除依赖</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn remove [package]</span><br></pre></td></tr></table></figure><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>一直都是使用cnpm来安装依赖，安装速度快，也比较方便，但是多人协作开发是容易出现问题，多人协作开发依赖版本应该保持一致。避免依赖版本不兼容项目出现问题。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt; &lt;strong&gt;前言：最近使用&lt;code&gt;cnpm&lt;/code&gt;安装项目依赖后，运行项目出现样式错乱问题。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;描述：最近升级项目&lt;code&gt;webpack&lt;/code&gt;的时候，删除了&lt;code&gt;node_module
+      
+    
+    </summary>
+    
+    
+      <category term="知识" scheme="https://npmrun.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="前端" scheme="https://npmrun.github.io/categories/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>圣杯布局,双飞翼布局</title>
+    <link href="https://npmrun.github.io/2020/05/25/%E5%89%8D%E7%AB%AF/css/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80,%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/"/>
+    <id>https://npmrun.github.io/2020/05/25/%E5%89%8D%E7%AB%AF/css/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80,%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/</id>
+    <published>2020-05-25T23:33:31.000Z</published>
+    <updated>2020-06-27T06:51:48.200Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>作者：放羊的小桃桃<br>链接：<a href="https://www.jianshu.com/p/81ef7e7094e8" target="_blank" rel="external nofollow noopener noreferrer">https://www.jianshu.com/p/81ef7e7094e8</a><br>来源：简书<br>简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。<br>参考： <a href="https://www.cnblogs.com/imwtr/p/4441741.html" target="_blank" rel="external nofollow noopener noreferrer">https://www.cnblogs.com/imwtr/p/4441741.html</a></p></blockquote><p>圣杯布局和双飞翼布局是前端工程师需要日常掌握的重要布局方式。两者的功能相同，都是为了实现一个 <strong>两侧宽度固定，中间宽度自适应的三栏布局。</strong><br><img src="https://upload-images.jianshu.io/upload_images/9397803-ab11463cd3c26105.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/981/format/webp" alt="image"></p><p>圣杯布局来源于文章<a href="https://alistapart.com/article/holygrail" target="_blank" rel="external nofollow noopener noreferrer">In Search of the Holy Grail</a>，而双飞翼布局来源于淘宝UED。虽然两者的实现方法略有差异，不过都遵循了以下要点：</p><ul><li>两侧宽度固定，中间宽度自适应</li><li>中间部分在DOM结构上优先，以便先行渲染</li><li>允许三列中的任意一列成为最高列</li><li>只需要使用一个额外的<code>&lt;div&gt;</code>标签</li></ul><h2 id="圣杯布局"><a href="#圣杯布局" class="headerlink" title="圣杯布局"></a>圣杯布局</h2><h3 id="DOM结构"><a href="#DOM结构" class="headerlink" title="DOM结构"></a>DOM结构</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;header&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;container&quot;&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;center&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;left&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;right&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;footer&quot;&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure><p>首先定义出整个布局的<code>DOM</code>结构，主体部分是由<code>container</code>包裹的<code>center</code>,<code>left</code>,<code>right</code>三列，其中<code>center</code>定义在最前面。</p><h3 id="CSS代码"><a href="#CSS代码" class="headerlink" title="CSS代码"></a>CSS代码</h3><p>假设左侧的固定宽度为200px，右侧的固定宽度为150px，则首先在<code>container</code>上设置：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#container &#123;</span><br><span class="line">  padding-left: 200px; </span><br><span class="line">  padding-right: 150px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>为左右两列预留出相应的空间，得到如下示意图：<br><img src="https://upload-images.jianshu.io/upload_images/9397803-aaea086d37ac9e06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"></p><p>随后分别为三列设置宽度与浮动，同时对<code>footer</code>设置清除浮动：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#container .column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#center &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#footer &#123;</span><br><span class="line">  clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>得到如下效果：</p><p><img src="https://upload-images.jianshu.io/upload_images/9397803-908ab18834f384ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"> </p><p>根据浮动的特性，由于<code>center</code>的宽度为100%，即占据了第一行的所有空间，所以<code>left</code>和<code>right</code>被“挤”到了第二行。</p><p>接下来的工作是将<code>left</code>放置到之前预留出的位置上，这里使用 <strong>负外边距</strong>（nagetive margin）：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">  &#x2F;&#x2F;这里是父元素宽度的%</span><br><span class="line">  margin-left: -100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>得到：</p><p><img src="https://upload-images.jianshu.io/upload_images/9397803-0092cb112431e076.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"></p><p>随后还需要使用<code>定位(position)</code>方法：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">  margin-left: -100%;</span><br><span class="line">  position: relative;</span><br><span class="line">  right: 200px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这里使用<code>position: relative</code>和<code>right: 200px</code>将left的位置在原有位置基础上左移200px，以完成left的放置：</p><p><img src="https://upload-images.jianshu.io/upload_images/9397803-0f0134d16c865fb9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"></p><p>接下来放置<code>right</code>，只需添加一条声明即可：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">  margin-right: -150px; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>得到最终的效果图：</p><p><img src="https://upload-images.jianshu.io/upload_images/9397803-e964c6f980b5da16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"></p><p>至此，布局效果完成。不过还需要考虑最后一步，那就是页面的最小宽度：要想保证该布局效果正常显示，由于两侧都具有固定的宽度，所以需要给定页面一个最小的宽度，但这并不只是简单的200+150=350px。回想之前left使用了position: relative，所以就意味着在center开始的区域，还存在着一个left的宽度。所以页面的最小宽度应该设置为200+150+200=550px：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  min-width: 550px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>综上所述，圣杯布局的CSS代码为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  min-width: 550px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#container &#123;</span><br><span class="line">  padding-left: 200px; </span><br><span class="line">  padding-right: 150px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#container .column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#center &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">  margin-left: -100%;</span><br><span class="line">  position: relative;</span><br><span class="line">  right: 200px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">  margin-right: -150px; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#footer &#123;</span><br><span class="line">  clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>关于圣杯布局的示例，可参考：<a href="https://litaooooo.github.io/page-examples/holy-grail.html" target="_blank" rel="external nofollow noopener noreferrer">圣杯布局</a></p><p>最后提醒一下很多朋友可能会忽略的小细节：在<code>#center</code>中，包含了一条声明<code>width: 100%</code>，这是中间栏能够做到自适应的关键。可能会有朋友认为不需要设置这条声明，因为觉得center在不设置宽度的情况下会默认将宽度设置为父元素(container)的100%宽度。但需要注意到，center是浮动元素，由于浮动具有包裹性，在不显式设置宽度的情况下会自动“收缩”到内容的尺寸大小。如果去掉width: 100%，则当中间栏不包含或者包含较少内容时，整个布局会“崩掉”，而达不到这样的效果：</p><p><img src="https://upload-images.jianshu.io/upload_images/9397803-09a8a5617072d0a2.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/904/format/webp" alt="image"></p><h2 id="双飞翼布局"><a href="#双飞翼布局" class="headerlink" title="双飞翼布局"></a>双飞翼布局</h2><h3 id="DOM结构-1"><a href="#DOM结构-1" class="headerlink" title="DOM结构"></a>DOM结构</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;header&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;container&quot; class&#x3D;&quot;column&quot;&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;center&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;left&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;right&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;footer&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;body&gt;</span><br></pre></td></tr></table></figure><p>双飞翼布局的<code>DOM结构</code>与<code>圣杯布局</code>的区别是用<code>container</code>仅包裹住center，另外将<code>.column</code>类从<code>center</code>移至<code>container</code>上。</p><h3 id="CSS代码-1"><a href="#CSS代码-1" class="headerlink" title="CSS代码"></a>CSS代码</h3><p>按照与圣杯布局相同的思路，首先设置各列的宽度与浮动，并且为左右两列预留出空间，以及为<code>footer</code>设置浮动清除：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">#container &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#center &#123;</span><br><span class="line">  margin-left: 200px;</span><br><span class="line">  margin-right: 150px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#footer &#123;</span><br><span class="line">  clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>得到如下效果示意图:<br><img src="https://upload-images.jianshu.io/upload_images/9397803-a0f387a0dc99d388.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="image"></p><p>以上代码将<code>container</code>,<code>left</code>,<code>right</code>设置为<code>float</code>: <code>left</code>，而在<code>container</code>内部，<code>center</code>由于没有设置浮动，所以其宽度默认为<code>container</code>的100%宽度，通过对其设置<code>margin-left</code>和<code>margin-right</code>为左右两列预留出了空间。</p><p>将<code>left</code>放置到预留位置：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">  margin-left: -100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>得到：<br><img src="https://upload-images.jianshu.io/upload_images/9397803-7fcff771168c26cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="image"><br>将<code>right</code>放置到预留位置：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">  margin-left: -150px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>得到最终效果：<br><img src="https://upload-images.jianshu.io/upload_images/9397803-639e4da232d31e21.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="image"></p><p>最后计算最小页面宽度：由于双飞翼布局没有用到<code>position:relative</code>进行定位，所以最小页面宽度应该为200+150=350px。但是当页面宽度缩小到350px附近时，会挤占中间栏的宽度，使得其内容被右侧栏覆盖，如下所示：</p><p><img src="https://upload-images.jianshu.io/upload_images/9397803-7612899f07163703.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/442/format/webp" alt="image"></p><p>因此在设置最小页面宽度时，应该适当增加一些宽度以供中间栏使用（假设为150px），则有：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  min-width: 500px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>至此双飞翼布局大功告成！其布局整体代码为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  min-width: 500px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#container &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line">        </span><br><span class="line">#center &#123;</span><br><span class="line">  margin-left: 200px;</span><br><span class="line">  margin-right: 150px;</span><br><span class="line">&#125;</span><br><span class="line">        </span><br><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">  margin-left: -100%;</span><br><span class="line">&#125;</span><br><span class="line">        </span><br><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">  margin-left: -150px;</span><br><span class="line">&#125;</span><br><span class="line">        </span><br><span class="line">#footer &#123;</span><br><span class="line">  clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>关于双飞翼布局的示例，可参考：<a href="https://litaooooo.github.io/page-examples/double-wings.html" target="_blank" rel="external nofollow noopener noreferrer">双飞翼布局</a></p><h2 id="总结与思考"><a href="#总结与思考" class="headerlink" title="总结与思考"></a>总结与思考</h2><p>通过对圣杯布局和双飞翼布局的介绍可以看出，圣杯布局在DOM结构上显得更加直观和自然，且在日常开发过程中，更容易形成这样的DOM结构（通常<code>&lt;aside&gt;</code>和<code>&lt;article&gt;/&lt;section&gt;</code>一起被嵌套在<code>&lt;main&gt;</code>中）；而双飞翼布局在实现上由于不需要使用定位，所以更加简洁，且允许的页面最小宽度通常比圣杯布局更小。</p><p>其实通过思考不难发现，两者在代码实现上都额外引入了一个<div>标签，其目的都是为了既能保证中间栏产生浮动（浮动后还必须显式设置宽度），又能限制自身宽度为两侧栏留出空间。</div></p><p>从这个角度出发，如果去掉额外添加的<div>标签，能否完成相同的布局呢？答案是肯定的，不过这需要在兼容性上做出牺牲：</div></p><h3 id="DOM结构-2"><a href="#DOM结构-2" class="headerlink" title="DOM结构"></a>DOM结构</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;header&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;center&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;left&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;right&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;footer&quot;&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure><p>去掉额外的<code>&lt;div&gt;</code>标签后，得到的DOM结构如上所示，基于双飞翼布局的实现思路，只需要在<code>center</code>上做出修改：</p><h3 id="使用calc"><a href="#使用calc" class="headerlink" title="使用calc()"></a>使用calc()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line">#center &#123;</span><br><span class="line">  margin-left: 200px;</span><br><span class="line">  margin-right: 150px;</span><br><span class="line">  width: calc(100% - 350px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>通过<code>calc()</code>可以十分方便地计算出center应该占据的自适应宽度，目前<code>calc()</code>支持到IE9。</p><h3 id="使用border-box"><a href="#使用border-box" class="headerlink" title="使用border-box"></a>使用border-box</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line">#center &#123;</span><br><span class="line">  padding-left: 200px;</span><br><span class="line">  padding-right: 150px;</span><br><span class="line">  box-sizing: border-box;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>使用<code>border-box</code>可以将<code>center</code>的整个盒模型宽度设置为父元素的100%宽度，此时再利用<code>padding-left</code>和<code>padding-right</code>可以自动得到中间栏的自适应宽度。不过需要注意的是，由于padding是盒子的一部分，所以padding部分会具有中间栏的背景色，当中间栏高于侧栏时，会出现这样的情况：</p><p><img src="https://upload-images.jianshu.io/upload_images/9397803-243751e1bb945634.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/703/format/webp" alt="image"></p><p>目前<code>box-sizing</code>支持到IE8。</p><h3 id="使用flex"><a href="#使用flex" class="headerlink" title="使用flex"></a>使用flex</h3><p>这里使用flex还是需要与圣杯布局相同的DOM结构，不过在实现上将更加简单：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- DOM结构 --&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;container&quot;&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;center&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;left&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;right&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#container &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#center &#123;</span><br><span class="line">    flex: 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#left &#123;</span><br><span class="line">    flex: 0 0 200px;</span><br><span class="line">    order: -1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#right &#123;</span><br><span class="line">    flex: 0 0 150px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;作者：放羊的小桃桃&lt;br&gt;链接：&lt;a href=&quot;https://www.jianshu.com/p/81ef7e7094e8&quot; target=&quot;_blank&quot; rel=&quot;external nofollow noopener noreferrer&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://npmrun.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://npmrun.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自定义设置hr的颜色</title>
+    <link href="https://npmrun.github.io/2020/05/25/%E5%89%8D%E7%AB%AF/css/%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AE%BE%E7%BD%AEhr%E7%9A%84%E9%A2%9C%E8%89%B2/"/>
+    <id>https://npmrun.github.io/2020/05/25/%E5%89%8D%E7%AB%AF/css/%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AE%BE%E7%BD%AEhr%E7%9A%84%E9%A2%9C%E8%89%B2/</id>
+    <published>2020-05-25T23:32:31.000Z</published>
+    <updated>2020-06-27T06:51:48.200Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、hr的颜色不能使用color来控制，要使用background-color来控制</p><p>2、hr的高度不能为 0</p><p>3,、还会有灰色的阴影，设置border:none</p><p>默认的hr样式</p><p>自定的hr样式：</p><p>附上代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hr &#123;</span><br><span class="line">  height: 1px;</span><br><span class="line">  background-color: #6EECB4;</span><br><span class="line">  border: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、hr的颜色不能使用color来控制，要使用background-color来控制&lt;/p&gt;
+&lt;p&gt;2、hr的高度不能为 0&lt;/p&gt;
+&lt;p&gt;3,、还会有灰色的阴影，设置border:none&lt;/p&gt;
+&lt;p&gt;默认的hr样式&lt;/p&gt;
+&lt;p&gt;自定的hr样式：&lt;/p&gt;
+&lt;p&gt;附上代
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://npmrun.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://npmrun.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+</feed>

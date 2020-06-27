@@ -3,27 +3,27 @@
   <entry>
     <title>网址</title>
     <url>/2020/05/07/%E6%94%B6%E9%9B%86/%E7%BD%91%E5%9D%80/</url>
-    <content><![CDATA[<h2 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h2><h3 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h3><p><a href="http://jquery.cuishifeng.cn/" target="_blank" rel="noopener">中文文档</a></p>
-<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p><a href="http://css.cuishifeng.cn/index.html" target="_blank" rel="noopener">参考手册</a></p>
+    <content><![CDATA[<h2 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h2><h3 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h3><p><a href="http://jquery.cuishifeng.cn/" target="_blank" rel="external nofollow noopener noreferrer">中文文档</a></p>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p><a href="http://css.cuishifeng.cn/index.html" target="_blank" rel="external nofollow noopener noreferrer">参考手册</a></p>
 <a id="more"></a>
 
-<h3 id="Vue生态链"><a href="#Vue生态链" class="headerlink" title="Vue生态链"></a>Vue生态链</h3><p><a href="https://cn.vuejs.org/" target="_blank" rel="noopener">官网</a>，<a href="https://vuex.vuejs.org/zh/" target="_blank" rel="noopener">vuex(状态管理)</a>，<a href="https://router.vuejs.org/zh/" target="_blank" rel="noopener">vuerouter(路由管理)</a></p>
-<h3 id="个人旗下网站"><a href="#个人旗下网站" class="headerlink" title="个人旗下网站"></a>个人旗下网站</h3><p><a href="http://wiki.poorman.top/" target="_blank" rel="noopener">Wiki</a>，</p>
-<h3 id="SCSS"><a href="#SCSS" class="headerlink" title="SCSS"></a>SCSS</h3><p><a href="https://www.sass.hk/docs/" target="_blank" rel="noopener">官网</a></p>
-<h3 id="Less"><a href="#Less" class="headerlink" title="Less"></a>Less</h3><p><a href="http://lesscss.cn/" target="_blank" rel="noopener">官网</a></p>
-<h3 id="stylus"><a href="#stylus" class="headerlink" title="stylus"></a>stylus</h3><p><a href="https://stylus.bootcss.com/" target="_blank" rel="noopener">官网</a></p>
-<h3 id="模板引擎"><a href="#模板引擎" class="headerlink" title="模板引擎"></a>模板引擎</h3><p><a href="https://www.pugjs.cn/api/getting-started.html" target="_blank" rel="noopener">pug</a>, <a href="https://ejs.bootcss.com/" target="_blank" rel="noopener">ejs</a></p>
-<h3 id="图表"><a href="#图表" class="headerlink" title="图表"></a>图表</h3><p><a href="https://echarts.apache.org/zh/index.html" target="_blank" rel="noopener">echarts</a> ,<a href="https://d3js.org/" target="_blank" rel="noopener">D3</a>, <a href="https://www.highcharts.com.cn/" target="_blank" rel="noopener">highcharts</a>, <a href="http://chartjs.cn/" target="_blank" rel="noopener">chartjs</a> ，<a href="https://ecomfe.github.io/zrender-doc/public/" target="_blank" rel="noopener">zrender</a></p>
+<h3 id="Vue生态链"><a href="#Vue生态链" class="headerlink" title="Vue生态链"></a>Vue生态链</h3><p><a href="https://cn.vuejs.org/" target="_blank" rel="external nofollow noopener noreferrer">官网</a>，<a href="https://vuex.vuejs.org/zh/" target="_blank" rel="external nofollow noopener noreferrer">vuex(状态管理)</a>，<a href="https://router.vuejs.org/zh/" target="_blank" rel="external nofollow noopener noreferrer">vuerouter(路由管理)</a></p>
+<h3 id="个人旗下网站"><a href="#个人旗下网站" class="headerlink" title="个人旗下网站"></a>个人旗下网站</h3><p><a href="http://wiki.poorman.top/" target="_blank" rel="external nofollow noopener noreferrer">Wiki</a>，</p>
+<h3 id="SCSS"><a href="#SCSS" class="headerlink" title="SCSS"></a>SCSS</h3><p><a href="https://www.sass.hk/docs/" target="_blank" rel="external nofollow noopener noreferrer">官网</a></p>
+<h3 id="Less"><a href="#Less" class="headerlink" title="Less"></a>Less</h3><p><a href="http://lesscss.cn/" target="_blank" rel="external nofollow noopener noreferrer">官网</a></p>
+<h3 id="stylus"><a href="#stylus" class="headerlink" title="stylus"></a>stylus</h3><p><a href="https://stylus.bootcss.com/" target="_blank" rel="external nofollow noopener noreferrer">官网</a></p>
+<h3 id="模板引擎"><a href="#模板引擎" class="headerlink" title="模板引擎"></a>模板引擎</h3><p><a href="https://www.pugjs.cn/api/getting-started.html" target="_blank" rel="external nofollow noopener noreferrer">pug</a>, <a href="https://ejs.bootcss.com/" target="_blank" rel="external nofollow noopener noreferrer">ejs</a></p>
+<h3 id="图表"><a href="#图表" class="headerlink" title="图表"></a>图表</h3><p><a href="https://echarts.apache.org/zh/index.html" target="_blank" rel="external nofollow noopener noreferrer">echarts</a> ,<a href="https://d3js.org/" target="_blank" rel="external nofollow noopener noreferrer">D3</a>, <a href="https://www.highcharts.com.cn/" target="_blank" rel="external nofollow noopener noreferrer">highcharts</a>, <a href="http://chartjs.cn/" target="_blank" rel="external nofollow noopener noreferrer">chartjs</a> ，<a href="https://ecomfe.github.io/zrender-doc/public/" target="_blank" rel="external nofollow noopener noreferrer">zrender</a></p>
 <p><strong>扩展文章</strong></p>
-<p><a href="https://www.zhihu.com/question/28687373" target="_blank" rel="noopener">https://www.zhihu.com/question/28687373</a></p>
+<p><a href="https://www.zhihu.com/question/28687373" target="_blank" rel="external nofollow noopener noreferrer">https://www.zhihu.com/question/28687373</a></p>
 ]]></content>
       <categories>
         <category>收集</category>
       </categories>
   </entry>
   <entry>
-    <title>知识/前端/同源与跨域/细说同域-同父域-跨域</title>
-    <url>/2020/06/26/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/%E5%90%8C%E6%BA%90%E4%B8%8E%E8%B7%A8%E5%9F%9F/%E7%BB%86%E8%AF%B4%E5%90%8C%E5%9F%9F-%E5%90%8C%E7%88%B6%E5%9F%9F-%E8%B7%A8%E5%9F%9F/</url>
+    <title></title>
+    <url>/2020/06/27/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/%E5%90%8C%E6%BA%90%E4%B8%8E%E8%B7%A8%E5%9F%9F/%E7%BB%86%E8%AF%B4%E5%90%8C%E5%9F%9F-%E5%90%8C%E7%88%B6%E5%9F%9F-%E8%B7%A8%E5%9F%9F/</url>
     <content><![CDATA[<p><strong>一、域名级别</strong></p>
 <p><strong>域名</strong>级别是网址分类的一个标准，包括顶级域名、二级域名等。一个完整的域名由二个或二个以上部分组成，各部分之间用英文的句号”.”来分隔，倒数第一个”.”的右边部分称为<strong>顶级域名</strong>（TLD，也称为一级域名，包含一个合法字符串和一个域名后缀），顶级域名的左边部分字符串到下个”.”为止称为二级域名（SLD），二级域名的左边部分称为三级域名，以此类推，每一级的域名控制它下一级域名的分配。</p>
 <p><strong>二、域名组成</strong></p>
@@ -40,17 +40,22 @@
 <p><strong>国家代码</strong>：由两个字母组成的顶级域名如.cn,.uk,.de和.jp称为国家代码顶级域名（ccTLDs),其中.cn是中国专用的顶级域名，其注册归CNNIC管理，以.cn结尾的二级域名我们简称为国内域名。注册国家代码顶级域名下的二级域名的规则和政策与不同的国家的政策有关。您在注册时应咨询域名注册机构，问清相关的注册条件及与注册相关的条款。某些域名注册商除了提供以.com,.net和.org结尾的域名的注册服务之外，还提供国家代码顶级域名的注册。ICANN并没有特别授权注册商提供国家代码顶级域名的注册服务。</p>
 <p><strong>三、同域-同父域-跨域区分</strong></p>
 <p><strong>同域</strong>：即同源，所谓同源，指的是协议、域名、端口号都必须完全相同。这里同源既是同域。</p>
-<p><strong>同父域</strong>：即存在父域相同。例如，Http：<a href="http://www.baidu.com/" target="_blank" rel="noopener">www.baidu.com/</a> 与Http：ww.baidu.com/ 就是同父域。</p>
+<p><strong>同父域</strong>：即存在父域相同。例如，Http：<a href="http://www.baidu.com/" target="_blank" rel="external nofollow noopener noreferrer">www.baidu.com/</a> 与Http：ww.baidu.com/ 就是同父域。</p>
 <p><strong>跨域</strong>：所谓跨域，就是不同源（IP地址相同，但域名不同也是跨域）。那这里的同父域你就懂得了？</p>
 <blockquote>
 <p>原文链接：</p>
-<p><a href="https://www.cnblogs.com/julygift/p/8535825.html" target="_blank" rel="noopener">https://www.cnblogs.com/julygift/p/8535825.html</a></p>
+<p><a href="https://www.cnblogs.com/julygift/p/8535825.html" target="_blank" rel="external nofollow noopener noreferrer">https://www.cnblogs.com/julygift/p/8535825.html</a></p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>知识</category>
+        <category>前端</category>
+        <category>同源与跨域</category>
+      </categories>
   </entry>
   <entry>
-    <title>随想/readme</title>
-    <url>/2020/06/26/%E9%9A%8F%E6%83%B3/readme/</url>
+    <title></title>
+    <url>/2020/06/27/%E9%9A%8F%E6%83%B3/readme/</url>
     <content><![CDATA[<p>这是一个electron项目，属于聚合项目，集合多种功能，方便我的使用</p>
 <ol>
 <li><p>用于开发一个代码笔记项目。记录灵感释放的瞬间。</p>
@@ -59,16 +64,22 @@
 </li>
 </ol>
 ]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
   </entry>
   <entry>
-    <title>随想/as</title>
-    <url>/2020/06/26/%E9%9A%8F%E6%83%B3/as/</url>
+    <title></title>
+    <url>/2020/06/27/%E9%9A%8F%E6%83%B3/as/</url>
     <content><![CDATA[<p>这是一个导航网站项目，旨在收集网络资源。为了提供更好的体验，必须提供后台，用于对网站数据的编辑</p>
 <p>整理需求，功能列举</p>
 <p>设计页面，配色，主题</p>
 <p>后台数据库设计，接口开发</p>
 <p>前端页面实现</p>
 ]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
   </entry>
   <entry>
     <title>西风颂---灵感</title>
@@ -193,47 +204,47 @@
   <entry>
     <title>CSS可替换元素</title>
     <url>/2020/06/14/%E5%89%8D%E7%AB%AF/css/CSS%E5%8F%AF%E6%9B%BF%E6%8D%A2%E5%85%83%E7%B4%A0/</url>
-    <content><![CDATA[<h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>在 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank" rel="noopener">CSS</a> 中，<strong>可替换元素</strong>（<strong>replaced element</strong>）的展现效果不是由 CSS 来控制的。这些元素是一种外部对象，它们外观的渲染，是独立于 CSS 的。</p>
+    <content><![CDATA[<h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>在 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank" rel="external nofollow noopener noreferrer">CSS</a> 中，<strong>可替换元素</strong>（<strong>replaced element</strong>）的展现效果不是由 CSS 来控制的。这些元素是一种外部对象，它们外观的渲染，是独立于 CSS 的。</p>
 <a id="more"></a>
 
 <p>简单来说，它们的内容不受当前文档的样式的影响。CSS 可以影响可替换元素的位置，但不会影响到可替换元素自身的内容。某些可替换元素，例如 <code>[&lt;iframe&gt;](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe)</code>元素，可能具有自己的样式表，但它们不会继承父文档的样式。</p>
-<p>CSS 能对可替换元素产生的唯一影响在于，部分属性支持控制元素内容在其框中的位置或定位方式。有关详细信息，请参阅本文下面的<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element#控制内容框中的对象位置" target="_blank" rel="noopener">控制内容框中的对象位置</a>。</p>
+<p>CSS 能对可替换元素产生的唯一影响在于，部分属性支持控制元素内容在其框中的位置或定位方式。有关详细信息，请参阅本文下面的<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element#控制内容框中的对象位置" target="_blank" rel="external nofollow noopener noreferrer">控制内容框中的对象位置</a>。</p>
 <h2 id="可替换元素"><a href="#可替换元素" class="headerlink" title="可替换元素"></a>可替换元素</h2><p>典型的可替换元素有：</p>
 <ul>
-<li><p><code>&lt;iframe&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe</a></p>
+<li><p><code>&lt;iframe&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe</a></p>
 </li>
-<li><p><code>&lt;video&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video</a></p>
+<li><p><code>&lt;video&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video</a></p>
 </li>
-<li><p><code>&lt;embed&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/embed" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/embed</a></p>
+<li><p><code>&lt;embed&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/embed" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/embed</a></p>
 </li>
-<li><p><code>&lt;img&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img</a></p>
+<li><p><code>&lt;img&gt;</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img</a></p>
 </li>
 </ul>
 <p>有些元素仅在特定情况下被作为可替换元素处理，例如：</p>
 <ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/option" target="_blank" rel="noopener"><code>&lt;option&gt;</code></a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio" target="_blank" rel="noopener"><code>audio</code></a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/canvas" target="_blank" rel="noopener"><code>canvas</code></a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/object" target="_blank" rel="noopener"><code>object</code></a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/applet" target="_blank" rel="noopener"><code>applet</code></a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/option" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;option&gt;</code></a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio" target="_blank" rel="external nofollow noopener noreferrer"><code>audio</code></a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/canvas" target="_blank" rel="external nofollow noopener noreferrer"><code>canvas</code></a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/object" target="_blank" rel="external nofollow noopener noreferrer"><code>object</code></a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/applet" target="_blank" rel="external nofollow noopener noreferrer"><code>applet</code></a></li>
 </ul>
-<p>HTML 规范也说了 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="noopener"><code>&lt;input&gt;</code></a> 元素可替换，因为 <code>&quot;image&quot;</code> 类型的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="noopener"><code>&lt;input&gt;</code></a> 元素就像<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" target="_blank" rel="noopener"><code>&lt;img&gt;</code></a>一样被替换。但是其他形式的控制元素，包括其他类型的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="noopener"><code>&lt;input&gt;</code></a> 元素，被明确地列为非可替换元素（non-replaced elements）。该规范用术语小挂件（Widgets）来描述它们默认的限定平台的渲染行为。</p>
-<p>用 CSS <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/content" target="_blank" rel="noopener"><code>content</code></a> 属性插入的对象是匿名的可替换元素。它们并不存在于 HTML 标记中，因此是“匿名的”。</p>
-<h2 id="CSS-与可替换元素"><a href="#CSS-与可替换元素" class="headerlink" title="CSS 与可替换元素"></a>CSS 与可替换元素</h2><p>CSS 在某些情况下会对可替换元素做一些特殊处理，比如计算外边距（<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin" target="_blank" rel="noopener"><code>margin</code></a>）和一些 <code>auto</code> 的具体值。</p>
-<p>需要注意的是，一部分（并非全部）可替换元素，其本身具有的尺寸和基线（baseline）会被一些 CSS 属性用到，加入计算之中，例如 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/vertical-align" target="_blank" rel="noopener"><code>vertical-align</code></a>。只有可替换元素才能具有这种自带值。</p>
+<p>HTML 规范也说了 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;input&gt;</code></a> 元素可替换，因为 <code>&quot;image&quot;</code> 类型的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;input&gt;</code></a> 元素就像<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;img&gt;</code></a>一样被替换。但是其他形式的控制元素，包括其他类型的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="external nofollow noopener noreferrer"><code>&lt;input&gt;</code></a> 元素，被明确地列为非可替换元素（non-replaced elements）。该规范用术语小挂件（Widgets）来描述它们默认的限定平台的渲染行为。</p>
+<p>用 CSS <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/content" target="_blank" rel="external nofollow noopener noreferrer"><code>content</code></a> 属性插入的对象是匿名的可替换元素。它们并不存在于 HTML 标记中，因此是“匿名的”。</p>
+<h2 id="CSS-与可替换元素"><a href="#CSS-与可替换元素" class="headerlink" title="CSS 与可替换元素"></a>CSS 与可替换元素</h2><p>CSS 在某些情况下会对可替换元素做一些特殊处理，比如计算外边距（<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin" target="_blank" rel="external nofollow noopener noreferrer"><code>margin</code></a>）和一些 <code>auto</code> 的具体值。</p>
+<p>需要注意的是，一部分（并非全部）可替换元素，其本身具有的尺寸和基线（baseline）会被一些 CSS 属性用到，加入计算之中，例如 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/vertical-align" target="_blank" rel="external nofollow noopener noreferrer"><code>vertical-align</code></a>。只有可替换元素才能具有这种自带值。</p>
 <blockquote>
 <p> 控制内容框中的对象位置</p>
 </blockquote>
-<p>某些CSS属性可用于指定 可替换元素中包含的内容对象 在该元素的盒区域内的位置或定位方式。这些属性的具体定义可以在 <a href="https://drafts.csswg.org/css-images-3/" target="_blank" rel="noopener">CSS Images Module Level 3</a> 和 <a href="https://drafts.csswg.org/css-images-4/" target="_blank" rel="noopener">CSS Images Module Level 4</a> 规范中找到：</p>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit" target="_blank" rel="noopener"><code>object-fit</code></a></p>
-<p>指定可替换元素的内容对象在元素盒区域中的填充方式。（有些类似于 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-size" target="_blank" rel="noopener"><code>background-size</code></a> ）</p>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-position" target="_blank" rel="noopener"><code>object-position</code></a></p>
-<p>指定可替换元素的内容对象在元素盒区域中的位置。（类似于 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-position" target="_blank" rel="noopener"><code>background-position</code></a> ）</p>
+<p>某些CSS属性可用于指定 可替换元素中包含的内容对象 在该元素的盒区域内的位置或定位方式。这些属性的具体定义可以在 <a href="https://drafts.csswg.org/css-images-3/" target="_blank" rel="external nofollow noopener noreferrer">CSS Images Module Level 3</a> 和 <a href="https://drafts.csswg.org/css-images-4/" target="_blank" rel="external nofollow noopener noreferrer">CSS Images Module Level 4</a> 规范中找到：</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit" target="_blank" rel="external nofollow noopener noreferrer"><code>object-fit</code></a></p>
+<p>指定可替换元素的内容对象在元素盒区域中的填充方式。（有些类似于 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-size" target="_blank" rel="external nofollow noopener noreferrer"><code>background-size</code></a> ）</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-position" target="_blank" rel="external nofollow noopener noreferrer"><code>object-position</code></a></p>
+<p>指定可替换元素的内容对象在元素盒区域中的位置。（类似于 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-position" target="_blank" rel="external nofollow noopener noreferrer"><code>background-position</code></a> ）</p>
 <blockquote>
 <h2 id="参见"><a href="#参见" class="headerlink" title="参见"></a>参见</h2><ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element</a></li>
-<li>可替换元素的 <a href="https://html.spec.whatwg.org/multipage/rendering.html#replaced-elements" target="_blank" rel="noopener">HTML 规范</a></li>
-<li>CSS Key Concepts: <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Syntax" target="_blank" rel="noopener">CSS 语法</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/At-rule" target="_blank" rel="noopener">@规则</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Comments" target="_blank" rel="noopener">注释</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity" target="_blank" rel="noopener">优先级</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/inheritance" target="_blank" rel="noopener">继承</a>, the <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank" rel="noopener">盒模型</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Layout_mode" target="_blank" rel="noopener">布局模式</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Visual_formatting_model" target="_blank" rel="noopener">视觉格式化模型</a>，以及<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing" target="_blank" rel="noopener">外边距合并</a>，或者<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/initial_value" target="_blank" rel="noopener">初始</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/computed_value" target="_blank" rel="noopener">计算</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/resolved_value" target="_blank" rel="noopener">解析</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/specified_value" target="_blank" rel="noopener">指定</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/used_value" target="_blank" rel="noopener">使用</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/actual_value" target="_blank" rel="noopener">实际</a>值。 Definitions of <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Value_definition_syntax" target="_blank" rel="noopener">值语法</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Shorthand_properties" target="_blank" rel="noopener">简写属性</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="noopener">可替换元素</a>。</li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element</a></li>
+<li>可替换元素的 <a href="https://html.spec.whatwg.org/multipage/rendering.html#replaced-elements" target="_blank" rel="external nofollow noopener noreferrer">HTML 规范</a></li>
+<li>CSS Key Concepts: <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Syntax" target="_blank" rel="external nofollow noopener noreferrer">CSS 语法</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/At-rule" target="_blank" rel="external nofollow noopener noreferrer">@规则</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Comments" target="_blank" rel="external nofollow noopener noreferrer">注释</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity" target="_blank" rel="external nofollow noopener noreferrer">优先级</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/inheritance" target="_blank" rel="external nofollow noopener noreferrer">继承</a>, the <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank" rel="external nofollow noopener noreferrer">盒模型</a>, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Layout_mode" target="_blank" rel="external nofollow noopener noreferrer">布局模式</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Visual_formatting_model" target="_blank" rel="external nofollow noopener noreferrer">视觉格式化模型</a>，以及<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing" target="_blank" rel="external nofollow noopener noreferrer">外边距合并</a>，或者<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/initial_value" target="_blank" rel="external nofollow noopener noreferrer">初始</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/computed_value" target="_blank" rel="external nofollow noopener noreferrer">计算</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/resolved_value" target="_blank" rel="external nofollow noopener noreferrer">解析</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/specified_value" target="_blank" rel="external nofollow noopener noreferrer">指定</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/used_value" target="_blank" rel="external nofollow noopener noreferrer">使用</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/actual_value" target="_blank" rel="external nofollow noopener noreferrer">实际</a>值。 Definitions of <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Value_definition_syntax" target="_blank" rel="external nofollow noopener noreferrer">值语法</a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Shorthand_properties" target="_blank" rel="external nofollow noopener noreferrer">简写属性</a>和<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="external nofollow noopener noreferrer">可替换元素</a>。</li>
 </ul>
 </blockquote>
 ]]></content>
@@ -244,16 +255,16 @@
   <entry>
     <title>前端SVG库</title>
     <url>/2020/06/14/%E6%94%B6%E9%9B%86/%E5%89%8D%E7%AB%AFSVG%E5%BA%93/</url>
-    <content><![CDATA[<h3 id="Vivus"><a href="#Vivus" class="headerlink" title="Vivus"></a><a href="http://maxwellito.github.io/vivus/" target="_blank" rel="noopener">Vivus</a></h3><p>Vivus 是一个能动画js类库，它能够给SVG图像显示出被画出来的过程。Vivus是没有其他类库依赖的（比如jQuery)。你仅仅需要在页面中加入这个.js文件，然后传入需要被用来动画的SVG部分就行。同时通过指定一些配置，它能够在页面加载后直接显示动画效果</p>
-<h3 id="Bonsai"><a href="#Bonsai" class="headerlink" title="Bonsai"></a><a href="http://bonsaijs.org/" target="_blank" rel="noopener">Bonsai</a></h3><p>Bonsai 是一个功能丰富的 JS 类库，你能够用它来画和 animate 动态内容在网站上。这些内容包括了 HTML5 video、变化的 Canvas 和 SVG。通过 Bonsai 框架，你能画一个简单的矩形、甚至一段矩形，如果你喜欢甚至可以画一个丰富的多人卡通游戏进去。</p>
-<h3 id="Velocity"><a href="#Velocity" class="headerlink" title="Velocity"></a><a href="http://julian.com/research/velocity/" target="_blank" rel="noopener">Velocity</a></h3><p>Velocity 是一个 JS 类库，它是用来做频繁动画用的。Velocity 的 js 动画“速度”是非常快的。它比JQuery 快，甚至比 CSS 动画还要快。Velocity 的 API 和 $.fn.animate 很像，都是通过$()来操作。velocity()是另一种方法，相比 $().animate()。总而言之，你应该使用一致的animate效果，包括 fadeIn 和 fadeOut 方法（译者：Velocity 提供了 fadeIn 和 fadeOut 方法）。</p>
-<h3 id="Raphael"><a href="#Raphael" class="headerlink" title="Raphael"></a><a href="http://raphaeljs.com/" target="_blank" rel="noopener">Raphael</a></h3><p>RaphaelJS 也通常是用来在网页上画SVG图和动画的。它兼容各种windows浏览器一直到IE6，因为如此，Raphael成为了市面上最受信赖的js（svg）类库。有了它，你可以制作分析图表、地图、游戏就像在厨房做饭一样。</p>
-<h3 id="Snap"><a href="#Snap" class="headerlink" title="Snap"></a><a href="http://snapsvg.io/" target="_blank" rel="noopener">Snap</a></h3><p>SnapSVG 是另一个知名 JS 类库，它是由 Dmitry Baranovskiy 开发的（Raphael 同样也是）。同样它也是 Adobe Web Software Group 来维护。和 Raphael 不同的是，它只提供了 ie 最新版支持。这使得 SnapSVG 在体积上小了许多（相比 Raphel）以实现相同的功能（比如 trim）和支持最新的功能。</p>
-<h3 id="Lazy-Line-Painter"><a href="#Lazy-Line-Painter" class="headerlink" title="Lazy Line Painter"></a><a href="http://lazylinepainter.info/" target="_blank" rel="noopener">Lazy Line Painter</a></h3><p>Laid back Range Painter 是一个 jQuery 插件，通常被用来作绘制图集，有点像 Vivus。通常你会吐槽的是它的也就只有这么一个特殊的功能。让我来解释下，如果你是用Illustrator 或者Inkscape制作的SVG图像，而且SVG图像没有任何颜色上的变化，仅仅是轨迹的变化，可以用它。</p>
-<h3 id="SVG-js"><a href="#SVG-js" class="headerlink" title="SVG.js"></a><a href="http://svgjs.com/" target="_blank" rel="noopener">SVG.js</a></h3><p>SVG.js 是一个轻量级的操作和动画 SVG 类库。你能够操作变化方向、位置和颜色。这还没完，你甚至可以自己实现插件等一些其他功能。这个实例可以attach一些插件，比如svg.filter.js，他可以为你的图片实现 Gaussian blur, desaturase, compare, sepia 等等功能。</p>
-<h3 id="Walkway"><a href="#Walkway" class="headerlink" title="Walkway"></a><a href="https://github.com/ConnorAtherton/walkway" target="_blank" rel="noopener">Walkway</a></h3><p>Walkway 支持3种方式, path, line 和 用polyline来画的svg线。它提供了一个很好的例子，绘制了一个PlayStation 的集合动画。</p>
-<h3 id="Progressbar-js"><a href="#Progressbar-js" class="headerlink" title="Progressbar.js"></a><a href="http://kimmobrunfeldt.github.io/progressbar.js/" target="_blank" rel="noopener">Progressbar.js</a></h3><p>ProgressBar.js 是一个可爱的和易于接受的增长曲线图用来绘制卡通SVG线条。有了它，各种形状都可以用作增长曲线。它集成了一些实用的形状如Range,Circle和Block，你甚至可以自行开发一个增长图通过Illustrator或者其他的矢量图绘制工具。 ProgressBar.js 是轻量级，MIT许可的而且支持IE9+。你可以通过它修改大型柱状增长图。你还可以改变属性生成动画，比如stroke breadth, load opacity, load coloring等等。</p>
-<h3 id="Chartlist-js"><a href="#Chartlist-js" class="headerlink" title="Chartlist.js"></a><a href="http://gionkunz.github.io/chartist-js/" target="_blank" rel="noopener">Chartlist.js</a></h3><p>Chartist.js 是一个简单的容易被接受的图标库，它是通过SVG绘制的。Chartist的宗旨是提供一个简单的，轻量级的，非侵入式的图表库。你需要提供一些javascript配置对象做一些自定义配置，要不然它会使用默认的配置，即已经默认是排序过后的。</p>
+    <content><![CDATA[<h3 id="Vivus"><a href="#Vivus" class="headerlink" title="Vivus"></a><a href="http://maxwellito.github.io/vivus/" target="_blank" rel="external nofollow noopener noreferrer">Vivus</a></h3><p>Vivus 是一个能动画js类库，它能够给SVG图像显示出被画出来的过程。Vivus是没有其他类库依赖的（比如jQuery)。你仅仅需要在页面中加入这个.js文件，然后传入需要被用来动画的SVG部分就行。同时通过指定一些配置，它能够在页面加载后直接显示动画效果</p>
+<h3 id="Bonsai"><a href="#Bonsai" class="headerlink" title="Bonsai"></a><a href="http://bonsaijs.org/" target="_blank" rel="external nofollow noopener noreferrer">Bonsai</a></h3><p>Bonsai 是一个功能丰富的 JS 类库，你能够用它来画和 animate 动态内容在网站上。这些内容包括了 HTML5 video、变化的 Canvas 和 SVG。通过 Bonsai 框架，你能画一个简单的矩形、甚至一段矩形，如果你喜欢甚至可以画一个丰富的多人卡通游戏进去。</p>
+<h3 id="Velocity"><a href="#Velocity" class="headerlink" title="Velocity"></a><a href="http://julian.com/research/velocity/" target="_blank" rel="external nofollow noopener noreferrer">Velocity</a></h3><p>Velocity 是一个 JS 类库，它是用来做频繁动画用的。Velocity 的 js 动画“速度”是非常快的。它比JQuery 快，甚至比 CSS 动画还要快。Velocity 的 API 和 $.fn.animate 很像，都是通过$()来操作。velocity()是另一种方法，相比 $().animate()。总而言之，你应该使用一致的animate效果，包括 fadeIn 和 fadeOut 方法（译者：Velocity 提供了 fadeIn 和 fadeOut 方法）。</p>
+<h3 id="Raphael"><a href="#Raphael" class="headerlink" title="Raphael"></a><a href="http://raphaeljs.com/" target="_blank" rel="external nofollow noopener noreferrer">Raphael</a></h3><p>RaphaelJS 也通常是用来在网页上画SVG图和动画的。它兼容各种windows浏览器一直到IE6，因为如此，Raphael成为了市面上最受信赖的js（svg）类库。有了它，你可以制作分析图表、地图、游戏就像在厨房做饭一样。</p>
+<h3 id="Snap"><a href="#Snap" class="headerlink" title="Snap"></a><a href="http://snapsvg.io/" target="_blank" rel="external nofollow noopener noreferrer">Snap</a></h3><p>SnapSVG 是另一个知名 JS 类库，它是由 Dmitry Baranovskiy 开发的（Raphael 同样也是）。同样它也是 Adobe Web Software Group 来维护。和 Raphael 不同的是，它只提供了 ie 最新版支持。这使得 SnapSVG 在体积上小了许多（相比 Raphel）以实现相同的功能（比如 trim）和支持最新的功能。</p>
+<h3 id="Lazy-Line-Painter"><a href="#Lazy-Line-Painter" class="headerlink" title="Lazy Line Painter"></a><a href="http://lazylinepainter.info/" target="_blank" rel="external nofollow noopener noreferrer">Lazy Line Painter</a></h3><p>Laid back Range Painter 是一个 jQuery 插件，通常被用来作绘制图集，有点像 Vivus。通常你会吐槽的是它的也就只有这么一个特殊的功能。让我来解释下，如果你是用Illustrator 或者Inkscape制作的SVG图像，而且SVG图像没有任何颜色上的变化，仅仅是轨迹的变化，可以用它。</p>
+<h3 id="SVG-js"><a href="#SVG-js" class="headerlink" title="SVG.js"></a><a href="http://svgjs.com/" target="_blank" rel="external nofollow noopener noreferrer">SVG.js</a></h3><p>SVG.js 是一个轻量级的操作和动画 SVG 类库。你能够操作变化方向、位置和颜色。这还没完，你甚至可以自己实现插件等一些其他功能。这个实例可以attach一些插件，比如svg.filter.js，他可以为你的图片实现 Gaussian blur, desaturase, compare, sepia 等等功能。</p>
+<h3 id="Walkway"><a href="#Walkway" class="headerlink" title="Walkway"></a><a href="https://github.com/ConnorAtherton/walkway" target="_blank" rel="external nofollow noopener noreferrer">Walkway</a></h3><p>Walkway 支持3种方式, path, line 和 用polyline来画的svg线。它提供了一个很好的例子，绘制了一个PlayStation 的集合动画。</p>
+<h3 id="Progressbar-js"><a href="#Progressbar-js" class="headerlink" title="Progressbar.js"></a><a href="http://kimmobrunfeldt.github.io/progressbar.js/" target="_blank" rel="external nofollow noopener noreferrer">Progressbar.js</a></h3><p>ProgressBar.js 是一个可爱的和易于接受的增长曲线图用来绘制卡通SVG线条。有了它，各种形状都可以用作增长曲线。它集成了一些实用的形状如Range,Circle和Block，你甚至可以自行开发一个增长图通过Illustrator或者其他的矢量图绘制工具。 ProgressBar.js 是轻量级，MIT许可的而且支持IE9+。你可以通过它修改大型柱状增长图。你还可以改变属性生成动画，比如stroke breadth, load opacity, load coloring等等。</p>
+<h3 id="Chartlist-js"><a href="#Chartlist-js" class="headerlink" title="Chartlist.js"></a><a href="http://gionkunz.github.io/chartist-js/" target="_blank" rel="external nofollow noopener noreferrer">Chartlist.js</a></h3><p>Chartist.js 是一个简单的容易被接受的图标库，它是通过SVG绘制的。Chartist的宗旨是提供一个简单的，轻量级的，非侵入式的图表库。你需要提供一些javascript配置对象做一些自定义配置，要不然它会使用默认的配置，即已经默认是排序过后的。</p>
 <p>Chartist是通过 inline-SVG绘制的，所以它对DOM操作影响很小，相对于它提供的功能来说。而且意味着Chartist不会提供个人控制、水印、行为等等一些你能够通过简单的HTML, JavaScript and CSS实现的。</p>
 ]]></content>
       <categories>
@@ -283,11 +294,11 @@
   <entry>
     <title>前端动画库</title>
     <url>/2020/06/14/%E6%94%B6%E9%9B%86/%E5%89%8D%E7%AB%AF%E5%8A%A8%E7%94%BB%E5%BA%93/</url>
-    <content><![CDATA[<p><a href="https://www.uisdc.com/10-best-free-animation-libraries" target="_blank" rel="noopener">https://www.uisdc.com/10-best-free-animation-libraries</a></p>
+    <content><![CDATA[<p><a href="https://www.uisdc.com/10-best-free-animation-libraries" target="_blank" rel="external nofollow noopener noreferrer">https://www.uisdc.com/10-best-free-animation-libraries</a></p>
 <ul>
-<li><p>GSAP <a href="https://greensock.com/gsap" target="_blank" rel="noopener">https://greensock.com/gsap</a></p>
+<li><p>GSAP <a href="https://greensock.com/gsap" target="_blank" rel="external nofollow noopener noreferrer">https://greensock.com/gsap</a></p>
 </li>
-<li><p>Anime.js <a href="http://animejs.com/" target="_blank" rel="noopener">http://animejs.com/</a></p>
+<li><p>Anime.js <a href="http://animejs.com/" target="_blank" rel="external nofollow noopener noreferrer">http://animejs.com/</a></p>
 </li>
 <li><p>Wicked CSS</p>
 </li>
@@ -295,9 +306,9 @@
 </li>
 <li><p>Tuesday</p>
 </li>
-<li><p>CSShake <a href="http://csshake.surge.sh/" target="_blank" rel="noopener">http://csshake.surge.sh/</a></p>
+<li><p>CSShake <a href="http://csshake.surge.sh/" target="_blank" rel="external nofollow noopener noreferrer">http://csshake.surge.sh/</a></p>
 </li>
-<li><p>Mo.js <a href="http://mojs.io/" target="_blank" rel="noopener">http://mojs.io/</a></p>
+<li><p>Mo.js <a href="http://mojs.io/" target="_blank" rel="external nofollow noopener noreferrer">http://mojs.io/</a></p>
 </li>
 <li><p>Animate Plus</p>
 </li>
@@ -305,13 +316,13 @@
 </li>
 <li><p>Magic</p>
 </li>
-<li><p>wow.js <a href="https://www.delac.io/wow/" target="_blank" rel="noopener">https://www.delac.io/wow/</a></p>
+<li><p>wow.js <a href="https://www.delac.io/wow/" target="_blank" rel="external nofollow noopener noreferrer">https://www.delac.io/wow/</a></p>
 </li>
-<li><p>GreenSock <a href="https://www.tweenmax.com.cn/" target="_blank" rel="noopener">https://www.tweenmax.com.cn/</a> 可以用作一镜到底的动画制作</p>
+<li><p>GreenSock <a href="https://www.tweenmax.com.cn/" target="_blank" rel="external nofollow noopener noreferrer">https://www.tweenmax.com.cn/</a> 可以用作一镜到底的动画制作</p>
 </li>
-<li><p>fullPage.js <a href="http://www.dowebok.com/demo/2014/77/" target="_blank" rel="noopener">http://www.dowebok.com/demo/2014/77/</a></p>
+<li><p>fullPage.js <a href="http://www.dowebok.com/demo/2014/77/" target="_blank" rel="external nofollow noopener noreferrer">http://www.dowebok.com/demo/2014/77/</a></p>
 </li>
-<li><p>视差动画库 <a href="http://matthew.wagerfield.com/parallax/" target="_blank" rel="noopener">http://matthew.wagerfield.com/parallax/</a></p>
+<li><p>视差动画库 <a href="http://matthew.wagerfield.com/parallax/" target="_blank" rel="external nofollow noopener noreferrer">http://matthew.wagerfield.com/parallax/</a></p>
 </li>
 </ul>
 ]]></content>
@@ -351,18 +362,22 @@
 <p>站点的目录结构应该如下：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;data&#x2F;wwwsite&#x2F;domain.com&#x2F;www&#x2F;</span><br><span class="line">&#x2F;data&#x2F;wwwsite&#x2F;domain.com&#x2F;nginx&#x2F;</span><br></pre></td></tr></table></figure>
 
-<p>这样访问<a href="http://www.domain.com时root目录为/data/wwwsite/domain.com/www/，nginx.domain.com时为/data/wwwsite/domain.com/nginx/，以此类推。" target="_blank" rel="noopener">www.domain.com时root目录为/data/wwwsite/domain.com/www/，nginx.domain.com时为/data/wwwsite/domain.com/nginx/，以此类推。</a></p>
-<p>后面if语句的作用是将domain.com的方位重定向到<a href="http://www.domain.com，这样既解决了网站的主目录访问，又可以增加seo中对www.domain.com的域名权重。" target="_blank" rel="noopener">www.domain.com，这样既解决了网站的主目录访问，又可以增加seo中对www.domain.com的域名权重。</a></p>
+<p>这样访问<a href="http://www.domain.com时root目录为/data/wwwsite/domain.com/www/，nginx.domain.com时为/data/wwwsite/domain.com/nginx/，以此类推。" target="_blank" rel="external nofollow noopener noreferrer">www.domain.com时root目录为/data/wwwsite/domain.com/www/，nginx.domain.com时为/data/wwwsite/domain.com/nginx/，以此类推。</a></p>
+<p>后面if语句的作用是将domain.com的方位重定向到<a href="http://www.domain.com，这样既解决了网站的主目录访问，又可以增加seo中对www.domain.com的域名权重。" target="_blank" rel="external nofollow noopener noreferrer">www.domain.com，这样既解决了网站的主目录访问，又可以增加seo中对www.domain.com的域名权重。</a></p>
 <p><code>server_name</code>同样也可以使用 ip进行匹配，以下是自己使用IP进行配置单的：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> upstream web_app &#123;</span><br><span class="line">  server 127.0.0.1:8080 weight&#x3D;1 max_fails&#x3D;2 fail_timeout&#x3D;30s;</span><br><span class="line">  server 127.0.0.1:8081 weight&#x3D;1 max_fails&#x3D;2 fail_timeout&#x3D;30s;</span><br><span class="line">&#125;</span><br><span class="line"> server&#123;</span><br><span class="line"> listen 8093;</span><br><span class="line"> \#server_name 127.0.0.1:8093;</span><br><span class="line"> server_name 192.168.47.128:8093</span><br><span class="line"> access_log  logs&#x2F;host.access.log  main;</span><br><span class="line"> location &#x2F;</span><br><span class="line"> &#123;</span><br><span class="line"> proxy_next_upstream http_502 http_504 error timeout invalid_header;</span><br><span class="line"> proxy_set_header Host  $host;</span><br><span class="line"> proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line"> proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line"> proxy_pass http:&#x2F;&#x2F;web_app;</span><br><span class="line"> expires    3d;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
 <p>以上配置的为用两个tomcat做负载均衡，分别为8080、8081，当通过 192.168.47.128:8093 访问时会随机分配到这两个tomcat上,但是在配置时我把 listen 换成 80 就会访问不到，原因还没弄清楚，有知道原因的还请留言告知，不胜感激！！！！</p>
 ]]></content>
+      <categories>
+        <category>知识</category>
+        <category>nginx</category>
+      </categories>
   </entry>
   <entry>
     <title>JavaScript与有限状态机</title>
     <url>/2020/06/09/%E7%9F%A5%E8%AF%86/JavaScript%E4%B8%8E%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/</url>
-    <content><![CDATA[<p><a href="http://zh.wikipedia.org/wiki/有限状态机" target="_blank" rel="noopener">有限状态机</a>（Finite-state machine）是一个非常有用的模型，可以模拟世界上大部分事物。</p>
+    <content><![CDATA[<p><a href="http://zh.wikipedia.org/wiki/有限状态机" target="_blank" rel="external nofollow noopener noreferrer">有限状态机</a>（Finite-state machine）是一个非常有用的模型，可以模拟世界上大部分事物。</p>
 <p><img src="/static/%E7%9F%A5%E8%AF%86/JavaScript%E4%B8%8E%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/images/bg2013090201.png" alt="img"></p>
 <p>简单说，它有三个特征：</p>
 <blockquote>
@@ -374,8 +389,8 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">　var menu &#x3D; &#123;</span><br><span class="line">　　　　&#x2F;&#x2F; 当前状态</span><br><span class="line">　　　　currentState: &#39;hide&#39;,</span><br><span class="line">　　　　&#x2F;&#x2F; 绑定事件</span><br><span class="line">　　　　initialize: function() &#123;</span><br><span class="line">　　　　　　var self &#x3D; this;</span><br><span class="line">　　　　　　self.on(&quot;hover&quot;, self.transition);</span><br><span class="line">　　　　&#125;,</span><br><span class="line">　　　　&#x2F;&#x2F; 状态转换</span><br><span class="line">　　　　transition: function(event)&#123;</span><br><span class="line">　　　　　　switch(this.currentState) &#123;</span><br><span class="line">　　　　　　　　case &quot;hide&quot;:</span><br><span class="line">　　　　　　　　　　this.currentState &#x3D; &#39;show&#39;;</span><br><span class="line">　　　　　　　　　　doSomething();</span><br><span class="line">　　　　　　　　　　break;</span><br><span class="line">　　　　　　　　case &quot;show&quot;:</span><br><span class="line">　　　　　　　　　　this.currentState &#x3D; &#39;hide&#39;;</span><br><span class="line">　　　　　　　　　　doSomething();</span><br><span class="line">　　　　　　　　　　break;</span><br><span class="line">　　　　　　　　default:</span><br><span class="line">　　　　　　　　　　console.log(&#39;Invalid State!&#39;);</span><br><span class="line">　　　　　　　　　　break;</span><br><span class="line">　　　　　　&#125;</span><br><span class="line">　　　　&#125;</span><br><span class="line">　　&#125;;</span><br></pre></td></tr></table></figure>
 
 <p>可以看到，有限状态机的写法，逻辑清晰，表达力强，有利于封装事件。一个对象的状态越多、发生的事件越多，就越适合采用有限状态机的写法。</p>
-<p>另外，JavaScript语言是一种<a href="http://www.ruanyifeng.com/blog/2012/12/asynchronous＿javascript.html" target="_blank" rel="noopener">异步操作</a>特别多的语言，常用的解决方法是指定回调函数，但这样会造成代码结构混乱、难以测试和除错等问题。有限状态机提供了<a href="http://tech.pro/blog/1402/five-patterns-to-help-you-tame-asynchronous-javascript" target="_blank" rel="noopener">更好的办法</a>：把异步操作与对象的状态改变挂钩，当异步操作结束的时候，发生相应的状态改变，由此再触发其他操作。这要比回调函数、事件监听、发布/订阅等解决方案，在逻辑上更合理，更易于降低代码的复杂度。</p>
-<p>下面介绍一个有限状态机的函数库<a href="https://github.com/jakesgordon/javascript-state-machine" target="_blank" rel="noopener">Javascript Finite State Machine</a>。这个库非常好懂，可以帮助我们加深理解，而且功能一点都不弱。</p>
+<p>另外，JavaScript语言是一种<a href="http://www.ruanyifeng.com/blog/2012/12/asynchronous＿javascript.html" target="_blank" rel="external nofollow noopener noreferrer">异步操作</a>特别多的语言，常用的解决方法是指定回调函数，但这样会造成代码结构混乱、难以测试和除错等问题。有限状态机提供了<a href="http://tech.pro/blog/1402/five-patterns-to-help-you-tame-asynchronous-javascript" target="_blank" rel="external nofollow noopener noreferrer">更好的办法</a>：把异步操作与对象的状态改变挂钩，当异步操作结束的时候，发生相应的状态改变，由此再触发其他操作。这要比回调函数、事件监听、发布/订阅等解决方案，在逻辑上更合理，更易于降低代码的复杂度。</p>
+<p>下面介绍一个有限状态机的函数库<a href="https://github.com/jakesgordon/javascript-state-machine" target="_blank" rel="external nofollow noopener noreferrer">Javascript Finite State Machine</a>。这个库非常好懂，可以帮助我们加深理解，而且功能一点都不弱。</p>
 <p>该库提供一个全局对象StateMachine，使用该对象的create方法，可以生成有限状态机的实例。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var fsm &#x3D; StateMachine.create();</span><br></pre></td></tr></table></figure>
 
@@ -419,13 +434,16 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var fsm &#x3D; StateMachine.create(&#123;</span><br><span class="line">　　　　&#x2F;&#x2F; ...</span><br><span class="line">　　　　error: function(eventName, from, to, args, errorCode, errorMessage) &#123;</span><br><span class="line">　　　　　　return &#39;event &#39; + eventName + &#39;: &#39; + errorMessage;</span><br><span class="line">　　　　&#125;,</span><br><span class="line">　　　　&#x2F;&#x2F; ... </span><br><span class="line">　　&#125;);</span><br></pre></td></tr></table></figure>
 
 <p>比如，当前状态是green，理论上这时只可能发生warn事件。要是这时发生了stop事件，就会触发上面的错误处理函数。</p>
-<p>Javascript Finite State Machine的基本用法就是上面这些，更详细的介绍可以参见它的<a href="https://github.com/jakesgordon/javascript-state-machine" target="_blank" rel="noopener">主页</a>。</p>
+<p>Javascript Finite State Machine的基本用法就是上面这些，更详细的介绍可以参见它的<a href="https://github.com/jakesgordon/javascript-state-machine" target="_blank" rel="external nofollow noopener noreferrer">主页</a>。</p>
 <p>（完）</p>
 <blockquote>
 <p>参考文献： </p>
-<p><a href="https://github.com/yhanwen/fsm" target="_blank" rel="noopener">https://github.com/yhanwen/fsm</a></p>
+<p><a href="https://github.com/yhanwen/fsm" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/yhanwen/fsm</a></p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>知识</category>
+      </categories>
   </entry>
   <entry>
     <title>tsconfig.json模板文件</title>
@@ -450,6 +468,9 @@
 <p>我们先绘制出鱼阵的路线,编上号,在让每一条鱼根据对应的编号走就行了.</p>
 <p>demo暂缓</p>
 ]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
   </entry>
   <entry>
     <title>JS中自定义事件的使用与触发</title>
@@ -481,7 +502,7 @@
     <url>/2020/05/27/cocos/cocos%E4%B8%ADgetLocation%E4%BB%A5%E5%B7%A6%E4%B8%8B%E8%A7%92%E4%B8%BA%E5%9D%90%E6%A0%87%E5%8E%9F%E7%82%B9%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<blockquote>
 <p>参考链接</p>
-<p><a href="https://forum.cocos.org/t/creator/85600" target="_blank" rel="noopener">https://forum.cocos.org/t/creator/85600</a></p>
+<p><a href="https://forum.cocos.org/t/creator/85600" target="_blank" rel="external nofollow noopener noreferrer">https://forum.cocos.org/t/creator/85600</a></p>
 </blockquote>
 <p>按下面这样从世界坐标转化为本地节点坐标就行了</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"> <span class="keyword">this</span>.map.on(cc.Node.EventType.MOUSE_DOWN,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">     <span class="keyword">let</span> pos = <span class="keyword">this</span>.map.convertToNodeSpaceAR(event.getLocation());</span><br><span class="line">     <span class="keyword">this</span>.graphics.fillColor = <span class="keyword">new</span> cc.Color().fromHEX(<span class="string">'#0000ff'</span>);</span><br><span class="line">     <span class="keyword">this</span>.graphics.circle(pos.x,pos.y,<span class="number">10</span>)</span><br><span class="line">     <span class="keyword">this</span>.graphics.fill();</span><br><span class="line">&#125;,<span class="keyword">this</span>)</span><br></pre></td></tr></table></figure>
@@ -530,15 +551,19 @@
 
 <h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>一直都是使用cnpm来安装依赖，安装速度快，也比较方便，但是多人协作开发是容易出现问题，多人协作开发依赖版本应该保持一致。避免依赖版本不兼容项目出现问题。</p>
 ]]></content>
+      <categories>
+        <category>知识</category>
+        <category>前端</category>
+      </categories>
   </entry>
   <entry>
     <title>圣杯布局,双飞翼布局</title>
     <url>/2020/05/25/%E5%89%8D%E7%AB%AF/css/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80,%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/</url>
     <content><![CDATA[<blockquote>
-<p>作者：放羊的小桃桃<br>链接：<a href="https://www.jianshu.com/p/81ef7e7094e8" target="_blank" rel="noopener">https://www.jianshu.com/p/81ef7e7094e8</a><br>来源：简书<br>简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。<br>参考： <a href="https://www.cnblogs.com/imwtr/p/4441741.html" target="_blank" rel="noopener">https://www.cnblogs.com/imwtr/p/4441741.html</a></p>
+<p>作者：放羊的小桃桃<br>链接：<a href="https://www.jianshu.com/p/81ef7e7094e8" target="_blank" rel="external nofollow noopener noreferrer">https://www.jianshu.com/p/81ef7e7094e8</a><br>来源：简书<br>简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。<br>参考： <a href="https://www.cnblogs.com/imwtr/p/4441741.html" target="_blank" rel="external nofollow noopener noreferrer">https://www.cnblogs.com/imwtr/p/4441741.html</a></p>
 </blockquote>
 <p>圣杯布局和双飞翼布局是前端工程师需要日常掌握的重要布局方式。两者的功能相同，都是为了实现一个 <strong>两侧宽度固定，中间宽度自适应的三栏布局。</strong><br><img src="https://upload-images.jianshu.io/upload_images/9397803-ab11463cd3c26105.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/981/format/webp" alt="image"></p>
-<p>圣杯布局来源于文章<a href="https://alistapart.com/article/holygrail" target="_blank" rel="noopener">In Search of the Holy Grail</a>，而双飞翼布局来源于淘宝UED。虽然两者的实现方法略有差异，不过都遵循了以下要点：</p>
+<p>圣杯布局来源于文章<a href="https://alistapart.com/article/holygrail" target="_blank" rel="external nofollow noopener noreferrer">In Search of the Holy Grail</a>，而双飞翼布局来源于淘宝UED。虽然两者的实现方法略有差异，不过都遵循了以下要点：</p>
 <ul>
 <li>两侧宽度固定，中间宽度自适应</li>
 <li>中间部分在DOM结构上优先，以便先行渲染</li>
@@ -573,7 +598,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  min-width: 550px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>综上所述，圣杯布局的CSS代码为：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  min-width: 550px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#container &#123;</span><br><span class="line">  padding-left: 200px; </span><br><span class="line">  padding-right: 150px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#container .column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#center &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">  margin-left: -100%;</span><br><span class="line">  position: relative;</span><br><span class="line">  right: 200px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">  margin-right: -150px; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#footer &#123;</span><br><span class="line">  clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>关于圣杯布局的示例，可参考：<a href="https://litaooooo.github.io/page-examples/holy-grail.html" target="_blank" rel="noopener">圣杯布局</a></p>
+<p>关于圣杯布局的示例，可参考：<a href="https://litaooooo.github.io/page-examples/holy-grail.html" target="_blank" rel="external nofollow noopener noreferrer">圣杯布局</a></p>
 <p>最后提醒一下很多朋友可能会忽略的小细节：在<code>#center</code>中，包含了一条声明<code>width: 100%</code>，这是中间栏能够做到自适应的关键。可能会有朋友认为不需要设置这条声明，因为觉得center在不设置宽度的情况下会默认将宽度设置为父元素(container)的100%宽度。但需要注意到，center是浮动元素，由于浮动具有包裹性，在不显式设置宽度的情况下会自动“收缩”到内容的尺寸大小。如果去掉width: 100%，则当中间栏不包含或者包含较少内容时，整个布局会“崩掉”，而达不到这样的效果：</p>
 <p><img src="https://upload-images.jianshu.io/upload_images/9397803-09a8a5617072d0a2.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/904/format/webp" alt="image"></p>
 <h2 id="双飞翼布局"><a href="#双飞翼布局" class="headerlink" title="双飞翼布局"></a>双飞翼布局</h2><h3 id="DOM结构-1"><a href="#DOM结构-1" class="headerlink" title="DOM结构"></a>DOM结构</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;header&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;container&quot; class&#x3D;&quot;column&quot;&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;center&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;left&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;right&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;footer&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;body&gt;</span><br></pre></td></tr></table></figure>
@@ -593,10 +618,10 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  min-width: 500px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>至此双飞翼布局大功告成！其布局整体代码为：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  min-width: 500px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#container &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line">        </span><br><span class="line">#center &#123;</span><br><span class="line">  margin-left: 200px;</span><br><span class="line">  margin-right: 150px;</span><br><span class="line">&#125;</span><br><span class="line">        </span><br><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">  margin-left: -100%;</span><br><span class="line">&#125;</span><br><span class="line">        </span><br><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">  margin-left: -150px;</span><br><span class="line">&#125;</span><br><span class="line">        </span><br><span class="line">#footer &#123;</span><br><span class="line">  clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>关于双飞翼布局的示例，可参考：<a href="https://litaooooo.github.io/page-examples/double-wings.html" target="_blank" rel="noopener">双飞翼布局</a></p>
+<p>关于双飞翼布局的示例，可参考：<a href="https://litaooooo.github.io/page-examples/double-wings.html" target="_blank" rel="external nofollow noopener noreferrer">双飞翼布局</a></p>
 <h2 id="总结与思考"><a href="#总结与思考" class="headerlink" title="总结与思考"></a>总结与思考</h2><p>通过对圣杯布局和双飞翼布局的介绍可以看出，圣杯布局在DOM结构上显得更加直观和自然，且在日常开发过程中，更容易形成这样的DOM结构（通常<code>&lt;aside&gt;</code>和<code>&lt;article&gt;/&lt;section&gt;</code>一起被嵌套在<code>&lt;main&gt;</code>中）；而双飞翼布局在实现上由于不需要使用定位，所以更加简洁，且允许的页面最小宽度通常比圣杯布局更小。</p>
-<p>其实通过思考不难发现，两者在代码实现上都额外引入了一个<div>标签，其目的都是为了既能保证中间栏产生浮动（浮动后还必须显式设置宽度），又能限制自身宽度为两侧栏留出空间。</p>
-<p>从这个角度出发，如果去掉额外添加的<div>标签，能否完成相同的布局呢？答案是肯定的，不过这需要在兼容性上做出牺牲：</p>
+<p>其实通过思考不难发现，两者在代码实现上都额外引入了一个<div>标签，其目的都是为了既能保证中间栏产生浮动（浮动后还必须显式设置宽度），又能限制自身宽度为两侧栏留出空间。</div></p>
+<p>从这个角度出发，如果去掉额外添加的<div>标签，能否完成相同的布局呢？答案是肯定的，不过这需要在兼容性上做出牺牲：</div></p>
 <h3 id="DOM结构-2"><a href="#DOM结构-2" class="headerlink" title="DOM结构"></a>DOM结构</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;header&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;center&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;left&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;right&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;footer&quot;&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
 <p>去掉额外的<code>&lt;div&gt;</code>标签后，得到的DOM结构如上所示，基于双飞翼布局的实现思路，只需要在<code>center</code>上做出修改：</p>
 <h3 id="使用calc"><a href="#使用calc" class="headerlink" title="使用calc()"></a>使用calc()</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line">#center &#123;</span><br><span class="line">  margin-left: 200px;</span><br><span class="line">  margin-right: 150px;</span><br><span class="line">  width: calc(100% - 350px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -694,8 +719,8 @@
     <title>样式统一化</title>
     <url>/2020/05/25/css/%E7%9F%A5%E8%AF%86/%E6%A0%B7%E5%BC%8F%E7%BB%9F%E4%B8%80%E5%8C%96/</url>
     <content><![CDATA[<ol>
-<li><a href="http://necolas.gihub.io/normalize.css/" target="_blank" rel="noopener">Normalize.css</a></li>
-<li><a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank" rel="noopener">reset.css</a></li>
+<li><a href="http://necolas.gihub.io/normalize.css/" target="_blank" rel="external nofollow noopener noreferrer">Normalize.css</a></li>
+<li><a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank" rel="external nofollow noopener noreferrer">reset.css</a></li>
 </ol>
 ]]></content>
       <categories>
@@ -758,14 +783,14 @@
     <content><![CDATA[<blockquote>
 <p>这里直接摘抄阮一峰老师的博客文章用来理解，本身他讲的就通俗易懂</p>
 <blockquote>
-<p><a href="http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html</a></p>
+<p><a href="http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html" target="_blank" rel="external nofollow noopener noreferrer">http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html</a></p>
 </blockquote>
 </blockquote>
-<p><a href="http://blog.jquery.com/2013/01/15/jquery-1-9-final-jquery-2-0-beta-migrate-final-released/" target="_blank" rel="noopener">jQuery 1.9</a>发布。</p>
+<p><a href="http://blog.jquery.com/2013/01/15/jquery-1-9-final-jquery-2-0-beta-migrate-final-released/" target="_blank" rel="external nofollow noopener noreferrer">jQuery 1.9</a>发布。</p>
 <p><img src="/static/%E7%9F%A5%E8%AF%86/sourcemap/sourcemap%E6%A6%82%E8%BF%B0/images/bg2013012203.png" alt="img"></p>
 <p>这是2.0版之前的最后一个新版本，有很多新功能，其中一个就是支持Source Map。</p>
-<p>访问 <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js，打开压缩后的版本，滚动到底部，你可以看到最后一行是这样的：" target="_blank" rel="noopener">http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js，打开压缩后的版本，滚动到底部，你可以看到最后一行是这样的：</a></p>
-<p>这就是Source Map。它是一个独立的map文件，与源码在同一个目录下，你可以<a href="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.map" target="_blank" rel="noopener">点击进去</a>，看看它的样子。</p>
+<p>访问 <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js，打开压缩后的版本，滚动到底部，你可以看到最后一行是这样的：" target="_blank" rel="external nofollow noopener noreferrer">http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js，打开压缩后的版本，滚动到底部，你可以看到最后一行是这样的：</a></p>
+<p>这就是Source Map。它是一个独立的map文件，与源码在同一个目录下，你可以<a href="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.map" target="_blank" rel="external nofollow noopener noreferrer">点击进去</a>，看看它的样子。</p>
 <p>这是一个很有用的功能，本文将详细讲解这个功能。</p>
 <h2 id="一、从源码转换讲起"><a href="#一、从源码转换讲起" class="headerlink" title="一、从源码转换讲起"></a>一、从源码转换讲起</h2><p>JavaScript脚本正变得越来越复杂。大部分源码（尤其是各种函数库和框架）都要经过转换，才能投入生产环境。</p>
 <p>常见的源码转换，主要是以下三种情况：</p>
@@ -787,7 +812,7 @@
 <h2 id="四、如何生成Source-map"><a href="#四、如何生成Source-map" class="headerlink" title="四、如何生成Source map"></a><strong>四、如何生成Source map</strong></h2><blockquote>
 <p>这里不太对，现在前端webpack，gulp都可以自己生成sourcmap,这一段了解一下就行了，毕竟是好早的了。</p>
 </blockquote>
-<p>最常用的方法是使用Google的<a href="https://developers.google.com/closure/compiler/" target="_blank" rel="noopener">Closure编译器</a>。</p>
+<p>最常用的方法是使用Google的<a href="https://developers.google.com/closure/compiler/" target="_blank" rel="external nofollow noopener noreferrer">Closure编译器</a>。</p>
 <p>生成命令的格式如下：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">　java -jar compiler.jar \</span><br><span class="line">　　　　--js script.js \</span><br><span class="line">　　　　--create_source_map .&#x2F;script-min.js.map \</span><br><span class="line">　　　　--source_map_format&#x3D;V3 \</span><br><span class="line">　　　　--js_output_file script-min.js</span><br></pre></td></tr></table></figure>
 
@@ -814,9 +839,9 @@
 
 <p>有几点需要说明。首先，所有的值都是以0作为基数的。其次，第五位不是必需的，如果该位置没有对应names属性中的变量，可以省略第五位。再次，每一位都采用VLQ编码表示；由于VLQ编码是变长的，所以每一位可以由多个字符构成。</p>
 <p>如果某个位置是AAAAA，由于A在VLQ编码中表示0，因此这个位置的五个位实际上都是0。它的意思是，该位置在转换后代码的第0列，对应sources属性中第0个文件，属于转换前代码的第0行第0列，对应names属性中的第0个变量。</p>
-<h2 id="八、VLQ编码"><a href="#八、VLQ编码" class="headerlink" title="八、VLQ编码"></a><strong>八、VLQ编码</strong></h2><p>最后，谈谈如何用<a href="http://en.wikipedia.org/wiki/Variable-length_quantity" target="_blank" rel="noopener">VLQ编码</a>表示数值。</p>
+<h2 id="八、VLQ编码"><a href="#八、VLQ编码" class="headerlink" title="八、VLQ编码"></a><strong>八、VLQ编码</strong></h2><p>最后，谈谈如何用<a href="http://en.wikipedia.org/wiki/Variable-length_quantity" target="_blank" rel="external nofollow noopener noreferrer">VLQ编码</a>表示数值。</p>
 <p>这种编码最早用于MIDI文件，后来被多种格式采用。它的特点就是可以非常精简地表示很大的数值。</p>
-<p>VLQ编码是变长的。如果（整）数值在-15到+15之间（含两个端点），用一个字符表示；超出这个范围，就需要用多个字符表示。它规定，每个字符使用6个两进制位，正好可以借用<a href="http://en.wikipedia.org/wiki/Base_64" target="_blank" rel="noopener">Base 64</a>编码的字符表。</p>
+<p>VLQ编码是变长的。如果（整）数值在-15到+15之间（含两个端点），用一个字符表示；超出这个范围，就需要用多个字符表示。它规定，每个字符使用6个两进制位，正好可以借用<a href="http://en.wikipedia.org/wiki/Base_64" target="_blank" rel="external nofollow noopener noreferrer">Base 64</a>编码的字符表。</p>
 <p><img src="/static/%E7%9F%A5%E8%AF%86/sourcemap/sourcemap%E6%A6%82%E8%BF%B0/images/bg2013012202.png" alt="img"></p>
 <p>在这6个位中，左边的第一位（最高位）表示是否”连续”（continuation）。如果是1，代表这６个位后面的6个位也属于同一个数；如果是0，表示该数值到这6个位结束。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">　　Continuation</span><br><span class="line">　　|　　　　　Sign</span><br><span class="line">　　|　　　　　|</span><br><span class="line">　　V　　　　　V</span><br><span class="line">　　１０１０１１</span><br></pre></td></tr></table></figure>
@@ -825,9 +850,13 @@
 <h2 id="九、VLQ编码：实例"><a href="#九、VLQ编码：实例" class="headerlink" title="九、VLQ编码：实例"></a><strong>九、VLQ编码：实例</strong></h2><p>下面看一个例子，如何对数值16进行VLQ编码。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">　　第一步，将16改写成二进制形式10000。</span><br><span class="line"></span><br><span class="line">　　第二步，在最右边补充符号位。因为16大于0，所以符号位为0，整个数变成100000。</span><br><span class="line"></span><br><span class="line">　　第三步，从右边的最低位开始，将整个数每隔5位，进行分段，即变成1和00000两段。如果最高位所在的段不足5位，则前面补0，因此两段变成00001和00000。</span><br><span class="line"></span><br><span class="line">　　第四步，将两段的顺序倒过来，即00000和00001。</span><br><span class="line"></span><br><span class="line">　　第五步，在每一段的最前面添加一个&quot;连续位&quot;，除了最后一段为0，其他都为1，即变成100000和000001。</span><br><span class="line"></span><br><span class="line">　　第六步，将每一段转成Base 64编码。</span><br></pre></td></tr></table></figure>
 
-<p>查表可知，100000为g，000001为B。因此，数值16的VLQ编码为gB。上面的过程，看上去好像很复杂，做起来其实很简单，具体的实现请看官方的<a href="https://github.com/mozilla/source-map/blob/master/lib/source-map/base64-vlq.js" target="_blank" rel="noopener">base64-vlq.js</a>文件，里面有详细的注释。</p>
-<h2 id="十、参考链接"><a href="#十、参考链接" class="headerlink" title="十、参考链接"></a><strong>十、参考链接</strong></h2><p>　　- <a href="http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/" target="_blank" rel="noopener">Introduction To JavaScript Source Maps</a><br>　　- <a href="https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit" target="_blank" rel="noopener">Source Map Revision 3 Proposal</a></p>
+<p>查表可知，100000为g，000001为B。因此，数值16的VLQ编码为gB。上面的过程，看上去好像很复杂，做起来其实很简单，具体的实现请看官方的<a href="https://github.com/mozilla/source-map/blob/master/lib/source-map/base64-vlq.js" target="_blank" rel="external nofollow noopener noreferrer">base64-vlq.js</a>文件，里面有详细的注释。</p>
+<h2 id="十、参考链接"><a href="#十、参考链接" class="headerlink" title="十、参考链接"></a><strong>十、参考链接</strong></h2><p>　　- <a href="http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/" target="_blank" rel="external nofollow noopener noreferrer">Introduction To JavaScript Source Maps</a><br>　　- <a href="https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit" target="_blank" rel="external nofollow noopener noreferrer">Source Map Revision 3 Proposal</a></p>
 ]]></content>
+      <categories>
+        <category>知识</category>
+        <category>sourcemap</category>
+      </categories>
   </entry>
   <entry>
     <title>cocos龙骨局部换装</title>
@@ -867,8 +896,8 @@
 </ol>
 <blockquote>
 <p>参考资料</p>
-<p><a href="https://forum.cocos.org/t/topic/89037" target="_blank" rel="noopener">https://forum.cocos.org/t/topic/89037</a></p>
-<p><a href="https://docs.cocos.com/creator/manual/zh/components/dragonbones.html?h=插槽" target="_blank" rel="noopener">https://docs.cocos.com/creator/manual/zh/components/dragonbones.html?h=%E6%8F%92%E6%A7%BD</a></p>
+<p><a href="https://forum.cocos.org/t/topic/89037" target="_blank" rel="external nofollow noopener noreferrer">https://forum.cocos.org/t/topic/89037</a></p>
+<p><a href="https://docs.cocos.com/creator/manual/zh/components/dragonbones.html?h=插槽" target="_blank" rel="external nofollow noopener noreferrer">https://docs.cocos.com/creator/manual/zh/components/dragonbones.html?h=%E6%8F%92%E6%A7%BD</a></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -879,7 +908,7 @@
     <title>浏览器的同源策略</title>
     <url>/2020/05/15/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/%E5%90%8C%E6%BA%90%E4%B8%8E%E8%B7%A8%E5%9F%9F/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5/</url>
     <content><![CDATA[<blockquote>
-<p><strong>同源策略</strong>是一个重要的安全策略，它用于限制一个<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/源" target="_blank" rel="noopener">origin</a>的文档或者它加载的脚本如何能与另一个源的资源进行交互。它能帮助阻隔恶意文档，减少可能被攻击的媒介。</p>
+<p><strong>同源策略</strong>是一个重要的安全策略，它用于限制一个<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/源" target="_blank" rel="external nofollow noopener noreferrer">origin</a>的文档或者它加载的脚本如何能与另一个源的资源进行交互。它能帮助阻隔恶意文档，减少可能被攻击的媒介。</p>
 </blockquote>
 <h3 id="同源的例子"><a href="#同源的例子" class="headerlink" title="同源的例子"></a>同源的例子</h3><table>
 <thead>
@@ -909,7 +938,7 @@
 <td>different ports</td>
 </tr>
 </tbody></table>
-<h2 id="同源的定义"><a href="#同源的定义" class="headerlink" title="同源的定义"></a><strong>同源</strong>的<strong>定义</strong></h2><p>如果两个 URL 的 <a href="https://developer.mozilla.org/zh-CN/docs/Glossary/Protocol" target="_blank" rel="noopener">protocol</a>、<a href="https://developer.mozilla.org/en-US/docs/Glossary/port" target="_blank" rel="noopener">port</a> (如果有指定的话)和 <a href="https://developer.mozilla.org/en-US/docs/Glossary/host" target="_blank" rel="noopener">host</a> 都相同的话，则这两个 URL 是<em>同源</em>。这个方案也被称为“协议/主机/端口元组”，或者直接是 “元组”。（“元组” 是指一组项目构成的整体，双重/三重/四重/五重/等的通用形式）。</p>
+<h2 id="同源的定义"><a href="#同源的定义" class="headerlink" title="同源的定义"></a><strong>同源</strong>的<strong>定义</strong></h2><p>如果两个 URL 的 <a href="https://developer.mozilla.org/zh-CN/docs/Glossary/Protocol" target="_blank" rel="external nofollow noopener noreferrer">protocol</a>、<a href="https://developer.mozilla.org/en-US/docs/Glossary/port" target="_blank" rel="external nofollow noopener noreferrer">port</a> (如果有指定的话)和 <a href="https://developer.mozilla.org/en-US/docs/Glossary/host" target="_blank" rel="external nofollow noopener noreferrer">host</a> 都相同的话，则这两个 URL 是<em>同源</em>。这个方案也被称为“协议/主机/端口元组”，或者直接是 “元组”。（“元组” 是指一组项目构成的整体，双重/三重/四重/五重/等的通用形式）。</p>
 <p>下表给出了与 URL <code>http://store.company.com/dir/page.html</code> 的源进行对比的示例:</p>
 <table>
 <thead>
@@ -947,7 +976,7 @@
 </tbody></table>
 <h3 id="源的-继承"><a href="#源的-继承" class="headerlink" title="源的**继承**"></a><strong>源的**</strong>继承**</h3><p>在页面中通过 <code>about:blank</code> 或 <code>javascript:</code> URL 执行的脚本会继承打开该 URL 的文档的源，因为这些类型的 URLs 没有包含源服务器的相关信息。</p>
 <blockquote>
-<p>例如，<code>about:blank</code> 通常作为父脚本写入内容的新的空白弹出窗口的 URL（例如，通过 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/open" target="_blank" rel="noopener">Window.open()</a> ）。 如果此弹出窗口也包含 JavaScript，则该脚本将从创建它的脚本那里继承对应的源。</p>
+<p>例如，<code>about:blank</code> 通常作为父脚本写入内容的新的空白弹出窗口的 URL（例如，通过 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/open" target="_blank" rel="external nofollow noopener noreferrer">Window.open()</a> ）。 如果此弹出窗口也包含 JavaScript，则该脚本将从创建它的脚本那里继承对应的源。</p>
 </blockquote>
 <blockquote>
 <p>注意：在Gecko 6.0之前，如果用户在位置栏中输入 <code>data</code> URLs，<code>data</code> URLs 将继承当前浏览器窗口中网页的安全上下文。</p>
@@ -961,26 +990,26 @@
 <li><strong>端口</strong>：IE 未将端口号纳入到同源策略的检查中，因此 <code>https://company.com:81/index.html</code> 和 <code>https://company.com/index.html</code> 属于同源并且不受任何限制。</li>
 </ul>
 <p>这些差异点是不规范的，其它浏览器也未做出支持，但会助于开发基于window RT IE的应用程序。</p>
-<h2 id="源的更改"><a href="#源的更改" class="headerlink" title="源的更改"></a><strong>源</strong>的更改</h2><p>满足某些限制条件的情况下，页面是可以修改它的源。脚本可以将 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/domain" target="_blank" rel="noopener"><code>document.domain</code></a> 的值设置为其当前域或其当前域的父域。如果将其设置为其当前域的父域，则这个较短的父域将用于后续源检查。</p>
-<p>例如：假设 <a href="http://store.company.com/dir/other.html" target="_blank" rel="noopener">http://store.company.com/dir/other.html</a> 文档中的一个脚本执行以下语句：</p>
+<h2 id="源的更改"><a href="#源的更改" class="headerlink" title="源的更改"></a><strong>源</strong>的更改</h2><p>满足某些限制条件的情况下，页面是可以修改它的源。脚本可以将 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/domain" target="_blank" rel="external nofollow noopener noreferrer"><code>document.domain</code></a> 的值设置为其当前域或其当前域的父域。如果将其设置为其当前域的父域，则这个较短的父域将用于后续源检查。</p>
+<p>例如：假设 <a href="http://store.company.com/dir/other.html" target="_blank" rel="external nofollow noopener noreferrer">http://store.company.com/dir/other.html</a> 文档中的一个脚本执行以下语句：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">document.domain = "company.com";</span><br></pre></td></tr></table></figure>
 
-<p>这条语句执行之后，页面将会成功地通过与 <code>http://company.com/dir/page.html</code> 的同源检测（假设<code>http://company.com/dir/page.html</code> 将其 <code>document.domain</code> 设置为“<code>company.com</code>”，以表明它希望允许这样做 - 更多有关信息，请参阅 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/domain" target="_blank" rel="noopener"><code>document.domain</code></a> ）。然而，<code>company.com</code> 不能设置 <code>document.domain</code> 为 <code>othercompany.com</code>，因为它不是 <code>company.com</code> 的父域。</p>
+<p>这条语句执行之后，页面将会成功地通过与 <code>http://company.com/dir/page.html</code> 的同源检测（假设<code>http://company.com/dir/page.html</code> 将其 <code>document.domain</code> 设置为“<code>company.com</code>”，以表明它希望允许这样做 - 更多有关信息，请参阅 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/domain" target="_blank" rel="external nofollow noopener noreferrer"><code>document.domain</code></a> ）。然而，<code>company.com</code> 不能设置 <code>document.domain</code> 为 <code>othercompany.com</code>，因为它不是 <code>company.com</code> 的父域。</p>
 <p>端口号是由浏览器另行检查的。任何对document.domain的赋值操作，包括 <code>document.domain = document.domain</code> 都会导致端口号被重写为 <code>null</code> 。因此 <code>company.com:8080</code> <strong>不能</strong>仅通过设置 <code>document.domain = &quot;company.com&quot;</code> 来与<code>company.com</code> 通信。必须在他们双方中都进行赋值，以确保端口号都为 <code>null</code> 。</p>
 <blockquote>
 <p>注意：使用 <code>document.domain</code> 来允许子域安全访问其父域时，您需要在父域和子域中设置 document.domain 为相同的值。这是必要的，即使这样做只是将父域设置回其原始值。不这样做可能会导致权限错误。</p>
 </blockquote>
-<h2 id="跨源网络访问"><a href="#跨源网络访问" class="headerlink" title="跨源网络访问"></a>跨源网络访问</h2><p>同源策略控制不同源之间的交互，例如在使用<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest" target="_blank" rel="noopener"><code>XMLHttpRequest</code></a> 或 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" target="_blank" rel="noopener"><code>![img](/D:/app/Typora)</code></a> 标签时则会受到同源策略的约束。这些交互通常分为三类：</p>
+<h2 id="跨源网络访问"><a href="#跨源网络访问" class="headerlink" title="跨源网络访问"></a>跨源网络访问</h2><p>同源策略控制不同源之间的交互，例如在使用<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest" target="_blank" rel="external nofollow noopener noreferrer"><code>XMLHttpRequest</code></a> 或 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" target="_blank" rel="external nofollow noopener noreferrer"><code>![img](/D:/app/Typora)</code></a> 标签时则会受到同源策略的约束。这些交互通常分为三类：</p>
 <ul>
-<li>跨域<strong>*写操作</strong>（Cross-origin writes）<em>一般是被允许的</em>。*例如链接（links），重定向以及表单提交。特定少数的HTTP请求需要添加 <a href="https://developer.mozilla.org/zh-CN/docs/HTTP/Access_control_CORS#Preflighted_requests" target="_blank" rel="noopener">preflight</a>。</li>
+<li>跨域<strong>*写操作</strong>（Cross-origin writes）<em>一般是被允许的</em>。*例如链接（links），重定向以及表单提交。特定少数的HTTP请求需要添加 <a href="https://developer.mozilla.org/zh-CN/docs/HTTP/Access_control_CORS#Preflighted_requests" target="_blank" rel="external nofollow noopener noreferrer">preflight</a>。</li>
 <li>跨域<strong>*资源嵌入</strong>（Cross-origin embedding）*一般是被允许（后面会举例说明）。</li>
-<li>跨域<strong>*读操作</strong>（Cross-origin reads）<em>一般是不被允许的</em>，*但常可以通过内嵌资源来巧妙的进行读取访问。例如，你可以读取嵌入图片的高度和宽度，调用内嵌脚本的方法，或<a href="https://grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information" target="_blank" rel="noopener">availability of an embedded resource</a>.</li>
+<li>跨域<strong>*读操作</strong>（Cross-origin reads）<em>一般是不被允许的</em>，*但常可以通过内嵌资源来巧妙的进行读取访问。例如，你可以读取嵌入图片的高度和宽度，调用内嵌脚本的方法，或<a href="https://grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information" target="_blank" rel="external nofollow noopener noreferrer">availability of an embedded resource</a>.</li>
 </ul>
 <p>以下是可能嵌入跨源的资源的一些示例：</p>
 <ul>
 <li><p><code>&lt;script src=&quot;...&quot;&gt;&lt;/script&gt;</code> 标签嵌入跨域脚本。语法错误信息只能被同源脚本中捕捉到。</p>
 </li>
-<li><p>`` 标签嵌入CSS。由于CSS的松散的语法规则，CSS的跨域需要一个设置正确的 HTTP 头部 <code>Content-Type</code> 。不同浏览器有不同的限制： <a href="http://msdn.microsoft.com/zh-CN/library/ie/gg622939(v=vs.85).aspx" target="_blank" rel="noopener">IE</a>, <a href="http://www.mozilla.org/security/announce/2010/mfsa2010-46.html" target="_blank" rel="noopener">Firefox</a>, <a href="http://code.google.com/p/chromium/issues/detail?id=9877" target="_blank" rel="noopener">Chrome</a>, <a href="http://support.apple.com/kb/HT4070" target="_blank" rel="noopener">Safari</a> (跳至CVE-2010-0051)部分 和 <a href="http://www.opera.com/support/kb/view/943/" target="_blank" rel="noopener">Opera</a>。</p>
+<li><p>`` 标签嵌入CSS。由于CSS的松散的语法规则，CSS的跨域需要一个设置正确的 HTTP 头部 <code>Content-Type</code> 。不同浏览器有不同的限制： <a href="http://msdn.microsoft.com/zh-CN/library/ie/gg622939(v=vs.85).aspx" target="_blank" rel="external nofollow noopener noreferrer">IE</a>, <a href="http://www.mozilla.org/security/announce/2010/mfsa2010-46.html" target="_blank" rel="external nofollow noopener noreferrer">Firefox</a>, <a href="http://code.google.com/p/chromium/issues/detail?id=9877" target="_blank" rel="external nofollow noopener noreferrer">Chrome</a>, <a href="http://support.apple.com/kb/HT4070" target="_blank" rel="external nofollow noopener noreferrer">Safari</a> (跳至CVE-2010-0051)部分 和 <a href="http://www.opera.com/support/kb/view/943/" target="_blank" rel="external nofollow noopener noreferrer">Opera</a>。</p>
 </li>
 <li><p>通过 <code>&lt;img&gt;</code> 展示的图片。支持的图片格式包括PNG,JPEG,GIF,BMP,SVG,…</p>
 </li>
@@ -990,16 +1019,16 @@
 </li>
 <li><p>通过 <code>@font-face</code> 引入的字体。一些浏览器允许跨域字体（ cross-origin fonts），一些需要同源字体（same-origin fonts）。</p>
 </li>
-<li><p>通过 <code>&lt;iframe&gt;</code> 载入的任何资源。站点可以使用 <a href="https://developer.mozilla.org/zh-CN/docs/HTTP/X-Frame-Options" target="_blank" rel="noopener">X-Frame-Options</a> 消息头来阻止这种形式的跨域交互。</p>
+<li><p>通过 <code>&lt;iframe&gt;</code> 载入的任何资源。站点可以使用 <a href="https://developer.mozilla.org/zh-CN/docs/HTTP/X-Frame-Options" target="_blank" rel="external nofollow noopener noreferrer">X-Frame-Options</a> 消息头来阻止这种形式的跨域交互。</p>
 </li>
 </ul>
-<h3 id="如何允许跨源访问"><a href="#如何允许跨源访问" class="headerlink" title="如何允许跨源访问"></a><strong>如何允许跨源访问</strong></h3><p>可以使用 <a href="https://developer.mozilla.org/zh-CN/docs/HTTP/Access_control_CORS" target="_blank" rel="noopener">CORS</a> 来允许跨源访问。CORS 是 <a href="https://developer.mozilla.org/zh-CN/docs/Glossary/HTTP" target="_blank" rel="noopener">HTTP</a> 的一部分，它允许服务端来指定哪些主机可以从这个服务端加载资源。</p>
-<h3 id="如何阻止跨源访问"><a href="#如何阻止跨源访问" class="headerlink" title="如何阻止跨源访问"></a><strong>如何阻止跨源访问</strong></h3><p>阻止跨域写操作，只要检测请求中的一个不可推测的标记(CSRF token)即可，这个标记被称为 <a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)" target="_blank" rel="noopener">Cross-Site Request Forgery (CSRF)</a> 标记。你必须使用这个标记来阻止页面的跨站读操作。</p>
+<h3 id="如何允许跨源访问"><a href="#如何允许跨源访问" class="headerlink" title="如何允许跨源访问"></a><strong>如何允许跨源访问</strong></h3><p>可以使用 <a href="https://developer.mozilla.org/zh-CN/docs/HTTP/Access_control_CORS" target="_blank" rel="external nofollow noopener noreferrer">CORS</a> 来允许跨源访问。CORS 是 <a href="https://developer.mozilla.org/zh-CN/docs/Glossary/HTTP" target="_blank" rel="external nofollow noopener noreferrer">HTTP</a> 的一部分，它允许服务端来指定哪些主机可以从这个服务端加载资源。</p>
+<h3 id="如何阻止跨源访问"><a href="#如何阻止跨源访问" class="headerlink" title="如何阻止跨源访问"></a><strong>如何阻止跨源访问</strong></h3><p>阻止跨域写操作，只要检测请求中的一个不可推测的标记(CSRF token)即可，这个标记被称为 <a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)" target="_blank" rel="external nofollow noopener noreferrer">Cross-Site Request Forgery (CSRF)</a> 标记。你必须使用这个标记来阻止页面的跨站读操作。</p>
 <p>阻止资源的跨站读取，需要保证该资源是不可嵌入的。阻止嵌入行为是必须的，因为嵌入资源通常向其暴露信息。</p>
 <p>阻止跨站嵌入，需要确保你的资源不能通过以上列出的可嵌入资源格式使用。浏览器可能不会遵守 <code>Content-Type</code> 头部定义的类型。例如，如果您在HTML文档中指定 `` 标记，则浏览器将尝试将标签内部的 HTML 解析为JavaScript。 当您的资源不是您网站的入口点时，您还可以使用CSRF令牌来防止嵌入。</p>
-<h2 id="跨源脚本API访问"><a href="#跨源脚本API访问" class="headerlink" title="跨源脚本API访问"></a>跨源脚本API访问</h2><p>JavaScript 的 API 中，如 <code>iframe.contentWindow</code>、 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/parent" target="_blank" rel="noopener"><code>window.parent</code></a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/open" target="_blank" rel="noopener"><code>window.open</code></a> 和 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/opener" target="_blank" rel="noopener"><code>window.opener</code></a> 允许文档间直接相互引用。当两个文档的源不同时，这些引用方式将对 <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/browsers.html#security-window" target="_blank" rel="noopener">Window</a> 和 <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/history.html#security-location" target="_blank" rel="noopener">Location</a>对象的访问添加限制，如下两节所述。</p>
-<p>为了能让不同源中文档进行交流，可以使用 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage" target="_blank" rel="noopener"><code>window.postMessage</code></a>。</p>
-<p>规范: <a href="https://html.spec.whatwg.org/multipage/browsers.html#cross-origin-objects" target="_blank" rel="noopener">HTML Living Standard § Cross-origin objects</a> 。</p>
+<h2 id="跨源脚本API访问"><a href="#跨源脚本API访问" class="headerlink" title="跨源脚本API访问"></a>跨源脚本API访问</h2><p>JavaScript 的 API 中，如 <code>iframe.contentWindow</code>、 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/parent" target="_blank" rel="external nofollow noopener noreferrer"><code>window.parent</code></a>、<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/open" target="_blank" rel="external nofollow noopener noreferrer"><code>window.open</code></a> 和 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/opener" target="_blank" rel="external nofollow noopener noreferrer"><code>window.opener</code></a> 允许文档间直接相互引用。当两个文档的源不同时，这些引用方式将对 <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/browsers.html#security-window" target="_blank" rel="external nofollow noopener noreferrer">Window</a> 和 <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/history.html#security-location" target="_blank" rel="external nofollow noopener noreferrer">Location</a>对象的访问添加限制，如下两节所述。</p>
+<p>为了能让不同源中文档进行交流，可以使用 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage" target="_blank" rel="external nofollow noopener noreferrer"><code>window.postMessage</code></a>。</p>
+<p>规范: <a href="https://html.spec.whatwg.org/multipage/browsers.html#cross-origin-objects" target="_blank" rel="external nofollow noopener noreferrer">HTML Living Standard § Cross-origin objects</a> 。</p>
 <h3 id="允许以下对-Window-属性的跨源访问："><a href="#允许以下对-Window-属性的跨源访问：" class="headerlink" title="允许以下对 Window 属性的跨源访问："></a>允许以下对 <code>Window</code> 属性的跨源访问：</h3><table>
 <thead>
 <tr>
@@ -1007,16 +1036,16 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/blur" target="_blank" rel="noopener"><code>window.blur</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/blur" target="_blank" rel="external nofollow noopener noreferrer"><code>window.blur</code></a></td>
 </tr>
 <tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/close" target="_blank" rel="noopener"><code>window.close</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/close" target="_blank" rel="external nofollow noopener noreferrer"><code>window.close</code></a></td>
 </tr>
 <tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/focus" target="_blank" rel="noopener"><code>window.focus</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/focus" target="_blank" rel="external nofollow noopener noreferrer"><code>window.focus</code></a></td>
 </tr>
 <tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage" target="_blank" rel="noopener"><code>window.postMessage</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage" target="_blank" rel="external nofollow noopener noreferrer"><code>window.postMessage</code></a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1027,39 +1056,39 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/closed" target="_blank" rel="noopener"><code>window.closed</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/closed" target="_blank" rel="external nofollow noopener noreferrer"><code>window.closed</code></a></td>
 <td align="left">只读.</td>
 </tr>
 <tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/frames" target="_blank" rel="noopener"><code>window.frames</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/frames" target="_blank" rel="external nofollow noopener noreferrer"><code>window.frames</code></a></td>
 <td align="left">只读.</td>
 </tr>
 <tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/length" target="_blank" rel="noopener"><code>window.length</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/length" target="_blank" rel="external nofollow noopener noreferrer"><code>window.length</code></a></td>
 <td align="left">只读.</td>
 </tr>
 <tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/location" target="_blank" rel="noopener"><code>window.location</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/location" target="_blank" rel="external nofollow noopener noreferrer"><code>window.location</code></a></td>
 <td align="left">读/写.</td>
 </tr>
 <tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/opener" target="_blank" rel="noopener"><code>window.opener</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/opener" target="_blank" rel="external nofollow noopener noreferrer"><code>window.opener</code></a></td>
 <td align="left">只读.</td>
 </tr>
 <tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/parent" target="_blank" rel="noopener"><code>window.parent</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/parent" target="_blank" rel="external nofollow noopener noreferrer"><code>window.parent</code></a></td>
 <td align="left">只读.</td>
 </tr>
 <tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/self" target="_blank" rel="noopener"><code>window.self</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/self" target="_blank" rel="external nofollow noopener noreferrer"><code>window.self</code></a></td>
 <td align="left">只读.</td>
 </tr>
 <tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/top" target="_blank" rel="noopener"><code>window.top</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/top" target="_blank" rel="external nofollow noopener noreferrer"><code>window.top</code></a></td>
 <td align="left">只读.</td>
 </tr>
 <tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/window" target="_blank" rel="noopener"><code>window.window</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/window" target="_blank" rel="external nofollow noopener noreferrer"><code>window.window</code></a></td>
 <td align="left">只读.</td>
 </tr>
 </tbody></table>
@@ -1072,7 +1101,7 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Location/replace" target="_blank" rel="noopener"><code>location.replace</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Location/replace" target="_blank" rel="external nofollow noopener noreferrer"><code>location.replace</code></a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1083,21 +1112,26 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/URLUtils/href" target="_blank" rel="noopener"><code>URLUtils.href</code></a></td>
+<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/URLUtils/href" target="_blank" rel="external nofollow noopener noreferrer"><code>URLUtils.href</code></a></td>
 <td align="left"></td>
 </tr>
 </tbody></table>
 <p>某些浏览器允许访问除上述外更多的属性。</p>
 <blockquote>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy</a></p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy</a></p>
 </blockquote>
-<h2 id="跨源数据存储访问"><a href="#跨源数据存储访问" class="headerlink" title="跨源数据存储访问"></a>跨源数据存储访问</h2><p>访问存储在浏览器中的数据，如 <a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/API/DOM/Storage" target="_blank" rel="noopener">localStorage</a> 和 <a href="https://developer.mozilla.org/zh-CN/docs/IndexedDB" target="_blank" rel="noopener">IndexedDB</a>，是以源进行分割。每个源都拥有自己单独的存储空间，一个源中的 JavaScript 脚本不能对属于其它源的数据进行读写操作。</p>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Glossary/Cookie" target="_blank" rel="noopener">Cookies</a> 使用不同的源定义方式。一个页面可以为本域和其父域设置 cookie，只要是父域不是公共后缀（public suffix）即可。Firefox 和 Chrome 使用 <a href="http://publicsuffix.org/" target="_blank" rel="noopener">Public Suffix List</a> 检测一个域是否是公共后缀（public suffix）。Internet Explorer 使用其内部的方法来检测域是否是公共后缀。不管使用哪个协议（HTTP/HTTPS）或端口号，浏览器都允许给定的域以及其任何子域名(sub-domains) 访问 cookie。当你设置 cookie 时，你可以使用 <code>Domain</code>、<code>Path</code>、<code>Secure</code>、和 <code>HttpOnly</code> 标记来限定其可访问性。当你读取 cookie 时，你无法知道它是在哪里被设置的。 即使您只使用安全的 https 连接，您看到的任何 cookie 都有可能是使用不安全的连接进行设置的。</p>
+<h2 id="跨源数据存储访问"><a href="#跨源数据存储访问" class="headerlink" title="跨源数据存储访问"></a>跨源数据存储访问</h2><p>访问存储在浏览器中的数据，如 <a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/API/DOM/Storage" target="_blank" rel="external nofollow noopener noreferrer">localStorage</a> 和 <a href="https://developer.mozilla.org/zh-CN/docs/IndexedDB" target="_blank" rel="external nofollow noopener noreferrer">IndexedDB</a>，是以源进行分割。每个源都拥有自己单独的存储空间，一个源中的 JavaScript 脚本不能对属于其它源的数据进行读写操作。</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Glossary/Cookie" target="_blank" rel="external nofollow noopener noreferrer">Cookies</a> 使用不同的源定义方式。一个页面可以为本域和其父域设置 cookie，只要是父域不是公共后缀（public suffix）即可。Firefox 和 Chrome 使用 <a href="http://publicsuffix.org/" target="_blank" rel="external nofollow noopener noreferrer">Public Suffix List</a> 检测一个域是否是公共后缀（public suffix）。Internet Explorer 使用其内部的方法来检测域是否是公共后缀。不管使用哪个协议（HTTP/HTTPS）或端口号，浏览器都允许给定的域以及其任何子域名(sub-domains) 访问 cookie。当你设置 cookie 时，你可以使用 <code>Domain</code>、<code>Path</code>、<code>Secure</code>、和 <code>HttpOnly</code> 标记来限定其可访问性。当你读取 cookie 时，你无法知道它是在哪里被设置的。 即使您只使用安全的 https 连接，您看到的任何 cookie 都有可能是使用不安全的连接进行设置的。</p>
 <h2 id="参见"><a href="#参见" class="headerlink" title="参见"></a>参见</h2><ul>
-<li><a href="http://www.w3.org/Security/wiki/Same_Origin_Policy" target="_blank" rel="noopener">Same-Origin Policy at W3C</a></li>
-<li><a href="http://web.dev/secure/same-origin-policy" target="_blank" rel="noopener">http://web.dev/secure/same-origin-policy</a></li>
+<li><a href="http://www.w3.org/Security/wiki/Same_Origin_Policy" target="_blank" rel="external nofollow noopener noreferrer">Same-Origin Policy at W3C</a></li>
+<li><a href="http://web.dev/secure/same-origin-policy" target="_blank" rel="external nofollow noopener noreferrer">http://web.dev/secure/same-origin-policy</a></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>知识</category>
+        <category>前端</category>
+        <category>同源与跨域</category>
+      </categories>
   </entry>
   <entry>
     <title>560. 和为K的子数组</title>
@@ -1123,15 +1157,22 @@
 <h3 id="其他题解"><a href="#其他题解" class="headerlink" title="其他题解"></a>其他题解</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var subarraySum &#x3D; function(nums, k) &#123;</span><br><span class="line">    const mp &#x3D; new Map();</span><br><span class="line">    mp.set(0, 1);</span><br><span class="line">    let count &#x3D; 0, pre &#x3D; 0;</span><br><span class="line">    for (const x of nums) &#123;</span><br><span class="line">        pre +&#x3D; x;</span><br><span class="line">        if (mp.has(pre - k)) count +&#x3D; mp.get(pre - k);</span><br><span class="line">        if (mp.has(pre)) mp.set(pre, mp.get(pre) + 1);</span><br><span class="line">        else mp.set(pre, 1);</span><br><span class="line">    &#125;</span><br><span class="line">    return count;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
   </entry>
   <entry>
     <title>10种跨域解决方案（终极大招）</title>
     <url>/2020/05/14/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/%E5%89%8D%E7%AB%AF/10%E7%A7%8D%E8%B7%A8%E5%9F%9F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%EF%BC%88%E7%BB%88%E6%9E%81%E5%A4%A7%E6%8B%9B%EF%BC%89/</url>
     <content><![CDATA[<blockquote>
 <p>原文链接</p>
-<p><a href="https://juejin.im/post/5e948bbbf265da47f2561705" target="_blank" rel="noopener">https://juejin.im/post/5e948bbbf265da47f2561705</a></p>
+<p><a href="https://juejin.im/post/5e948bbbf265da47f2561705" target="_blank" rel="external nofollow noopener noreferrer">https://juejin.im/post/5e948bbbf265da47f2561705</a></p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>疑难杂症</category>
+        <category>前端</category>
+      </categories>
   </entry>
   <entry>
     <title>scss主题切换功能</title>
@@ -1233,45 +1274,62 @@
 
 <blockquote>
 <p>扩展文章</p>
-<p><a href="https://fed.taobao.org/blog/taofed/do71ct/some-thing-about-random/?spm=taofed.homepage.header.7.7eab5ac81EtpFe" target="_blank" rel="noopener">https://fed.taobao.org/blog/taofed/do71ct/some-thing-about-random/?spm=taofed.homepage.header.7.7eab5ac81EtpFe</a></p>
+<p><a href="https://fed.taobao.org/blog/taofed/do71ct/some-thing-about-random/?spm=taofed.homepage.header.7.7eab5ac81EtpFe" target="_blank" rel="external nofollow noopener noreferrer">https://fed.taobao.org/blog/taofed/do71ct/some-thing-about-random/?spm=taofed.homepage.header.7.7eab5ac81EtpFe</a></p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>原创</category>
+      </categories>
   </entry>
   <entry>
     <title>rem响应式原理</title>
     <url>/2020/05/13/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/rem%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/</url>
     <content><![CDATA[<blockquote>
 <p><strong>参考文章</strong></p>
-<p><a href="https://blog.csdn.net/qq_36263601/article/details/78366710" target="_blank" rel="noopener">https://blog.csdn.net/qq_36263601/article/details/78366710</a></p>
-<p><a href="https://segmentfault.com/a/1190000007526917" target="_blank" rel="noopener">https://segmentfault.com/a/1190000007526917</a></p>
-<p><a href="https://github.com/amfe/lib-flexible" target="_blank" rel="noopener">https://github.com/amfe/lib-flexible</a></p>
+<p><a href="https://blog.csdn.net/qq_36263601/article/details/78366710" target="_blank" rel="external nofollow noopener noreferrer">https://blog.csdn.net/qq_36263601/article/details/78366710</a></p>
+<p><a href="https://segmentfault.com/a/1190000007526917" target="_blank" rel="external nofollow noopener noreferrer">https://segmentfault.com/a/1190000007526917</a></p>
+<p><a href="https://github.com/amfe/lib-flexible" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/amfe/lib-flexible</a></p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>知识</category>
+        <category>前端</category>
+      </categories>
   </entry>
   <entry>
     <title>低版本vue打包之后一片空白</title>
     <url>/2020/05/13/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/vue/%E4%BD%8E%E7%89%88%E6%9C%ACvue%E6%89%93%E5%8C%85%E4%B9%8B%E5%90%8E%E4%B8%80%E7%89%87%E7%A9%BA%E7%99%BD/</url>
     <content><![CDATA[<blockquote>
-<p><a href="https://blog.csdn.net/dq674362263/article/details/81876445" target="_blank" rel="noopener">https://blog.csdn.net/dq674362263/article/details/81876445</a></p>
+<p><a href="https://blog.csdn.net/dq674362263/article/details/81876445" target="_blank" rel="external nofollow noopener noreferrer">https://blog.csdn.net/dq674362263/article/details/81876445</a></p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>疑难杂症</category>
+        <category>vue</category>
+      </categories>
   </entry>
   <entry>
     <title>作用域是什么</title>
     <url>/2020/05/12/%E9%9A%8F%E6%83%B3/%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%98%AF%E4%BB%80%E4%B9%88%20/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
   </entry>
   <entry>
     <title>网页棋牌游戏的注意事项</title>
     <url>/2020/05/12/%E9%9A%8F%E6%83%B3/%E7%BD%91%E9%A1%B5%E6%A3%8B%E7%89%8C%E6%B8%B8%E6%88%8F%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
     <content><![CDATA[<h3 id="后台-gt-前台"><a href="#后台-gt-前台" class="headerlink" title="后台&gt;前台"></a>后台&gt;前台</h3><p>注意，最简单的办法就是先把界面全部清除，在获取重连数据，根据数据进行界面的重新绘制。清除包括界面一切元素，定时器，动画效果.</p>
 ]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
   </entry>
   <entry>
     <title>增量时间（deltaTime）</title>
     <url>/2020/05/11/%E7%9F%A5%E8%AF%86/cocos/%E5%A2%9E%E9%87%8F%E6%97%B6%E9%97%B4%EF%BC%88deltaTime%EF%BC%89/</url>
     <content><![CDATA[<blockquote>
-<p>作者：EickL<br>链接：<a href="https://www.jianshu.com/p/a628d1e8a8c5" target="_blank" rel="noopener">https://www.jianshu.com/p/a628d1e8a8c5</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>作者：EickL<br>链接：<a href="https://www.jianshu.com/p/a628d1e8a8c5" target="_blank" rel="external nofollow noopener noreferrer">https://www.jianshu.com/p/a628d1e8a8c5</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 </blockquote>
 <h3 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h3><p>增量时间是根据上一帧更新游戏以来经过的时间，用于动态的更新游戏场景渲染。</p>
 <h3 id="基于时间的动画"><a href="#基于时间的动画" class="headerlink" title="基于时间的动画"></a>基于时间的动画</h3><p>在早期游戏开发中，一些游戏的场景移动速度依赖于CPU的运行速度，游戏场景将每帧在屏幕上移动一定数量的像素。如果CPU只能以每秒15帧（FPS）运行游戏，并且游戏场景被代码定义为每秒向左移动10个像素，则游戏场景将以每秒150个像素向左移动。但是，如果性能更好的处理器可以每秒60帧运行游戏呢？游戏场景将以600像素移动！怎么能解决这个问题呢？</p>
@@ -1288,12 +1346,16 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const APP.core &#x3D; &#123;</span><br><span class="line"> frame() &#123;</span><br><span class="line"> APP.core.setDelta()</span><br><span class="line"> APP.core.update()</span><br><span class="line"> APP.core.render()</span><br><span class="line"> APP.core.animationFrame &#x3D; window.requestAnimationFrame(APP.core.frame)</span><br><span class="line"> &#125;,</span><br><span class="line"></span><br><span class="line"> setDelta() &#123;</span><br><span class="line"> APP.core.now &#x3D; Date.now()</span><br><span class="line"> APP.core.delta &#x3D; (APP.core.now - APP.core.lastTime ) &#x2F; 1000 &#x2F;&#x2F; 上一帧以来经过的秒数</span><br><span class="line"> APP.core.lastTime &#x3D; APP.core.now</span><br><span class="line"> &#125;,</span><br><span class="line"></span><br><span class="line"> update() &#123;</span><br><span class="line"> &#x2F;&#x2F; 更新值</span><br><span class="line"> &#x2F;&#x2F; var distance &#x3D; 100 * APP.core.delta</span><br><span class="line"> &#x2F;&#x2F; APP.thing.x +&#x3D; distance</span><br><span class="line"> &#125;,</span><br><span class="line"></span><br><span class="line"> render() &#123;</span><br><span class="line"> &#x2F;&#x2F; 渲染更新</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>知识</category>
+        <category>cocos</category>
+      </categories>
   </entry>
   <entry>
     <title>贝塞尔曲线</title>
     <url>/2020/05/11/%E7%9F%A5%E8%AF%86/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/</url>
     <content><![CDATA[<blockquote>
-<p>作者：骑小猪看流星<br>链接：<a href="https://www.jianshu.com/p/0c9b4b681724" target="_blank" rel="noopener">https://www.jianshu.com/p/0c9b4b681724</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>作者：骑小猪看流星<br>链接：<a href="https://www.jianshu.com/p/0c9b4b681724" target="_blank" rel="external nofollow noopener noreferrer">https://www.jianshu.com/p/0c9b4b681724</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 <h5 id="贝赛尔曲线的前世今生："><a href="#贝赛尔曲线的前世今生：" class="headerlink" title="贝赛尔曲线的前世今生："></a>贝赛尔曲线的前世今生：</h5><p>贝塞尔曲线，这个命名规则一眼看上去大概是一个叫贝塞尔的数学家发明的。但，贝塞尔曲线依据的最原始的数学公式，是在1912年在数学界广为人知的伯恩斯坦多项式。</p>
 <p>简单理解，伯恩斯坦多项式可以用来证明，在[ a, b ] 区间上所有的连续函数都可以用多项式来逼近，并且收敛性很强，也就是一致收敛。再简单点，就是一个连续函数，你可以将它写成若干个伯恩斯坦多项式相加的形式，并且，随着 n→∞，这个多项式将一致收敛到原函数，这个就是伯恩斯坦斯的逼近性质。</p>
 <p>时光荏苒岁月如梭，镜头切换到了1959年。当时就职于雪铁龙的法国数学家 Paul de Casteljau 开始对伯恩斯坦多项式进行了图形化的尝试，并且提供了一种数值稳定的德卡斯特里奥（de Casteljau） 算法。（多数理论公式是建立在大量且系统的数学建模基础之上研究的规律性成果）根据这个算法，就可以实现 <strong>通过很少的控制点，去生成复杂的平滑曲线，也就是贝塞尔曲线</strong>。</p>
@@ -1317,6 +1379,9 @@
 </li>
 </ul>
 ]]></content>
+      <categories>
+        <category>知识</category>
+      </categories>
   </entry>
   <entry>
     <title>一镜到底</title>
@@ -1330,7 +1395,7 @@
     <title>Widget</title>
     <url>/2020/05/06/cocos/Widget/</url>
     <content><![CDATA[<blockquote>
-<p><a href="https://docs.cocos.com/creator/api/zh/classes/Widget.html#updatealignment" target="_blank" rel="noopener">https://docs.cocos.com/creator/api/zh/classes/Widget.html#updatealignment</a></p>
+<p><a href="https://docs.cocos.com/creator/api/zh/classes/Widget.html#updatealignment" target="_blank" rel="external nofollow noopener noreferrer">https://docs.cocos.com/creator/api/zh/classes/Widget.html#updatealignment</a></p>
 </blockquote>
 <h5 id="updateAlignment"><a href="#updateAlignment" class="headerlink" title="updateAlignment"></a>updateAlignment</h5><p>立刻执行 widget 对齐操作。这个接口一般不需要手工调用。 只有当你需要在当前帧结束前获得 widget 对齐后的最新结果时才需要手动调用这个方法。</p>
 <a id="more"></a>
@@ -1339,7 +1404,7 @@
 
 <blockquote>
 <p>可能会遇见的问题</p>
-<p><a href="https://blog.csdn.net/u013654125/article/details/83379765" target="_blank" rel="noopener">https://blog.csdn.net/u013654125/article/details/83379765</a></p>
+<p><a href="https://blog.csdn.net/u013654125/article/details/83379765" target="_blank" rel="external nofollow noopener noreferrer">https://blog.csdn.net/u013654125/article/details/83379765</a></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -1350,10 +1415,10 @@
     <title>苹果录像有关hevc格式视频的网页播放</title>
     <url>/2020/05/01/%E5%89%8D%E7%AB%AF/%E4%B8%9A%E5%8A%A1%E7%9B%B8%E5%85%B3/%E8%8B%B9%E6%9E%9C%E5%BD%95%E5%83%8F%E6%9C%89%E5%85%B3hevc%E6%A0%BC%E5%BC%8F%E8%A7%86%E9%A2%91%E7%9A%84%E7%BD%91%E9%A1%B5%E6%92%AD%E6%94%BE/</url>
     <content><![CDATA[<h3 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h3><p>格式可以使用window上的potplayer播放，右键看属性</p>
-<p><a href="http://get.ftqq.com/9132.get" target="_blank" rel="noopener">http://get.ftqq.com/9132.get</a></p>
-<p><a href="https://blog.csdn.net/keji_123/article/details/77717849?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1" target="_blank" rel="noopener">https://blog.csdn.net/keji_123/article/details/77717849?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/50655841" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/50655841</a></p>
-<p><a href="https://tieba.baidu.com/p/5882990363?red_tag=1551058192" target="_blank" rel="noopener">https://tieba.baidu.com/p/5882990363?red_tag=1551058192</a></p>
+<p><a href="http://get.ftqq.com/9132.get" target="_blank" rel="external nofollow noopener noreferrer">http://get.ftqq.com/9132.get</a></p>
+<p><a href="https://blog.csdn.net/keji_123/article/details/77717849?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1" target="_blank" rel="external nofollow noopener noreferrer">https://blog.csdn.net/keji_123/article/details/77717849?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/50655841" target="_blank" rel="external nofollow noopener noreferrer">https://zhuanlan.zhihu.com/p/50655841</a></p>
+<p><a href="https://tieba.baidu.com/p/5882990363?red_tag=1551058192" target="_blank" rel="external nofollow noopener noreferrer">https://tieba.baidu.com/p/5882990363?red_tag=1551058192</a></p>
 <a id="more"></a>
 
 <p><img src="/static/%E5%89%8D%E7%AB%AF/%E4%B8%9A%E5%8A%A1%E7%9B%B8%E5%85%B3/%E8%8B%B9%E6%9E%9C%E5%BD%95%E5%83%8F%E6%9C%89%E5%85%B3hevc%E6%A0%BC%E5%BC%8F%E8%A7%86%E9%A2%91%E7%9A%84%E7%BD%91%E9%A1%B5%E6%92%AD%E6%94%BE/images/image-20200501114203764.png" alt="image-20200501114203764"></p>
@@ -1367,11 +1432,11 @@
     <title>代码笔记本推荐</title>
     <url>/2020/04/29/%E5%B7%A5%E5%85%B7/%E4%BB%A3%E7%A0%81%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<h1 id="Cacher"><a href="#Cacher" class="headerlink" title="Cacher"></a>Cacher</h1><p>其实GitHub上是有提供代码片段管理功能的, 名字叫gist<br>Cacher是它的一个桌面版Interface, 分为免费版, 个人专业版和协作版</p>
-<p>官网地址: <a href="https://www.cacher.io/" target="_blank" rel="noopener">https://www.cacher.io/</a></p>
-<h1 id="Lepton"><a href="#Lepton" class="headerlink" title="Lepton"></a>Lepton</h1><p>GitHub地址: <a href="https://github.com/hackjutsu/Lepton" target="_blank" rel="noopener">https://github.com/hackjutsu/Lepton</a></p>
-<h1 id="Snippet-Store"><a href="#Snippet-Store" class="headerlink" title="Snippet Store"></a>Snippet Store</h1><p>官网地址: <a href="https://zerox-dg.github.io/SnippetStoreWeb/" target="_blank" rel="noopener">https://zerox-dg.github.io/SnippetStoreWeb/</a><br>GitHub地址: <a href="https://github.com/ZeroX-DG/SnippetStore" target="_blank" rel="noopener">https://github.com/ZeroX-DG/SnippetStore</a></p>
-<h1 id="VNote"><a href="#VNote" class="headerlink" title="VNote"></a>VNote</h1><p>官网地址: <a href="https://tamlok.github.io/vnote/en_us/#!index.md" target="_blank" rel="noopener">https://tamlok.github.io/vnote/en_us/#!index.md</a><br>GitHub地址: <a href="https://github.com/tamlok/vnote" target="_blank" rel="noopener">https://github.com/tamlok/vnote</a></p>
-<p><a href="https://boostnote.io/" target="_blank" rel="noopener">https://boostnote.io/</a></p>
+<p>官网地址: <a href="https://www.cacher.io/" target="_blank" rel="external nofollow noopener noreferrer">https://www.cacher.io/</a></p>
+<h1 id="Lepton"><a href="#Lepton" class="headerlink" title="Lepton"></a>Lepton</h1><p>GitHub地址: <a href="https://github.com/hackjutsu/Lepton" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/hackjutsu/Lepton</a></p>
+<h1 id="Snippet-Store"><a href="#Snippet-Store" class="headerlink" title="Snippet Store"></a>Snippet Store</h1><p>官网地址: <a href="https://zerox-dg.github.io/SnippetStoreWeb/" target="_blank" rel="external nofollow noopener noreferrer">https://zerox-dg.github.io/SnippetStoreWeb/</a><br>GitHub地址: <a href="https://github.com/ZeroX-DG/SnippetStore" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/ZeroX-DG/SnippetStore</a></p>
+<h1 id="VNote"><a href="#VNote" class="headerlink" title="VNote"></a>VNote</h1><p>官网地址: <a href="https://tamlok.github.io/vnote/en_us/#!index.md" target="_blank" rel="external nofollow noopener noreferrer">https://tamlok.github.io/vnote/en_us/#!index.md</a><br>GitHub地址: <a href="https://github.com/tamlok/vnote" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/tamlok/vnote</a></p>
+<p><a href="https://boostnote.io/" target="_blank" rel="external nofollow noopener noreferrer">https://boostnote.io/</a></p>
 ]]></content>
       <categories>
         <category>工具</category>
@@ -1404,7 +1469,7 @@
   <entry>
     <title>commander使用方法</title>
     <url>/2020/04/27/npm/commander%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p><a href="https://github.com/tj/commander.js/blob/HEAD/Readme_zh-CN.md#parse-%e5%92%8c-parseasync" target="_blank" rel="noopener">npm commander</a></p>
+    <content><![CDATA[<p><a href="https://github.com/tj/commander.js/blob/HEAD/Readme_zh-CN.md#parse-%e5%92%8c-parseasync" target="_blank" rel="external nofollow noopener noreferrer">npm commander</a></p>
 <h2 id="初步使用"><a href="#初步使用" class="headerlink" title="初步使用"></a>初步使用</h2><p><strong>安装</strong></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i commander --save-dev</span><br></pre></td></tr></table></figure>
 
@@ -1474,7 +1539,7 @@
 </tr>
 <tr>
 <td>STATUS</td>
-<td>容器状态(7种)<br />create(已创建)     restarting(重启中)     running(运行中)<br />removing(迁移种)     paused(暂停)     exited(停止)    dead(死亡)</td>
+<td>容器状态(7种)<br>create(已创建)     restarting(重启中)     running(运行中)<br>removing(迁移种)     paused(暂停)     exited(停止)    dead(死亡)</td>
 </tr>
 <tr>
 <td>PORT</td>
@@ -1548,7 +1613,7 @@
     <title>git-rebase详解</title>
     <url>/2020/04/24/git/git-rebase%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<blockquote>
-<p><a href="https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/rebase" target="_blank" rel="noopener">https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/rebase</a></p>
+<p><a href="https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/rebase" target="_blank" rel="external nofollow noopener noreferrer">https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/rebase</a></p>
 </blockquote>
 <h1 id="Rebase-代替合并"><a href="#Rebase-代替合并" class="headerlink" title="Rebase 代替合并"></a>Rebase 代替合并</h1><p>虽然<code>合并（merge）</code>操作可以用来简单和方便地整合改动，但是它却不是唯一的方法。<code>“Rebase”</code> 就是另一种替代手段。</p>
 <blockquote>
@@ -1618,11 +1683,11 @@
   <entry>
     <title>frp内网穿透</title>
     <url>/2020/04/23/%E5%B7%A5%E5%85%B7/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</url>
-    <content><![CDATA[<p><a href="https://github.com/fatedier/frp/blob/master/README_zh.md" target="_blank" rel="noopener">frp</a>国人开发的免费开源工具</p>
+    <content><![CDATA[<p><a href="https://github.com/fatedier/frp/blob/master/README_zh.md" target="_blank" rel="external nofollow noopener noreferrer">frp</a>国人开发的免费开源工具</p>
 <h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><ul>
 <li><p>公网服务器 IP 140.140.192.192</p>
 </li>
-<li><p>域名 <a href="http://www.good.com" target="_blank" rel="noopener">www.good.com</a> 解析至上面的服务器</p>
+<li><p>域名 <a href="http://www.good.com" target="_blank" rel="external nofollow noopener noreferrer">www.good.com</a> 解析至上面的服务器</p>
 </li>
 <li><p>本地运行的服务</p>
 </li>
@@ -1630,7 +1695,7 @@
 <a id="more"></a>
 
 <h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p>利用<code>frp</code>，可以实现任何人都可以通过配置的端口如 <code>www.good.com:7001</code> 访问我本机的<code>hbuilder</code>网页应用</p>
-<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>服务器和内网本机分别<a href="https://github.com/fatedier/frp/releases" target="_blank" rel="noopener">下载</a>对应系统平台的frp，<br>这里ubuntu服务器需要下载linux_arm_64， mac本机是frp_0.32.1_windows_amd64.zip</p>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>服务器和内网本机分别<a href="https://github.com/fatedier/frp/releases" target="_blank" rel="external nofollow noopener noreferrer">下载</a>对应系统平台的frp，<br>这里ubuntu服务器需要下载linux_arm_64， mac本机是frp_0.32.1_windows_amd64.zip</p>
 <ul>
 <li><p>先配服务端</p>
 <p>linux_arm_64文件包在服务器上下载解压，编辑 <code>frps.ini</code>， 然后启动 <code>./frps -c ./frps.ini</code>，放后台启动命令 <code>nohup ./frps -c ./frps.ini &amp;</code>，配置修改如下</p>
@@ -1653,10 +1718,10 @@
 <p><img src="/static/%E5%B7%A5%E5%85%B7/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/images/image-20200423140150925.png" alt="image-20200423140150925"></p>
 <blockquote>
 <p>参考文档</p>
-<p><a href="https://github.com/fatedier/frp/blob/master/README_zh.md#%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81" target="_blank" rel="noopener">https://github.com/fatedier/frp/blob/master/README_zh.md#%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81</a></p>
-<p><a href="https://www.jianshu.com/p/d579c2156311" target="_blank" rel="noopener">https://www.jianshu.com/p/d579c2156311</a></p>
-<p><a href="https://www.kuke365.com/2019/09/19/uniapp%E4%B8%8Bh5%E7%AB%AF%E5%92%8Cvuejs%E4%B8%8B%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8Finvalid-host-header/" target="_blank" rel="noopener">https://www.kuke365.com/2019/09/19/uniapp%E4%B8%8Bh5%E7%AB%AF%E5%92%8Cvuejs%E4%B8%8B%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8Finvalid-host-header/</a></p>
-<p><a href="https://www.it72.com/12580-1.htm" target="_blank" rel="noopener">https://www.it72.com/12580-1.htm</a></p>
+<p><a href="https://github.com/fatedier/frp/blob/master/README_zh.md#%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/fatedier/frp/blob/master/README_zh.md#%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81</a></p>
+<p><a href="https://www.jianshu.com/p/d579c2156311" target="_blank" rel="external nofollow noopener noreferrer">https://www.jianshu.com/p/d579c2156311</a></p>
+<p><a href="https://www.kuke365.com/2019/09/19/uniapp%E4%B8%8Bh5%E7%AB%AF%E5%92%8Cvuejs%E4%B8%8B%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8Finvalid-host-header/" target="_blank" rel="external nofollow noopener noreferrer">https://www.kuke365.com/2019/09/19/uniapp%E4%B8%8Bh5%E7%AB%AF%E5%92%8Cvuejs%E4%B8%8B%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8Finvalid-host-header/</a></p>
+<p><a href="https://www.it72.com/12580-1.htm" target="_blank" rel="external nofollow noopener noreferrer">https://www.it72.com/12580-1.htm</a></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -1741,7 +1806,7 @@
 <td>不是光源，用于给光源添加镜头光晕效果</td>
 </tr>
 </tbody></table>
-<p>关于光源的详细 API 大家可以参考 threejs 官网，很详细，demo 也很完整 <a href="https://threejs.org/examples/?q=light#webgl_lights_physical" target="_blank" rel="noopener">传送门</a></p>
+<p>关于光源的详细 API 大家可以参考 threejs 官网，很详细，demo 也很完整 <a href="https://threejs.org/examples/?q=light#webgl_lights_physical" target="_blank" rel="external nofollow noopener noreferrer">传送门</a></p>
 <h2 id="Mesh-网格"><a href="#Mesh-网格" class="headerlink" title="Mesh(网格)"></a>Mesh(网格)</h2><p>在计算机的世界中，一条弧线是由有限个点构成的有限条段链接得到的。当线段数量越多，长度就越短，当达到你无法察觉这是线段时，一条平滑的弧线就出现了。计算机三位模型也是类似的。只不过是线段变成了平面，普遍用三角形组成的网格来描述。我们把这种模型称之为Mesh模型。在ThreeJs的世界中，材质（Mterial）+几何体（Geomtry） 及时一个<code>mesh</code>。设置其name属性可以通过scene.getObjectByName(name)获取改物体对象。Geomtry就好像是故交，材质则类似于皮肤，对于材质和几何体的分类见下表格：</p>
 <h3 id="材质分类"><a href="#材质分类" class="headerlink" title="材质分类"></a>材质分类</h3><table>
 <thead>
@@ -1828,6 +1893,9 @@
 
 
 <h3 id="对应知识点"><a href="#对应知识点" class="headerlink" title="对应知识点"></a>对应知识点</h3>]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
   </entry>
   <entry>
     <title>node创建文件</title>
@@ -1879,7 +1947,7 @@
 <p>用编辑器打开<code>id_rsa.pub</code>，推荐使用Notepad++，不要使用记事本打开，因为记事本的默认编码不是utf-8，拷贝里面的全部内容，登录你其中一个git 账号，例如:我登录github平台，后添加公钥里把它添加进去，公钥名称可以随便写。提交保存，输入你的github登录密码并提示添加成功。</p>
 <p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110453118.png" alt="image-20200420110453118"></p>
 <p>测试刚才添加的github密钥是否成功：</p>
-<p>在Git Bash Here中输入 ssh <a href="mailto:git@github.com">git@github.com</a>  回车</p>
+<p>在Git Bash Here中输入 ssh <a href="mailto:git@github.com" rel="external nofollow noopener noreferrer" target="_blank">git@github.com</a>  回车</p>
 <p>会出现一个提示，输入 yes 回车，可以看见一个successfully的提示信息，说明添加成功，可以使用了。</p>
 <p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110505960.png" alt="image-20200420110505960"></p>
 <h3 id="生成第二个账号的密钥"><a href="#生成第二个账号的密钥" class="headerlink" title="生成第二个账号的密钥"></a>生成第二个账号的密钥</h3><p>重复上面的步骤，那用户名和邮箱改成另一个账号的</p>
@@ -1968,7 +2036,7 @@
 <p>下面是一些路由定义的方式：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  const &#123; router, controller &#125; &#x3D; app;</span><br><span class="line">  router.get(&#39;&#x2F;home&#39;, controller.home);</span><br><span class="line">  router.get(&#39;&#x2F;user&#x2F;:id&#39;, controller.user.page);</span><br><span class="line">  router.post(&#39;&#x2F;admin&#39;, isAdmin, controller.admin);</span><br><span class="line">  router.post(&#39;&#x2F;user&#39;, isLoginUser, hasAdminPermission, controller.user.create);</span><br><span class="line">  router.post(&#39;&#x2F;api&#x2F;v1&#x2F;comments&#39;, controller.v1.comments.create); &#x2F;&#x2F; app&#x2F;controller&#x2F;v1&#x2F;comments.js</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<h3 id="RESTful-风格的-URL-定义"><a href="#RESTful-风格的-URL-定义" class="headerlink" title="RESTful 风格的 URL 定义"></a>RESTful 风格的 URL 定义</h3><p>如果想通过 RESTful 的方式来定义路由， 我们提供了 <code>app.router.resources(&#39;routerName&#39;, &#39;pathMatch&#39;, controller)</code> 快速在一个路径上生成 <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank" rel="noopener">CRUD</a> 路由结构。</p>
+<h3 id="RESTful-风格的-URL-定义"><a href="#RESTful-风格的-URL-定义" class="headerlink" title="RESTful 风格的 URL 定义"></a>RESTful 风格的 URL 定义</h3><p>如果想通过 RESTful 的方式来定义路由， 我们提供了 <code>app.router.resources(&#39;routerName&#39;, &#39;pathMatch&#39;, controller)</code> 快速在一个路径上生成 <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank" rel="external nofollow noopener noreferrer">CRUD</a> 路由结构。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  const &#123; router, controller &#125; &#x3D; app;</span><br><span class="line">  router.resources(&#39;posts&#39;, &#39;&#x2F;api&#x2F;posts&#39;, controller.posts);</span><br><span class="line">  router.resources(&#39;users&#39;, &#39;&#x2F;api&#x2F;v1&#x2F;users&#39;, controller.v1.users); &#x2F;&#x2F; app&#x2F;controller&#x2F;v1&#x2F;users.js</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <p>上面代码就在 <code>/posts</code> 路径上部署了一组 CRUD 路径结构，对应的 Controller 为 <code>app/controller/posts.js</code> 接下来， 你只需要在 <code>posts.js</code> 里面实现对应的函数就可以了。</p>
@@ -2041,13 +2109,13 @@
 <p>附：</p>
 </blockquote>
 <blockquote>
-<p>这里直接发起 POST 请求会<strong>报错</strong>：’secret is missing’。错误信息来自 <a href="https://github.com/koajs/csrf/blob/2.5.0/index.js#L69" target="_blank" rel="noopener">koa-csrf/index.js#L69</a> 。</p>
+<p>这里直接发起 POST 请求会<strong>报错</strong>：’secret is missing’。错误信息来自 <a href="https://github.com/koajs/csrf/blob/2.5.0/index.js#L69" target="_blank" rel="external nofollow noopener noreferrer">koa-csrf/index.js#L69</a> 。</p>
 </blockquote>
 <blockquote>
-<p><strong>原因</strong>：框架内部针对表单 POST 请求均会验证 CSRF 的值，因此我们在表单提交时，请带上 CSRF key 进行提交，可参考<a href="https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范" target="_blank" rel="noopener">安全威胁csrf的防范</a></p>
+<p><strong>原因</strong>：框架内部针对表单 POST 请求均会验证 CSRF 的值，因此我们在表单提交时，请带上 CSRF key 进行提交，可参考<a href="https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范" target="_blank" rel="external nofollow noopener noreferrer">安全威胁csrf的防范</a></p>
 </blockquote>
 <blockquote>
-<p><strong>注意</strong>：上面的校验是因为框架中内置了安全插件 <a href="https://github.com/eggjs/egg-security" target="_blank" rel="noopener">egg-security</a>，提供了一些默认的安全实践，并且框架的安全插件是默认开启的，如果需要关闭其中一些安全防范，直接设置该项的 enable 属性为 false 即可。</p>
+<p><strong>注意</strong>：上面的校验是因为框架中内置了安全插件 <a href="https://github.com/eggjs/egg-security" target="_blank" rel="external nofollow noopener noreferrer">egg-security</a>，提供了一些默认的安全实践，并且框架的安全插件是默认开启的，如果需要关闭其中一些安全防范，直接设置该项的 enable 属性为 false 即可。</p>
 </blockquote>
 <blockquote>
 <p>「除非清楚的确认后果，否则不建议擅自关闭安全插件提供的功能。」</p>
@@ -2063,14 +2131,14 @@
 
 <h4 id="外部重定向"><a href="#外部重定向" class="headerlink" title="外部重定向"></a>外部重定向</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.get(&#39;&#x2F;search&#39;, app.controller.search.index);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;search.js</span><br><span class="line">exports.index &#x3D; async ctx &#x3D;&gt; &#123;</span><br><span class="line">  const type &#x3D; ctx.query.type;</span><br><span class="line">  const q &#x3D; ctx.query.q || &#39;nodejs&#39;;</span><br><span class="line"></span><br><span class="line">  if (type &#x3D;&#x3D;&#x3D; &#39;bing&#39;) &#123;</span><br><span class="line">    ctx.redirect(&#96;http:&#x2F;&#x2F;cn.bing.com&#x2F;search?q&#x3D;$&#123;q&#125;&#96;);</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">    ctx.redirect(&#96;https:&#x2F;&#x2F;www.google.co.kr&#x2F;search?q&#x3D;$&#123;q&#125;&#96;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; curl http:&#x2F;&#x2F;localhost:7001&#x2F;search?type&#x3D;bing&amp;q&#x3D;node.js</span><br><span class="line">&#x2F;&#x2F; curl http:&#x2F;&#x2F;localhost:7001&#x2F;search?q&#x3D;node.js</span><br></pre></td></tr></table></figure>
 
-<h3 id="中间件的使用"><a href="#中间件的使用" class="headerlink" title="中间件的使用"></a>中间件的使用</h3><p>如果我们想把用户某一类请求的参数都大写，可以通过中间件来实现。 这里我们只是简单说明下如何使用中间件，更多请查看 <a href="https://eggjs.org/zh-cn/basics/middleware.html" target="_blank" rel="noopener">中间件</a>。</p>
+<h3 id="中间件的使用"><a href="#中间件的使用" class="headerlink" title="中间件的使用"></a>中间件的使用</h3><p>如果我们想把用户某一类请求的参数都大写，可以通过中间件来实现。 这里我们只是简单说明下如何使用中间件，更多请查看 <a href="https://eggjs.org/zh-cn/basics/middleware.html" target="_blank" rel="external nofollow noopener noreferrer">中间件</a>。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;search.js</span><br><span class="line">exports.index &#x3D; async ctx &#x3D;&gt; &#123;</span><br><span class="line">  ctx.body &#x3D; &#96;search: $&#123;ctx.query.name&#125;&#96;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;middleware&#x2F;uppercase.js</span><br><span class="line">module.exports &#x3D; () &#x3D;&gt; &#123;</span><br><span class="line">  return async function uppercase(ctx, next) &#123;</span><br><span class="line">    ctx.query.name &#x3D; ctx.query.name &amp;&amp; ctx.query.name.toUpperCase();</span><br><span class="line">    await next();</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.get(&#39;s&#39;, &#39;&#x2F;search&#39;, app.middleware.uppercase(), app.controller.search)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; curl http:&#x2F;&#x2F;localhost:7001&#x2F;search?name&#x3D;egg</span><br></pre></td></tr></table></figure>
 
 <h3 id="太多路由映射？"><a href="#太多路由映射？" class="headerlink" title="太多路由映射？"></a>太多路由映射？</h3><p>如上所述，我们并不建议把路由规则逻辑散落在多个地方，会给排查问题带来困扰。</p>
 <p>若确实有需求，可以如下拆分：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  require(&#39;.&#x2F;router&#x2F;news&#39;)(app);</span><br><span class="line">  require(&#39;.&#x2F;router&#x2F;admin&#39;)(app);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;router&#x2F;news.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.get(&#39;&#x2F;news&#x2F;list&#39;, app.controller.news.list);</span><br><span class="line">  app.router.get(&#39;&#x2F;news&#x2F;detail&#39;, app.controller.news.detail);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;router&#x2F;admin.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  app.router.get(&#39;&#x2F;admin&#x2F;user&#39;, app.controller.admin.user);</span><br><span class="line">  app.router.get(&#39;&#x2F;admin&#x2F;log&#39;, app.controller.admin.log);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<p>也可直接使用 <a href="https://github.com/eggjs/egg-router-plus" target="_blank" rel="noopener">egg-router-plus</a>。</p>
+<p>也可直接使用 <a href="https://github.com/eggjs/egg-router-plus" target="_blank" rel="external nofollow noopener noreferrer">egg-router-plus</a>。</p>
 ]]></content>
       <categories>
         <category>eggjs</category>
@@ -2103,24 +2171,24 @@
     <url>/2020/04/16/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E6%95%88%E6%9E%9C%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[<h3 id="通用框架"><a href="#通用框架" class="headerlink" title="通用框架"></a>通用框架</h3><ul>
 <li><p>轮播框架</p>
-<p><a href="https://www.swiper.com.cn/" target="_blank" rel="noopener">Swiper</a>(老牌又强大)</p>
+<p><a href="https://www.swiper.com.cn/" target="_blank" rel="external nofollow noopener noreferrer">Swiper</a>(老牌又强大)</p>
 </li>
 <li><p>图表</p>
-<p><a href="https://www.echartsjs.com/zh/index.html" target="_blank" rel="noopener">EChart</a></p>
+<p><a href="https://www.echartsjs.com/zh/index.html" target="_blank" rel="external nofollow noopener noreferrer">EChart</a></p>
 </li>
 <li><p>效果</p>
-<p><a href="http://www.clipboardjs.cn/" target="_blank" rel="noopener">复制文本</a></p>
+<p><a href="http://www.clipboardjs.cn/" target="_blank" rel="external nofollow noopener noreferrer">复制文本</a></p>
 </li>
 <li><p>全屏滚动插件</p>
-<p><a href="https://www.dowebok.com/demo/2014/77/" target="_blank" rel="noopener">FullPage.js</a></p>
+<p><a href="https://www.dowebok.com/demo/2014/77/" target="_blank" rel="external nofollow noopener noreferrer">FullPage.js</a></p>
 </li>
 </ul>
 <h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><ul>
 <li><p>列表滑动</p>
-<p><a href="http://www.mescroll.com/reward.html?v=20200315" target="_blank" rel="noopener">mescroll</a></p>
+<p><a href="http://www.mescroll.com/reward.html?v=20200315" target="_blank" rel="external nofollow noopener noreferrer">mescroll</a></p>
 </li>
 <li><p>高性能虚拟滑动</p>
-<p><a href="https://www.npmjs.com/package/vue-virtual-scroller" target="_blank" rel="noopener">vue-virtual-scroller</a></p>
+<p><a href="https://www.npmjs.com/package/vue-virtual-scroller" target="_blank" rel="external nofollow noopener noreferrer">vue-virtual-scroller</a></p>
 </li>
 </ul>
 ]]></content>
@@ -2132,7 +2200,7 @@
     <title>如何给git仓库瘦身,删除大文件</title>
     <url>/2020/04/16/git/%E5%A6%82%E4%BD%95%E7%BB%99git%E4%BB%93%E5%BA%93%E7%98%A6%E8%BA%AB,%E5%88%A0%E9%99%A4%E5%A4%A7%E6%96%87%E4%BB%B6/</url>
     <content><![CDATA[<blockquote>
-<p><a href="http://blog.mallol.cn/2015/8d45392.html" target="_blank" rel="noopener">http://blog.mallol.cn/2015/8d45392.html</a></p>
+<p><a href="http://blog.mallol.cn/2015/8d45392.html" target="_blank" rel="external nofollow noopener noreferrer">http://blog.mallol.cn/2015/8d45392.html</a></p>
 </blockquote>
 <h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p><code>git</code>用久后,或者<code>.gitignore</code>设置不好,没有忽略掉大文件(比如:<code>zip,sql,deb,tar.gz…</code>等二进制文件)。会把git库撑的很大,有几个G。这些大文件有些是没必要放进来的,需要删除掉.下面有解决办法:</p>
 <a id="more"></a>
@@ -2170,7 +2238,7 @@
     <title>gitfls大文件</title>
     <url>/2020/04/16/git/gitfls%E5%A4%A7%E6%96%87%E4%BB%B6/</url>
     <content><![CDATA[<blockquote>
-<p>作者：amosbake<br>链接：<a href="https://www.jianshu.com/p/493b81544f80" target="_blank" rel="noopener">https://www.jianshu.com/p/493b81544f80</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>作者：amosbake<br>链接：<a href="https://www.jianshu.com/p/493b81544f80" target="_blank" rel="external nofollow noopener noreferrer">https://www.jianshu.com/p/493b81544f80</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 </blockquote>
 <a id="more"></a>
 
@@ -2199,7 +2267,7 @@
 <li><code>git lfs install</code></li>
 </ol>
 <h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a><em>Windows</em></h4><ol>
-<li>下载安装 <a href="https://link.jianshu.com?t=https%3A%2F%2Fgithub.com%2Fgithub%2Fgit-lfs%2Freleases" target="_blank" rel="noopener">windows installer</a></li>
+<li>下载安装 <a href="https://link.jianshu.com?t=https%3A%2F%2Fgithub.com%2Fgithub%2Fgit-lfs%2Freleases" target="_blank" rel="external nofollow noopener noreferrer">windows installer</a></li>
 <li>运行 windows installer</li>
 <li>在命令行执行 <code>git lfs install</code></li>
 </ol>
@@ -2229,7 +2297,7 @@
     <url>/2020/04/15/eggjs/eggjs%E9%94%99%E8%AF%AF%E6%90%9C%E9%9B%86/</url>
     <content><![CDATA[<blockquote>
 <p>Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by serv</p>
-<p><a href="https://blog.csdn.net/weixin_36222137/article/details/81293332" target="_blank" rel="noopener">https://blog.csdn.net/weixin_36222137/article/details/81293332</a></p>
+<p><a href="https://blog.csdn.net/weixin_36222137/article/details/81293332" target="_blank" rel="external nofollow noopener noreferrer">https://blog.csdn.net/weixin_36222137/article/details/81293332</a></p>
 </blockquote>
 <a id="more"></a>]]></content>
       <categories>
@@ -2262,8 +2330,8 @@
     <title>mysql安装</title>
     <url>/2020/04/15/mysql/mysql%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<blockquote>
-<p>下载安装文件:<a href="http://cloud.poorman.top/index.php?share/folder&user=1&sid=ivbmXp3E" target="_blank" rel="noopener">MySQL</a></p>
-<p><a href="https://blog.csdn.net/CWH0908/article/details/82959511" target="_blank" rel="noopener">https://blog.csdn.net/CWH0908/article/details/82959511</a></p>
+<p>下载安装文件:<a href="http://cloud.poorman.top/index.php?share/folder&user=1&sid=ivbmXp3E" target="_blank" rel="external nofollow noopener noreferrer">MySQL</a></p>
+<p><a href="https://blog.csdn.net/CWH0908/article/details/82959511" target="_blank" rel="external nofollow noopener noreferrer">https://blog.csdn.net/CWH0908/article/details/82959511</a></p>
 </blockquote>
 <p>我的服务名称为<code>MySQL80</code></p>
 <p>管理员启动：<code>net start MySQL80</code></p>
@@ -2276,43 +2344,43 @@
   <entry>
     <title>eggjs目录结构</title>
     <url>/2020/04/15/eggjs/eggjs%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><p>在<a href="https://eggjs.org/zh-cn/intro/quickstart.html" target="_blank" rel="noopener">快速入门</a>中，大家对框架应该有了初步的印象，接下来我们简单了解下目录约定规范。</p>
+    <content><![CDATA[<h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><p>在<a href="https://eggjs.org/zh-cn/intro/quickstart.html" target="_blank" rel="external nofollow noopener noreferrer">快速入门</a>中，大家对框架应该有了初步的印象，接下来我们简单了解下目录约定规范。</p>
 <a id="more"></a>
 
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egg-project</span><br><span class="line">├── package.json</span><br><span class="line">├── app.js (可选)</span><br><span class="line">├── agent.js (可选)</span><br><span class="line">├── app</span><br><span class="line">|   ├── router.js</span><br><span class="line">│   ├── controller</span><br><span class="line">│   |   └── home.js</span><br><span class="line">│   ├── service (可选)</span><br><span class="line">│   |   └── user.js</span><br><span class="line">│   ├── middleware (可选)</span><br><span class="line">│   |   └── response_time.js</span><br><span class="line">│   ├── schedule (可选)</span><br><span class="line">│   |   └── my_task.js</span><br><span class="line">│   ├── public (可选)</span><br><span class="line">│   |   └── reset.css</span><br><span class="line">│   ├── view (可选)</span><br><span class="line">│   |   └── home.tpl</span><br><span class="line">│   └── extend (可选)</span><br><span class="line">│       ├── helper.js (可选)</span><br><span class="line">│       ├── request.js (可选)</span><br><span class="line">│       ├── response.js (可选)</span><br><span class="line">│       ├── context.js (可选)</span><br><span class="line">│       ├── application.js (可选)</span><br><span class="line">│       └── agent.js (可选)</span><br><span class="line">├── config</span><br><span class="line">|   ├── plugin.js</span><br><span class="line">|   ├── config.default.js</span><br><span class="line">│   ├── config.prod.js</span><br><span class="line">|   ├── config.test.js (可选)</span><br><span class="line">|   ├── config.local.js (可选)</span><br><span class="line">|   └── config.unittest.js (可选)</span><br><span class="line">└── test</span><br><span class="line">    ├── middleware</span><br><span class="line">    |   └── response_time.test.js</span><br><span class="line">    └── controller</span><br><span class="line">        └── home.test.js</span><br></pre></td></tr></table></figure>
 
 <p>如上，由框架约定的目录：</p>
 <ul>
-<li><p><code>app/router.js</code> 用于配置 URL 路由规则，具体参见 <a href="https://eggjs.org/zh-cn/basics/router.html" target="_blank" rel="noopener">Router</a>。</p>
+<li><p><code>app/router.js</code> 用于配置 URL 路由规则，具体参见 <a href="https://eggjs.org/zh-cn/basics/router.html" target="_blank" rel="external nofollow noopener noreferrer">Router</a>。</p>
 </li>
-<li><p><code>app/controller/**</code> 用于解析用户的输入，处理后返回相应的结果，具体参见 <a href="https://eggjs.org/zh-cn/basics/controller.html" target="_blank" rel="noopener">Controller</a>。</p>
+<li><p><code>app/controller/**</code> 用于解析用户的输入，处理后返回相应的结果，具体参见 <a href="https://eggjs.org/zh-cn/basics/controller.html" target="_blank" rel="external nofollow noopener noreferrer">Controller</a>。</p>
 </li>
-<li><p><code>app/service/**</code> 用于编写业务逻辑层，可选，建议使用，具体参见 <a href="https://eggjs.org/zh-cn/basics/service.html" target="_blank" rel="noopener">Service</a>。</p>
+<li><p><code>app/service/**</code> 用于编写业务逻辑层，可选，建议使用，具体参见 <a href="https://eggjs.org/zh-cn/basics/service.html" target="_blank" rel="external nofollow noopener noreferrer">Service</a>。</p>
 </li>
-<li><p><code>app/middleware/**</code> 用于编写中间件，可选，具体参见 <a href="https://eggjs.org/zh-cn/basics/middleware.html" target="_blank" rel="noopener">Middleware</a>。</p>
+<li><p><code>app/middleware/**</code> 用于编写中间件，可选，具体参见 <a href="https://eggjs.org/zh-cn/basics/middleware.html" target="_blank" rel="external nofollow noopener noreferrer">Middleware</a>。</p>
 </li>
-<li><p><code>app/public/**</code> 用于放置静态资源，可选，具体参见内置插件 <a href="https://github.com/eggjs/egg-static" target="_blank" rel="noopener">egg-static</a>。</p>
+<li><p><code>app/public/**</code> 用于放置静态资源，可选，具体参见内置插件 <a href="https://github.com/eggjs/egg-static" target="_blank" rel="external nofollow noopener noreferrer">egg-static</a>。</p>
 </li>
-<li><p><code>app/extend/**</code> 用于框架的扩展，可选，具体参见<a href="https://eggjs.org/zh-cn/basics/extend.html" target="_blank" rel="noopener">框架扩展</a>。</p>
+<li><p><code>app/extend/**</code> 用于框架的扩展，可选，具体参见<a href="https://eggjs.org/zh-cn/basics/extend.html" target="_blank" rel="external nofollow noopener noreferrer">框架扩展</a>。</p>
 </li>
-<li><p><code>config/config.{env}.js</code> 用于编写配置文件，具体参见<a href="https://eggjs.org/zh-cn/basics/config.html" target="_blank" rel="noopener">配置</a>。</p>
+<li><p><code>config/config.{env}.js</code> 用于编写配置文件，具体参见<a href="https://eggjs.org/zh-cn/basics/config.html" target="_blank" rel="external nofollow noopener noreferrer">配置</a>。</p>
 </li>
-<li><p><code>config/plugin.js</code> 用于配置需要加载的插件，具体参见<a href="https://eggjs.org/zh-cn/basics/plugin.html" target="_blank" rel="noopener">插件</a>。</p>
+<li><p><code>config/plugin.js</code> 用于配置需要加载的插件，具体参见<a href="https://eggjs.org/zh-cn/basics/plugin.html" target="_blank" rel="external nofollow noopener noreferrer">插件</a>。</p>
 </li>
-<li><p><code>test/**</code> 用于单元测试，具体参见<a href="https://eggjs.org/zh-cn/core/unittest.html" target="_blank" rel="noopener">单元测试</a>。</p>
+<li><p><code>test/**</code> 用于单元测试，具体参见<a href="https://eggjs.org/zh-cn/core/unittest.html" target="_blank" rel="external nofollow noopener noreferrer">单元测试</a>。</p>
 </li>
-<li><p><code>app.js</code> 和 <code>agent.js</code> 用于自定义启动时的初始化工作，可选，具体参见<a href="https://eggjs.org/zh-cn/basics/app-start.html" target="_blank" rel="noopener">启动自定义</a>。关于<code>agent.js</code>的作用参见<a href="https://eggjs.org/zh-cn/core/cluster-and-ipc.html#agent-机制" target="_blank" rel="noopener">Agent机制</a>。</p>
+<li><p><code>app.js</code> 和 <code>agent.js</code> 用于自定义启动时的初始化工作，可选，具体参见<a href="https://eggjs.org/zh-cn/basics/app-start.html" target="_blank" rel="external nofollow noopener noreferrer">启动自定义</a>。关于<code>agent.js</code>的作用参见<a href="https://eggjs.org/zh-cn/core/cluster-and-ipc.html#agent-机制" target="_blank" rel="external nofollow noopener noreferrer">Agent机制</a>。</p>
 </li>
 </ul>
 <p>由内置插件约定的目录：</p>
 <ul>
-<li><code>app/public/**</code> 用于放置静态资源，可选，具体参见内置插件 <a href="https://github.com/eggjs/egg-static" target="_blank" rel="noopener">egg-static</a>。</li>
-<li><code>app/schedule/**</code> 用于定时任务，可选，具体参见<a href="https://eggjs.org/zh-cn/basics/schedule.html" target="_blank" rel="noopener">定时任务</a>。</li>
+<li><code>app/public/**</code> 用于放置静态资源，可选，具体参见内置插件 <a href="https://github.com/eggjs/egg-static" target="_blank" rel="external nofollow noopener noreferrer">egg-static</a>。</li>
+<li><code>app/schedule/**</code> 用于定时任务，可选，具体参见<a href="https://eggjs.org/zh-cn/basics/schedule.html" target="_blank" rel="external nofollow noopener noreferrer">定时任务</a>。</li>
 </ul>
-<p><strong>若需自定义自己的目录规范，参见 <a href="https://eggjs.org/zh-cn/advanced/loader.html" target="_blank" rel="noopener">Loader API</a></strong></p>
+<p><strong>若需自定义自己的目录规范，参见 <a href="https://eggjs.org/zh-cn/advanced/loader.html" target="_blank" rel="external nofollow noopener noreferrer">Loader API</a></strong></p>
 <ul>
-<li><code>app/view/**</code> 用于放置模板文件，可选，由模板插件约定，具体参见<a href="https://eggjs.org/zh-cn/core/view.html" target="_blank" rel="noopener">模板渲染</a>。</li>
-<li><code>app/model/**</code> 用于放置领域模型，可选，由领域类相关插件约定，如 <a href="https://github.com/eggjs/egg-sequelize" target="_blank" rel="noopener">egg-sequelize</a>。</li>
+<li><code>app/view/**</code> 用于放置模板文件，可选，由模板插件约定，具体参见<a href="https://eggjs.org/zh-cn/core/view.html" target="_blank" rel="external nofollow noopener noreferrer">模板渲染</a>。</li>
+<li><code>app/model/**</code> 用于放置领域模型，可选，由领域类相关插件约定，如 <a href="https://github.com/eggjs/egg-sequelize" target="_blank" rel="external nofollow noopener noreferrer">egg-sequelize</a>。</li>
 </ul>
 ]]></content>
       <categories>
@@ -2330,38 +2398,38 @@
 <p>添加 <code>npm scripts</code> 到 <code>package.json</code>：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;egg-example&quot;,</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;dev&quot;: &quot;egg-bin dev&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="编写-Controller"><a href="#编写-Controller" class="headerlink" title="编写 Controller"></a>编写 Controller</h3><p>如果你熟悉 Web 开发或 MVC，肯定猜到我们第一步需要编写的是 <a href="https://eggjs.org/zh-cn/basics/controller.html" target="_blank" rel="noopener">Controller</a> 和 <a href="https://eggjs.org/zh-cn/basics/router.html" target="_blank" rel="noopener">Router</a>。</p>
+<h3 id="编写-Controller"><a href="#编写-Controller" class="headerlink" title="编写 Controller"></a>编写 Controller</h3><p>如果你熟悉 Web 开发或 MVC，肯定猜到我们第一步需要编写的是 <a href="https://eggjs.org/zh-cn/basics/controller.html" target="_blank" rel="external nofollow noopener noreferrer">Controller</a> 和 <a href="https://eggjs.org/zh-cn/basics/router.html" target="_blank" rel="external nofollow noopener noreferrer">Router</a>。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;home.js</span><br><span class="line">const Controller &#x3D; require(&#39;egg&#39;).Controller;</span><br><span class="line"></span><br><span class="line">class HomeController extends Controller &#123;</span><br><span class="line">  async index() &#123;</span><br><span class="line">    this.ctx.body &#x3D; &#39;Hello world&#39;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; HomeController;</span><br></pre></td></tr></table></figure>
 
 <p>配置路由映射：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  const &#123; router, controller &#125; &#x3D; app;</span><br><span class="line">  router.get(&#39;&#x2F;&#39;, controller.home.index);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<p>加一个<a href="https://eggjs.org/zh-cn/basics/config.html" target="_blank" rel="noopener">配置文件</a>：</p>
+<p>加一个<a href="https://eggjs.org/zh-cn/basics/config.html" target="_blank" rel="external nofollow noopener noreferrer">配置文件</a>：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; config&#x2F;config.default.js</span><br><span class="line">exports.keys &#x3D; &lt;此处改为你自己的 Cookie 安全字符串&gt;;</span><br></pre></td></tr></table></figure>
 
 <p>此时目录结构如下：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egg-example</span><br><span class="line">├── app</span><br><span class="line">│   ├── controller</span><br><span class="line">│   │   └── home.js</span><br><span class="line">│   └── router.js</span><br><span class="line">├── config</span><br><span class="line">│   └── config.default.js</span><br><span class="line">└── package.json</span><br></pre></td></tr></table></figure>
 
-<p>完整的目录结构规范参见<a href="https://eggjs.org/zh-cn/basics/structure.html" target="_blank" rel="noopener">目录结构</a>。</p>
+<p>完整的目录结构规范参见<a href="https://eggjs.org/zh-cn/basics/structure.html" target="_blank" rel="external nofollow noopener noreferrer">目录结构</a>。</p>
 <p>好，现在可以启动应用来体验下</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm run dev</span><br><span class="line">$ open http:&#x2F;&#x2F;localhost:7001</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>注意：</p>
 <ul>
-<li>Controller 有 <code>class</code> 和 <code>exports</code> 两种编写方式，本文示范的是前者，你可能需要参考 <a href="https://eggjs.org/zh-cn/basics/controller.html" target="_blank" rel="noopener">Controller</a> 文档。</li>
-<li>Config 也有 <code>module.exports</code> 和 <code>exports</code> 的写法，具体参考 <a href="https://nodejs.org/api/modules.html#modules_exports_shortcut" target="_blank" rel="noopener">Node.js modules 文档</a>。</li>
+<li>Controller 有 <code>class</code> 和 <code>exports</code> 两种编写方式，本文示范的是前者，你可能需要参考 <a href="https://eggjs.org/zh-cn/basics/controller.html" target="_blank" rel="external nofollow noopener noreferrer">Controller</a> 文档。</li>
+<li>Config 也有 <code>module.exports</code> 和 <code>exports</code> 的写法，具体参考 <a href="https://nodejs.org/api/modules.html#modules_exports_shortcut" target="_blank" rel="external nofollow noopener noreferrer">Node.js modules 文档</a>。</li>
 </ul>
 </blockquote>
-<h3 id="静态资源"><a href="#静态资源" class="headerlink" title="静态资源"></a>静态资源</h3><p>Egg 内置了 <a href="https://github.com/eggjs/egg-static" target="_blank" rel="noopener">static</a> 插件，线上环境建议部署到 CDN，无需该插件。</p>
+<h3 id="静态资源"><a href="#静态资源" class="headerlink" title="静态资源"></a>静态资源</h3><p>Egg 内置了 <a href="https://github.com/eggjs/egg-static" target="_blank" rel="external nofollow noopener noreferrer">static</a> 插件，线上环境建议部署到 CDN，无需该插件。</p>
 <p>static 插件默认映射 <code>/public/* -&gt; app/public/*</code> 目录</p>
 <p>此处，我们把静态资源都放到 <code>app/public</code> 目录即可：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">app&#x2F;public</span><br><span class="line">├── css</span><br><span class="line">│   └── news.css</span><br><span class="line">└── js</span><br><span class="line">    ├── lib.js</span><br><span class="line">    └── news.js</span><br></pre></td></tr></table></figure>
 
 <h3 id="模板渲染"><a href="#模板渲染" class="headerlink" title="模板渲染"></a>模板渲染</h3><p>绝大多数情况，我们都需要读取数据后渲染模板，然后呈现给用户。故我们需要引入对应的模板引擎。</p>
-<p>框架并不强制你使用某种模板引擎，只是约定了 <a href="https://eggjs.org/zh-cn/advanced/view-plugin.html" target="_blank" rel="noopener">View 插件开发规范</a>，开发者可以引入不同的插件来实现差异化定制。</p>
-<p>更多用法参见 <a href="https://eggjs.org/zh-cn/core/view.html" target="_blank" rel="noopener">View</a>。</p>
-<p>在本例中，我们使用 <a href="https://mozilla.github.io/nunjucks/" target="_blank" rel="noopener">Nunjucks</a> 来渲染，先安装对应的插件 <a href="https://github.com/eggjs/egg-view-nunjucks" target="_blank" rel="noopener">egg-view-nunjucks</a> ：</p>
+<p>框架并不强制你使用某种模板引擎，只是约定了 <a href="https://eggjs.org/zh-cn/advanced/view-plugin.html" target="_blank" rel="external nofollow noopener noreferrer">View 插件开发规范</a>，开发者可以引入不同的插件来实现差异化定制。</p>
+<p>更多用法参见 <a href="https://eggjs.org/zh-cn/core/view.html" target="_blank" rel="external nofollow noopener noreferrer">View</a>。</p>
+<p>在本例中，我们使用 <a href="https://mozilla.github.io/nunjucks/" target="_blank" rel="external nofollow noopener noreferrer">Nunjucks</a> 来渲染，先安装对应的插件 <a href="https://github.com/eggjs/egg-view-nunjucks" target="_blank" rel="external nofollow noopener noreferrer">egg-view-nunjucks</a> ：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm i egg-view-nunjucks --save</span><br></pre></td></tr></table></figure>
 
 <p>开启插件：</p>
@@ -2376,14 +2444,14 @@
 <p>添加 Controller 和 Router</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;news.js</span><br><span class="line">const Controller &#x3D; require(&#39;egg&#39;).Controller;</span><br><span class="line"></span><br><span class="line">class NewsController extends Controller &#123;</span><br><span class="line">  async list() &#123;</span><br><span class="line">    const dataList &#x3D; &#123;</span><br><span class="line">      list: [</span><br><span class="line">        &#123; id: 1, title: &#39;this is news 1&#39;, url: &#39;&#x2F;news&#x2F;1&#39; &#125;,</span><br><span class="line">        &#123; id: 2, title: &#39;this is news 2&#39;, url: &#39;&#x2F;news&#x2F;2&#39; &#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;;</span><br><span class="line">    await this.ctx.render(&#39;news&#x2F;list.tpl&#39;, dataList);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; NewsController;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;router.js</span><br><span class="line">module.exports &#x3D; app &#x3D;&gt; &#123;</span><br><span class="line">  const &#123; router, controller &#125; &#x3D; app;</span><br><span class="line">  router.get(&#39;&#x2F;&#39;, controller.home.index);</span><br><span class="line">  router.get(&#39;&#x2F;news&#39;, controller.news.list);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<p>启动浏览器，访问 <a href="http://localhost:7001/news" target="_blank" rel="noopener">http://localhost:7001/news</a> 即可看到渲染后的页面。</p>
-<p><strong>提示：开发期默认开启了 <a href="https://github.com/eggjs/egg-development" target="_blank" rel="noopener">development</a> 插件，修改后端代码后，会自动重启 Worker 进程。</strong></p>
-<h3 id="编写-service"><a href="#编写-service" class="headerlink" title="编写 service"></a>编写 service</h3><p>在实际应用中，Controller 一般不会自己产出数据，也不会包含复杂的逻辑，复杂的过程应抽象为业务逻辑层 <a href="https://eggjs.org/zh-cn/basics/service.html" target="_blank" rel="noopener">Service</a>。</p>
-<p>我们来添加一个 Service 抓取 <a href="https://github.com/HackerNews/API" target="_blank" rel="noopener">Hacker News</a> 的数据 ，如下：</p>
+<p>启动浏览器，访问 <a href="http://localhost:7001/news" target="_blank" rel="external nofollow noopener noreferrer">http://localhost:7001/news</a> 即可看到渲染后的页面。</p>
+<p><strong>提示：开发期默认开启了 <a href="https://github.com/eggjs/egg-development" target="_blank" rel="external nofollow noopener noreferrer">development</a> 插件，修改后端代码后，会自动重启 Worker 进程。</strong></p>
+<h3 id="编写-service"><a href="#编写-service" class="headerlink" title="编写 service"></a>编写 service</h3><p>在实际应用中，Controller 一般不会自己产出数据，也不会包含复杂的逻辑，复杂的过程应抽象为业务逻辑层 <a href="https://eggjs.org/zh-cn/basics/service.html" target="_blank" rel="external nofollow noopener noreferrer">Service</a>。</p>
+<p>我们来添加一个 Service 抓取 <a href="https://github.com/HackerNews/API" target="_blank" rel="external nofollow noopener noreferrer">Hacker News</a> 的数据 ，如下：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;service&#x2F;news.js</span><br><span class="line">const Service &#x3D; require(&#39;egg&#39;).Service;</span><br><span class="line"></span><br><span class="line">class NewsService extends Service &#123;</span><br><span class="line">  async list(page &#x3D; 1) &#123;</span><br><span class="line">    &#x2F;&#x2F; read config</span><br><span class="line">    const &#123; serverUrl, pageSize &#125; &#x3D; this.config.news;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; use build-in http client to GET hacker-news api</span><br><span class="line">    const &#123; data: idList &#125; &#x3D; await this.ctx.curl(&#96;$&#123;serverUrl&#125;&#x2F;topstories.json&#96;, &#123;</span><br><span class="line">      data: &#123;</span><br><span class="line">        orderBy: &#39;&quot;$key&quot;&#39;,</span><br><span class="line">        startAt: &#96;&quot;$&#123;pageSize * (page - 1)&#125;&quot;&#96;,</span><br><span class="line">        endAt: &#96;&quot;$&#123;pageSize * page - 1&#125;&quot;&#96;,</span><br><span class="line">      &#125;,</span><br><span class="line">      dataType: &#39;json&#39;,</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; parallel GET detail</span><br><span class="line">    const newsList &#x3D; await Promise.all(</span><br><span class="line">      Object.keys(idList).map(key &#x3D;&gt; &#123;</span><br><span class="line">        const url &#x3D; &#96;$&#123;serverUrl&#125;&#x2F;item&#x2F;$&#123;idList[key]&#125;.json&#96;;</span><br><span class="line">        return this.ctx.curl(url, &#123; dataType: &#39;json&#39; &#125;);</span><br><span class="line">      &#125;)</span><br><span class="line">    );</span><br><span class="line">    return newsList.map(res &#x3D;&gt; res.data);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; NewsService;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>框架提供了内置的 <a href="https://eggjs.org/zh-cn/core/httpclient.html" target="_blank" rel="noopener">HttpClient</a> 来方便开发者使用 HTTP 请求。</p>
+<p>框架提供了内置的 <a href="https://eggjs.org/zh-cn/core/httpclient.html" target="_blank" rel="external nofollow noopener noreferrer">HttpClient</a> 来方便开发者使用 HTTP 请求。</p>
 </blockquote>
 <p>然后稍微修改下之前的 Controller：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;controller&#x2F;news.js</span><br><span class="line">const Controller &#x3D; require(&#39;egg&#39;).Controller;</span><br><span class="line"></span><br><span class="line">class NewsController extends Controller &#123;</span><br><span class="line">  async list() &#123;</span><br><span class="line">    const ctx &#x3D; this.ctx;</span><br><span class="line">    const page &#x3D; ctx.query.page || 1;</span><br><span class="line">    const newsList &#x3D; await ctx.service.news.list(page);</span><br><span class="line">    await ctx.render(&#39;news&#x2F;list.tpl&#39;, &#123; list: newsList &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; NewsController;</span><br></pre></td></tr></table></figure>
@@ -2392,7 +2460,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; config&#x2F;config.default.js</span><br><span class="line">&#x2F;&#x2F; 添加 news 的配置项</span><br><span class="line">exports.news &#x3D; &#123;</span><br><span class="line">  pageSize: 5,</span><br><span class="line">  serverUrl: &#39;https:&#x2F;&#x2F;hacker-news.firebaseio.com&#x2F;v0&#39;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <h3 id="编写扩展"><a href="#编写扩展" class="headerlink" title="编写扩展"></a>编写扩展</h3><p>遇到一个小问题，我们的资讯时间的数据是 UnixTime 格式的，我们希望显示为便于阅读的格式。</p>
-<p>框架提供了一种快速扩展的方式，只需在 <code>app/extend</code> 目录下提供扩展脚本即可，具体参见<a href="https://eggjs.org/zh-cn/basics/extend.html" target="_blank" rel="noopener">扩展</a>。</p>
+<p>框架提供了一种快速扩展的方式，只需在 <code>app/extend</code> 目录下提供扩展脚本即可，具体参见<a href="https://eggjs.org/zh-cn/basics/extend.html" target="_blank" rel="external nofollow noopener noreferrer">扩展</a>。</p>
 <p>在这里，我们可以使用 View 插件支持的 Helper 来实现：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm i moment --save</span><br></pre></td></tr></table></figure>
 
@@ -2402,20 +2470,20 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- app&#x2F;view&#x2F;news&#x2F;list.tpl --&gt;</span><br><span class="line">&#123;&#123; helper.relativeTime(item.time) &#125;&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="编写-Middleware"><a href="#编写-Middleware" class="headerlink" title="编写 Middleware"></a>编写 Middleware</h3><p>假设有个需求：我们的新闻站点，禁止百度爬虫访问。</p>
-<p>聪明的同学们一定很快能想到可以通过 <a href="https://eggjs.org/zh-cn/basics/middleware.html" target="_blank" rel="noopener">Middleware</a> 判断 User-Agent，如下：</p>
+<p>聪明的同学们一定很快能想到可以通过 <a href="https://eggjs.org/zh-cn/basics/middleware.html" target="_blank" rel="external nofollow noopener noreferrer">Middleware</a> 判断 User-Agent，如下：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; app&#x2F;middleware&#x2F;robot.js</span><br><span class="line">&#x2F;&#x2F; options &#x3D;&#x3D;&#x3D; app.config.robot</span><br><span class="line">module.exports &#x3D; (options, app) &#x3D;&gt; &#123;</span><br><span class="line">  return async function robotMiddleware(ctx, next) &#123;</span><br><span class="line">    const source &#x3D; ctx.get(&#39;user-agent&#39;) || &#39;&#39;;</span><br><span class="line">    const match &#x3D; options.ua.some(ua &#x3D;&gt; ua.test(source));</span><br><span class="line">    if (match) &#123;</span><br><span class="line">      ctx.status &#x3D; 403;</span><br><span class="line">      ctx.message &#x3D; &#39;Go away, robot.&#39;;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      await next();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; config&#x2F;config.default.js</span><br><span class="line">&#x2F;&#x2F; add middleware robot</span><br><span class="line">exports.middleware &#x3D; [</span><br><span class="line">  &#39;robot&#39;</span><br><span class="line">];</span><br><span class="line">&#x2F;&#x2F; robot&#39;s configurations</span><br><span class="line">exports.robot &#x3D; &#123;</span><br><span class="line">  ua: [</span><br><span class="line">    &#x2F;Baiduspider&#x2F;i,</span><br><span class="line">  ]</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <p>现在可以使用 <code>curl http://localhost:7001/news -A &quot;Baiduspider&quot;</code> 看看效果。</p>
-<p>更多参见<a href="https://eggjs.org/zh-cn/basics/middleware.html" target="_blank" rel="noopener">中间件</a>文档。</p>
+<p>更多参见<a href="https://eggjs.org/zh-cn/basics/middleware.html" target="_blank" rel="external nofollow noopener noreferrer">中间件</a>文档。</p>
 <h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>写业务的时候，不可避免的需要有配置文件，框架提供了强大的配置合并管理功能：</p>
 <ul>
 <li>支持按环境变量加载不同的配置文件，如 <code>config.local.js</code>， <code>config.prod.js</code> 等等。</li>
 <li>应用/插件/框架都可以配置自己的配置文件，框架将按顺序合并加载。</li>
-<li>具体合并逻辑可参见<a href="https://eggjs.org/zh-cn/basics/config.html#配置加载顺序" target="_blank" rel="noopener">配置文件</a>。</li>
+<li>具体合并逻辑可参见<a href="https://eggjs.org/zh-cn/basics/config.html#配置加载顺序" target="_blank" rel="external nofollow noopener noreferrer">配置文件</a>。</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; config&#x2F;config.default.js</span><br><span class="line">exports.robot &#x3D; &#123;</span><br><span class="line">  ua: [</span><br><span class="line">    &#x2F;curl&#x2F;i,</span><br><span class="line">    &#x2F;Baiduspider&#x2F;i,</span><br><span class="line">  ],</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; config&#x2F;config.local.js</span><br><span class="line">&#x2F;&#x2F; only read at development mode, will override default</span><br><span class="line">exports.robot &#x3D; &#123;</span><br><span class="line">  ua: [</span><br><span class="line">    &#x2F;Baiduspider&#x2F;i,</span><br><span class="line">  ],</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; app&#x2F;service&#x2F;some.js</span><br><span class="line">const Service &#x3D; require(&#39;egg&#39;).Service;</span><br><span class="line"></span><br><span class="line">class SomeService extends Service &#123;</span><br><span class="line">  async list() &#123;</span><br><span class="line">    const rule &#x3D; this.config.robot.ua;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; SomeService;</span><br></pre></td></tr></table></figure>
 
-<h3 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h3><p>单元测试非常重要，框架也提供了 <a href="https://github.com/eggjs/egg-bin" target="_blank" rel="noopener">egg-bin</a> 来帮开发者无痛的编写测试。</p>
+<h3 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h3><p>单元测试非常重要，框架也提供了 <a href="https://github.com/eggjs/egg-bin" target="_blank" rel="external nofollow noopener noreferrer">egg-bin</a> 来帮开发者无痛的编写测试。</p>
 <p>测试文件应该放在项目根目录下的 test 目录下，并以 <code>test.js</code> 为后缀名，即 <code>{app_root}/test/**/*.test.js</code>。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; test&#x2F;app&#x2F;middleware&#x2F;robot.test.js</span><br><span class="line">const &#123; app, mock, assert &#125; &#x3D; require(&#39;egg-mock&#x2F;bootstrap&#39;);</span><br><span class="line"></span><br><span class="line">describe(&#39;test&#x2F;app&#x2F;middleware&#x2F;robot.test.js&#39;, () &#x3D;&gt; &#123;</span><br><span class="line">  it(&#39;should block robot&#39;, () &#x3D;&gt; &#123;</span><br><span class="line">    return app.httpRequest()</span><br><span class="line">      .get(&#39;&#x2F;&#39;)</span><br><span class="line">      .set(&#39;User-Agent&#39;, &quot;Baiduspider&quot;)</span><br><span class="line">      .expect(403);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
@@ -2427,14 +2495,14 @@
 <p>执行测试:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm test</span><br></pre></td></tr></table></figure>
 
-<p>就这么简单，更多请参见 <a href="https://eggjs.org/zh-cn/core/unittest.html" target="_blank" rel="noopener">单元测试</a>。</p>
+<p>就这么简单，更多请参见 <a href="https://eggjs.org/zh-cn/core/unittest.html" target="_blank" rel="external nofollow noopener noreferrer">单元测试</a>。</p>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>短短几章内容，只能讲 Egg 的冰山一角，我们建议开发者继续阅读其他章节：</p>
 <ul>
-<li>关于骨架类型，参见<a href="https://eggjs.org/zh-cn/tutorials/index.html" target="_blank" rel="noopener">骨架说明</a></li>
-<li>提供了强大的扩展机制，参见<a href="https://eggjs.org/zh-cn/basics/plugin.html" target="_blank" rel="noopener">插件</a>。</li>
-<li>一个大规模的团队需要遵循一定的约束和约定，在 Egg 里我们建议封装适合自己团队的上层框架，参见 <a href="https://eggjs.org/zh-cn/advanced/framework.html" target="_blank" rel="noopener">框架开发</a>。</li>
-<li>这是一个渐进式的框架，代码的共建，复用和下沉，竟然可以这么的无痛，建议阅读 <a href="https://eggjs.org/zh-cn/tutorials/progressive.html" target="_blank" rel="noopener">渐进式开发</a>。</li>
-<li>写单元测试其实很简单的事，Egg 也提供了非常多的配套辅助，我们强烈建议大家测试驱动开发，具体参见 <a href="https://eggjs.org/zh-cn/core/unittest.html" target="_blank" rel="noopener">单元测试</a>。</li>
+<li>关于骨架类型，参见<a href="https://eggjs.org/zh-cn/tutorials/index.html" target="_blank" rel="external nofollow noopener noreferrer">骨架说明</a></li>
+<li>提供了强大的扩展机制，参见<a href="https://eggjs.org/zh-cn/basics/plugin.html" target="_blank" rel="external nofollow noopener noreferrer">插件</a>。</li>
+<li>一个大规模的团队需要遵循一定的约束和约定，在 Egg 里我们建议封装适合自己团队的上层框架，参见 <a href="https://eggjs.org/zh-cn/advanced/framework.html" target="_blank" rel="external nofollow noopener noreferrer">框架开发</a>。</li>
+<li>这是一个渐进式的框架，代码的共建，复用和下沉，竟然可以这么的无痛，建议阅读 <a href="https://eggjs.org/zh-cn/tutorials/progressive.html" target="_blank" rel="external nofollow noopener noreferrer">渐进式开发</a>。</li>
+<li>写单元测试其实很简单的事，Egg 也提供了非常多的配套辅助，我们强烈建议大家测试驱动开发，具体参见 <a href="https://eggjs.org/zh-cn/core/unittest.html" target="_blank" rel="external nofollow noopener noreferrer">单元测试</a>。</li>
 </ul>
 ]]></content>
       <categories>
@@ -2496,12 +2564,16 @@
     <title>cocos的几种动画方式</title>
     <url>/2020/04/14/cocos/%E5%8A%A8%E7%94%BB/cocos%E7%9A%84%E5%87%A0%E7%A7%8D%E5%8A%A8%E7%94%BB%E6%96%B9%E5%BC%8F/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>cocos</category>
+        <category>动画</category>
+      </categories>
   </entry>
   <entry>
     <title>github-actions详解</title>
     <url>/2020/04/14/github/github-actions%E8%AF%A6%E8%A7%A3/</url>
-    <content><![CDATA[<p><a href="https://www.v2ex.com/t/609744" target="_blank" rel="noopener">https://www.v2ex.com/t/609744</a></p>
-<p><a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html</a></p>
+    <content><![CDATA[<p><a href="https://www.v2ex.com/t/609744" target="_blank" rel="external nofollow noopener noreferrer">https://www.v2ex.com/t/609744</a></p>
+<p><a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html" target="_blank" rel="external nofollow noopener noreferrer">http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html</a></p>
 ]]></content>
       <categories>
         <category>github</category>
@@ -2752,7 +2824,7 @@
     <title>cocos creator常用api</title>
     <url>/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/</url>
     <content><![CDATA[<blockquote>
-<p><a href="https://blog.csdn.net/sotmwhat/article/details/93884076" target="_blank" rel="noopener">https://blog.csdn.net/sotmwhat/article/details/93884076</a></p>
+<p><a href="https://blog.csdn.net/sotmwhat/article/details/93884076" target="_blank" rel="external nofollow noopener noreferrer">https://blog.csdn.net/sotmwhat/article/details/93884076</a></p>
 </blockquote>
 <h2 id="场景加载"><a href="#场景加载" class="headerlink" title="场景加载"></a>场景加载</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cc.director.loadScene(<span class="string">'场景名称'</span>);<span class="comment">//场景跳转</span></span><br><span class="line">cc.director.preloadScene(<span class="string">'场景名称'</span>);<span class="comment">//预加载场景</span></span><br><span class="line">cc.director.getScene();<span class="comment">//获取当前场景</span></span><br></pre></td></tr></table></figure>
 
@@ -2846,7 +2918,7 @@
     <url>/2020/04/06/node/node%E7%94%9F%E6%88%90%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<blockquote>
 <p>主要用作生成文件模板，方便之后的一系列开发，能够快速的制作类似结构的复杂页面。</p>
-<p><a href="https://www.npmjs.com/package/plop" target="_blank" rel="noopener">plop npm</a></p>
+<p><a href="https://www.npmjs.com/package/plop" target="_blank" rel="external nofollow noopener noreferrer">plop npm</a></p>
 </blockquote>
 <a id="more"></a>
 
@@ -2879,7 +2951,7 @@
     <title>hexo添加看板娘</title>
     <url>/2020/04/05/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/</url>
     <content><![CDATA[<blockquote>
-<p>源码下载：<a href="http://cloud.poorman.top/index.php?share/folder&user=1&sid=NgEfhW2k#" target="_blank" rel="noopener">点击下载</a> 源码地址：<a href="https://github.com/stevenjoezhang/live2d-widget" target="_blank" rel="noopener">live2d-widget</a></p>
+<p>源码下载：<a href="http://cloud.poorman.top/index.php?share/folder&user=1&sid=NgEfhW2k#" target="_blank" rel="external nofollow noopener noreferrer">点击下载</a> 源码地址：<a href="https://github.com/stevenjoezhang/live2d-widget" target="_blank" rel="external nofollow noopener noreferrer">live2d-widget</a></p>
 <p>这是首先感谢原作者的插件，我根据Github上的项目克隆下载自定义的看板娘，在他的基础上添加了拖动效果，同时根据自己的博客自定义了不同的对话。</p>
 </blockquote>
 <a id="more"></a>
@@ -2976,7 +3048,7 @@
 <p>多入口不能单独的指定一个具体的文件名，而是需要提供一个占位符，由<code>webpack</code>提供各个文件的一些参数，但是具体的名字仍旧可以自己定义。</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: <span class="string">'./src/app.js'</span>,</span><br><span class="line">    search: <span class="string">'./src/search.js'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: <span class="string">'[name].js'</span>,</span><br><span class="line">    path: __dirname + <span class="string">'/dist'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 写入到硬盘：./dist/app.js, ./dist/search.js</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p><a href="https://www.webpackjs.com/concepts/output/" target="_blank" rel="noopener">publicPath</a>  (这个参数尚未用过)</p>
+<li><p><a href="https://www.webpackjs.com/concepts/output/" target="_blank" rel="external nofollow noopener noreferrer">publicPath</a>  (这个参数尚未用过)</p>
 </li>
 </ul>
 </li>
@@ -3060,7 +3132,7 @@
 <tr>
 <td><code>&lt;area&gt;</code></td>
 <td>定义图像映射内部的区域。</td>
-<td><a href="https://www.w3school.com.cn/tags/tag_area.asp" target="_blank" rel="noopener">area说明</a></td>
+<td><a href="https://www.w3school.com.cn/tags/tag_area.asp" target="_blank" rel="external nofollow noopener noreferrer">area说明</a></td>
 <td></td>
 </tr>
 <tr>
@@ -3244,15 +3316,15 @@
     <title>npm库个人常用整合</title>
     <url>/2020/04/01/npm/npm%E5%BA%93%E4%B8%AA%E4%BA%BA%E5%B8%B8%E7%94%A8%E6%95%B4%E5%90%88/</url>
     <content><![CDATA[<h3 id="数学计算库"><a href="#数学计算库" class="headerlink" title="数学计算库"></a>数学计算库</h3><ul>
-<li><a href="https://www.npmjs.com/package/mathjs" target="_blank" rel="noopener">math.js</a></li>
+<li><a href="https://www.npmjs.com/package/mathjs" target="_blank" rel="external nofollow noopener noreferrer">math.js</a></li>
 </ul>
 <h3 id="生成文件模板"><a href="#生成文件模板" class="headerlink" title="生成文件模板"></a>生成文件模板</h3><ul>
-<li><a href="https://www.npmjs.com/package/plop" target="_blank" rel="noopener">plop</a> （用于快速生成模板文件，可提供变量定制化输出）</li>
+<li><a href="https://www.npmjs.com/package/plop" target="_blank" rel="external nofollow noopener noreferrer">plop</a> （用于快速生成模板文件，可提供变量定制化输出）</li>
 </ul>
 <h3 id="打包工具"><a href="#打包工具" class="headerlink" title="打包工具"></a>打包工具</h3><ul>
 <li><code>webpack</code> (大名鼎鼎的模块打包工具)</li>
 </ul>
-<h3 id="发布订阅库"><a href="#发布订阅库" class="headerlink" title="发布订阅库"></a>发布订阅库</h3><p><a href="https://github.com/mroderick/PubSubJS" target="_blank" rel="noopener">PubSubJS</a>，<a href="https://www.npmjs.com/package/@types/pubsub-js" target="_blank" rel="noopener">@types/pubsub-js</a>，<a href="https://github.com/Gozala/events" target="_blank" rel="noopener">events</a></p>
+<h3 id="发布订阅库"><a href="#发布订阅库" class="headerlink" title="发布订阅库"></a>发布订阅库</h3><p><a href="https://github.com/mroderick/PubSubJS" target="_blank" rel="external nofollow noopener noreferrer">PubSubJS</a>，<a href="https://www.npmjs.com/package/@types/pubsub-js" target="_blank" rel="external nofollow noopener noreferrer">@types/pubsub-js</a>，<a href="https://github.com/Gozala/events" target="_blank" rel="external nofollow noopener noreferrer">events</a></p>
 <h2 id="Webpack常用库"><a href="#Webpack常用库" class="headerlink" title="Webpack常用库"></a>Webpack常用库</h2><ul>
 <li><code>html-webpack-plugin</code> 打包<code>html</code>，提供脚本样式注入等功能</li>
 </ul>
