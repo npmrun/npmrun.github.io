@@ -72,7 +72,7 @@ const promptList = [{
 
 效果：
 
-![input](/images/20180526163529495)
+![input](/images/20180526163529495.jpg)
 
 #### confirm
 
@@ -95,9 +95,9 @@ const promptList = [{
 
 效果：
 
-![confirm_y](/images/20180526171059692)
+![confirm_y](/images/20180526171059692.jpg)
 
-![confirm_n](/images/20180526171118828)
+![confirm_n](/images/20180526171118828.jpg)
 
 #### list
 
@@ -119,9 +119,9 @@ const promptList = [{
 
 效果：
 
-![list_1](/images/20180526171358697)
+![list_1](/images/20180526171358697.jpg)
 
-![list](/images/20180526171252867)
+![list](/images/20180526171252867.jpg)
 
 #### rawlist
 
@@ -140,7 +140,7 @@ const promptList = [{
 
 效果：
 
-![rawlist](/images/20180526171501268)
+![rawlist](/images/20180526171501268.jpg)
 
 #### expand
 
@@ -171,9 +171,9 @@ const promptList = [{
 
 效果：
 
-![expend_1](/images/2018052617182848)
+![expend_1](/images/2018052617182848.jpg)
 
-![expend_2](/images/2018052617184757)
+![expend_2](/images/2018052617184757.jpg)
 
 #### checkbox
 
@@ -217,9 +217,9 @@ const promptList = [{
 
 效果：
 
-![checkbox_sep](/images/20180526172231673)
+![checkbox_sep](/images/20180526172231673.jpg)
 
-![checkbox_size](/images/20180526172246307)
+![checkbox_size](/images/20180526172246307.jpg)
 
 #### password
 
@@ -233,7 +233,7 @@ const promptList = [{
 
 效果：
 
-![pwd](/images/2018052617241416)
+![pwd](/images/2018052617241416.jpg)
 
 #### editor
 
@@ -247,6 +247,6 @@ const promptList = [{
 
 效果：
 
-![editor_inset](/images/20180526172640212)
+![editor_inset](/images/20180526172640212.jpg)
 
-![editor_res](/images/20180526172652359)
+![editor_res](/images/20180526172652359.jpg)
