@@ -18,6 +18,7 @@ jobs:
         npx gulp clean
         npx gulp
         npx hexo clean
+        npx hexo douban -m
         npx hexo generate
     - name: Deploy
       uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
