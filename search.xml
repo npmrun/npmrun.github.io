@@ -23,39 +23,22 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2020/06/27/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/%E5%90%8C%E6%BA%90%E4%B8%8E%E8%B7%A8%E5%9F%9F/%E7%BB%86%E8%AF%B4%E5%90%8C%E5%9F%9F-%E5%90%8C%E7%88%B6%E5%9F%9F-%E8%B7%A8%E5%9F%9F/</url>
-    <content><![CDATA[<p><strong>一、域名级别</strong></p>
-<p><strong>域名</strong>级别是网址分类的一个标准，包括顶级域名、二级域名等。一个完整的域名由二个或二个以上部分组成，各部分之间用英文的句号”.”来分隔，倒数第一个”.”的右边部分称为<strong>顶级域名</strong>（TLD，也称为一级域名，包含一个合法字符串和一个域名后缀），顶级域名的左边部分字符串到下个”.”为止称为二级域名（SLD），二级域名的左边部分称为三级域名，以此类推，每一级的域名控制它下一级域名的分配。</p>
-<p><strong>二、域名组成</strong></p>
-<p>域名组成方式是由一下域名级别类型构成的</p>
+    <url>/2020/06/28/%E9%9A%8F%E6%83%B3/readme/</url>
+    <content><![CDATA[<p>这是一个electron项目，属于聚合项目，集合多种功能，方便我的使用</p>
 <ol>
-<li>顶级域名</li>
-<li>二级域名</li>
-<li>三级域名</li>
-<li>国家代码域名</li>
+<li><p>用于开发一个代码笔记项目。记录灵感释放的瞬间。</p>
+</li>
+<li><p>提供markdown项目部署</p>
+</li>
 </ol>
-<p><strong>顶级域名</strong>：分为两类：　一是国家顶级域名（nationaltop-leveldomainnames，简称nTLDs），目前200多个国家都按照ISO3166国家代码分配了顶级域名，例如中国是cn，美国是us，日本是jp等；二是国际顶级域名（internationaltop-leveldomainnames，简称iTDs），例如表示工商企业的.com，表示网络提供商的.net，表示非盈利组织的.org等。目前大多数域名争议都发生在com的顶级域名下，因为多数公司上网的目的都是为了赢利。为加强域名管理，解决域名资源的紧张，Internet协会、Internet分址机构及世界知识产权组织（WIPO）等国际组织经过广泛协商，在原来三个国际通用顶级域名：（com）的基础上，新增加了7个国际通用顶级域名：firm（公司企业）、store（销售公司或企业）、Web（突出WWW活动的单位）、arts（突出文化、娱乐活动的单位）、rec(突出消遣、娱乐活动的单位）、info(提供信息服务的单位）、nom(个人），并在世界范围内选择新的注册机构来受理域名注册申请。</p>
-<p><strong>二级域名：</strong>是指顶级域名之下的域名，在国际顶级域名下，它是指域名注册人的网上名称，例如ibm，yahoo，microsoft等；在国家顶级域名下，它是表示注册企业类别的符号，例如com，edu，gov，net等。　中国在国际互联网络信息中心（InterNIC）正式注册并运行的顶级域名是cn，这也是中国的一级域名。在顶级域名之下，中国的二级域名又分为类别域名和行政区域名两类。类别域名共6个，包括用于科研机构的ac；用于工商金融企业的com；用于教育机构的edu；用于政府部门的gov；用于互联网络信息中心和运行中心的net；用于非盈利组织的org。而行政区域名有34个，分别对应于中国各省、自治区和直辖市。</p>
-<p><strong>三级域名</strong>：用字母（A～Z，a～z，大小写等）、数字（0～9）和连接符（－）组成，各级域名之间用实点（.）连接，三级域名的长度不能超过20个字符。如无特殊原因，建议采用申请人的英文名（或者缩写）或者汉语拼音名（或者缩写）作为三级域名，以保持域名的清晰性和简洁性。</p>
-<p><strong>国家代码</strong>：由两个字母组成的顶级域名如.cn,.uk,.de和.jp称为国家代码顶级域名（ccTLDs),其中.cn是中国专用的顶级域名，其注册归CNNIC管理，以.cn结尾的二级域名我们简称为国内域名。注册国家代码顶级域名下的二级域名的规则和政策与不同的国家的政策有关。您在注册时应咨询域名注册机构，问清相关的注册条件及与注册相关的条款。某些域名注册商除了提供以.com,.net和.org结尾的域名的注册服务之外，还提供国家代码顶级域名的注册。ICANN并没有特别授权注册商提供国家代码顶级域名的注册服务。</p>
-<p><strong>三、同域-同父域-跨域区分</strong></p>
-<p><strong>同域</strong>：即同源，所谓同源，指的是协议、域名、端口号都必须完全相同。这里同源既是同域。</p>
-<p><strong>同父域</strong>：即存在父域相同。例如，Http：<a href="http://www.baidu.com/" target="_blank" rel="external nofollow noopener noreferrer">www.baidu.com/</a> 与Http：ww.baidu.com/ 就是同父域。</p>
-<p><strong>跨域</strong>：所谓跨域，就是不同源（IP地址相同，但域名不同也是跨域）。那这里的同父域你就懂得了？</p>
-<blockquote>
-<p>原文链接：</p>
-<p><a href="https://www.cnblogs.com/julygift/p/8535825.html" target="_blank" rel="external nofollow noopener noreferrer">https://www.cnblogs.com/julygift/p/8535825.html</a></p>
-</blockquote>
 ]]></content>
       <categories>
-        <category>知识</category>
-        <category>前端</category>
-        <category>同源与跨域</category>
+        <category>随想</category>
       </categories>
   </entry>
   <entry>
     <title></title>
-    <url>/2020/06/27/%E9%9A%8F%E6%83%B3/as/</url>
+    <url>/2020/06/28/%E9%9A%8F%E6%83%B3/as/</url>
     <content><![CDATA[<p>这是一个导航网站项目，旨在收集网络资源。为了提供更好的体验，必须提供后台，用于对网站数据的编辑</p>
 <p>整理需求，功能列举</p>
 <p>设计页面，配色，主题</p>
@@ -67,18 +50,15 @@
       </categories>
   </entry>
   <entry>
-    <title></title>
-    <url>/2020/06/27/%E9%9A%8F%E6%83%B3/readme/</url>
-    <content><![CDATA[<p>这是一个electron项目，属于聚合项目，集合多种功能，方便我的使用</p>
-<ol>
-<li><p>用于开发一个代码笔记项目。记录灵感释放的瞬间。</p>
-</li>
-<li><p>提供markdown项目部署</p>
-</li>
-</ol>
+    <title>MDN技术学习</title>
+    <url>/2020/06/27/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/MDN/MDN%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><blockquote>
+<p><a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="external nofollow noopener noreferrer">mozilla文档</a></p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>随想</category>
+        <category>技术积累</category>
+        <category>MDN</category>
       </categories>
   </entry>
   <entry>
@@ -143,43 +123,44 @@
 <h4 id="input"><a href="#input" class="headerlink" title="input"></a>input</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &#39;input&#39;,</span><br><span class="line">    message: &#39;设置一个用户名:&#39;,</span><br><span class="line">    name: &#39;name&#39;,</span><br><span class="line">    default: &quot;test_user&quot; &#x2F;&#x2F; 默认值</span><br><span class="line">&#125;,&#123;</span><br><span class="line">    type: &#39;input&#39;,</span><br><span class="line">    message: &#39;请输入手机号:&#39;,</span><br><span class="line">    name: &#39;phone&#39;,</span><br><span class="line">    validate: function(val) &#123;</span><br><span class="line">        if(val.match(&#x2F;\d&#123;11&#125;&#x2F;g)) &#123; &#x2F;&#x2F; 校验位数</span><br><span class="line">            return val;</span><br><span class="line">        &#125;</span><br><span class="line">        return &quot;请输入11位数字&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526163529495.jpg" alt="input"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526163529495.jpg" alt="input"></p>
 <h4 id="confirm"><a href="#confirm" class="headerlink" title="confirm"></a>confirm</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;confirm&quot;,</span><br><span class="line">    message: &quot;是否使用监听？&quot;,</span><br><span class="line">    name: &quot;watch&quot;,</span><br><span class="line">    prefix: &quot;前缀&quot;</span><br><span class="line">&#125;,&#123;</span><br><span class="line">    type: &quot;confirm&quot;,</span><br><span class="line">    message: &quot;是否进行文件过滤？&quot;,</span><br><span class="line">    name: &quot;filter&quot;,</span><br><span class="line">    suffix: &quot;后缀&quot;,</span><br><span class="line">    when: function(answers) &#123; &#x2F;&#x2F; 当watch为true的时候才会提问当前问题</span><br><span class="line">        return answers.watch</span><br><span class="line">    &#125;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171059692.jpg" alt="confirm_y"></p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171118828.jpg" alt="confirm_n"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171059692.jpg" alt="confirm_y"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171118828.jpg" alt="confirm_n"></p>
 <h4 id="list"><a href="#list" class="headerlink" title="list"></a>list</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &#39;list&#39;,</span><br><span class="line">    message: &#39;请选择一种水果:&#39;,</span><br><span class="line">    name: &#39;fruit&#39;,</span><br><span class="line">    choices: [</span><br><span class="line">        &quot;Apple&quot;,</span><br><span class="line">        &quot;Pear&quot;,</span><br><span class="line">        &quot;Banana&quot;</span><br><span class="line">    ],</span><br><span class="line">    filter: function (val) &#123; &#x2F;&#x2F; 使用filter将回答变为小写</span><br><span class="line">        return val.toLowerCase();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171358697.jpg" alt="list_1"></p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171252867.jpg" alt="list"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171358697.jpg" alt="list_1"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171252867.jpg" alt="list"></p>
 <h4 id="rawlist"><a href="#rawlist" class="headerlink" title="rawlist"></a>rawlist</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &#39;rawlist&#39;,</span><br><span class="line">    message: &#39;请选择一种水果:&#39;,</span><br><span class="line">    name: &#39;fruit&#39;,</span><br><span class="line">    choices: [</span><br><span class="line">        &quot;Apple&quot;,</span><br><span class="line">        &quot;Pear&quot;,</span><br><span class="line">        &quot;Banana&quot;</span><br><span class="line">    ]</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171501268.jpg" alt="rawlist"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526171501268.jpg" alt="rawlist"></p>
 <h4 id="expand"><a href="#expand" class="headerlink" title="expand"></a>expand</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;expand&quot;,</span><br><span class="line">    message: &quot;请选择一种水果：&quot;,</span><br><span class="line">    name: &quot;fruit&quot;,</span><br><span class="line">    choices: [</span><br><span class="line">        &#123;</span><br><span class="line">            key: &quot;a&quot;,</span><br><span class="line">            name: &quot;Apple&quot;,</span><br><span class="line">            value: &quot;apple&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            key: &quot;O&quot;,</span><br><span class="line">            name: &quot;Orange&quot;,</span><br><span class="line">            value: &quot;orange&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            key: &quot;p&quot;,</span><br><span class="line">            name: &quot;Pear&quot;,</span><br><span class="line">            value: &quot;pear&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/2018052617182848.jpg" alt="expend_1"></p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/2018052617184757.jpg" alt="expend_2"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/2018052617182848.jpg" alt="expend_1"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/2018052617184757.jpg" alt="expend_2"></p>
 <h4 id="checkbox"><a href="#checkbox" class="headerlink" title="checkbox"></a>checkbox</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;checkbox&quot;,</span><br><span class="line">    message: &quot;选择颜色:&quot;,</span><br><span class="line">    name: &quot;color&quot;,</span><br><span class="line">    choices: [</span><br><span class="line">        &#123;</span><br><span class="line">            name: &quot;red&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        new inquirer.Separator(), &#x2F;&#x2F; 添加分隔符</span><br><span class="line">        &#123;</span><br><span class="line">            name: &quot;blur&quot;,</span><br><span class="line">            checked: true &#x2F;&#x2F; 默认选中</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            name: &quot;green&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        new inquirer.Separator(&quot;--- 分隔符 ---&quot;), &#x2F;&#x2F; 自定义分隔符</span><br><span class="line">        &#123;</span><br><span class="line">            name: &quot;yellow&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;];</span><br><span class="line">&#x2F;&#x2F; 或者下面这样</span><br><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;checkbox&quot;,</span><br><span class="line">    message: &quot;选择颜色:&quot;,</span><br><span class="line">    name: &quot;color&quot;,</span><br><span class="line">    choices: [</span><br><span class="line">        &quot;red&quot;,</span><br><span class="line">        &quot;blur&quot;,</span><br><span class="line">        &quot;green&quot;,</span><br><span class="line">        &quot;yellow&quot;</span><br><span class="line">    ],</span><br><span class="line">    pageSize: 2 &#x2F;&#x2F; 设置行数</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526172231673.jpg" alt="checkbox_sep"></p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526172246307.jpg" alt="checkbox_size"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526172231673.jpg" alt="checkbox_sep"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526172246307.jpg" alt="checkbox_size"></p>
 <h4 id="password"><a href="#password" class="headerlink" title="password"></a>password</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;password&quot;, &#x2F;&#x2F; 密码为密文输入</span><br><span class="line">    message: &quot;请输入密码：&quot;,</span><br><span class="line">    name: &quot;pwd&quot;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/2018052617241416.jpg" alt="pwd"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/2018052617241416.jpg" alt="pwd"></p>
 <h4 id="editor"><a href="#editor" class="headerlink" title="editor"></a>editor</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const promptList &#x3D; [&#123;</span><br><span class="line">    type: &quot;editor&quot;,</span><br><span class="line">    message: &quot;请输入备注：&quot;,</span><br><span class="line">    name: &quot;editor&quot;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526172640212.jpg" alt="editor_inset"></p>
-<p><img src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526172652359.jpg" alt="editor_res"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526172640212.jpg" alt="editor_inset"></p>
+<p><img src= "/img/loading.gif" data-src="/static/npm/%E8%AF%95%E7%94%A8/inquirer%E7%9A%84%E8%AF%95%E7%94%A8/images/20180526172652359.jpg" alt="editor_res"></p>
 ]]></content>
       <categories>
         <category>npm</category>
+        <category>试用</category>
       </categories>
   </entry>
   <entry>
@@ -250,6 +231,7 @@
 ]]></content>
       <categories>
         <category>前端</category>
+        <category>css</category>
       </categories>
   </entry>
   <entry>
@@ -378,7 +360,7 @@
     <title>JavaScript与有限状态机</title>
     <url>/2020/06/09/%E7%9F%A5%E8%AF%86/JavaScript%E4%B8%8E%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/</url>
     <content><![CDATA[<p><a href="http://zh.wikipedia.org/wiki/有限状态机" target="_blank" rel="external nofollow noopener noreferrer">有限状态机</a>（Finite-state machine）是一个非常有用的模型，可以模拟世界上大部分事物。</p>
-<p><img src="/static/%E7%9F%A5%E8%AF%86/JavaScript%E4%B8%8E%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/images/bg2013090201.png" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E7%9F%A5%E8%AF%86/JavaScript%E4%B8%8E%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/images/bg2013090201.png" alt="img"></p>
 <p>简单说，它有三个特征：</p>
 <blockquote>
 <p>　　* 状态总数（state）是有限的。<br>　　* 任一时刻，只处在一种状态之中。<br>　　* 某种条件下，会从一种状态转变（transition）到另一种状态。</p>
@@ -492,6 +474,7 @@
 ]]></content>
       <categories>
         <category>前端</category>
+        <category>javascript</category>
       </categories>
       <tags>
         <tag>前端</tag>
@@ -521,7 +504,7 @@
 </blockquote>
 <p><strong>然后把同事的<code>node_modules</code>拷贝过来，结果运行正常，</strong></p>
 <h4 id="为什么node-modules会不一样？"><a href="#为什么node-modules会不一样？" class="headerlink" title="为什么node_modules会不一样？"></a>为什么<code>node_modules</code>会不一样？</h4><p>和同事对比了依赖的版本，发现还是有差异的，左边是有错误的，右边是正确;</p>
-<p><img src="/static/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/JavaScript%E9%A1%B9%E7%9B%AE%E4%B8%AD%E9%94%81%E5%AE%9Anpm%E4%BE%9D%E8%B5%96%E5%8C%85%E7%89%88%E6%9C%AC/images/image-20200526134440533.png" alt="image-20200526134440533"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/JavaScript%E9%A1%B9%E7%9B%AE%E4%B8%AD%E9%94%81%E5%AE%9Anpm%E4%BE%9D%E8%B5%96%E5%8C%85%E7%89%88%E6%9C%AC/images/image-20200526134440533.png" alt="image-20200526134440533"></p>
 <p>然后我安装成右边正确的版本，发现样式问题都好了。<br>为什么会造成安装的版本不一样？<br>图下是本地项目<code>package.json</code>依赖</p>
 <p>网上找了下 包里面的<code>^</code>是什么意思,示例如下：<br><code>1.2.1</code><br>-匹配指定版本，这里是匹配1.2.1。</p>
 <p><code>^1.0.0</code><br>匹配 &gt;=1.0.0 且 &lt;2.0.0的版本。<br>^ 前缀意为 与指定的版本兼容 。<br>^ 前缀表示最左边的非0段不允许改变，该段之后的段可以为更高版，所以<br>^1.1.0 匹配 &gt;=1.1.0 且 &lt;2.0.0<br>^0.0.3 匹配 &gt;=0.0.3 且 &lt;0.0.4</p>
@@ -562,7 +545,7 @@
     <content><![CDATA[<blockquote>
 <p>作者：放羊的小桃桃<br>链接：<a href="https://www.jianshu.com/p/81ef7e7094e8" target="_blank" rel="external nofollow noopener noreferrer">https://www.jianshu.com/p/81ef7e7094e8</a><br>来源：简书<br>简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。<br>参考： <a href="https://www.cnblogs.com/imwtr/p/4441741.html" target="_blank" rel="external nofollow noopener noreferrer">https://www.cnblogs.com/imwtr/p/4441741.html</a></p>
 </blockquote>
-<p>圣杯布局和双飞翼布局是前端工程师需要日常掌握的重要布局方式。两者的功能相同，都是为了实现一个 <strong>两侧宽度固定，中间宽度自适应的三栏布局。</strong><br><img src="https://upload-images.jianshu.io/upload_images/9397803-ab11463cd3c26105.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/981/format/webp" alt="image"></p>
+<p>圣杯布局和双飞翼布局是前端工程师需要日常掌握的重要布局方式。两者的功能相同，都是为了实现一个 <strong>两侧宽度固定，中间宽度自适应的三栏布局。</strong><br><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/9397803-ab11463cd3c26105.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/981/format/webp" alt="image"></p>
 <p>圣杯布局来源于文章<a href="https://alistapart.com/article/holygrail" target="_blank" rel="external nofollow noopener noreferrer">In Search of the Holy Grail</a>，而双飞翼布局来源于淘宝UED。虽然两者的实现方法略有差异，不过都遵循了以下要点：</p>
 <ul>
 <li>两侧宽度固定，中间宽度自适应</li>
@@ -574,46 +557,46 @@
 <p>首先定义出整个布局的<code>DOM</code>结构，主体部分是由<code>container</code>包裹的<code>center</code>,<code>left</code>,<code>right</code>三列，其中<code>center</code>定义在最前面。</p>
 <h3 id="CSS代码"><a href="#CSS代码" class="headerlink" title="CSS代码"></a>CSS代码</h3><p>假设左侧的固定宽度为200px，右侧的固定宽度为150px，则首先在<code>container</code>上设置：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#container &#123;</span><br><span class="line">  padding-left: 200px; </span><br><span class="line">  padding-right: 150px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>为左右两列预留出相应的空间，得到如下示意图：<br><img src="https://upload-images.jianshu.io/upload_images/9397803-aaea086d37ac9e06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"></p>
+<p>为左右两列预留出相应的空间，得到如下示意图：<br><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/9397803-aaea086d37ac9e06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"></p>
 <p>随后分别为三列设置宽度与浮动，同时对<code>footer</code>设置清除浮动：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#container .column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#center &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#footer &#123;</span><br><span class="line">  clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>得到如下效果：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/9397803-908ab18834f384ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"> </p>
+<p><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/9397803-908ab18834f384ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"> </p>
 <p>根据浮动的特性，由于<code>center</code>的宽度为100%，即占据了第一行的所有空间，所以<code>left</code>和<code>right</code>被“挤”到了第二行。</p>
 <p>接下来的工作是将<code>left</code>放置到之前预留出的位置上，这里使用 <strong>负外边距</strong>（nagetive margin）：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">  &#x2F;&#x2F;这里是父元素宽度的%</span><br><span class="line">  margin-left: -100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>得到：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/9397803-0092cb112431e076.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"></p>
+<p><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/9397803-0092cb112431e076.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"></p>
 <p>随后还需要使用<code>定位(position)</code>方法：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">  margin-left: -100%;</span><br><span class="line">  position: relative;</span><br><span class="line">  right: 200px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>这里使用<code>position: relative</code>和<code>right: 200px</code>将left的位置在原有位置基础上左移200px，以完成left的放置：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/9397803-0f0134d16c865fb9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"></p>
+<p><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/9397803-0f0134d16c865fb9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"></p>
 <p>接下来放置<code>right</code>，只需添加一条声明即可：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">  margin-right: -150px; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>得到最终的效果图：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/9397803-e964c6f980b5da16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"></p>
+<p><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/9397803-e964c6f980b5da16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540/format/webp" alt="image"></p>
 <p>至此，布局效果完成。不过还需要考虑最后一步，那就是页面的最小宽度：要想保证该布局效果正常显示，由于两侧都具有固定的宽度，所以需要给定页面一个最小的宽度，但这并不只是简单的200+150=350px。回想之前left使用了position: relative，所以就意味着在center开始的区域，还存在着一个left的宽度。所以页面的最小宽度应该设置为200+150+200=550px：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  min-width: 550px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>综上所述，圣杯布局的CSS代码为：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  min-width: 550px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#container &#123;</span><br><span class="line">  padding-left: 200px; </span><br><span class="line">  padding-right: 150px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#container .column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#center &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">  margin-left: -100%;</span><br><span class="line">  position: relative;</span><br><span class="line">  right: 200px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">  margin-right: -150px; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#footer &#123;</span><br><span class="line">  clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>关于圣杯布局的示例，可参考：<a href="https://litaooooo.github.io/page-examples/holy-grail.html" target="_blank" rel="external nofollow noopener noreferrer">圣杯布局</a></p>
 <p>最后提醒一下很多朋友可能会忽略的小细节：在<code>#center</code>中，包含了一条声明<code>width: 100%</code>，这是中间栏能够做到自适应的关键。可能会有朋友认为不需要设置这条声明，因为觉得center在不设置宽度的情况下会默认将宽度设置为父元素(container)的100%宽度。但需要注意到，center是浮动元素，由于浮动具有包裹性，在不显式设置宽度的情况下会自动“收缩”到内容的尺寸大小。如果去掉width: 100%，则当中间栏不包含或者包含较少内容时，整个布局会“崩掉”，而达不到这样的效果：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/9397803-09a8a5617072d0a2.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/904/format/webp" alt="image"></p>
+<p><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/9397803-09a8a5617072d0a2.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/904/format/webp" alt="image"></p>
 <h2 id="双飞翼布局"><a href="#双飞翼布局" class="headerlink" title="双飞翼布局"></a>双飞翼布局</h2><h3 id="DOM结构-1"><a href="#DOM结构-1" class="headerlink" title="DOM结构"></a>DOM结构</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;header&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;container&quot; class&#x3D;&quot;column&quot;&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;center&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;left&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;right&quot; class&#x3D;&quot;column&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;footer&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;body&gt;</span><br></pre></td></tr></table></figure>
 <p>双飞翼布局的<code>DOM结构</code>与<code>圣杯布局</code>的区别是用<code>container</code>仅包裹住center，另外将<code>.column</code>类从<code>center</code>移至<code>container</code>上。</p>
 <h3 id="CSS代码-1"><a href="#CSS代码-1" class="headerlink" title="CSS代码"></a>CSS代码</h3><p>按照与圣杯布局相同的思路，首先设置各列的宽度与浮动，并且为左右两列预留出空间，以及为<code>footer</code>设置浮动清除：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#container &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#center &#123;</span><br><span class="line">  margin-left: 200px;</span><br><span class="line">  margin-right: 150px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#footer &#123;</span><br><span class="line">  clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>得到如下效果示意图:<br><img src="https://upload-images.jianshu.io/upload_images/9397803-a0f387a0dc99d388.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="image"></p>
+<p>得到如下效果示意图:<br><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/9397803-a0f387a0dc99d388.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="image"></p>
 <p>以上代码将<code>container</code>,<code>left</code>,<code>right</code>设置为<code>float</code>: <code>left</code>，而在<code>container</code>内部，<code>center</code>由于没有设置浮动，所以其宽度默认为<code>container</code>的100%宽度，通过对其设置<code>margin-left</code>和<code>margin-right</code>为左右两列预留出了空间。</p>
 <p>将<code>left</code>放置到预留位置：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#left &#123;</span><br><span class="line">  width: 200px; </span><br><span class="line">  margin-left: -100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>得到：<br><img src="https://upload-images.jianshu.io/upload_images/9397803-7fcff771168c26cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="image"><br>将<code>right</code>放置到预留位置：</p>
+<p>得到：<br><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/9397803-7fcff771168c26cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="image"><br>将<code>right</code>放置到预留位置：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#right &#123;</span><br><span class="line">  width: 150px; </span><br><span class="line">  margin-left: -150px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>得到最终效果：<br><img src="https://upload-images.jianshu.io/upload_images/9397803-639e4da232d31e21.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="image"></p>
+<p>得到最终效果：<br><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/9397803-639e4da232d31e21.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="image"></p>
 <p>最后计算最小页面宽度：由于双飞翼布局没有用到<code>position:relative</code>进行定位，所以最小页面宽度应该为200+150=350px。但是当页面宽度缩小到350px附近时，会挤占中间栏的宽度，使得其内容被右侧栏覆盖，如下所示：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/9397803-7612899f07163703.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/442/format/webp" alt="image"></p>
+<p><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/9397803-7612899f07163703.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/442/format/webp" alt="image"></p>
 <p>因此在设置最小页面宽度时，应该适当增加一些宽度以供中间栏使用（假设为150px），则有：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  min-width: 500px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>至此双飞翼布局大功告成！其布局整体代码为：</p>
@@ -628,13 +611,14 @@
 <p>通过<code>calc()</code>可以十分方便地计算出center应该占据的自适应宽度，目前<code>calc()</code>支持到IE9。</p>
 <h3 id="使用border-box"><a href="#使用border-box" class="headerlink" title="使用border-box"></a>使用border-box</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line">#center &#123;</span><br><span class="line">  padding-left: 200px;</span><br><span class="line">  padding-right: 150px;</span><br><span class="line">  box-sizing: border-box;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>使用<code>border-box</code>可以将<code>center</code>的整个盒模型宽度设置为父元素的100%宽度，此时再利用<code>padding-left</code>和<code>padding-right</code>可以自动得到中间栏的自适应宽度。不过需要注意的是，由于padding是盒子的一部分，所以padding部分会具有中间栏的背景色，当中间栏高于侧栏时，会出现这样的情况：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/9397803-243751e1bb945634.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/703/format/webp" alt="image"></p>
+<p><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/9397803-243751e1bb945634.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/703/format/webp" alt="image"></p>
 <p>目前<code>box-sizing</code>支持到IE8。</p>
 <h3 id="使用flex"><a href="#使用flex" class="headerlink" title="使用flex"></a>使用flex</h3><p>这里使用flex还是需要与圣杯布局相同的DOM结构，不过在实现上将更加简单：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- DOM结构 --&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;container&quot;&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;center&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;left&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;right&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#container &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#center &#123;</span><br><span class="line">    flex: 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#left &#123;</span><br><span class="line">    flex: 0 0 200px;</span><br><span class="line">    order: -1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#right &#123;</span><br><span class="line">    flex: 0 0 150px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>前端</category>
+        <category>css</category>
       </categories>
       <tags>
         <tag>前端</tag>
@@ -654,6 +638,7 @@
 ]]></content>
       <categories>
         <category>前端</category>
+        <category>css</category>
       </categories>
       <tags>
         <tag>前端</tag>
@@ -678,6 +663,7 @@
 ]]></content>
       <categories>
         <category>前端</category>
+        <category>css</category>
       </categories>
       <tags>
         <tag>前端</tag>
@@ -702,6 +688,7 @@
 ]]></content>
       <categories>
         <category>前端</category>
+        <category>css</category>
       </categories>
       <tags>
         <tag>前端</tag>
@@ -713,6 +700,7 @@
     <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">animation-fill-mode:forwards</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>css</category>
+        <category>知识</category>
       </categories>
   </entry>
   <entry>
@@ -725,6 +713,7 @@
 ]]></content>
       <categories>
         <category>css</category>
+        <category>知识</category>
       </categories>
   </entry>
   <entry>
@@ -744,6 +733,7 @@
 ]]></content>
       <categories>
         <category>css</category>
+        <category>知识</category>
       </categories>
   </entry>
   <entry>
@@ -765,6 +755,7 @@
     <content><![CDATA[]]></content>
       <categories>
         <category>loadsh</category>
+        <category>数组操作</category>
       </categories>
   </entry>
   <entry>
@@ -787,7 +778,7 @@
 </blockquote>
 </blockquote>
 <p><a href="http://blog.jquery.com/2013/01/15/jquery-1-9-final-jquery-2-0-beta-migrate-final-released/" target="_blank" rel="external nofollow noopener noreferrer">jQuery 1.9</a>发布。</p>
-<p><img src="/static/%E7%9F%A5%E8%AF%86/sourcemap/sourcemap%E6%A6%82%E8%BF%B0/images/bg2013012203.png" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E7%9F%A5%E8%AF%86/sourcemap/sourcemap%E6%A6%82%E8%BF%B0/images/bg2013012203.png" alt="img"></p>
 <p>这是2.0版之前的最后一个新版本，有很多新功能，其中一个就是支持Source Map。</p>
 <p>访问 <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js，打开压缩后的版本，滚动到底部，你可以看到最后一行是这样的：" target="_blank" rel="external nofollow noopener noreferrer">http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js，打开压缩后的版本，滚动到底部，你可以看到最后一行是这样的：</a></p>
 <p>这就是Source Map。它是一个独立的map文件，与源码在同一个目录下，你可以<a href="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.map" target="_blank" rel="external nofollow noopener noreferrer">点击进去</a>，看看它的样子。</p>
@@ -802,9 +793,9 @@
 <p>这就是Source map想要解决的问题。</p>
 <h2 id="二、什么是Source-map"><a href="#二、什么是Source-map" class="headerlink" title="二、什么是Source map"></a>二、什么是Source map</h2><p>简单说，Source map就是一个信息文件，里面储存着位置信息。也就是说，转换后的代码的每一个位置，所对应的转换前的位置。</p>
 <p>有了它，出错的时候，除错工具将直接显示原始代码，而不是转换后的代码。这无疑给开发者带来了很大方便。</p>
-<p><img src="/static/%E7%9F%A5%E8%AF%86/sourcemap/sourcemap%E6%A6%82%E8%BF%B0/images/bg2013012204.png" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E7%9F%A5%E8%AF%86/sourcemap/sourcemap%E6%A6%82%E8%BF%B0/images/bg2013012204.png" alt="img"></p>
 <p>目前，暂时只有Chrome浏览器支持这个功能。在Developer Tools的Setting设置中，确认选中<code>&quot;Enable source maps&quot;</code>。</p>
-<p><img src="/static/%E7%9F%A5%E8%AF%86/sourcemap/sourcemap%E6%A6%82%E8%BF%B0/images/bg2013012201.png" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E7%9F%A5%E8%AF%86/sourcemap/sourcemap%E6%A6%82%E8%BF%B0/images/bg2013012201.png" alt="img"></p>
 <h2 id="三、如何启用Source-map"><a href="#三、如何启用Source-map" class="headerlink" title="三、如何启用Source map"></a>三、如何启用Source map</h2><p>正如前文所提到的，只要在转换后的代码尾部，加上一行就可以了。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">　&#x2F;&#x2F;@ sourceMappingURL&#x3D;&#x2F;path&#x2F;to&#x2F;file.js.map</span><br></pre></td></tr></table></figure>
 
@@ -842,7 +833,7 @@
 <h2 id="八、VLQ编码"><a href="#八、VLQ编码" class="headerlink" title="八、VLQ编码"></a><strong>八、VLQ编码</strong></h2><p>最后，谈谈如何用<a href="http://en.wikipedia.org/wiki/Variable-length_quantity" target="_blank" rel="external nofollow noopener noreferrer">VLQ编码</a>表示数值。</p>
 <p>这种编码最早用于MIDI文件，后来被多种格式采用。它的特点就是可以非常精简地表示很大的数值。</p>
 <p>VLQ编码是变长的。如果（整）数值在-15到+15之间（含两个端点），用一个字符表示；超出这个范围，就需要用多个字符表示。它规定，每个字符使用6个两进制位，正好可以借用<a href="http://en.wikipedia.org/wiki/Base_64" target="_blank" rel="external nofollow noopener noreferrer">Base 64</a>编码的字符表。</p>
-<p><img src="/static/%E7%9F%A5%E8%AF%86/sourcemap/sourcemap%E6%A6%82%E8%BF%B0/images/bg2013012202.png" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E7%9F%A5%E8%AF%86/sourcemap/sourcemap%E6%A6%82%E8%BF%B0/images/bg2013012202.png" alt="img"></p>
 <p>在这6个位中，左边的第一位（最高位）表示是否”连续”（continuation）。如果是1，代表这６个位后面的6个位也属于同一个数；如果是0，表示该数值到这6个位结束。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">　　Continuation</span><br><span class="line">　　|　　　　　Sign</span><br><span class="line">　　|　　　　　|</span><br><span class="line">　　V　　　　　V</span><br><span class="line">　　１０１０１１</span><br></pre></td></tr></table></figure>
 
@@ -867,11 +858,11 @@
 </blockquote>
 <a id="more"></a>
 
-<h2 id="需要实现的效果"><a href="#需要实现的效果" class="headerlink" title="需要实现的效果"></a>需要实现的效果</h2><p><img src="/static/cocos/cocos%E9%BE%99%E9%AA%A8%E5%B1%80%E9%83%A8%E6%8D%A2%E8%A3%85/images/image-20200517143013713.png" alt="image-20200517143013713"></p>
+<h2 id="需要实现的效果"><a href="#需要实现的效果" class="headerlink" title="需要实现的效果"></a>需要实现的效果</h2><p><img src= "/img/loading.gif" data-src="/static/cocos/cocos%E9%BE%99%E9%AA%A8%E5%B1%80%E9%83%A8%E6%8D%A2%E8%A3%85/images/image-20200517143013713.png" alt="image-20200517143013713"></p>
 <p>上面是原始效果，可以看到有两个插槽,一个是<code>fish</code>,一个是<code>number</code>。这个时候cocos并不能替换，因为是空的，因此就需要随便添加两个资源。</p>
-<p><img src="/static/cocos/cocos%E9%BE%99%E9%AA%A8%E5%B1%80%E9%83%A8%E6%8D%A2%E8%A3%85/images/image-20200517143122750.png" alt="image-20200517143122750"></p>
+<p><img src= "/img/loading.gif" data-src="/static/cocos/cocos%E9%BE%99%E9%AA%A8%E5%B1%80%E9%83%A8%E6%8D%A2%E8%A3%85/images/image-20200517143122750.png" alt="image-20200517143122750"></p>
 <p>这里我就添加<code>fish</code>插槽，那个<code>number</code>感觉太麻烦了，是一个滚动的数字。这样的话就能够使用cocos官方提供的方式进行换装替换 了。</p>
-<h3 id="制作龙骨模型替换资源"><a href="#制作龙骨模型替换资源" class="headerlink" title="制作龙骨模型替换资源"></a>制作龙骨模型替换资源</h3><p><img src="/static/cocos/cocos%E9%BE%99%E9%AA%A8%E5%B1%80%E9%83%A8%E6%8D%A2%E8%A3%85/images/image-20200517143330120.png" alt="image-20200517143330120"></p>
+<h3 id="制作龙骨模型替换资源"><a href="#制作龙骨模型替换资源" class="headerlink" title="制作龙骨模型替换资源"></a>制作龙骨模型替换资源</h3><p><img src= "/img/loading.gif" data-src="/static/cocos/cocos%E9%BE%99%E9%AA%A8%E5%B1%80%E9%83%A8%E6%8D%A2%E8%A3%85/images/image-20200517143330120.png" alt="image-20200517143330120"></p>
 <blockquote>
 <ul>
 <li><code>Armature</code>表示 部件名称</li>
@@ -880,7 +871,7 @@
 </ul>
 </blockquote>
 <p>接下来对两个资源进行导出，根据论坛中引擎开发人员的建议，将<code>_tex.json</code>后缀的改成了<code>_atlas.json</code>的。类似于</p>
-<p><img src="/static/cocos/cocos%E9%BE%99%E9%AA%A8%E5%B1%80%E9%83%A8%E6%8D%A2%E8%A3%85/images/image-20200517143824254.png" alt="image-20200517143824254"></p>
+<p><img src= "/img/loading.gif" data-src="/static/cocos/cocos%E9%BE%99%E9%AA%A8%E5%B1%80%E9%83%A8%E6%8D%A2%E8%A3%85/images/image-20200517143824254.png" alt="image-20200517143824254"></p>
 <p>这样的话准备条件就做好了。不过仍有两种方式。</p>
 <h3 id="挂载节点替换"><a href="#挂载节点替换" class="headerlink" title="挂载节点替换"></a>挂载节点替换</h3><p>总代码：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cc.Class(&#123;</span><br><span class="line">    extends: cc.Component,</span><br><span class="line"></span><br><span class="line">    properties: &#123;</span><br><span class="line">        b: &#123;</span><br><span class="line">            type: dragonBones.ArmatureDisplay,</span><br><span class="line">            default: null,</span><br><span class="line">        &#125;,</span><br><span class="line">        c: &#123;</span><br><span class="line">            type: dragonBones.ArmatureDisplay,</span><br><span class="line">            default: null,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    start () &#123;</span><br><span class="line">    	&#x2F;&#x2F; 需要被替换的fish插槽</span><br><span class="line">        let robotSlot &#x3D; this.b.armature().getSlot(&quot;fish&quot;);</span><br><span class="line">        let factory &#x3D; dragonBones.CCFactory.getInstance();</span><br><span class="line">        factory.replaceSlotDisplay(</span><br><span class="line">            this.c.getArmatureKey(), </span><br><span class="line">            &quot;Armature&quot;, &#x2F;&#x2F;  部件名称</span><br><span class="line">            &quot;killboss_bx&quot;, &#x2F;&#x2F; 插槽名称</span><br><span class="line">            &quot;kypy_killboss_mgy&quot;,  &#x2F;&#x2F; 显示资源名称</span><br><span class="line">            robotSlot</span><br><span class="line">        );</span><br><span class="line">        this.b.playAnimation(&quot;animation&quot;, 500);  </span><br><span class="line">    &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
@@ -1178,7 +1169,7 @@
     <title>scss主题切换功能</title>
     <url>/2020/05/14/%E5%89%8D%E7%AB%AF/scss%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>结构类似下面这样：</p>
-<p><img src="/static/%E5%89%8D%E7%AB%AF/scss%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2%E5%8A%9F%E8%83%BD/images/image-20200514140159247.png" alt="image-20200514140159247"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E5%89%8D%E7%AB%AF/scss%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2%E5%8A%9F%E8%83%BD/images/image-20200514140159247.png" alt="image-20200514140159247"></p>
 <p><strong><code>index.html</code></strong></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;zh&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot;</span><br><span class="line">          content&#x3D;&quot;width&#x3D;device-width, user-scalable&#x3D;no, initial-scale&#x3D;1.0, maximum-scale&#x3D;1.0, minimum-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;meta http-equiv&#x3D;&quot;X-UA-Compatible&quot; content&#x3D;&quot;ie&#x3D;edge&quot;&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;.&#x2F;index.css&quot;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body data-theme&#x3D;&quot;light&quot;&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;app-home&quot;&gt;</span><br><span class="line">        dsakdjsafs</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 
@@ -1297,6 +1288,38 @@
       </categories>
   </entry>
   <entry>
+    <title>细说同域</title>
+    <url>/2020/05/13/%E7%9F%A5%E8%AF%86/%E5%89%8D%E7%AB%AF/%E5%90%8C%E6%BA%90%E4%B8%8E%E8%B7%A8%E5%9F%9F/%E7%BB%86%E8%AF%B4%E5%90%8C%E5%9F%9F/</url>
+    <content><![CDATA[<p><strong>一、域名级别</strong></p>
+<p><strong>域名</strong>级别是网址分类的一个标准，包括顶级域名、二级域名等。一个完整的域名由二个或二个以上部分组成，各部分之间用英文的句号”.”来分隔，倒数第一个”.”的右边部分称为<strong>顶级域名</strong>（TLD，也称为一级域名，包含一个合法字符串和一个域名后缀），顶级域名的左边部分字符串到下个”.”为止称为二级域名（SLD），二级域名的左边部分称为三级域名，以此类推，每一级的域名控制它下一级域名的分配。</p>
+<p><strong>二、域名组成</strong></p>
+<p>域名组成方式是由一下域名级别类型构成的</p>
+<ol>
+<li>顶级域名</li>
+<li>二级域名</li>
+<li>三级域名</li>
+<li>国家代码域名</li>
+</ol>
+<p><strong>顶级域名</strong>：分为两类：　一是国家顶级域名（nationaltop-leveldomainnames，简称nTLDs），目前200多个国家都按照ISO3166国家代码分配了顶级域名，例如中国是cn，美国是us，日本是jp等；二是国际顶级域名（internationaltop-leveldomainnames，简称iTDs），例如表示工商企业的.com，表示网络提供商的.net，表示非盈利组织的.org等。目前大多数域名争议都发生在com的顶级域名下，因为多数公司上网的目的都是为了赢利。为加强域名管理，解决域名资源的紧张，Internet协会、Internet分址机构及世界知识产权组织（WIPO）等国际组织经过广泛协商，在原来三个国际通用顶级域名：（com）的基础上，新增加了7个国际通用顶级域名：firm（公司企业）、store（销售公司或企业）、Web（突出WWW活动的单位）、arts（突出文化、娱乐活动的单位）、rec(突出消遣、娱乐活动的单位）、info(提供信息服务的单位）、nom(个人），并在世界范围内选择新的注册机构来受理域名注册申请。</p>
+<p><strong>二级域名：</strong>是指顶级域名之下的域名，在国际顶级域名下，它是指域名注册人的网上名称，例如ibm，yahoo，microsoft等；在国家顶级域名下，它是表示注册企业类别的符号，例如com，edu，gov，net等。　中国在国际互联网络信息中心（InterNIC）正式注册并运行的顶级域名是cn，这也是中国的一级域名。在顶级域名之下，中国的二级域名又分为类别域名和行政区域名两类。类别域名共6个，包括用于科研机构的ac；用于工商金融企业的com；用于教育机构的edu；用于政府部门的gov；用于互联网络信息中心和运行中心的net；用于非盈利组织的org。而行政区域名有34个，分别对应于中国各省、自治区和直辖市。</p>
+<p><strong>三级域名</strong>：用字母（A～Z，a～z，大小写等）、数字（0～9）和连接符（－）组成，各级域名之间用实点（.）连接，三级域名的长度不能超过20个字符。如无特殊原因，建议采用申请人的英文名（或者缩写）或者汉语拼音名（或者缩写）作为三级域名，以保持域名的清晰性和简洁性。</p>
+<p><strong>国家代码</strong>：由两个字母组成的顶级域名如.cn,.uk,.de和.jp称为国家代码顶级域名（ccTLDs),其中.cn是中国专用的顶级域名，其注册归CNNIC管理，以.cn结尾的二级域名我们简称为国内域名。注册国家代码顶级域名下的二级域名的规则和政策与不同的国家的政策有关。您在注册时应咨询域名注册机构，问清相关的注册条件及与注册相关的条款。某些域名注册商除了提供以.com,.net和.org结尾的域名的注册服务之外，还提供国家代码顶级域名的注册。ICANN并没有特别授权注册商提供国家代码顶级域名的注册服务。</p>
+<p><strong>三、同域-同父域-跨域区分</strong></p>
+<p><strong>同域</strong>：即同源，所谓同源，指的是协议、域名、端口号都必须完全相同。这里同源既是同域。</p>
+<p><strong>同父域</strong>：即存在父域相同。例如，Http：<a href="http://www.baidu.com/" target="_blank" rel="external nofollow noopener noreferrer">www.baidu.com/</a> 与Http：ww.baidu.com/ 就是同父域。</p>
+<p><strong>跨域</strong>：所谓跨域，就是不同源（IP地址相同，但域名不同也是跨域）。那这里的同父域你就懂得了？</p>
+<blockquote>
+<p>原文链接：</p>
+<p><a href="https://www.cnblogs.com/julygift/p/8535825.html" target="_blank" rel="external nofollow noopener noreferrer">https://www.cnblogs.com/julygift/p/8535825.html</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>知识</category>
+        <category>前端</category>
+        <category>同源与跨域</category>
+      </categories>
+  </entry>
+  <entry>
     <title>低版本vue打包之后一片空白</title>
     <url>/2020/05/13/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/vue/%E4%BD%8E%E7%89%88%E6%9C%ACvue%E6%89%93%E5%8C%85%E4%B9%8B%E5%90%8E%E4%B8%80%E7%89%87%E7%A9%BA%E7%99%BD/</url>
     <content><![CDATA[<blockquote>
@@ -1366,16 +1389,16 @@
 <h5 id="贝赛尔曲线的数学理论："><a href="#贝赛尔曲线的数学理论：" class="headerlink" title="贝赛尔曲线的数学理论："></a>贝赛尔曲线的数学理论：</h5><p>既然贝赛尔曲线的本质是通过数学计算公式去绘制平滑的曲线，那就可以通过数学工具进行实际求证以及解释说明。当然对其进行数学求证就没必要了，因为这些伟大的数学家们已经做过了，这里只是解释说明：</p>
 <ul>
 <li><p>步骤一：在平面内选3个不同线的点并且依次用线段连接。如下所示..</p>
-<p><img src="/static/%E7%9F%A5%E8%AF%86/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/images/5417430-7ac24ea6e49bb425.webp" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E7%9F%A5%E8%AF%86/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/images/5417430-7ac24ea6e49bb425.webp" alt="img"></p>
 </li>
 <li><p>步骤二：在AB和BC线段上找出点D和点E，使得 <strong>AD/AB = BE/BC</strong></p>
-<p><img src="/static/%E7%9F%A5%E8%AF%86/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/images/5417430-d4157bc9a6cea222.webp" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E7%9F%A5%E8%AF%86/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/images/5417430-d4157bc9a6cea222.webp" alt="img"></p>
 </li>
 <li><p>步骤三：连接DE，在DE上寻找点F，F点需要满足：<strong>DF/DE = AD/AB = BE/BC</strong></p>
-<p><img src="/static/%E7%9F%A5%E8%AF%86/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/images/5417430-894fcaf1a5809cb7.webp" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E7%9F%A5%E8%AF%86/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/images/5417430-894fcaf1a5809cb7.webp" alt="img"></p>
 </li>
 <li><p>步骤四：最最重要的！<strong>根据DE线段和计算公式找出所有的F点</strong>，记住是所有的F点，然后将其这些点连接起来。那，连接规则是什么？以上图为例，第一个连接点是A-F，第二连接点是A-F1（这个F1必须满足<strong>DF1/DE = AD/AB = BE/BC</strong>）以此类推，直到最后连接上C点，下面上一个动图加深理解：</p>
-<p><img src="/static/%E7%9F%A5%E8%AF%86/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/images/5417430-0c59851cc48cadcd.webp" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E7%9F%A5%E8%AF%86/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/images/5417430-0c59851cc48cadcd.webp" alt="img"></p>
 </li>
 </ul>
 ]]></content>
@@ -1389,6 +1412,7 @@
     <content><![CDATA[]]></content>
       <categories>
         <category>前端</category>
+        <category>实战</category>
       </categories>
   </entry>
   <entry>
@@ -1421,11 +1445,12 @@
 <p><a href="https://tieba.baidu.com/p/5882990363?red_tag=1551058192" target="_blank" rel="external nofollow noopener noreferrer">https://tieba.baidu.com/p/5882990363?red_tag=1551058192</a></p>
 <a id="more"></a>
 
-<p><img src="/static/%E5%89%8D%E7%AB%AF/%E4%B8%9A%E5%8A%A1%E7%9B%B8%E5%85%B3/%E8%8B%B9%E6%9E%9C%E5%BD%95%E5%83%8F%E6%9C%89%E5%85%B3hevc%E6%A0%BC%E5%BC%8F%E8%A7%86%E9%A2%91%E7%9A%84%E7%BD%91%E9%A1%B5%E6%92%AD%E6%94%BE/images/image-20200501114203764.png" alt="image-20200501114203764"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E5%89%8D%E7%AB%AF/%E4%B8%9A%E5%8A%A1%E7%9B%B8%E5%85%B3/%E8%8B%B9%E6%9E%9C%E5%BD%95%E5%83%8F%E6%9C%89%E5%85%B3hevc%E6%A0%BC%E5%BC%8F%E8%A7%86%E9%A2%91%E7%9A%84%E7%BD%91%E9%A1%B5%E6%92%AD%E6%94%BE/images/image-20200501114203764.png" alt="image-20200501114203764"></p>
 <p>改成兼容性最佳可以直接播放</p>
 ]]></content>
       <categories>
         <category>前端</category>
+        <category>业务相关</category>
       </categories>
   </entry>
   <entry>
@@ -1463,6 +1488,7 @@
 
 ]]></content>
       <categories>
+        <category>vue</category>
         <category>vue</category>
       </categories>
   </entry>
@@ -1516,7 +1542,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ docker run -d ubuntu:15.10 &#x2F;bin&#x2F;sh -c &quot;while true;do echo hello world;sleep 1;done&quot;</span><br><span class="line">一长串的字符</span><br></pre></td></tr></table></figure>
 
 <p>上面一长串的字符叫做容器ID，对于容器来说，这是唯一的。我们可以通过容器ID来查看容器发生了什么。当然，我们需要确认是否有容器在运行：<code>docker ps</code></p>
-<p><img src="/static/docker/docker%E5%90%AF%E8%92%99/images/image-20200426220150273.png" alt="image-20200426220150273"></p>
+<p><img src= "/img/loading.gif" data-src="/static/docker/docker%E5%90%AF%E8%92%99/images/image-20200426220150273.png" alt="image-20200426220150273"></p>
 <p>如果，我们可以看到有一个容器。</p>
 <table>
 <thead>
@@ -1551,7 +1577,7 @@
 </tr>
 </tbody></table>
 <p>为了查看宿主主机内的输出，我们可以运行<code>docker logs ***</code>，后面表示ID或者容器名称</p>
-<p><img src="/static/docker/docker%E5%90%AF%E8%92%99/images/image-20200426220812571.png" alt="image-20200426220812571"></p>
+<p><img src= "/img/loading.gif" data-src="/static/docker/docker%E5%90%AF%E8%92%99/images/image-20200426220812571.png" alt="image-20200426220812571"></p>
 <h3 id="停止容器"><a href="#停止容器" class="headerlink" title="停止容器"></a>停止容器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker ps  # 查看容器的信息</span><br><span class="line">docker stop *** # 后面接ID或者容器名称</span><br><span class="line">docker ps # 看到容器已经不在了</span><br></pre></td></tr></table></figure>
 
 ]]></content>
@@ -1563,13 +1589,14 @@
     <title>vue-cli3跨域代理配置</title>
     <url>/2020/04/25/vue/vue/vue-cli3%E8%B7%A8%E5%9F%9F%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<blockquote>
-<p>配置只能作用于本地，开发模式下，axios请不要设置默认服务器网址，这个在<code>vue.config.js</code>中设置。<img src="/static/vue/vue/vue-cli3%E8%B7%A8%E5%9F%9F%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/images/image-20200425141012188.png" alt="image-20200425141012188"></p>
+<p>配置只能作用于本地，开发模式下，axios请不要设置默认服务器网址，这个在<code>vue.config.js</code>中设置。<img src= "/img/loading.gif" data-src="/static/vue/vue/vue-cli3%E8%B7%A8%E5%9F%9F%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/images/image-20200425141012188.png" alt="image-20200425141012188"></p>
 </blockquote>
 <p><code>vue.config.js</code>:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports &#x3D; &#123;</span><br><span class="line">	***</span><br><span class="line">	devServer: &#123;</span><br><span class="line">		port: port, &#x2F;&#x2F; 本地服务的端口</span><br><span class="line">		open: true, &#x2F;&#x2F; 启动之后是否自动打开浏览器</span><br><span class="line">		proxy: &#123;</span><br><span class="line">          &#39;&#x2F;member&#39;: &#123;	&#x2F;&#x2F;配置&#96;&#x2F;member&#96;开头的网址</span><br><span class="line">            target: &#39;http:&#x2F;&#x2F;0000000:9002&#39;, &#x2F;&#x2F;请替换成你自己的服务器地址</span><br><span class="line">            ws: false, &#x2F;&#x2F; 是否代理websockets</span><br><span class="line">            changeOrigin: true, &#x2F;&#x2F; 默认是false：请求头中host仍然是浏览器发送过来的host</span><br><span class="line">            pathRewrite: &#123;</span><br><span class="line">              &#x2F;&#x2F; &#39;^&#x2F;member&#39;: &#39;&#39; &#x2F;&#x2F; 重写路径，这个的意思是去掉了&#x2F;member</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">	&#125;</span><br><span class="line">	***</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
+        <category>vue</category>
         <category>vue</category>
       </categories>
   </entry>
@@ -1584,6 +1611,7 @@
 <p>这样就被store管理了，在vue里也能够实时更新</p>
 ]]></content>
       <categories>
+        <category>vue</category>
         <category>vue</category>
       </categories>
   </entry>
@@ -1627,28 +1655,28 @@
 <p>(2) + (3) 两个分支的最终点<br>合并操作的目的就是把两个分支的最新状态结合起来。因此他们各自的最新版本是有特殊含义的。</p>
 <p>结合这三个提交后得到的结果就是我们整合的目标。</p>
 <h2 id="快进或合并提交"><a href="#快进或合并提交" class="headerlink" title="快进或合并提交"></a>快进或合并提交</h2><p>一种最简单的情况是，在其中的一个分支上没有任何一个新的改动提交发生。那么在它之前的最后一次提交就仍然还是那个共同的原始提交。</p>
-<p><img src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/starting-situation-fast-forward.gif" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/starting-situation-fast-forward.gif" alt="img"></p>
 <p>在这种情况下，执行整合操作就非常简单了。 Git 仅仅需要添加所有那些在另外一个分支上的新提交就可以了。在 Git 中，这种最简单的整合操作我们称之为 <code>“快进（fast-forward）”</code>合并。之后两个分支就拥有了完全相同的历史。</p>
-<p><img src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/end-situation-fast-forward.gif" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/end-situation-fast-forward.gif" alt="img"></p>
 <p>但是在大多数情况下，两个分支都会有自己不同的发展轨迹。</p>
-<p><img src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/starting-situation-merge-commit.gif" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/starting-situation-merge-commit.gif" alt="img"></p>
 <p>为了完成整合，Git 会需要创建一个新的提交来含括它们之间的差异，这就是整合提交（merge commit）。</p>
-<p><img src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/end-situation-merge-commit.gif" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/end-situation-merge-commit.gif" alt="img"></p>
 <h2 id="手工提交与合并提交"><a href="#手工提交与合并提交" class="headerlink" title="手工提交与合并提交"></a>手工提交与合并提交</h2><p>通常情况下，提交都是由手工精心创建的。这样也就能更好地保证一次提交只涉及一个关联改动，并且能更好地注释这个提交。</p>
 <p>一个合并提交就不同了，它不是由开发人员手动创建的，而是由 Git 自动生成的。它也不涉及一个关联改动，其目的只是连接两个分支，就像节点一样。如果之后想要了解某个合并操作，你只需要查看这两个分支的历史记录和它们相应的提交树（version tree）。</p>
 <h2 id="Rebase-整合"><a href="#Rebase-整合" class="headerlink" title="Rebase 整合"></a>Rebase 整合</h2><p>有些人并不喜欢使用这种自动合并提交。相反，他们希望项目拥有一个单一的历史发展轨迹。比如一条直线。在历史纪录上没有迹象表明在某些时间它被分成过多个分支。</p>
-<p><img src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/end-situation-rebase.gif" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/end-situation-rebase.gif" alt="img"></p>
 <p>现在就让我们一步一步地了解一下 <code>rebase</code> 操作吧！仍然来使用前面的例子：我们想合并分支 B 到 分支 A 中，但是这次使用 <code>rebase</code> 操作。</p>
-<p><img src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/starting-situation-rebase.gif" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/starting-situation-rebase.gif" alt="img"></p>
 <p>使用下面这个非常的简单的命令：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git rebase branch-B</span><br></pre></td></tr></table></figure>
 
 <p>首先，Git 会 <code>“撤销”</code> 所有在分支 A 上的那些在与分支 B 的共同提交之后发生的提交。当然，Git 不会真的放弃这些提交，其实你可以把这些撤销的提交想像成 “<em>被暂时地存储</em>” 到另外的一个地方去了。</p>
-<p><img src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/rebase-step-1.gif" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/rebase-step-1.gif" alt="img"></p>
 <p>接下来它会整合那些在分支 B（这个我们想要整合的分支）上的还未整合的提交到分支 A 中。在这个时间点，这两个分支看起来会是一模一样的。</p>
-<p><img src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/rebase-step-2.gif" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/rebase-step-2.gif" alt="img"></p>
 <p>最后，那些在分支 A 的新的提交（也就是第一步中自动撤销掉的那些提交）会被重新应用到这个分支上，但是在不同的位置上，在那些从分支 B 被整合过来的提交之后，它们就被 <em>re-based</em> 了。<br>整个项目开发轨迹看起来就像发生在一条直线上。相对于一个合并提交，rebase 包括了所有的组合变化，最原始的提交结构会被保留下来。</p>
-<p><img src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/rebase-step-3.gif" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git-rebase%E8%AF%A6%E8%A7%A3/images/rebase-step-3.gif" alt="img"></p>
 <h2 id="Rebase-存在的陷阱"><a href="#Rebase-存在的陷阱" class="headerlink" title="Rebase 存在的陷阱"></a>Rebase 存在的陷阱</h2><p>当然，使用 <strong>rebase</strong> 操作不会是永远一帆风顺的。很有可能会搬起石头砸自己的脚，因此你不能忽视一个重要的事实：<strong>rebase 会改写历史记录</strong>。</p>
 <p>你有可能已经注意到了，在被 rebase 操作之后的版本中，提交 “C3*” 存在一个新添加的星号。这是因为，尽管这个提交的内容和 “C3” 完全一样，但是它实际上是一个不同的提交。这样做的原因是，它现在有一个新的源提交 C4（在最初创建 C3 时的源提交是 C1）。</p>
 <p>一个提交仅仅包括很少的属性，比如作者，日期，变动和谁是它的父提交。如果改变其中任何一个信息，就必须创建一个全新的提交。当然，新的提交也会拥有一个新的 <code>hash ID</code> 。</p>
@@ -1669,8 +1697,8 @@
 <a id="more"></a>
 
 <p>webstrom的一些配置：</p>
-<p><img src="/static/ts/ts%E4%BD%BF%E7%94%A8paths%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E5%88%AB%E5%90%8D/images/image-20200424105018577.png" alt="image-20200424105018577"></p>
-<p><img src="/static/ts/ts%E4%BD%BF%E7%94%A8paths%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E5%88%AB%E5%90%8D/images/image-20200424105035089.png" alt="image-20200424105035089"></p>
+<p><img src= "/img/loading.gif" data-src="/static/ts/ts%E4%BD%BF%E7%94%A8paths%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E5%88%AB%E5%90%8D/images/image-20200424105018577.png" alt="image-20200424105018577"></p>
+<p><img src= "/img/loading.gif" data-src="/static/ts/ts%E4%BD%BF%E7%94%A8paths%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E5%88%AB%E5%90%8D/images/image-20200424105035089.png" alt="image-20200424105035089"></p>
 <blockquote>
 <p>不一定要一样，只是我这样是可以用的。</p>
 <p>那个Recompile on changes不推荐钩选，不然会把你的所有ts文件的同级目录下编译出一个js文件</p>
@@ -1715,7 +1743,7 @@
 </blockquote>
 <p>如果本机的web项目用了webpack server(目前vue cli, react cli, angular 本地开发用的都是这个) , 这个是webpack server的安全策略，如果是angular项目，需要在启动配置中加上 <code>--disable-host-check</code> 类似 <code>ng serve --open --host $IP --port $PORT --disable-host-check</code>。</p>
 <p>如果是<code>uniapp</code>项目，进行如下配置：</p>
-<p><img src="/static/%E5%B7%A5%E5%85%B7/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/images/image-20200423140150925.png" alt="image-20200423140150925"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E5%B7%A5%E5%85%B7/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/images/image-20200423140150925.png" alt="image-20200423140150925"></p>
 <blockquote>
 <p>参考文档</p>
 <p><a href="https://github.com/fatedier/frp/blob/master/README_zh.md#%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/fatedier/frp/blob/master/README_zh.md#%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81</a></p>
@@ -1765,7 +1793,7 @@
 </tr>
 </tbody></table>
 <p><strong>透视相机示意图</strong></p>
-<p><img src="/static/3D/3D%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/images/201809271025363f22144e-553d-4de9-af31-4ab884924e84.png" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/3D/3D%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/images/201809271025363f22144e-553d-4de9-af31-4ab884924e84.png" alt="img"></p>
 <p>创建摄像机以后还要对其进行移动、然后对准物体积聚的场景中心位置，分别是设置其 <code>position</code>和调用 <code>lookAt</code> 方法，参数均是一个 xyz向量<code>(new THREE.Vector3(x,y,z))</code></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">camera.position：控制相机在整个3D环境中的位置（取值为3维坐标对象-THREE.Vector3(x,y,z)）</span><br><span class="line">camera.lookAt：控制相机的焦点位置，决定相机的朝向（取值为3维坐标对象-THREE.Vector3(x,y,z)）</span><br></pre></td></tr></table></figure>
 
@@ -1942,23 +1970,23 @@
 <p>输入 <code>ssh-keygen -t rsa -C &quot;你的邮箱&quot;</code>  回车，再连续3次回车见下图：</p>
 <p>此时看下图中有一行提示：<code>Your public key has been saved in /c/Users/xxx/.ssh/id_rsa.pub</code></p>
 <p>到该路径（<code>C/Users/xxx/.ssh</code>）可以看见两个文件：id_rsa、id_rsa.pub 。</p>
-<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110415002.png" alt="image-20200420110415002"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110415002.png" alt="image-20200420110415002"></p>
 <p>把密钥添加进git账号中：</p>
 <p>用编辑器打开<code>id_rsa.pub</code>，推荐使用Notepad++，不要使用记事本打开，因为记事本的默认编码不是utf-8，拷贝里面的全部内容，登录你其中一个git 账号，例如:我登录github平台，后添加公钥里把它添加进去，公钥名称可以随便写。提交保存，输入你的github登录密码并提示添加成功。</p>
-<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110453118.png" alt="image-20200420110453118"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110453118.png" alt="image-20200420110453118"></p>
 <p>测试刚才添加的github密钥是否成功：</p>
 <p>在Git Bash Here中输入 ssh <a href="mailto:git@github.com" rel="external nofollow noopener noreferrer" target="_blank">git@github.com</a>  回车</p>
 <p>会出现一个提示，输入 yes 回车，可以看见一个successfully的提示信息，说明添加成功，可以使用了。</p>
-<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110505960.png" alt="image-20200420110505960"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110505960.png" alt="image-20200420110505960"></p>
 <h3 id="生成第二个账号的密钥"><a href="#生成第二个账号的密钥" class="headerlink" title="生成第二个账号的密钥"></a>生成第二个账号的密钥</h3><p>重复上面的步骤，那用户名和邮箱改成另一个账号的</p>
 <blockquote>
 <p>注：在输入<code>ssh-keygen -t rsa -C &quot;你的邮箱&quot;</code>的第一个选择存储路径的时候请自行改成自己的自定义名字，例如输入：smalldemons，这个时候一般是在<code>C/Users/xxx/.ssh</code>目录下就会又增加两个文件：smalldemons、smalldemons.pub,如果没看到的话，一般是在命令行打开的当前目录下，把这两个文件复制过去就行了</p>
 </blockquote>
-<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110803461.png" alt="image-20200420110803461"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110803461.png" alt="image-20200420110803461"></p>
 <p>添加多账号配置文件config（<code>C/Users/xxx/.ssh</code>）：</p>
-<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110903542.png" alt="image-20200420110903542"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110903542.png" alt="image-20200420110903542"></p>
 <p>里面的代码 如下：</p>
-<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420111043623.png" alt="image-20200420111043623"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420111043623.png" alt="image-20200420111043623"></p>
 <blockquote>
 <p>Host 配置的别名</p>
 <p>HostName  填写改git账号的官网地址</p>
@@ -1966,7 +1994,7 @@
 <p>如此就可以在多个账号间切换使用了</p>
 </blockquote>
 <h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>这样的话只能使用<code>git@github.com:xxxx/xxxx.git</code>的方式拉取或推送代码，另一种我试的是失效的，得再看一下。</p>
-<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420111258450.png" alt="image-20200420111258450"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420111258450.png" alt="image-20200420111258450"></p>
 <p>切换<code>npmrun</code>账号:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;你的名称&quot; </span><br><span class="line">git config --global user.email &quot;你的邮箱&quot; </span><br><span class="line">git@npmrun.github.com:npmrun&#x2F;npmrun.github.io.git</span><br><span class="line">&#x2F;&#x2F; 注意前面的 git@npmrun.github.com,我加了npmrun,对应的是config里面的Host</span><br></pre></td></tr></table></figure>
 
@@ -2243,13 +2271,13 @@
 <a id="more"></a>
 
 <p>Git LFS 是 Github 开发的一个 Git 的扩展，用于实现 Git 对大文件的支持</p>
-<p><img src="/static/git/gitfls%E5%A4%A7%E6%96%87%E4%BB%B6/images/1059995-670f795346b86292.webp" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/gitfls%E5%A4%A7%E6%96%87%E4%BB%B6/images/1059995-670f795346b86292.webp" alt="img"></p>
 <h3 id="使用目的"><a href="#使用目的" class="headerlink" title="使用目的"></a>使用目的</h3><p>在游戏开发过程中,设计资源占用了很大一部分空间. 像png,psd等文件是二进制(blob)的,体积也很庞大.<br> 但git的diff/patch等是基于文件行的.对于二进制文件来说. git需要存储每次commit的改动.<br> 每次当二进制文件修改,发生变化的时候. 都会产生额外的提交量.导致clone和pull的数据量大增.在线仓库的体积也会迅速增长.</p>
-<p><img src="/static/git/gitfls%E5%A4%A7%E6%96%87%E4%BB%B6/images/1059995-c9ddfd907277e8df.webp" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/gitfls%E5%A4%A7%E6%96%87%E4%BB%B6/images/1059995-c9ddfd907277e8df.webp" alt="img"></p>
 <p>LFS(Large File Storage) 就是为了解决这一问题而产生的工具.</p>
 <p>它将你所标记的大文件保存至另外的仓库,而在主仓库仅保留其轻量级指针.</p>
 <p>那么在你检出版本时,根据指针的变化情况下更新对应的大文件.而不是在本地保存所有版本的大文件</p>
-<p><img src="/static/git/gitfls%E5%A4%A7%E6%96%87%E4%BB%B6/images/1059995-7e78b1cc5ceb6c1f.webp" alt="img"></p>
+<p><img src= "/img/loading.gif" data-src="/static/git/gitfls%E5%A4%A7%E6%96%87%E4%BB%B6/images/1059995-7e78b1cc5ceb6c1f.webp" alt="img"></p>
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><blockquote>
 <p>注意：安装 Git LFS 需要 Git 的版本不低于 1.8.5</p>
 </blockquote>
@@ -2312,11 +2340,11 @@
 <a id="more"></a>
 
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>解压上面两个文件，得到</p>
-<p><img src="/static/v2ray/v2rayn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200415145453557.png" alt="image-20200415145453557"></p>
+<p><img src= "/img/loading.gif" data-src="/static/v2ray/v2rayn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200415145453557.png" alt="image-20200415145453557"></p>
 <p>接下来把<code>v2ray-window-64</code>的所有文件全都复制到v2rayN的目录下就行了</p>
-<p><img src="/static/v2ray/v2rayn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200415145543025.png" alt="image-20200415145543025"></p>
+<p><img src= "/img/loading.gif" data-src="/static/v2ray/v2rayn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200415145543025.png" alt="image-20200415145543025"></p>
 <p>移动后：</p>
-<p><img src="/static/v2ray/v2rayn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200415145559168.png" alt="image-20200415145559168"></p>
+<p><img src= "/img/loading.gif" data-src="/static/v2ray/v2rayn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200415145559168.png" alt="image-20200415145559168"></p>
 <p>然后百度使用教程就行了</p>
 ]]></content>
       <categories>
@@ -2519,7 +2547,7 @@
 
 <h3 id="资源位置"><a href="#资源位置" class="headerlink" title="资源位置"></a>资源位置</h3><p>在<code>cocos</code>中，动态资源都是放在<code>resources</code>中的，</p>
 <p>示例目录如下：</p>
-<p><img src="/static/cocos/cocos%E5%8A%A8%E6%80%81%E9%BE%99%E9%AA%A8/images/image-20200414112831540.png" alt="image-20200414112831540"></p>
+<p><img src= "/img/loading.gif" data-src="/static/cocos/cocos%E5%8A%A8%E6%80%81%E9%BE%99%E9%AA%A8/images/image-20200414112831540.png" alt="image-20200414112831540"></p>
 <p>然后我们采用<code>loadResDir</code>的方式加载<code>eatting</code>下的三个龙骨资源，因为这三个都是必须的，必须同时加载。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">loadDragonBones(</span><br><span class="line">    path: string,</span><br><span class="line">    cb?: (bone: IDragonAssets) &#x3D;&gt; void</span><br><span class="line">): Promise&lt;IDragonAssets&gt; &#123;</span><br><span class="line">    let that &#x3D; this;</span><br><span class="line">    let allAssets: IDragonAssets &#x3D; &#123;</span><br><span class="line">        dragonAsset: null,</span><br><span class="line">        dragonAtlasAsset: null</span><br><span class="line">    &#125;</span><br><span class="line">    return new Promise((resolve, reject) &#x3D;&gt; &#123;</span><br><span class="line">        &#x2F;&#x2F;动态加载龙骨</span><br><span class="line"></span><br><span class="line">        if (this.cacheAssets[path]) &#123;</span><br><span class="line">            allAssets &#x3D; this.cacheAssets[path]</span><br><span class="line">            cb &amp;&amp; cb(allAssets);</span><br><span class="line">            resolve(allAssets);</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        let ac &#x3D; cc.loader.loadResDir(path, function (err, assets) &#123;</span><br><span class="line">            if (err || assets.length &lt;&#x3D; 0) &#123;</span><br><span class="line">                err &amp;&amp; console.error(err)</span><br><span class="line">                assets.length &lt;&#x3D; 0 &amp;&amp; console.error(&quot;该目录下没有资源:&quot; + path)</span><br><span class="line">                &#x2F;&#x2F; reject();</span><br><span class="line">                return;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            assets.forEach(asset &#x3D;&gt; &#123;</span><br><span class="line">                if (asset instanceof dragonBones.DragonBonesAsset) &#123;</span><br><span class="line">                    allAssets.dragonAsset &#x3D; asset;</span><br><span class="line">                &#125;</span><br><span class="line">                if (asset instanceof dragonBones.DragonBonesAtlasAsset) &#123;</span><br><span class="line">                    allAssets.dragonAtlasAsset &#x3D; asset;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">            cb &amp;&amp; cb(allAssets);</span><br><span class="line">            resolve(allAssets);</span><br><span class="line">            that.cacheAssets[path] &#x3D; allAssets</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -2549,9 +2577,9 @@
 </blockquote>
 <a id="more"></a>
 
-<h2 id="简要"><a href="#简要" class="headerlink" title="简要"></a>简要</h2><p><img src="/static/cocos/cocos%E9%80%82%E9%85%8D%E5%BF%83%E5%BE%97/images/image-20200428134427268.png" alt="image-20200428134427268"></p>
+<h2 id="简要"><a href="#简要" class="headerlink" title="简要"></a>简要</h2><p><img src= "/img/loading.gif" data-src="/static/cocos/cocos%E9%80%82%E9%85%8D%E5%BF%83%E5%BE%97/images/image-20200428134427268.png" alt="image-20200428134427268"></p>
 <p>场景的适配策略只需要钩选适配高度就行了。再结合<code>Widget</code>就能够实现不留黑边的全屏</p>
-<p><img src="/static/cocos/cocos%E9%80%82%E9%85%8D%E5%BF%83%E5%BE%97/images/image-20200428134542763.png" alt="image-20200428134542763"></p>
+<p><img src= "/img/loading.gif" data-src="/static/cocos/cocos%E9%80%82%E9%85%8D%E5%BF%83%E5%BE%97/images/image-20200428134542763.png" alt="image-20200428134542763"></p>
 <p>但这还是不够的，因为你的子元素也得加上这个<code>Widget</code>才行，保证不是绝对布局，而是相对于上下左右四个边界的距离，灵活调整<code>top,right,bottom,left</code>的值，就能实现全屏与布局的流动化。</p>
 <h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><p>你要实现某部分的流动布局，必须将其所有的父元素也先<code>widget</code>化.或者直接绑定根元素</p>
 <p>屏幕太小的话元素会重叠。</p>
@@ -2874,13 +2902,13 @@
 
 <ol>
 <li><p>新加一个属性:</p>
-<p><img src="/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114816545.png" alt="image-20200407114816545"></p>
+<p><img src= "/img/loading.gif" data-src="/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114816545.png" alt="image-20200407114816545"></p>
 </li>
 <li><p>我们用图集打包出来的是这样的文件：</p>
-<p><img src="/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114923862.png" alt="image-20200407114923862"></p>
+<p><img src= "/img/loading.gif" data-src="/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407114923862.png" alt="image-20200407114923862"></p>
 </li>
 <li><p>在<code>cocos</code>上将<code>plist</code>拖进属性中。</p>
-<p><img src="/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407115004375.png" alt="image-20200407115004375"></p>
+<p><img src= "/img/loading.gif" data-src="/static/cocos/spriteAltas%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%86%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/images/image-20200407115004375.png" alt="image-20200407115004375"></p>
 </li>
 <li><p>编写代码动态修改精灵图：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">setAtlasImg(node,spAtlas,spriteName)&#123;</span><br><span class="line">  <span class="keyword">let</span> sprite = node.getComponent(cc.Sprite);</span><br><span class="line">  <span class="keyword">if</span> (!sprite) &#123;</span><br><span class="line">    sprite = node.addComponent(cc.Sprite);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> mySprite =  spAtlas.getSpriteFrame(spriteName)</span><br><span class="line">  sprite.spriteFrame = mySprite;</span><br><span class="line">  <span class="keyword">return</span> mySprite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 节点，图集组件，图集中文件名字</span></span><br><span class="line">setAtlasImg(<span class="keyword">this</span>.node, <span class="keyword">this</span>.spAtlas, <span class="string">"11"</span>);</span><br></pre></td></tr></table></figure>
@@ -2942,6 +2970,7 @@
 ]]></content>
       <categories>
         <category>前端</category>
+        <category>业务相关</category>
       </categories>
       <tags>
         <tag>支付</tag>
@@ -2959,12 +2988,12 @@
 <h2 id="用法-Usage"><a href="#用法-Usage" class="headerlink" title="用法 Usage"></a>用法 Usage</h2><ol>
 <li>首先下载上面的源码，这个<code>hexo-bolg</code>表示是我的博客根目录，然后再<code>source\js</code>目录下解压，得到以下的文件。</li>
 </ol>
-<p><img src="/static/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/images/image-20200405112453987.png" alt="image-20200405112453987"></p>
+<p><img src= "/img/loading.gif" data-src="/static/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/images/image-20200405112453987.png" alt="image-20200405112453987"></p>
 <ol start="2">
 <li><p>如果是<code>next</code>主题，请根据目录打开以下文件:</p>
-<p><img src="/static/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/images/image-20200405112653619.png" alt="image-20200405112653619"></p>
+<p><img src= "/img/loading.gif" data-src="/static/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/images/image-20200405112653619.png" alt="image-20200405112653619"></p>
 <p>将代码添加到如图所示的位置：</p>
-<p><img src="/static/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/images/image-20200405112737704.png" alt="image-20200405112737704"></p>
+<p><img src= "/img/loading.gif" data-src="/static/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98/images/image-20200405112737704.png" alt="image-20200405112737704"></p>
 </li>
 <li><p>大功告成，将页面启动起来就能看见效果了。不过最好自己去改一下源码的<code>waifu-tips.json</code>的匹配条件，根据自己的博客做出对应的对话效果。</p>
 </li>
@@ -3071,7 +3100,7 @@
 
 
 
-<p><img src="/static/%E5%89%8D%E7%AB%AF/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%BC%AB%E6%B8%B8/images/image-20200405183952644.png" alt="image-20200405183952644"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E5%89%8D%E7%AB%AF/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%BC%AB%E6%B8%B8/images/image-20200405183952644.png" alt="image-20200405183952644"></p>
 ]]></content>
       <categories>
         <category>前端</category>
@@ -3136,19 +3165,19 @@
 <td></td>
 </tr>
 <tr>
-<td><code>&lt;article&gt;</code><img src="/static/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/images/table_bg_html5.png" alt="img"></td>
+<td><code>&lt;article&gt;</code><img src= "/img/loading.gif" data-src="/static/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/images/table_bg_html5.png" alt="img"></td>
 <td>定义文章。</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><code>&lt;aside&gt;</code><img src="/static/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/images/table_bg_html5.png" alt="img"></td>
+<td><code>&lt;aside&gt;</code><img src= "/img/loading.gif" data-src="/static/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/images/table_bg_html5.png" alt="img"></td>
 <td>定义页面内容之外的内容。</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><code>&lt;audio&gt;</code><img src="/static/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/images/table_bg_html5.png" alt="img"></td>
+<td><code>&lt;audio&gt;</code><img src= "/img/loading.gif" data-src="/static/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%90%84%E7%A7%8D%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E/images/table_bg_html5.png" alt="img"></td>
 <td>定义声音内容</td>
 <td><audio></audio></td>
 <td>基本都可以用</td>
@@ -3181,6 +3210,7 @@
 ]]></content>
       <categories>
         <category>前端</category>
+        <category>基础知识</category>
       </categories>
       <tags>
         <tag>前端</tag>
@@ -3202,7 +3232,7 @@
 <li><p><code>hexo &gt; source</code>目录下建一个文件夹叫images，用来保存博客中的图片。</p>
 </li>
 <li><p>打开<code>Typora</code>的 <code>文件 &gt; 偏好设置</code>，进行如下设置。</p>
-<p><img src="/static/hexo/hexo-typora-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/images/image-20200411092155916.png" alt="image-20200411092155916"></p>
+<p><img src= "/img/loading.gif" data-src="/static/hexo/hexo-typora-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/images/image-20200411092155916.png" alt="image-20200411092155916"></p>
 <p>这样的话所有的博客中的图片都将会保存到 <code>/source/images/该博客md文件名/图片名称</code></p>
 <p>但是仅仅这样设置还不够，这样设置在typora中倒是能看图片了，但是使用的却是相对于当前md文件的相对路径，可是如果启动hexo，是要用服务器访问的，而服务器显然无法根据这个相对路径正确访问到图片，因此还需要在typora中进行进一步设置。</p>
 </li>
@@ -3210,7 +3240,7 @@
 <p>之后再该<code>md</code>文件头部会出现:<code>typora-root-url: ..\..\source</code>这样的代码，我们将这行代码复制进模板文件中</p>
 </li>
 <li><p>以下这三个都可以添加</p>
-<p><img src="/static/hexo/hexo-typora-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/images/image-20200411092141854.png" alt="image-20200411092141854"></p>
+<p><img src= "/img/loading.gif" data-src="/static/hexo/hexo-typora-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/images/image-20200411092141854.png" alt="image-20200411092141854"></p>
 <p>只要在第一个<code>---</code>下添加<code>typora-root-url: ..\..\source</code>就行了，这样<code>Typora</code>就能识别而不用每次都自己手动设置了。</p>
 </li>
 </ol>
