@@ -1,6 +1,6 @@
 ---
-typora-root-url: 关于
-title: 关于
+typora-root-url: 留言板
+title: 留言板
 date: 2020-04-04 17:57:25
 layout: "page"
 ---

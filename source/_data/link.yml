@@ -4,11 +4,15 @@
     - name: JerryC
       link: https://jerryc.me/
       avatar: https://jerryc.me/image/avatar.png
-      descr: 今日事,今日毕
+      descr: 该主题作者
     - name: Hexo
       link: https://hexo.io/zh-tw/
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
       descr: 快速、简单且强大的网誌框架
+    - name: onestar
+      link: https://onestar.newstar.net.cn/
+      avatar: https://onestar.newstar.net.cn/images/me.jpg
+      descr: 初中同学的博客
 
 - class_name: 网站
   class_desc: 值得推荐的网站
