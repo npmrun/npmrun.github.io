@@ -43,19 +43,6 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2020/06/28/%E9%9A%8F%E6%83%B3/as/</url>
-    <content><![CDATA[<p>这是一个导航网站项目，旨在收集网络资源。为了提供更好的体验，必须提供后台，用于对网站数据的编辑</p>
-<p>整理需求，功能列举</p>
-<p>设计页面，配色，主题</p>
-<p>后台数据库设计，接口开发</p>
-<p>前端页面实现</p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-  </entry>
-  <entry>
-    <title></title>
     <url>/2020/06/28/%E9%9A%8F%E6%83%B3/readme/</url>
     <content><![CDATA[<p>这是一个electron项目，属于聚合项目，集合多种功能，方便我的使用</p>
 <ol>
@@ -64,6 +51,19 @@
 <li><p>提供markdown项目部署</p>
 </li>
 </ol>
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2020/06/28/%E9%9A%8F%E6%83%B3/as/</url>
+    <content><![CDATA[<p>这是一个导航网站项目，旨在收集网络资源。为了提供更好的体验，必须提供后台，用于对网站数据的编辑</p>
+<p>整理需求，功能列举</p>
+<p>设计页面，配色，主题</p>
+<p>后台数据库设计，接口开发</p>
+<p>前端页面实现</p>
 ]]></content>
       <categories>
         <category>随想</category>
