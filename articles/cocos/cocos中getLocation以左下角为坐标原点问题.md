@@ -3,7 +3,7 @@ typora-root-url: cocos中getLocation以左下角为坐标原点问题
 title: cocos中getLocation以左下角为坐标原点问题
 date: 2020-05-27 16:58:32
 tags:
-categories: cocos
+categories: 
 comments: true
 top: false
 ---

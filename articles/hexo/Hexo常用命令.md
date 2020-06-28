@@ -4,7 +4,7 @@ title: Hexo常用命令
 author: Dash King
 date: 2020-04-03 11:30:46
 tags: hexo
-categories: hexo
+categories: 
 comments: true
 ---
 

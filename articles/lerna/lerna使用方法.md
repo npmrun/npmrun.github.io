@@ -3,7 +3,7 @@ typora-root-url: lerna使用方法
 title: lerna使用方法
 date: 2020-4-0 19:19:39
 tags:
-categories: lerna
+categories: 
 comments: true
 ---
 

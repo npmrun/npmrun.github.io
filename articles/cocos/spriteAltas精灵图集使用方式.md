@@ -4,7 +4,7 @@ title: spriteAltas精灵图集使用方式
 comments: true
 date: 2020-04-07 11:43:23
 tags: cocos
-categories: cocos
+categories: 
 ---
 
 > 之前，对于扑克牌的加载一直是散装加载，用`loadRes`动态的添加到游戏中，这样的缺陷是在动画的时候会闪一下，在网慢的情况下也许扑克牌不会加载出来而动画就执行了。因此，改用图集加载方式，将整幅扑克牌一起加载出来，用那种加载哪张就行了。

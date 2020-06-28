@@ -3,7 +3,7 @@ typora-root-url: JS中自定义事件的使用与触发
 title: JS中自定义事件的使用与触发
 date: 2020-06-01 11:09:33
 tags: 前端
-categories: 前端
+categories:
 comments: true
 top: false
 ---

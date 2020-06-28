@@ -3,7 +3,7 @@ typora-root-url: git-rebase详解
 title: git-rebase详解
 date: 2020-04-24 17:09:42
 tags:
-categories: git
+categories: 
 comments: true
 ---
 

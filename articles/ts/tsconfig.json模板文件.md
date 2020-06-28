@@ -3,7 +3,7 @@ typora-root-url: tsconfig.json模板文件
 title: tsconfig.json模板文件
 date: 2020-06-09 09:14:43
 tags:
-categories: ts
+categories: 
 comments: true
 top: false
 ---

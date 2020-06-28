@@ -3,7 +3,7 @@ typora-root-url: 前端SVG库
 title: 前端SVG库
 date: 2020-06-14 12:20:31
 tags:
-categories: 收集
+categories:
 comments: true
 top: false
 ---

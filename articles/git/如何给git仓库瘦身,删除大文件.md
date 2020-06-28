@@ -3,7 +3,7 @@ typora-root-url: 如何给git仓库瘦身,删除大文件
 title: 如何给git仓库瘦身,删除大文件
 date: 2020-04-16 13:24:04
 tags:
-categories: git
+categories: 
 comments: true
 ---
 

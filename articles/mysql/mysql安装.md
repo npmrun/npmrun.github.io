@@ -3,7 +3,7 @@ typora-root-url: mysql安装
 title: mysql安装
 date: 2020-04-15 11:18:40
 tags:
-categories: mysql
+categories: 
 comments: true
 ---
 

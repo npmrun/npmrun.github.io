@@ -3,7 +3,7 @@ typora-root-url: v2rayn的使用方式
 title: v2rayn的使用方式
 date: 2020-04-15 14:52:29
 tags: v2ray
-categories: v2ray
+categories: 
 comments: true
 ---
 

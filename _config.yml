@@ -128,7 +128,7 @@ jsonContent:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: butterfly
 
 
 # Deployment
@@ -155,3 +155,21 @@ search:
   format: html
 
 # https://github.com/stevenjoezhang/live2d-widget
+
+aplayer:
+  asset_inject: false
+  meting: true
+
+douban:
+  user: mythsman
+  builtin: false
+  # book:
+  #   title: 'This is my book title'
+  #   quote: 'This is my book quote'
+  movie:
+    title: "电影"
+    quote: "想看吗？请尽情翻阅吧！"
+  # game:
+  #   title: 'This is my game title'
+  #   quote: 'This is my game quote'
+  timeout: 10000

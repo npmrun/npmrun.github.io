@@ -3,7 +3,7 @@ typora-root-url: docker启蒙
 title: docker启蒙
 date: 2020-04-26 21:41:29
 tags:
-categories: docker
+categories:
 comments: false
 ---
 

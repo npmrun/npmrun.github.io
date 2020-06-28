@@ -3,7 +3,7 @@ typora-root-url: inquirer的试用
 title: inquirer的试用
 date: 2020-06-23 10:31:48
 tags:
-categories: npm
+categories: 
 comments: true
 top: false
 ---

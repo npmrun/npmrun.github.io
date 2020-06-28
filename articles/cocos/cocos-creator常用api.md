@@ -4,7 +4,7 @@ title: cocos creator常用api
 comments: true
 date: 2020-04-07 13:41:11
 tags: cocos
-categories: cocos
+categories:
 ---
 
 

@@ -3,7 +3,7 @@
 title: hexo添加看板娘
 date: 2020-04-05 11:18:13
 tags: hexo
-categories: hexo
+categories: 
 comments: true
 typora-root-url: hexo添加看板娘
 ---

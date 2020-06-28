@@ -3,7 +3,7 @@ typora-root-url: ts使用paths配置路径别名
 title: ts使用paths配置路径别名
 date: 2020-04-24 10:45:41
 tags:
-categories: ts
+categories: 
 comments: true
 ---
 

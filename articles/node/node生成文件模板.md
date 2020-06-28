@@ -3,7 +3,7 @@ typora-root-url: node生成文件模板
 title: node生成文件模板
 date: 2020-4-6 16:57:45
 tags:
-categories: node
+categories: 
 comments: true
 ---
 

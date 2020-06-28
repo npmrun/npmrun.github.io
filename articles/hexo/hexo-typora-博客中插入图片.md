@@ -4,7 +4,7 @@ date: 2020-04-04 18:01:52
 tags: 
 	- hexo 
 	- typora
-categories: hexo
+categories: 
 comments: true
 typora-root-url: hexo-typora-博客中插入图片
 ---
