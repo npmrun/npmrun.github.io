@@ -582,13 +582,13 @@ aside:
     enable: true
     description:
   card_announcement:
-    enable: true
-    content: This is my Blog
+    enable: false
+    content: 这是一个公告
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
   card_categories:
-    enable: true
+    enable: false
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
   card_tags:
