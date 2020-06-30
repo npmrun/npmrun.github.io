@@ -44,34 +44,6 @@
       </categories>
   </entry>
   <entry>
-    <title></title>
-    <url>/2020/06/30/%E9%9A%8F%E6%83%B3/readme/</url>
-    <content><![CDATA[<p>这是一个electron项目，属于聚合项目，集合多种功能，方便我的使用</p>
-<ol>
-<li><p>用于开发一个代码笔记项目。记录灵感释放的瞬间。</p>
-</li>
-<li><p>提供markdown项目部署</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2020/06/30/%E9%9A%8F%E6%83%B3/as/</url>
-    <content><![CDATA[<p>这是一个导航网站项目，旨在收集网络资源。为了提供更好的体验，必须提供后台，用于对网站数据的编辑</p>
-<p>整理需求，功能列举</p>
-<p>设计页面，配色，主题</p>
-<p>后台数据库设计，接口开发</p>
-<p>前端页面实现</p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Git创建一个新分支</title>
     <url>/2020/06/29/git/Git%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%88%86%E6%94%AF/</url>
     <content><![CDATA[<h1 id="创建一个空的分支"><a href="#创建一个空的分支" class="headerlink" title="创建一个空的分支"></a>创建一个空的分支</h1><p>在Git中创建分支，是一定有一个父节点的，也就说新创建的分支是要在已经存在分支上来创建，如果你的工程已经开到了中途，这个时候你直接创建分支的话，它是无法成为一个空分支的。</p>
@@ -124,39 +96,6 @@
 ]]></content>
       <categories>
         <category>git</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>MDN技术学习</title>
-    <url>/2020/06/27/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/MDN/MDN%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><blockquote>
-<p><a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="external nofollow noopener noreferrer">mozilla文档</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>技术积累</category>
-        <category>MDN</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>西风颂---灵感</title>
-    <url>/2020/06/23/%E5%B0%8F%E8%AF%B4/%E8%A5%BF%E9%A3%8E%E9%A2%82---%E7%81%B5%E6%84%9F/</url>
-    <content><![CDATA[<h2 id="墟城"><a href="#墟城" class="headerlink" title="墟城"></a>墟城</h2><h3 id="废墟城"><a href="#废墟城" class="headerlink" title="废墟城"></a>废墟城</h3><p>主角生活在废墟城城郊，主要工作是一个企业的小职员，大学毕业就来到了这个城市，然后准备干一番事业。这个世界是力量与科技的结合，修仙者吸收天地源力，凡人追寻科技进步。又力量的差距，必定存在着等级的差距，现在凡人的科技尚弱，但是表现的威力开始引起了修仙者的注意，也是此时，修仙者开始入世。</p>
-<p>主角所在的是一个小公司，主要靠接客户的订单完成相应的任务赚取酬劳。</p>
-]]></content>
-      <categories>
-        <category>小说</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>西风颂</title>
-    <url>/2020/06/23/%E5%B0%8F%E8%AF%B4/%E8%A5%BF%E9%A3%8E%E9%A2%82/</url>
-    <content><![CDATA[<blockquote>
-<p>知道吗？修炼乃逆天而为，想要攀上至强的高峰，所付出的一定是你的一切。问题是，你愿意赌上你的一切去追寻那虚无缥缈的未来吗？会么？</p>
-</blockquote>
-<h2 id="远方的来客"><a href="#远方的来客" class="headerlink" title="远方的来客"></a>远方的来客</h2>]]></content>
-      <categories>
-        <category>小说</category>
       </categories>
   </entry>
   <entry>
@@ -1406,14 +1345,6 @@
       <categories>
         <category>疑难杂症</category>
         <category>vue</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>作用域是什么</title>
-    <url>/2020/05/12/%E9%9A%8F%E6%83%B3/%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%98%AF%E4%BB%80%E4%B9%88%20/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>随想</category>
       </categories>
   </entry>
   <entry>
