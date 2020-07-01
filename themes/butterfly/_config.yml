@@ -583,8 +583,8 @@ aside:
     enable: true
     description:
   card_announcement:
-    enable: false
-    content: 这是一个公告
+    enable: true
+    content: 欢迎来到时光之城！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -614,8 +614,8 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date:
+  enable: true
+  publish_date: 2018/5/10
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
