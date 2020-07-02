@@ -6,4 +6,4 @@ comments: true
 aplayer: true
 ---
 
-{% githubCard user:npmrun repo:xyx-cli%}
+{% githubCard user:npmrun%}
