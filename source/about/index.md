@@ -17,7 +17,7 @@ layout: "page"
 					var myChart = echarts.init(document.getElementById('maindddd'));
 				var option = {
 					title : {
-						text: '编程语言掌握图',
+						text: '',
 						subtext: '',
 						x:'center'
 					},
