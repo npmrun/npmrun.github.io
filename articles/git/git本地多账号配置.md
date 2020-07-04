@@ -86,6 +86,7 @@ comments: true
 ```
 git config --global user.name "你的名称" 
 git config --global user.email "你的邮箱" 
+# 上面两步不是必须的
 git@npmrun.github.com:npmrun/npmrun.github.io.git
 // 注意前面的 git@npmrun.github.com,我加了npmrun,对应的是config里面的Host
 ```
@@ -95,7 +96,37 @@ git@npmrun.github.com:npmrun/npmrun.github.io.git
 ```
 git config --global user.name "你的名称" 
 git config --global user.email "你的邮箱" 
+# 上面两步不是必须的
 git@1549469775.github.com:npmrun/1549469775.github.io.git
 // 注意前面的 git@1549469775.github.com,我加了1549469775,对应的是config里面的Host
 ```
 
+
+
+> 查看自己的用户名和邮箱地址
+>
+> ```
+> $ git config user.name
+> $ git config user.email
+> ```
+>
+
+
+
+> 注意别把两个账号的ssh密钥都放一个账号里去了，会出问题，我就是有一个放一起了，结果两个配置访问的都是一个账号下的仓库了。
+
+>此时由于你的id_rsa存放的是1549469775的密钥，于是在使用`ssh git@github.com`发送的是默认的这个密钥，如果要修改默认登录的账号，可以在`config`文件里添加如下面的代码：
+>
+>```
+>#npmrun Git账号
+>Host github.com
+>HostName github.com
+>User git
+>IdentityFile ~/.ssh/npmrun
+>```
+>
+>就是把`github.com`默认指向npmrun这个账号
+
+## 参考
+
+> https://www.cnblogs.com/fanbi/p/7825746.html
