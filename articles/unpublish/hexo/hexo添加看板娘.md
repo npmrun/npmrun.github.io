@@ -8,7 +8,7 @@ comments: true
 typora-root-url: hexo添加看板娘
 ---
 
-> 源码下载：[点击下载](http://cloud.poorman.top/index.php?share/folder&user=1&sid=NgEfhW2k#) 源码地址：[live2d-widget](https://github.com/stevenjoezhang/live2d-widget)
+> 源码地址：[live2d-widget](https://github.com/stevenjoezhang/live2d-widget)
 >
 > 这是首先感谢原作者的插件，我根据Github上的项目克隆下载自定义的看板娘，在他的基础上添加了拖动效果，同时根据自己的博客自定义了不同的对话。
 

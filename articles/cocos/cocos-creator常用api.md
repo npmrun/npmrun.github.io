@@ -7,11 +7,13 @@ tags: cocos
 categories:
 ---
 
+> 主题：cocos creator常用api
+> 概述：收集cocos creator常用的函数，防止老年痴呆，记得东西太多会使自己混乱，写下来才是王道。
 
+<!--正文-->
+<!--more-->
 
 > https://blog.csdn.net/sotmwhat/article/details/93884076
-
-
 
 ## 场景加载
 
