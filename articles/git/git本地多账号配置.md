@@ -127,6 +127,18 @@ git@1549469775.github.com:npmrun/1549469775.github.io.git
 >
 >就是把`github.com`默认指向npmrun这个账号
 
+> 之后可以自己添加对应的git的，如：
+>
+> ```
+> #poorman账号,这是我自建的git网站
+> Host git.poorman.top
+> HostName git.poorman.top
+> User xxx  #
+> IdentityFile ~/.ssh/poorman
+> ```
+>
+> 
+
 ## 参考
 
 > https://www.cnblogs.com/fanbi/p/7825746.html

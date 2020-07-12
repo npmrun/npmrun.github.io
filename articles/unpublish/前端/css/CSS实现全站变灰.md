@@ -1,6 +1,6 @@
 ---
-typora-root-url: css实现全站变灰
-title: css实现全站变灰
+typora-root-url: CSS实现全站变灰
+title: CSS实现全站变灰
 date: 2020-04-04 22:48:22
 tags: [前端,css]
 categories:

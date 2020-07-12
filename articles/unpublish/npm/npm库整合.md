@@ -1,6 +1,6 @@
 ---
-typora-root-url: npm库个人常用整合
-title: npm库个人常用整合
+typora-root-url: npm库整合
+title: npm库整合
 date: 2020-4-1 11:16:24
 tags:
 categories: 
@@ -22,6 +22,24 @@ comments: true
 ### 发布订阅库
 
 [PubSubJS](https://github.com/mroderick/PubSubJS)，[@types/pubsub-js](https://www.npmjs.com/package/@types/pubsub-js)，[events](https://github.com/Gozala/events)
+
+### 网络
+
+[qs](https://www.npmjs.com/package/qs)（字符串解析与序列化的库）,  [axios](https://www.npmjs.com/package/axios)(为浏览器和node.js提供基于HTTP客户端)
+
+### 命令行相关
+
+* `commander.js`
+
+  node.js命令行开发工具开发库，使node.js开发CLI工具变得简单，允许快捷的定义形如`<command> [options]`的命令。
+
+* `inquirer.js`
+
+  node.js 交互式命令行界面开发库，允许方便的定义使用上下左右进行列表选择等交互式命令。
+
+* `ora`
+
+  优雅的命令行`Loading`动画。
 
 ## Webpack常用库
 
