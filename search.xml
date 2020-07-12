@@ -10,6 +10,92 @@
       </categories>
   </entry>
   <entry>
+    <title>有关vmware中主机访问虚拟机端口</title>
+    <url>/2020/07/12/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/</url>
+    <content><![CDATA[<blockquote>
+<p>主题：主要是为了试一下nginx配置rtmp的网络推拉流<br>概述：了解以下虚拟机与主机的端口映射基本操作</p>
+</blockquote>
+<!--正文-->
+<a id="more"></a>
+
+<ol>
+<li><p>确认你的虚拟机的网络适配器是<code>NAT</code></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231430886.png" alt="image-20200712231430886"></p>
+</li>
+<li><p>当然，我们首先打开<code>VMware</code>中的虚拟机，我用的是<code>elementoryOS中文版</code></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712230538875.png" alt="image-20200712230538875"></p>
+</li>
+<li><p>打开终端，输入<code>ifconfig -a</code>查看你的IP地址，当你看到下面图的时候，不要慌，点击如下图那个图标，会弹出一个页面，里面可能会有你的ip地址显示，没有的话只能自己先去安装一个网络库了。</p>
+<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712230718842.png" alt="终端"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712230738863.png" alt="网络"></p>
+</li>
+<li><p>由于我想要转发是nginx配置的页面，所以先查看以下nginx是否启动了，然后确保你需要转发的端口是真实有效的，如图，我配置过了 nginx，因此就会显示一个网页，我需要的就是转发这个端口</p>
+<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231056969.png" alt="image-20200712231056969"></p>
+</li>
+<li><p>这个时候我们回到<code>vmware</code>上,我们打开，<code>编辑--&gt;虚拟网络地址编辑器</code></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231252798.png" alt="image-20200712231252798"></p>
+</li>
+<li><p>如上图，我们必须要网络管理员的特权，因此点击那个更改设置，这个窗口就会重新加载，这个时候就可以编辑了。这个时候看图步骤操作：</p>
+<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231708242.png" alt="image-20200712231708242"></p>
+<p>​    <img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231805058.png" alt="image-20200712231805058"></p>
+<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231815534.png" alt="image-20200712231815534"></p>
+</li>
+<li><p>这个时候就需要填你自己的数据了：</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+<th>不知道的谢我推荐的</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主机端口</td>
+<td>表示你在你PC上需要用到那个端口跟你虚拟机的映射</td>
+<td>12345</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>直接默认TCP就行了</td>
+<td>TCP</td>
+</tr>
+<tr>
+<td>虚拟机IP地址</td>
+<td>这里填你上面查到的虚拟机的IP地址</td>
+<td>192.168.x.x(x可不能乱填)</td>
+</tr>
+<tr>
+<td>端口</td>
+<td>填nginx中需要映射的端口</td>
+<td>9606（我的虚拟机里配置过的网页端口）</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>随意</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>写玩点确认就行了，回到上一页的时候确认一下，没问题就表示OK了。</p>
+</li>
+<li><p>测试，OK，主机上能访问了</p>
+<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712232327323.png" alt="image-20200712232327323"></p>
+</li>
+</ol>
+<blockquote>
+<p>注意：</p>
+<p>你挂起了或者关闭了虚拟机就没用了。</p>
+</blockquote>
+<p>更高级的用法请参见参考资料中的。</p>
+<blockquote>
+<p>参考资料：</p>
+<p><a href="https://blog.csdn.net/u012268339/article/details/61204801" target="_blank" rel="external nofollow noopener noreferrer"><em>局域网访问电脑中VMware虚拟机</em></a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>虚拟机</category>
+      </categories>
+  </entry>
+  <entry>
     <title>从零开始搭建一个工程化项目(一)Babel</title>
     <url>/2020/07/11/webpack/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%B7%A5%E7%A8%8B%E5%8C%96%E9%A1%B9%E7%9B%AE(%E4%B8%80)Babel/</url>
     <content><![CDATA[<blockquote>
