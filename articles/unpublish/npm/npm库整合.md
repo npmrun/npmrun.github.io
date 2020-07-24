@@ -41,6 +41,10 @@ comments: true
 
   优雅的命令行`Loading`动画。
 
+### 日期库
+
+Moment.js，[dayjs](https://github.com/iamkun/dayjs)
+
 ## Webpack常用库
 
 * `html-webpack-plugin` 打包`html`，提供脚本样式注入等功能

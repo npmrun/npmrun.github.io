@@ -284,5 +284,13 @@ cc.find('canvas/map' + num)//读取带变量的路径
 cc.sys.openURL('Http://www.baidu.com');//打开网页
 ```
 
+## 全屏
+
+```
+if (cc.screen.fullScreen()) {
+     cc.screen.exitFullScreen();
+}else cc.screen.requestFullScreen();
+```
+
 
 

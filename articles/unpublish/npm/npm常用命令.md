@@ -66,3 +66,22 @@ comments: true
 ### 查看全局依赖模块如下：
 
 `npm ls -g --depth 0`
+
+### 查看当前登录的账户
+
+`npm whoami`
+
+### 删除发布的包
+
+`npm unpublish --force` 强制删除
+
+`npm unpublish guitest@1.0.1`指定版本号
+
+现在好像不能删除包了，得用下面这种方式：
+
+`npm deprecate -f '@noderun/common-util@*' "this package has been deprecated"`
+
+一旦弃用，如果您还希望从用户个人资料中删除该软件包，则可以将其转移到我们的@npm帐户中。 这可以通过在命令行中使用以下命令来实现：
+
+- `npm owner add npm @noderun/common-util`
+- `npm owner rm noderun @noderun/common-util`
