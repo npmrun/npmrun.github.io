@@ -137,7 +137,17 @@ git@1549469775.github.com:npmrun/1549469775.github.io.git
 > IdentityFile ~/.ssh/poorman
 > ```
 >
-> 
+
+>有关别的账号使用默认配置
+>
+>```
+>## 加在最下面
+>Host *
+>User git
+>IdentityFile ~/.ssh/id_rsa
+>```
+>
+>
 
 ## 参考
 

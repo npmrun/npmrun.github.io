@@ -1,6 +1,6 @@
 ---
-typora-root-url: npm库整合
-title: npm库整合
+typora-root-url: npm推荐
+title: npm推荐
 date: 2020-4-1 11:16:24
 tags:
 categories: 
@@ -18,6 +18,10 @@ comments: true
 ### 打包工具
 
 * `webpack` (大名鼎鼎的模块打包工具)
+
+### 文件匹配库
+
+* glob
 
 ### 发布订阅库
 
@@ -40,6 +44,10 @@ comments: true
 * `ora`
 
   优雅的命令行`Loading`动画。
+  
+* `execa`
+
+  针对人类的命令行执行库
 
 ### 日期库
 
@@ -48,3 +56,4 @@ Moment.js，[dayjs](https://github.com/iamkun/dayjs)
 ## Webpack常用库
 
 * `html-webpack-plugin` 打包`html`，提供脚本样式注入等功能
+

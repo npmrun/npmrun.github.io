@@ -96,6 +96,7 @@ npm install --save-dev @babel/plugin-transform-runtime @babel/runtime
 npm install --save-dev @babel/runtime-corejs3
 npm install --save-dev babel-plugin-dynamic-import-polyfill
 npm install --save @babel/polyfill
+npm install --save-dev @babel/preset-typescript
 ```
 
 根目录的`babel.config.json`配置：
