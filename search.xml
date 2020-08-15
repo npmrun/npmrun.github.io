@@ -1,6 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CSS3.0使用@font-face自定义字体</title>
+    <url>/2020/08/15/font/CSS3.0%E4%BD%BF%E7%94%A8@font-face%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93/</url>
+    <content><![CDATA[<blockquote>
+<p>主题：CSS3.0使用@font-face自定义字体<br>概述：CSS3.0使用@font-face自定义字体</p>
+</blockquote>
+<!--正文-->
+<a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;css3.0 @font-face&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;utf-8&quot; &#x2F;&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;index.css&quot;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;myblog&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@font-face &#123;</span><br><span class="line">    font-family: &#39;汉仪雪君体简&#39;;</span><br><span class="line">    src:url(&#39;.&#x2F;fonts&#x2F;汉仪雪君体简.ttf&#39;) format(&#39;truetype&#39;)，</span><br><span class="line">	    url(&#39;.&#x2F;fonts&#x2F;汉仪雪君体简.eot&#39;) format(&#39;embedded-opentype&#39;)，</span><br><span class="line">	    url(&#39;.&#x2F;fonts&#x2F;汉仪雪君体简.woff&#39;) format(&#39;truetype&#39;);</span><br><span class="line">    font-weight: normal;</span><br><span class="line">    font-style: normal;</span><br><span class="line">&#125;</span><br><span class="line">h1&#123;</span><br><span class="line">    font-family:&quot;汉仪雪君体简&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如以上代码所示，@font-face的语法规则如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@font-face &#123;</span><br><span class="line">  font-family: &lt;YourWebFontName&gt;;</span><br><span class="line">  src: &lt;source&gt; [&lt;format&gt;][,&lt;source&gt; [&lt;format&gt;]]*;</span><br><span class="line">  [font-weight: &lt;weight&gt;];</span><br><span class="line">  [font-style: &lt;style&gt;];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注：</p>
+<ul>
+<li><p><code>YourWebFontName</code>:此值为你自定义的字体名称，最好是使用你下载的默认字体，他将被引用到你的Web元素中的<code>font-family</code>。如<code>font-family</code>: ‘汉仪雪君体简’;</p>
+</li>
+<li><p><code>source</code>:此值指的是你自定义的字体的存放路径；</p>
+</li>
+<li><p><code>format</code>：此值指的是你自定义的字体的格式，主要用来帮助浏览器识别，其值主要有以下几种类型：</p>
+<p><code>truetype,opentype,truetype-aat,embedded-opentype,avg</code>等。不同浏览器对字体格式的支持不同，一般来说至少需要<code>.woff,.eot</code>两种格式字体，甚至还需要<code>.svg</code>等字体达到更多种浏览版本的支持。</p>
+</li>
+<li><p><code>weight</code>和<code>style:weight</code>定义字体是否为粗体，style主要定义字体样式，如斜体。</p>
+</li>
+<li><p>下载字体：<a href="https://www.google.com/fonts" target="_blank" rel="external nofollow noopener noreferrer">https://www.google.com/fonts</a><br> 获取@font-face所需字体格式：<a href="https://www.fontsquirrel.com/tools/webfont-generator" target="_blank" rel="external nofollow noopener noreferrer">https://www.fontsquirrel.com/tools/webfont-generator</a></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>font</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>vue中进行多层组件监听</title>
+    <url>/2020/08/14/vue/vue/vue%E4%B8%AD%E8%BF%9B%E8%A1%8C%E5%A4%9A%E5%B1%82%E7%BB%84%E4%BB%B6%E7%9B%91%E5%90%AC/</url>
+    <content><![CDATA[<blockquote>
+<p>主题：vue中使用v-bind=”$attrs”和v-on=”$listeners”进行多层组件监听<br>概述：</p>
+</blockquote>
+<!--正文-->
+<a id="more"></a>
+
+<blockquote>
+<p>参考资料：</p>
+<p><a href="https://www.jianshu.com/p/ce8ca875c337" target="_blank" rel="external nofollow noopener noreferrer">https://www.jianshu.com/p/ce8ca875c337</a></p>
+<p><a href="https://www.cnblogs.com/jin-zhe/p/13099416.html" target="_blank" rel="external nofollow noopener noreferrer">https://www.cnblogs.com/jin-zhe/p/13099416.html</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>vue</category>
+        <category>vue</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>有关storybookreadme的在vue解析docs标签的问题</title>
+    <url>/2020/08/13/storybook/%E6%9C%89%E5%85%B3storybookreadme%E7%9A%84%E5%9C%A8vue%E8%A7%A3%E6%9E%90docss%E6%A0%87%E7%AD%BE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<blockquote>
+<p>主题：<br>概述：</p>
+</blockquote>
+<!--正文-->
+<a id="more"></a>
+
+<h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><p>我是根据<code>storybook-readme</code>的文档进行配置的，类似于下面这样 ：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">config.module.rules.push(&#123;</span><br><span class="line">    test: &#x2F;\.vue$&#x2F;,</span><br><span class="line">    use: &quot;vue-docgen-loader&quot;,</span><br><span class="line">    enforce: &quot;post&quot;,</span><br><span class="line">  &#125;);</span><br><span class="line">  config.module.rules.push(&#123;</span><br><span class="line">    resourceQuery: &#x2F;blockType&#x3D;docs&#x2F;,</span><br><span class="line">    use: [&#39;storybook-readme&#x2F;vue&#x2F;docs-loader&#39;,&#39;html-loader&#39;, &#39;markdown-loader&#39;],</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>然后就出问题了：</p>
+<p><img src= "/img/loading.gif" data-src="/static/storybook/%E6%9C%89%E5%85%B3storybookreadme%E7%9A%84%E5%9C%A8vue%E8%A7%A3%E6%9E%90docss%E6%A0%87%E7%AD%BE%E7%9A%84%E9%97%AE%E9%A2%98/images/image-20200813224956262.png" alt="image-20200813224956262"></p>
+<p>经过长时间的尝试，发现这两个错误，在<code>Component.options.__docs</code>后面竟然没有引号，直接接了一串<code>docs</code>的内容，因此我找到那个<code>docs-loader</code>进行修改，修改之后类似于下面这样：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports &#x3D; function (source, map) &#123;</span><br><span class="line">  this.callback(null, &#39;module.exports &#x3D; function(Component) &#123;Component.options.__docs &#x3D; &quot;&#39; + source + &#39;&quot;&#125;&#39;, map);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>然后又除了下面这个问题：</p>
+<p><img src= "/img/loading.gif" data-src="/static/storybook/%E6%9C%89%E5%85%B3storybookreadme%E7%9A%84%E5%9C%A8vue%E8%A7%A3%E6%9E%90docss%E6%A0%87%E7%AD%BE%E7%9A%84%E9%97%AE%E9%A2%98/images/image-20200813225100254.png" alt="image-20200813225100254"></p>
+<p>百度得知好像是双引号不能回车，因此我们把加的双引号换车反引号。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports &#x3D; function (source, map) &#123;</span><br><span class="line">  console.log(source)</span><br><span class="line">  this.callback(null, &#39;module.exports &#x3D; function(Component) &#123;Component.options.__docs &#x3D; &#96;&#39; + source + &#39;&#96;&#125;&#39;, map);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>通过打印<code>source</code>你会发现又多了一小撮东西，这是因为这个<code>source</code>本质上是一个js文件，需要导入才行，不过我也不知道怎么把字符串当js导入，因此我就直接把<code>html-loader</code>去掉了，这样就行了。能够使用<code>docs</code>标签了。</p>
+]]></content>
+      <categories>
+        <category>storybook</category>
+      </categories>
+  </entry>
+  <entry>
     <title>有关构建一个简单的vuex模式，而不引入整个vuex</title>
     <url>/2020/08/06/vue/vue/%E6%9C%89%E5%85%B3%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84vuex%E6%A8%A1%E5%BC%8F%EF%BC%8C%E8%80%8C%E4%B8%8D%E5%BC%95%E5%85%A5%E6%95%B4%E4%B8%AAvuex/</url>
     <content><![CDATA[<blockquote>
