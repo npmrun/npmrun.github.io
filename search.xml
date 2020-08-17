@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>有关在vue中使用防抖节流的正确姿势</title>
-    <url>/2020/08/15/vue/%E6%9C%89%E5%85%B3%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/</url>
-    <content><![CDATA[<blockquote>
-<p>主题：有关在vue中使用防抖节流的正确姿势<br>概述：有关在vue中使用防抖节流的正确姿势</p>
-</blockquote>
-<!--正文-->
-<a id="more"></a>
-
-<p><code>util.js</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export default &#123;</span><br><span class="line">    &#x2F;&#x2F; 防抖</span><br><span class="line">	_debounce(fn, delay) &#123;</span><br><span class="line"></span><br><span class="line">		var delay &#x3D; delay || 200;</span><br><span class="line">		var timer;</span><br><span class="line">		return function() &#123;</span><br><span class="line">			var th &#x3D; this;</span><br><span class="line">			var args &#x3D; arguments;</span><br><span class="line">			if (timer) &#123;</span><br><span class="line">				clearTimeout(timer);</span><br><span class="line">			&#125;</span><br><span class="line">			timer &#x3D; setTimeout(function() &#123;</span><br><span class="line">				timer &#x3D; null;</span><br><span class="line">				fn.apply(th, args);</span><br><span class="line">			&#125;, delay);</span><br><span class="line">		&#125;;</span><br><span class="line">	&#125;,</span><br><span class="line">	&#x2F;&#x2F; 节流</span><br><span class="line">	_throttle(fn, interval) &#123;</span><br><span class="line">		var last;</span><br><span class="line">		var timer;</span><br><span class="line">		var interval &#x3D; interval || 200;</span><br><span class="line">		return function() &#123;</span><br><span class="line">			var th &#x3D; this;</span><br><span class="line">			var args &#x3D; arguments;</span><br><span class="line">			var now &#x3D; +new Date();</span><br><span class="line">			if (last &amp;&amp; now - last &lt; interval) &#123;</span><br><span class="line">				clearTimeout(timer);</span><br><span class="line">				timer &#x3D; setTimeout(function() &#123;</span><br><span class="line">					last &#x3D; now;</span><br><span class="line">					fn.apply(th, args);</span><br><span class="line">				&#125;, interval);</span><br><span class="line">			&#125; else &#123;</span><br><span class="line">				last &#x3D; now;</span><br><span class="line">				fn.apply(th, args);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p> 使用的文件：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import util from &quot;@&#x2F;utils&#x2F;index.js&quot;</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line">    watch:&#123;</span><br><span class="line">		amount(n)&#123;</span><br><span class="line">			this.getData(n,this);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;,</span><br><span class="line">	onShow() &#123;</span><br><span class="line">	    &#x2F;&#x2F; 确保一进来就调用，传递this上下文方便调用方法。</span><br><span class="line">		this.getData(0,this);</span><br><span class="line">	&#125;,</span><br><span class="line">    methods:&#123;</span><br><span class="line">        getData: util._debounce(async function(value,that) &#123;</span><br><span class="line">			if(!value) value &#x3D; 0;</span><br><span class="line">			const data &#x3D; await that.getPayAmount(value)</span><br><span class="line">			that.payHowMuch &#x3D; data.payAmount;</span><br><span class="line">			that.payYue &#x3D; data.amount;</span><br><span class="line">		&#125;, 300),</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>vue</category>
-      </categories>
-  </entry>
-  <entry>
     <title>CSS3.0使用@font-face自定义字体</title>
     <url>/2020/08/15/font/CSS3.0%E4%BD%BF%E7%94%A8@font-face%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93/</url>
     <content><![CDATA[<blockquote>
