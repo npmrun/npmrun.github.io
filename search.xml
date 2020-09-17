@@ -1,6 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>html中offsetTopclientTopscrollTopoffsetTop各属性介绍</title>
+    <url>/2020/08/23/%E5%89%8D%E7%AB%AF/html%E4%B8%ADoffsetTopclientTopscrollTopoffsetTop%E5%90%84%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<blockquote>
+<p>主题：html中offsetTop,clientTop,scrollTop,offsetTop各属性介绍<br>概述：html中offsetTop,clientTop,scrollTop,offsetTop各属性介绍</p>
+</blockquote>
+<!--正文-->
+<a id="more"></a>
+
+<p>HTML精确定位:scrollLeft,scrollWidth,clientWidth,offsetWidth<br>scrollHeight: 获取对象的滚动高度。<br>scrollLeft:设置或获取位于对象左边界和窗口中目前可见内容的最左端之间的距离<br>scrollTop:设置或获取位于对象最顶端和窗口中可见内容的最顶端之间的距离<br>scrollWidth:获取对象的滚动宽度<br>offsetHeight:获取对象相对于版面或由父坐标 offsetParent 属性指定的父坐标的高度<br>offsetLeft:获取对象相对于版面或由 offsetParent 属性指定的父坐标的计算左侧位置<br>offsetTop:获取对象相对于版面或由 offsetTop 属性指定的父坐标的计算顶端位置<br>event.clientX 相对文档的水平座标<br>event.clientY 相对文档的垂直座标<br>event.offsetX 相对容器的水平坐标<br>event.offsetY 相对容器的垂直坐标<br>document.documentElement.scrollTop 垂直方向滚动的值<br>event.clientX+document.documentElement.scrollTop 相对文档的水平座标+垂直方向滚动的量</p>
+<p>这里是javascript中建造迁移转变代码的常用属性<br>页可见区域宽： document.body.clientWidth;<br>网页可见区域高： document.body.clientHeight;<br>网页可见区域宽： document.body.offsetWidth  （包含边线的宽）;<br>网页可见区域高： document.body.offsetHeight （包含边线的宽）;<br>网页正文全文宽： document.body.scrollWidth;<br>网页正文全文高： document.body.scrollHeight;<br>网页被卷去的高： document.body.scrollTop;<br>网页被卷去的左： document.body.scrollLeft;<br>网页正文项目组上： window.screenTop;<br>网页正文项目组左： window.screenLeft;<br>屏幕辨别率的高： window.screen.height;<br>屏幕辨别率的宽： window.screen.width;</p>
+<p>屏幕可用工作区高度： window.screen.availHeight;</p>
+<p><img src="/static/%E5%89%8D%E7%AB%AF/html%E4%B8%ADoffsetTopclientTopscrollTopoffsetTop%E5%90%84%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D/images/20160810144543410.jpg" alt="img"></p>
+<h2 id="1、offsetXXX"><a href="#1、offsetXXX" class="headerlink" title="1、offsetXXX"></a>1、offsetXXX</h2><p>假设 obj 为某个 HTML 控件。<br>obj.offsetTop 指 obj 间隔上方或上层控件的地位，整型，单位像素。<br>obj.offsetLeft 指 obj 间隔左方或上层控件的地位，整型，单位像素。<br>obj.offsetWidth 指 obj 控件自身的宽度，整型，单位像素。<br>obj.offsetHeight 指 obj 控件自身的高度，整型，单位像素。</p>
+<p>我们对前面提到的“上方或上层”与“左方或上层”控件作个申明。<br>例如：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"tool"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"提交"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"重置"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p>“提交”按钮的 offsetTop 指“提交”按钮距“tool”层上边框的间隔，因为距其上边比来的是 “tool” 层的上边框。<br>“重置”按钮的 offsetTop 指“重置”按钮距“tool”层上边框的间隔，因为距其上边比来的是 “tool” 层的上边框。<br>“提交”按钮的 offsetLeft 指“提交”按钮距“tool”层左边框的间隔，因为距其左边比来的是 “tool” 层的左边框。<br>“重置”按钮的 offsetLeft 指“重置”按钮距“提交”按钮右边框的间隔，因为距其左边比来的是“提交”按钮的右边框。<br>以上属性在 FireFox 中也有效。<br>另 外：我们这里所说的是指 HTML 控件的属性值，并不是 document.body，document.body 的值在不合浏览器中有不合申明（实际上大多半景象是因为对 document.body 申明不合造成的，并不是因为对 offset 申明不合造成的）。</p>
+<h2 id="2-offsetTop-与-style-top-的差别"><a href="#2-offsetTop-与-style-top-的差别" class="headerlink" title="2.offsetTop 与 style.top 的差别"></a>2.offsetTop 与 style.top 的差别</h2><p>我们知道 offsetTop 可以获得 HTML 元素间隔上方或外层元素的地位，style.top 也是可以的，二者的差别是：</p>
+<ol>
+<li>offsetTop 返回的是数字，而 style.top 返回的是字符串，除了数字外还带有单位：px。</li>
+<li>offsetTop 只读，而 style.top 可读写。</li>
+<li>若是没有给 HTML 元素指定过 top 样式，则 style.top 返回的是空字符串。</li>
+</ol>
+<p>offsetLeft 与 style.left、offsetWidth 与 style.width、offsetHeight 与 style.height 也是同样事理。</p>
+<h2 id="3-clientHeight、offsetHeight和scrollHeight"><a href="#3-clientHeight、offsetHeight和scrollHeight" class="headerlink" title="3.clientHeight、offsetHeight和scrollHeight"></a>3.clientHeight、offsetHeight和scrollHeight</h2><p>我们这里说说四种浏览器对 document.body 的 clientHeight、offsetHeight 和 scrollHeight 的申明，这里说的是 document.body，若是是 HTML 控件，则又有不合，点击这里查看。<br>这四种浏览器分别为IE（Internet Explorer）、NS（Netscape）、Opera、FF（FireFox）。</p>
+<p>clientHeight<br>对 clientHeight 都没有什么贰言，都认为是内容可视区域的高度，也就是说页面浏览器中可以看到内容的这个区域的高度，一般是最后一个对象条以下到状况栏以上的这个区域，与页面内容无关。<br>offsetHeight<br>IE、Opera 认为 offsetHeight = clientHeight + 迁移转变条 + 边框。<br>NS、FF 认为 offsetHeight 是网页内容实际高度，可以小于 clientHeight。<br>scrollHeight<br>IE、Opera 认为 scrollHeight 是网页内容实际高度，可以小于 clientHeight。<br>NS、FF 认为 scrollHeight 是网页内容高度，不过最小值是 clientHeight。</p>
+<p>简单地说<br>clientHeight 就是透过浏览器看内容的这个区域高度。<br>NS、 FF 认为 offsetHeight 和 scrollHeight 都是网页内容高度，只不过当网页内容高度小于便是 clientHeight 时，scrollHeight 的值是 clientHeight，而 offsetHeight 可以小于 clientHeight。<br>IE、Opera 认为 offsetHeight 是可视区域 clientHeight 迁移转变条加边框。scrollHeight 则是网页内容实际高度。<br>同理<br>clientWidth、offsetWidth 和 scrollWidth 的申明与上方雷同，只是把高度换成宽度即可。<br>然则<br>FF 在不合的 DOCTYPE 中对 clientHeight 的申明不合， xhtml 1 trasitional 中则不是如上申明的。其它浏览器则不存在此题目。</p>
+<h2 id="4-scrollTop、scrollLeft、scrollWidth、scrollHeight"><a href="#4-scrollTop、scrollLeft、scrollWidth、scrollHeight" class="headerlink" title="4.scrollTop、scrollLeft、scrollWidth、scrollHeight"></a>4.scrollTop、scrollLeft、scrollWidth、scrollHeight</h2><p>scrollTop 是“卷”起来的高度值，示例：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:100px;height:100px;background-color:＃FF0000;overflow:hidden;"</span> <span class="attr">id</span>=<span class="string">"p"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:50px;height:300px;background-color:＃0000FF;"</span> <span class="attr">id</span>=<span class="string">"t"</span>&gt;</span>若是为 p 设置了 scrollTop，这些内容可能不会完全显示。<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> p = <span class="built_in">document</span>.getElementById（<span class="string">"p"</span>）;</span></span><br><span class="line">	p.scrollTop = 10;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>因为为外层元素 p 设置了 scrollTop，所以内层元素会向上卷。<br>scrollLeft 也是类似事理。<br>我们已经知道 offsetHeight 是自身元素的宽度。<br>而 scrollHeight 是内部元素的绝对宽度，包含内部元素的隐蔽的项目组。<br>上述中 p 的 scrollHeight 为 300，而 p 的 offsetHeight 为 100。<br>scrollWidth 也是类似事理。<br>IE 和 FireFox 周全支撑，而 Netscape 和 Opera 不支撑 scrollTop、scrollLeft（document.body 除外）。</p>
+<h2 id="5-offsetTop、offsetLeft、offsetWidth、offsetHeight"><a href="#5-offsetTop、offsetLeft、offsetWidth、offsetHeight" class="headerlink" title="5.offsetTop、offsetLeft、offsetWidth、offsetHeight"></a>5.offsetTop、offsetLeft、offsetWidth、offsetHeight</h2><p>一向以来对offsetLeft，offsetTop，scrollLeft，scrollTop这几个办法很含混，花了一天的时候好好的进修了一下．得出了以下的成果：<br>1.offsetTop   :<br>当前对象到其上级层顶部的间隔.<br>不克不及对其进行赋值.设置对象到页面顶部的间隔请用style.top属性.<br>2.offsetLeft :<br>当前对象到其上级层左边的间隔.<br>不克不及对其进行赋值.设置对象到页面左部的间隔请用style.left属性.<br>3.offsetWidth :<br>当前对象的宽度.<br>与style.width属性的差别在于:如对象的宽度设定值为百分比宽度，则无论页面变大还是变小，style.width都返回此百分比，而offsetWidth则返回在不合页面中对象的宽度值而不是百分比值<br>4.offsetHeight :<br>与style.height属性的差别在于:如对象的宽度设定值为百分比高度，则无论页面变大还是变小，style.height都返回此百分比，而offsetHeight则返回在不合页面中对象的高度值而不是百分比值<br>5.offsetParent  :<br>当前对象的上级层对象.</p>
+<p>若是对象是包含在一个DIV中时，此DIV不会被当做是此对象的上级层，（即对象的上级层会跳过DIV对象）上级层是Table时则不会有题目.<br>哄骗这个属性，可以获得当前对象在不合大小的页面中的绝对地位．</p>
+<p>获得绝对地位脚本代码</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">GetPosition</span>（<span class="title">obj</span>）</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="keyword">var</span> left = <span class="number">0</span>;</span><br><span class="line"> <span class="keyword">var</span> top   = <span class="number">0</span>;</span><br><span class="line"> <span class="keyword">while</span>（obj != <span class="built_in">document</span>.body）</span><br><span class="line"> &#123;</span><br><span class="line">        left = obj.offsetLeft;</span><br><span class="line">        top   = obj.offsetTop;</span><br><span class="line">        obj = obj.offsetParent;</span><br><span class="line"> &#125;</span><br><span class="line"> alert（<span class="string">"Left Is : "</span> + left + <span class="string">"\r\n"</span> + <span class="string">"Top   Is : "</span> + top）;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>6.scrollLeft :<br>对象的最左边到对象在当前窗口显示的局限内的左边的间隔．<br>便是在呈现了横向迁移转变条的景象下，迁移转变条拉动的间隔．<br>7.scrollTop<br>对象的最顶部到对象在当前窗口显示的局限内的顶边的间隔．<br>便是在呈现了纵向迁移转变条的景象下，迁移转变条拉动的间隔．</p>
+<p>页面滚动的时候，元素的offsetXXX不变，要获取页面滚动距离用$(document).scrollTop()</p>
+<p>转自：<a href="http://blog.csdn.net/fswan/article/details/17238933" target="_blank" rel="external nofollow noopener noreferrer">http://blog.csdn.net/fswan/article/details/17238933</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>讲一讲iconfont的三种实现方式以及自定义制作</title>
+    <url>/2020/08/20/font/%E8%AE%B2%E4%B8%80%E8%AE%B2iconfont%E7%9A%84%E4%B8%89%E7%A7%8D%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E4%BB%A5%E5%8F%8A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%B6%E4%BD%9C/</url>
+    <content><![CDATA[<blockquote>
+<p>主题：讲一讲iconfont的三种实现方式以及自定义制作<br>概述：iconfont的图标都挺好看的，但是最近我要自己搞一套UI库的话，不可避免的需要制作一些图标，因此就研究了一下具体的实现方式，统共的话有两种。</p>
+</blockquote>
+<!--正文-->
+<a id="more"></a>
+
+<ol>
+<li><code>unicode</code>：制作自定义字体文件并引入，当在网页上编写特殊的unicode编码的时候可以呈现对应的文字。</li>
+<li><code>font-class</code>: 前一种的变种，不用再费力去看unicode编码，而是直接制作成一个css文件，采用将字符编码以伪类的方式定义在content中，能达到更上面类似的效果。</li>
+<li><code>symbol</code>：这属于Svg了，svg可以设置symbol,然后通过use:xlink引用symbol的id从而实现svg的类似雪碧图效果。这样的方式支持彩色图标。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>font</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>获取元素各种宽高及页面宽高总结</title>
+    <url>/2020/08/19/%E5%89%8D%E7%AB%AF/%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%E5%90%84%E7%A7%8D%E5%AE%BD%E9%AB%98%E5%8F%8A%E9%A1%B5%E9%9D%A2%E5%AE%BD%E9%AB%98%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<blockquote>
+<p>主题：获取元素各种宽高及页面宽高总结<br>概述：获取元素各种宽高及页面宽高总结</p>
+</blockquote>
+<!--正文-->
+<a id="more"></a>
+
+<p>当网页并没有设置overflow:hidden而被卷曲时，卷曲的就是html，可以用document.documentElement.scrollTop获取被卷曲的高度</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">window.onload&#x3D;function()&#123;</span><br><span class="line">    var a &#x3D; $(&quot;#div&quot;).width(),&#x2F;&#x2F;width()返回元素的宽高，不包括padding&#x2F;border&#x2F;margin</span><br><span class="line">        b &#x3D; $(&quot;#div&quot;).innerWidth(),&#x2F;&#x2F;innerWidth()返回元素的宽高 + padding</span><br><span class="line">        c &#x3D; $(&quot;#div&quot;).outerWidth(),&#x2F;&#x2F;outerWidth()返回元素的宽高 + padding + border</span><br><span class="line">        d &#x3D; $(&quot;#div&quot;).outerWidth(true);&#x2F;&#x2F;outerWidth(true)返回元素宽高 + padding + border + margin</span><br><span class="line">    console.log(a,b,c,d);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>获取浏览器显示区域（可视区域）的高度 ：</strong><br><code>$(window).height();</code> </p>
+<p><strong>获取浏览器显示区域（可视区域）的宽度 ：</strong><br><code>$(window).width();</code></p>
+<p><strong>获取页面的文档高度</strong><br><code>$(document).height();</code></p>
+<p><strong>获取页面的文档宽度</strong><br><code>$(document).width();</code></p>
+<p><strong>浏览器当前窗口文档body的高度</strong><br><code>$(document.body).height();</code> </p>
+<p><strong>浏览器当前窗口文档body的宽度</strong><br><code>$(document.body).width();</code> </p>
+<p><strong>获取滚动条到顶部的垂直高度(即网页被卷上去的高度)</strong><br><code>$(document).scrollTop();</code></p>
+<p><strong>获取滚动条到左边的垂直宽度</strong><br><code>$(document).scrollLeft();</code>   </p>
+<p><strong>获取或设置元素的宽度</strong><br><code>$(obj).width();</code></p>
+<p><strong>获取或设置元素的高度</strong> </p>
+<p><code>$(obj).height();</code></p>
+<p><strong>某个元素的上边界到body最顶部的距离</strong><br><code>obj.offset().top;</code>（在元素的包含元素不含滚动条的情况下） </p>
+<p><strong>某个元素的左边界到body最左边的距离</strong><br><code>obj.offset().left;</code>（在元素的包含元素不含滚动条的情况下）  </p>
+<p><strong>返回当前元素的上边界到它的包含元素的上边界的偏移量</strong><br><code>obj.offset().top</code>（在元素的包含元素含滚动条的情况下）  </p>
+<p><strong>返回当前元素的左边界到它的包含元素的左边界的偏移量</strong><br><code>obj.offset().left</code>（在元素的包含元素含滚动条的情况下）  </p>
+<blockquote>
+<p><code>Element.getBoundingClientRect()</code> 方法返回元素的大小及其相对于视口的位置。</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect</a></p>
+<p><a href="https://blog.csdn.net/gs6511/article/details/53900761" target="_blank" rel="external nofollow noopener noreferrer">https://blog.csdn.net/gs6511/article/details/53900761</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/1106529" target="_blank" rel="external nofollow noopener noreferrer">https://cloud.tencent.com/developer/article/1106529</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>scrollWidth,clientWidth,offsetWidth的区别</title>
+    <url>/2020/08/19/%E5%89%8D%E7%AB%AF/scrollWidth,clientWidth,offsetWidth%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<blockquote>
+<p>主题：scrollWidth,clientWidth,offsetWidth的区别<br>概述：scrollWidth,clientWidth,offsetWidth的区别</p>
+</blockquote>
+<!--正文-->
+<a id="more"></a>
+
+<ul>
+<li><code>scrollWidth</code>：对象的实际内容的宽度，不包边线宽度，会随对象中内容超过可视区后而变大。</li>
+<li><code>clientWidth</code>：对象内容的可视区的宽度，不包滚动条等边线，会随对象显示大小的变化而改变。</li>
+<li><code>offsetWidth</code>：对象整体的实际宽度，包滚动条等边线，会随对象显示大小的变化而改变。</li>
+</ul>
+<p>示例展示：</p>
+<p>该demo就在页面中放一个textarea元素，采用默认宽高显示。</p>
+<p>情况1：</p>
+<p>元素内无内容或者内容不超过可视区，滚动不出现或不可用的情况下。</p>
+<p>scrollWidth=clientWidth，两者皆为内容可视区的宽度。</p>
+<p>offsetWidth为元素的实际宽度。</p>
+<p><img src="/static/%E5%89%8D%E7%AB%AF/scrollWidth,clientWidth,offsetWidth%E7%9A%84%E5%8C%BA%E5%88%AB/images/dd81f5ea107d46c3a87894408db35355.png" alt="img"></p>
+<p>情况2：</p>
+<p>元素的内容超过可视区，滚动条出现和可用的情况下。</p>
+<p>scrollWidth&gt;clientWidth。</p>
+<p>scrollWidth为实际内容的宽度。</p>
+<p>clientWidth是内容可视区的宽度。</p>
+<p>offsetWidth是元素的实际宽度。</p>
+<p><img src="/static/%E5%89%8D%E7%AB%AF/scrollWidth,clientWidth,offsetWidth%E7%9A%84%E5%8C%BA%E5%88%AB/images/32163def3f0742049681f4a7b258e28f.png" alt="img"></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>ui组件库之图标的思考</title>
+    <url>/2020/08/19/ui/ui%E7%BB%84%E4%BB%B6%E5%BA%93%E4%B9%8B%E5%9B%BE%E6%A0%87%E7%9A%84%E6%80%9D%E8%80%83/</url>
+    <content><![CDATA[<blockquote>
+<p>主题：ui组件库之图标的思考<br>概述：在制作<code>xyx-ui</code>的时候，个人认为这是比较重要的一环，借此机会，将深入了解一下。</p>
+</blockquote>
+<!--正文-->
+<a id="more"></a>]]></content>
+      <categories>
+        <category>ui</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>从零开始搭建一个rollup库</title>
+    <url>/2020/08/17/rollup/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AArollup%E5%BA%93/</url>
+    <content><![CDATA[<blockquote>
+<p>主题：从零开始搭建一个rollup库<br>概述：从零开始搭建一个rollup库</p>
+</blockquote>
+<!--正文-->
+<a id="more"></a>
+
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
+<p>全局安装</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --global rollup</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2>]]></content>
+      <categories>
+        <category>rollup</category>
+      </categories>
+  </entry>
+  <entry>
     <title>CSS3.0使用@font-face自定义字体</title>
     <url>/2020/08/15/font/CSS3.0%E4%BD%BF%E7%94%A8@font-face%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93/</url>
     <content><![CDATA[<blockquote>
@@ -68,12 +233,12 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">config.module.rules.push(&#123;</span><br><span class="line">    test: &#x2F;\.vue$&#x2F;,</span><br><span class="line">    use: &quot;vue-docgen-loader&quot;,</span><br><span class="line">    enforce: &quot;post&quot;,</span><br><span class="line">  &#125;);</span><br><span class="line">  config.module.rules.push(&#123;</span><br><span class="line">    resourceQuery: &#x2F;blockType&#x3D;docs&#x2F;,</span><br><span class="line">    use: [&#39;storybook-readme&#x2F;vue&#x2F;docs-loader&#39;,&#39;html-loader&#39;, &#39;markdown-loader&#39;],</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
 
 <p>然后就出问题了：</p>
-<p><img src= "/img/loading.gif" data-src="/static/storybook/%E6%9C%89%E5%85%B3storybookreadme%E7%9A%84%E5%9C%A8vue%E8%A7%A3%E6%9E%90docss%E6%A0%87%E7%AD%BE%E7%9A%84%E9%97%AE%E9%A2%98/images/image-20200813224956262.png" alt="image-20200813224956262"></p>
+<p><img src="/static/storybook/%E6%9C%89%E5%85%B3storybookreadme%E7%9A%84%E5%9C%A8vue%E8%A7%A3%E6%9E%90docss%E6%A0%87%E7%AD%BE%E7%9A%84%E9%97%AE%E9%A2%98/images/image-20200813224956262.png" alt="image-20200813224956262"></p>
 <p>经过长时间的尝试，发现这两个错误，在<code>Component.options.__docs</code>后面竟然没有引号，直接接了一串<code>docs</code>的内容，因此我找到那个<code>docs-loader</code>进行修改，修改之后类似于下面这样：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports &#x3D; function (source, map) &#123;</span><br><span class="line">  this.callback(null, &#39;module.exports &#x3D; function(Component) &#123;Component.options.__docs &#x3D; &quot;&#39; + source + &#39;&quot;&#125;&#39;, map);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <p>然后又除了下面这个问题：</p>
-<p><img src= "/img/loading.gif" data-src="/static/storybook/%E6%9C%89%E5%85%B3storybookreadme%E7%9A%84%E5%9C%A8vue%E8%A7%A3%E6%9E%90docss%E6%A0%87%E7%AD%BE%E7%9A%84%E9%97%AE%E9%A2%98/images/image-20200813225100254.png" alt="image-20200813225100254"></p>
+<p><img src="/static/storybook/%E6%9C%89%E5%85%B3storybookreadme%E7%9A%84%E5%9C%A8vue%E8%A7%A3%E6%9E%90docss%E6%A0%87%E7%AD%BE%E7%9A%84%E9%97%AE%E9%A2%98/images/image-20200813225100254.png" alt="image-20200813225100254"></p>
 <p>百度得知好像是双引号不能回车，因此我们把加的双引号换车反引号。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports &#x3D; function (source, map) &#123;</span><br><span class="line">  console.log(source)</span><br><span class="line">  this.callback(null, &#39;module.exports &#x3D; function(Component) &#123;Component.options.__docs &#x3D; &#96;&#39; + source + &#39;&#96;&#125;&#39;, map);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
@@ -158,25 +323,25 @@
 
 <ol>
 <li><p>确认你的虚拟机的网络适配器是<code>NAT</code></p>
-<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231430886.png" alt="image-20200712231430886"></p>
+<p><img src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231430886.png" alt="image-20200712231430886"></p>
 </li>
 <li><p>当然，我们首先打开<code>VMware</code>中的虚拟机，我用的是<code>elementoryOS中文版</code></p>
-<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712230538875.png" alt="image-20200712230538875"></p>
+<p><img src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712230538875.png" alt="image-20200712230538875"></p>
 </li>
 <li><p>打开终端，输入<code>ifconfig -a</code>查看你的IP地址，当你看到下面图的时候，不要慌，点击如下图那个图标，会弹出一个页面，里面可能会有你的ip地址显示，没有的话只能自己先去安装一个网络库了。</p>
-<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712230718842.png" alt="终端"></p>
-<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712230738863.png" alt="网络"></p>
+<p><img src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712230718842.png" alt="终端"></p>
+<p><img src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712230738863.png" alt="网络"></p>
 </li>
 <li><p>由于我想要转发是nginx配置的页面，所以先查看以下nginx是否启动了，然后确保你需要转发的端口是真实有效的，如图，我配置过了 nginx，因此就会显示一个网页，我需要的就是转发这个端口</p>
-<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231056969.png" alt="image-20200712231056969"></p>
+<p><img src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231056969.png" alt="image-20200712231056969"></p>
 </li>
 <li><p>这个时候我们回到<code>vmware</code>上,我们打开，<code>编辑--&gt;虚拟网络地址编辑器</code></p>
-<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231252798.png" alt="image-20200712231252798"></p>
+<p><img src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231252798.png" alt="image-20200712231252798"></p>
 </li>
 <li><p>如上图，我们必须要网络管理员的特权，因此点击那个更改设置，这个窗口就会重新加载，这个时候就可以编辑了。这个时候看图步骤操作：</p>
-<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231708242.png" alt="image-20200712231708242"></p>
-<p>​    <img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231805058.png" alt="image-20200712231805058"></p>
-<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231815534.png" alt="image-20200712231815534"></p>
+<p><img src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231708242.png" alt="image-20200712231708242"></p>
+<p>​    <img src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231805058.png" alt="image-20200712231805058"></p>
+<p><img src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231815534.png" alt="image-20200712231815534"></p>
 </li>
 <li><p>这个时候就需要填你自己的数据了：</p>
 <table>
@@ -216,7 +381,7 @@
 <p>写玩点确认就行了，回到上一页的时候确认一下，没问题就表示OK了。</p>
 </li>
 <li><p>测试，OK，主机上能访问了</p>
-<p><img src= "/img/loading.gif" data-src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712232327323.png" alt="image-20200712232327323"></p>
+<p><img src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712232327323.png" alt="image-20200712232327323"></p>
 </li>
 </ol>
 <blockquote>
@@ -480,7 +645,7 @@
 
 
 <p>结构类似下面这样：</p>
-<p><img src= "/img/loading.gif" data-src="/static/%E5%89%8D%E7%AB%AF/scss%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2%E5%8A%9F%E8%83%BD/images/image-20200514140159247.png" alt="image-20200514140159247"></p>
+<p><img src="/static/%E5%89%8D%E7%AB%AF/scss%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2%E5%8A%9F%E8%83%BD/images/image-20200514140159247.png" alt="image-20200514140159247"></p>
 <p><strong><code>index.html</code></strong></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;zh&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot;</span><br><span class="line">          content&#x3D;&quot;width&#x3D;device-width, user-scalable&#x3D;no, initial-scale&#x3D;1.0, maximum-scale&#x3D;1.0, minimum-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;meta http-equiv&#x3D;&quot;X-UA-Compatible&quot; content&#x3D;&quot;ie&#x3D;edge&quot;&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;.&#x2F;index.css&quot;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body data-theme&#x3D;&quot;light&quot;&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;app-home&quot;&gt;</span><br><span class="line">        dsakdjsafs</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 
@@ -547,13 +712,14 @@
 </blockquote>
 <p>如果本机的web项目用了webpack server(目前vue cli, react cli, angular 本地开发用的都是这个) , 这个是webpack server的安全策略，如果是angular项目，需要在启动配置中加上 <code>--disable-host-check</code> 类似 <code>ng serve --open --host $IP --port $PORT --disable-host-check</code>。</p>
 <p>如果是<code>uniapp</code>项目，进行如下配置：</p>
-<p><img src= "/img/loading.gif" data-src="/static/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/images/image-20200423140150925.png" alt="image-20200423140150925"></p>
+<p><img src="/static/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/images/image-20200423140150925.png" alt="image-20200423140150925"></p>
 <blockquote>
 <p>参考文档</p>
 <p><a href="https://github.com/fatedier/frp/blob/master/README_zh.md#%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/fatedier/frp/blob/master/README_zh.md#%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81</a></p>
 <p><a href="https://www.jianshu.com/p/d579c2156311" target="_blank" rel="external nofollow noopener noreferrer">https://www.jianshu.com/p/d579c2156311</a></p>
 <p><a href="https://www.kuke365.com/2019/09/19/uniapp%E4%B8%8Bh5%E7%AB%AF%E5%92%8Cvuejs%E4%B8%8B%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8Finvalid-host-header/" target="_blank" rel="external nofollow noopener noreferrer">https://www.kuke365.com/2019/09/19/uniapp%E4%B8%8Bh5%E7%AB%AF%E5%92%8Cvuejs%E4%B8%8B%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8Finvalid-host-header/</a></p>
 <p><a href="https://www.it72.com/12580-1.htm" target="_blank" rel="external nofollow noopener noreferrer">https://www.it72.com/12580-1.htm</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/1572324" target="_blank" rel="external nofollow noopener noreferrer">https://cloud.tencent.com/developer/article/1572324</a></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -579,23 +745,23 @@
 <p>输入 <code>ssh-keygen -t rsa -C &quot;你的邮箱&quot;</code>  回车，再连续3次回车见下图：</p>
 <p>此时看下图中有一行提示：<code>Your public key has been saved in /c/Users/xxx/.ssh/id_rsa.pub</code></p>
 <p>到该路径（<code>C/Users/xxx/.ssh</code>）可以看见两个文件：id_rsa、id_rsa.pub 。</p>
-<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110415002.png" alt="image-20200420110415002"></p>
+<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110415002.png" alt="image-20200420110415002"></p>
 <p>把密钥添加进git账号中：</p>
 <p>用编辑器打开<code>id_rsa.pub</code>，推荐使用Notepad++，不要使用记事本打开，因为记事本的默认编码不是utf-8，拷贝里面的全部内容，登录你其中一个git 账号，例如:我登录github平台，后添加公钥里把它添加进去，公钥名称可以随便写。提交保存，输入你的github登录密码并提示添加成功。</p>
-<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110453118.png" alt="image-20200420110453118"></p>
+<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110453118.png" alt="image-20200420110453118"></p>
 <p>测试刚才添加的github密钥是否成功：</p>
 <p>在Git Bash Here中输入 ssh <a href="mailto:git@github.com" rel="external nofollow noopener noreferrer" target="_blank">git@github.com</a>  回车</p>
 <p>会出现一个提示，输入 yes 回车，可以看见一个successfully的提示信息，说明添加成功，可以使用了。</p>
-<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110505960.png" alt="image-20200420110505960"></p>
+<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110505960.png" alt="image-20200420110505960"></p>
 <h3 id="生成第二个账号的密钥"><a href="#生成第二个账号的密钥" class="headerlink" title="生成第二个账号的密钥"></a>生成第二个账号的密钥</h3><p>重复上面的步骤，那用户名和邮箱改成另一个账号的</p>
 <blockquote>
 <p>注：在输入<code>ssh-keygen -t rsa -C &quot;你的邮箱&quot;</code>的第一个选择存储路径的时候请自行改成自己的自定义名字，例如输入：smalldemons，这个时候一般是在<code>C/Users/xxx/.ssh</code>目录下就会又增加两个文件：smalldemons、smalldemons.pub,如果没看到的话，一般是在命令行打开的当前目录下，把这两个文件复制过去就行了</p>
 </blockquote>
-<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110803461.png" alt="image-20200420110803461"></p>
+<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110803461.png" alt="image-20200420110803461"></p>
 <p>添加多账号配置文件config（<code>C/Users/xxx/.ssh</code>）：</p>
-<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110903542.png" alt="image-20200420110903542"></p>
+<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420110903542.png" alt="image-20200420110903542"></p>
 <p>里面的代码 如下：</p>
-<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420111043623.png" alt="image-20200420111043623"></p>
+<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420111043623.png" alt="image-20200420111043623"></p>
 <blockquote>
 <p>Host 配置的别名</p>
 <p>HostName  填写改git账号的官网地址</p>
@@ -603,7 +769,7 @@
 <p>如此就可以在多个账号间切换使用了</p>
 </blockquote>
 <h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>这样的话只能使用<code>git@github.com:xxxx/xxxx.git</code>的方式拉取或推送代码，另一种我试的是失效的，得再看一下。</p>
-<p><img src= "/img/loading.gif" data-src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420111258450.png" alt="image-20200420111258450"></p>
+<p><img src="/static/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/images/image-20200420111258450.png" alt="image-20200420111258450"></p>
 <p>切换<code>npmrun</code>账号:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;你的名称&quot; </span><br><span class="line">git config --global user.email &quot;你的邮箱&quot; </span><br><span class="line"># 上面两步不是必须的</span><br><span class="line">git@npmrun.github.com:npmrun&#x2F;npmrun.github.io.git</span><br><span class="line">&#x2F;&#x2F; 注意前面的 git@npmrun.github.com,我加了npmrun,对应的是config里面的Host</span><br></pre></td></tr></table></figure>
 

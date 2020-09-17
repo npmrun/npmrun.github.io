@@ -1,106 +1,71 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>cocos creator常用api | 时光之城</title><meta name="description" content="主题：cocos creator常用api概述：收集cocos creator常用的函数，防止老年痴呆，记得东西太多会使自己混乱，写下来才是王道。      https:&#x2F;&#x2F;blog.csdn.net&#x2F;sotmwhat&#x2F;article&#x2F;details&#x2F;93884076  给自己的忠告 异步读取的必须要判断节点或者组件是否isValid可用 龙骨动画节点中途中断并重新执行，异步的情况下并不会触发结"><meta name="keywords" content="cocos"><meta name="author" content="西风吹盛夏"><meta name="copyright" content="西风吹盛夏"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://xieyaxin.top/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"><link rel="preconnect" href="//busuanzi.ibruce.info"><meta property="og:type" content="article"><meta property="og:title" content="cocos creator常用api"><meta property="og:url" content="https://xieyaxin.top/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/"><meta property="og:site_name" content="时光之城"><meta property="og:description" content="主题：cocos creator常用api概述：收集cocos creator常用的函数，防止老年痴呆，记得东西太多会使自己混乱，写下来才是王道。      https:&#x2F;&#x2F;blog.csdn.net&#x2F;sotmwhat&#x2F;article&#x2F;details&#x2F;93884076  给自己的忠告 异步读取的必须要判断节点或者组件是否isValid可用 龙骨动画节点中途中断并重新执行，异步的情况下并不会触发结"><meta property="og:image" content="https://xieyaxin.top/top/2.jpg"><meta property="article:published_time" content="2020-04-07T13:41:11.000Z"><meta property="article:modified_time" content="2020-08-17T13:56:08.737Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
-  }
-}
-var activateLightMode = function () {
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
-  }
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>时光👎</title>
+    <!-- 响应式的关键，不设置的话页面会自动缩小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href>
+    
+<script src="/lib/highlight.min.js"></script>
+ 
+    <!-- 
+<script src="/lib/highlightjs-line-numbers.min.js"></script>
+  -->
+    <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+      // hljs.initLineNumbersOnLoad();
+    </script>
+    
+<link rel="stylesheet" href="/assets/init.css">
+ 
+    
+<link rel="stylesheet" href="/assets/scroll.css">
 
-var getCookies = function (name) {
-  const value = `; ${document.cookie}`
-  const parts = value.split(`; ${name}=`)
-  if (parts.length === 2) return parts.pop().split(';').shift()
-}
+    
+<link rel="stylesheet" href="/assets/github.css">
+ 
+    
+<link rel="stylesheet" href="/assets/gitcode.css">
+ 
+    
+<link rel="stylesheet" href="/assets/index.css">
 
-var autoChangeMode = 'false'
-var t = getCookies('theme')
-if (autoChangeMode === '1') {
-  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    <script src="https://cdn.bootcdn.net/ajax/libs/graingert-wow/1.1.2/wow.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    
+    
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="时光之城" type="application/atom+xml">
+</head>
+  <body>
+    </body></html>
 
-  if (t === undefined) {
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport) {
-      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      var now = new Date()
-      var hour = now.getHours()
-      var isNight = hour <= 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
-    }
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-      if (Cookies.get('theme') === undefined) {
-        e.matches ? activateDarkMode() : activateLightMode()
-      }
-    })
-  } else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else if (autoChangeMode === '2') {
-  now = new Date()
-  hour = now.getHours()
-  isNight = hour <= 6 || hour >= 18
-  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else {
-  if (t === 'dark') activateDarkMode()
-  else if (t === 'light') activateLightMode()
-}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="prev" title="git本地多账号配置" href="https://xieyaxin.top/2020/04/20/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
-  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  bookmark: {
-    message_prev: '按',
-    message_next: '键将本页加入书签'
-  },
-  runtime_unit: '天',
-  runtime: true,
-  copyright: undefined,
-  ClickShowText: {"text":"I,LOVE,YOU","fontSize":"15px"},
-  medium_zoom: false,
-  fancybox: true,
-  Snackbar: undefined,
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
-  },
-  baiduPush: false,
-  highlightCopy: true,
-  highlightLang: true,
-  isPhotoFigcaption: false,
-  islazyload: true,
-  isanchor: false    
-}</script><script>var GLOBAL_CONFIG_SITE = { 
-  isPost: true,
-  isHome: false,
-  isHighlightShrink: false,
-  isSidebar: true
-  }</script><noscript><style>
-#nav {
-  opacity: 1
-}
-.justified-gallery img{
-  opacity: 1
-}
-</style></noscript><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="时光之城" type="application/atom+xml">
-</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/static/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">13</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">2</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">12</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> 特色</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 留言板</span></a></div></div></div></div><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#给自己的忠告"><span class="toc-number">1.</span> <span class="toc-text">给自己的忠告</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#场景加载"><span class="toc-number"></span> <span class="toc-text">场景加载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取节点"><span class="toc-number"></span> <span class="toc-text">获取节点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取节点位置，设置节点"><span class="toc-number"></span> <span class="toc-text">获取节点位置，设置节点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#动作操作"><span class="toc-number"></span> <span class="toc-text">动作操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#计时器"><span class="toc-number"></span> <span class="toc-text">计时器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#事件监听"><span class="toc-number"></span> <span class="toc-text">事件监听</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分辨率"><span class="toc-number"></span> <span class="toc-text">分辨率</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#音频控制"><span class="toc-number"></span> <span class="toc-text">音频控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#存档操作"><span class="toc-number"></span> <span class="toc-text">存档操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#判断平台"><span class="toc-number"></span> <span class="toc-text">判断平台</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#监听和发射事件"><span class="toc-number"></span> <span class="toc-text">监听和发射事件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他操作"><span class="toc-number"></span> <span class="toc-text">其他操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#全屏"><span class="toc-number"></span> <span class="toc-text">全屏</span></a></li></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/top/2.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">时光之城</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> 特色</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 留言板</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">cocos creator常用api</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-04-07 13:41:11"><i class="far fa-calendar-alt fa-fw"></i> 发表于 2020-04-07</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-08-17 13:56:08"><i class="fas fa-history fa-fw"></i> 更新于 2020-08-17</span></time><span class="post-meta__categories"><span class="post-meta__separator">|</span><i class="fas fa-inbox fa-fw post-meta__icon"></i><a class="post-meta__categories" href="/categories/cocos/">cocos</a></span></div><div class="meta-secondline"> </div><div class="meta-thirdline"><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta__icon"></i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"><span class="post-meta__separator">|</span><i class="far fa-comments fa-fw post-meta__icon"></i><span>评论数:</span><a href="/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><blockquote>
+<div class="page-wrapper">
+  <header class="header-wrapper session-wrapper wow animate__slideInDown" data-wow-duration="1s">
+  <a href="/" class="title" title="home">home</a>
+  <ol class="right-menu">  
+  
+    <li title="首页"><a href="/">首页</a></li>
+  
+    <li title="关于"><a href="/about">关于</a></li>
+  
+    <li title="友情链接"><a href="/link">友情链接</a></li>
+   
+  
+</ol></header>
+  <div class="article-list session-wrapper" style="min-height: auto;margin-top:40px;">
+  <!-- <h2 class="article-list__title">cocos creator常用api</h2> -->
+  <div class="article-list__meta">
+    <p class="article-list__author">author西风吹盛夏</p>
+    <p class="article-list__time">updated:2020-09-17</p>
+  </div>
+</div>
+<article class="markdown-body article  session-wrapper wow animate__fadeIn " data-wow-duration="1s">
+  <blockquote>
 <p>主题：cocos creator常用api<br>概述：收集cocos creator常用的函数，防止老年痴呆，记得东西太多会使自己混乱，写下来才是王道。</p>
 </blockquote>
 <!--正文-->
-<a id="more"></a>
+<!--more-->
 
 <blockquote>
 <p><a href="https://blog.csdn.net/sotmwhat/article/details/93884076" target="_blank" rel="external nofollow noopener noreferrer">https://blog.csdn.net/sotmwhat/article/details/93884076</a></p>
@@ -114,64 +79,249 @@ if (autoChangeMode === '1') {
 <li>ts文件只导出一个对象的时候，游戏可能报错，这时候在这个文件中随便改点东西保存就好了</li>
 <li>依赖的路径一定要写对，最好全部用绝对路径，按住ctrl能打开的那种</li>
 </ol>
-<h2 id="场景加载"><a href="#场景加载" class="headerlink" title="场景加载"></a>场景加载</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cc.director.loadScene(<span class="string">'场景名称'</span>);<span class="comment">//场景跳转</span></span><br><span class="line">cc.director.preloadScene(<span class="string">'场景名称'</span>);<span class="comment">//预加载场景</span></span><br><span class="line">cc.director.getScene();<span class="comment">//获取当前场景</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="场景加载"><a href="#场景加载" class="headerlink" title="场景加载"></a>场景加载</h2><pre><code class="javascript">cc.director.loadScene(<span class="string">'场景名称'</span>);<span class="comment">//场景跳转</span>
+cc.director.preloadScene(<span class="string">'场景名称'</span>);<span class="comment">//预加载场景</span>
+cc.director.getScene();<span class="comment">//获取当前场景</span></code></pre>
 <!--more-->
 
 
 
-<h2 id="获取节点"><a href="#获取节点" class="headerlink" title="获取节点"></a>获取节点</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> node = cc.find(<span class="string">"Canvas/bg"</span>);<span class="comment">//通过访问路径来获取节点</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.getChildByName(<span class="string">'name'</span>);<span class="comment">//通过名字获取子节点</span></span><br><span class="line">node.getComponent(cc.Label).string = <span class="string">'abc'</span>;<span class="comment">//获取节点上的组件值</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = cc.find(<span class="string">"Canvas/bg"</span>).getComponent(cc.Sprite);<span class="comment">//通过访问路径来获取节点，及获取该节点的指定组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">this</span>.node .getChildByName(<span class="string">'节点名称'</span>).getComponent(cc.Label)<span class="comment">//通过节点名获取子节点，获取该节点指定组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node;<span class="comment">//获取当前脚本所在的节点</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.parent;<span class="comment">//获取父节点</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.getChildByTag(<span class="number">1001</span>);<span class="comment">//通过标签获取子节点</span></span><br><span class="line"><span class="keyword">var</span> a = cc.find(<span class="string">"bg/score"</span>,<span class="keyword">this</span>.node);<span class="comment">//通过指定节点下的路径获取节点</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.children;<span class="comment">//获取所有子节点</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">this</span>.node.childrenCount;<span class="comment">//获取子节点数量</span></span><br><span class="line"><span class="keyword">var</span> a = cc.director.getScene();<span class="comment">//获取场景主节点</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = cc.instantiate(node);<span class="comment">//克隆节点</span></span><br><span class="line"><span class="keyword">this</span>.node.parent = cc.find(<span class="string">'Canvas'</span>);<span class="comment">//绑定父节点</span></span><br><span class="line"><span class="keyword">this</span>.node.addChild(nodeName,zIndex,tag);<span class="comment">//添加子节点,可设置层级和标签</span></span><br><span class="line"><span class="keyword">this</span>.node.removeChild(nodeName);<span class="comment">//通过名字移除子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.removeChildByTag (nodeTag);<span class="comment">//通过标签移除子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.destroy();<span class="comment">//销毁节点</span></span><br><span class="line"><span class="keyword">this</span>.node.isValid;<span class="comment">//判定节点是否可用</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">this</span>.node.removeChild(newNode);<span class="comment">//移除节点中指定的子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.removeChildByTag(<span class="number">1001</span>);<span class="comment">//通过标签移除节点中指定的子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.removeAllChildren();<span class="comment">//移除所有子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.destroyAllChildren();<span class="comment">//销毁所有子节点</span></span><br><span class="line"><span class="keyword">this</span>.node.cleanup();<span class="comment">//停止所有正在播放的动作和计时器</span></span><br><span class="line"><span class="keyword">var</span> sprites = <span class="keyword">this</span>.node.getComponentsInChildren(cc.Label);<span class="comment">//递归查找自身及所有子节点中指定类型的组件</span></span><br></pre></td></tr></table></figure>
+<h2 id="获取节点"><a href="#获取节点" class="headerlink" title="获取节点"></a>获取节点</h2><pre><code class="javascript"><span class="keyword">var</span> node = cc.find(<span class="string">"Canvas/bg"</span>);<span class="comment">//通过访问路径来获取节点</span>
 
-<h2 id="获取节点位置，设置节点"><a href="#获取节点位置，设置节点" class="headerlink" title="获取节点位置，设置节点"></a>获取节点位置，设置节点</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = node.getPositionX();或 getPositionY() <span class="comment">//获取节点的X轴或Y轴坐标</span></span><br><span class="line"><span class="keyword">var</span> a = node.getScaleX(); 或getScaleY() <span class="comment">//获取节点的X轴或Y轴缩放比例</span></span><br><span class="line">node.x = <span class="number">100</span>;<span class="comment">//设置节点x轴坐标</span></span><br><span class="line">node.y = <span class="number">100</span>;<span class="comment">//设置节点y轴坐标</span></span><br><span class="line">node.setPosition(x,y); <span class="comment">//设置节点坐标</span></span><br><span class="line">node.rotation = <span class="number">90</span>; <span class="comment">//设置节点旋转角度</span></span><br><span class="line">node.scaleX = <span class="number">2</span>; <span class="comment">//设置节点x轴缩放倍数</span></span><br><span class="line">node.scaleY = <span class="number">2</span>; <span class="comment">//设置节点y轴缩放倍数</span></span><br><span class="line">node.setScale(<span class="number">2</span>); <span class="comment">//设置节点整体缩放倍数</span></span><br><span class="line">node.width = <span class="number">100</span>; <span class="comment">//设置节点宽度大小</span></span><br><span class="line">node.height = <span class="number">100</span>;  <span class="comment">//设置节点高度大小</span></span><br><span class="line">node.setContentSize(<span class="number">100</span>, <span class="number">100</span>); <span class="comment">//设置节点宽高尺寸大小</span></span><br><span class="line">node.anchorX = <span class="number">1</span>; <span class="comment">//设置节点x轴锚点坐标</span></span><br><span class="line">node.anchorY = <span class="number">0</span>; <span class="comment">//设置节点y轴锚点坐标</span></span><br><span class="line">node.setAnchorPoint(<span class="number">1</span>, <span class="number">0</span>); <span class="comment">//设置节点锚点坐标</span></span><br><span class="line">node.opacity = <span class="number">128</span>; <span class="comment">//设置节点透明度大小（0-255）</span></span><br><span class="line">node.setOpacity(<span class="number">20</span>); <span class="comment">//设置节点透明度（0~255）</span></span><br><span class="line">node.color = <span class="keyword">new</span> cc.color(<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>,<span class="number">255</span>); <span class="comment">//设置节点颜色（R,G,B,透明度）</span></span><br><span class="line"><span class="keyword">if</span> (cc.isValid(<span class="keyword">this</span>.label.node) ) <span class="comment">//判定节点是否存在</span></span><br><span class="line">node.destroy(); <span class="comment">//销毁节点</span></span><br><span class="line"><span class="keyword">this</span>.cannons = [];</span><br><span class="line"><span class="keyword">this</span>.cannons = node.getChildren(); <span class="comment">//获取所有子节点</span></span><br><span class="line"><span class="keyword">this</span>.cannons = node.getChildrenCount(); <span class="comment">//获取子节点数量</span></span><br><span class="line">node.active = <span class="literal">false</span>; <span class="comment">//关闭节点(隐藏节点)</span></span><br><span class="line">cc.game.addPersistRootNode(myNode); <span class="comment">//常驻节点（全局变量）</span></span><br><span class="line">cc.game.removePersistRootNode(myNode); <span class="comment">//取消常驻节点</span></span><br></pre></td></tr></table></figure>
+<span class="keyword">var</span> a = <span class="keyword">this</span>.node.getChildByName(<span class="string">'name'</span>);<span class="comment">//通过名字获取子节点</span>
+node.getComponent(cc.Label).string = <span class="string">'abc'</span>;<span class="comment">//获取节点上的组件值</span>
 
-<h2 id="动作操作"><a href="#动作操作" class="headerlink" title="动作操作"></a>动作操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">cc.show()&#x2F;&#x2F;立即显示</span><br><span class="line">cc.hide ()&#x2F;&#x2F;立即隐藏</span><br><span class="line">cc.toggleVisibility()&#x2F;&#x2F;显隐切换</span><br><span class="line">cc.fadeIn(1)&#x2F;&#x2F;渐显效果</span><br><span class="line">cc.fadeOut(1)&#x2F;&#x2F;渐隐效果</span><br><span class="line">cc.delayTime(1)&#x2F;&#x2F;等待1秒</span><br><span class="line">node.runAction(cc.moveTo(1,0,0)); &#x2F;&#x2F;移动到当前节点（时间（s），X轴坐标，Y 轴坐标）</span><br><span class="line">node.runAction(cc.scaleTo(1,0.7,0.8));&#x2F;&#x2F;缩放到当前倍数节点（时间（s），X轴倍数，Y 轴倍数）</span><br><span class="line">node.runAction(cc.rotateTo(1,160,160));&#x2F;&#x2F;旋转到指定角度（时间（s），X轴角度，Y 轴角度）</span><br><span class="line">node.runAction(cc.skewTo(1,5,-5));&#x2F;&#x2F;变化节点倾斜度（时间（s），X轴倾斜度，Y 轴倾斜度）</span><br><span class="line"></span><br><span class="line">node.runAction(cc.fadeTo(2,0));&#x2F;&#x2F;变化当前节点的透明度（时间（s），透明度）</span><br><span class="line"></span><br><span class="line">node.runAction(cc.tintTo(2,255,255,0));&#x2F;&#x2F;变化当前节点颜色（时间，R,G,B）</span><br><span class="line">node.stopAllActions();&#x2F;&#x2F;停止所有动作</span><br><span class="line">&#x2F;&#x2F;自定义动作</span><br><span class="line">var action &#x3D; cc.moveTo(2, 100, 100);&#x2F;&#x2F; 创建一个移动动作</span><br><span class="line">node.runAction(action);&#x2F;&#x2F; 执行动作</span><br><span class="line">node.stopAction(action);&#x2F;&#x2F; 停止一个动作</span><br><span class="line"></span><br><span class="line">cc.sequence(action1,action2); &#x2F;&#x2F;按顺序连续执行，先action1，后action2</span><br><span class="line"></span><br><span class="line">cc.spawn(action1，action2); &#x2F;&#x2F;同时执行，action1和action2一起执行</span><br><span class="line"></span><br><span class="line">cc.repeatForever(cc.sequence(action1,action2)); &#x2F;&#x2F;一直重复括号里的动作</span><br></pre></td></tr></table></figure>
+<span class="keyword">var</span> a = cc.find(<span class="string">"Canvas/bg"</span>).getComponent(cc.Sprite);<span class="comment">//通过访问路径来获取节点，及获取该节点的指定组件</span>
 
-<h2 id="计时器"><a href="#计时器" class="headerlink" title="计时器"></a>计时器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;只用1次的计时器,2秒后执行</span><br><span class="line">        this.scheduleOnce(function()&#123;</span><br><span class="line">            &#x2F;&#x2F;一条或多条执行语句  </span><br><span class="line"></span><br><span class="line">        &#125;,2); &#x2F;&#x2F;(function()&#123;&#125;,时间（s）)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;每隔5秒执行1次</span><br><span class="line">        this.schedule(function()&#123;</span><br><span class="line">            &#x2F;&#x2F;一条或多条执行语句  </span><br><span class="line"></span><br><span class="line">        &#125;,5);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;计算多次的计时器（1秒后，以0.1秒的执行间隔，执行10次）</span><br><span class="line">        this.schedule(function()&#123;</span><br><span class="line">            &#x2F;&#x2F;一条或多条执行语句</span><br><span class="line"></span><br><span class="line">        &#125;,0.1,10,1); &#x2F;&#x2F;(function()&#123;&#125;,间隔时间，次数，多久后开始)</span><br><span class="line"></span><br><span class="line">this.unscheduleAllCallbacks(this);&#x2F;&#x2F;停止某组件的所有计时器</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;自定义定时器执行内容（相比常规使用的定时器优势是：方便随时开启或关闭）</span><br><span class="line">var cb&#x3D; function()&#123;</span><br><span class="line">    &#x2F;&#x2F;do something</span><br><span class="line">&#125;;</span><br><span class="line">this.schedule(cb,1);&#x2F;&#x2F;启动定时器</span><br><span class="line">this.unschedule(cb);&#x2F;&#x2F;取消定时器</span><br></pre></td></tr></table></figure>
+<span class="keyword">this</span>.node .getChildByName(<span class="string">'节点名称'</span>).getComponent(cc.Label)<span class="comment">//通过节点名获取子节点，获取该节点指定组件</span>
 
-<h2 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a>事件监听</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">(开始：&#39;touchstart&#39;，移动：&#39;touchmove&#39;，结束：&#39;touchend&#39;，取消：&#39;touchcancel&#39;)</span><br><span class="line">node.on(&#39;touchstart&#39;,function(event)&#123;</span><br><span class="line">    this.doSomething();</span><br><span class="line">&#125;,this);  </span><br><span class="line">var a &#x3D; event.getID();&#x2F;&#x2F;获取触点的ID</span><br><span class="line">var a &#x3D; event.getLocationX();&#x2F;&#x2F;获取触摸点的坐标X</span><br><span class="line">var b &#x3D; event.getLocationY();&#x2F;&#x2F;获取触摸点的坐标Y</span><br><span class="line"></span><br><span class="line">cc.eventManager.addListener(&#123;</span><br><span class="line">            event: cc.EventListener.KEYBOARD&#x2F;TOUCH_ONE_BY_ONE,myfunction&#125;,self.node);</span><br></pre></td></tr></table></figure>
+<span class="keyword">var</span> a = <span class="keyword">this</span>.node;<span class="comment">//获取当前脚本所在的节点</span>
+<span class="keyword">var</span> a = <span class="keyword">this</span>.node.parent;<span class="comment">//获取父节点</span>
+<span class="keyword">var</span> a = <span class="keyword">this</span>.node.getChildByTag(<span class="number">1001</span>);<span class="comment">//通过标签获取子节点</span>
+<span class="keyword">var</span> a = cc.find(<span class="string">"bg/score"</span>,<span class="keyword">this</span>.node);<span class="comment">//通过指定节点下的路径获取节点</span>
 
-<h2 id="分辨率"><a href="#分辨率" class="headerlink" title="分辨率"></a>分辨率</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;获得设备分辨率</span><br><span class="line">var b &#x3D; cc.director.getWinSizeInPixels()</span><br><span class="line">var bx &#x3D; b.width</span><br><span class="line">var by &#x3D; b.height</span><br><span class="line"></span><br><span class="line">cc.view.getCanvasSize().width;&#x2F;&#x2F;获得设备分辨率的宽度</span><br><span class="line">cc.view.getCanvasSize().height;&#x2F;&#x2F;获得设备分辨率的高度</span><br><span class="line">cc.director.setDisplayStats(true);&#x2F;&#x2F;显示帧数信息</span><br></pre></td></tr></table></figure>
+<span class="keyword">var</span> a = <span class="keyword">this</span>.node.children;<span class="comment">//获取所有子节点</span>
+<span class="keyword">var</span> a = <span class="keyword">this</span>.node.childrenCount;<span class="comment">//获取子节点数量</span>
+<span class="keyword">var</span> a = cc.director.getScene();<span class="comment">//获取场景主节点</span>
 
-<h2 id="音频控制"><a href="#音频控制" class="headerlink" title="音频控制"></a>音频控制</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cc.audioEngine.playMusic(this.BGAudio,true);&#x2F;&#x2F;播放音乐（true代表循环）</span><br><span class="line">cc.audioEngine.stopMusic()&#x2F;&#x2F;停止播放背景音乐</span><br><span class="line">cc.audioEngine.playEffect(this.ClickAudio,false);&#x2F;&#x2F;播放音效（false代表只播放一次）</span><br><span class="line">cc.audioEngine.stopEffect(音效变量名);&#x2F;&#x2F;停止指定音效（需要先把音效赋值给变量）</span><br><span class="line">cc.audioEngine.AllEffects();&#x2F;&#x2F;停止所有音效</span><br><span class="line">cc.audioEngine.setMusicVolume(参数);  &#x2F;&#x2F;设置背景音乐的音量（该参数范围是0到1）</span><br><span class="line">cc.audioEngine.setEffectsVolume(参数);  &#x2F;&#x2F;设置音效的音量（该参数范围是0到1）</span><br></pre></td></tr></table></figure>
+<span class="keyword">var</span> a = cc.instantiate(node);<span class="comment">//克隆节点</span>
+<span class="keyword">this</span>.node.parent = cc.find(<span class="string">'Canvas'</span>);<span class="comment">//绑定父节点</span>
+<span class="keyword">this</span>.node.addChild(nodeName,zIndex,tag);<span class="comment">//添加子节点,可设置层级和标签</span>
+<span class="keyword">this</span>.node.removeChild(nodeName);<span class="comment">//通过名字移除子节点</span>
+<span class="keyword">this</span>.node.removeChildByTag (nodeTag);<span class="comment">//通过标签移除子节点</span>
+<span class="keyword">this</span>.node.destroy();<span class="comment">//销毁节点</span>
+<span class="keyword">this</span>.node.isValid;<span class="comment">//判定节点是否可用</span>
 
-<h2 id="存档操作"><a href="#存档操作" class="headerlink" title="存档操作"></a>存档操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cc.sys.localStorage.setItem(&#39;存储标识名&#39;,变量名);&#x2F;&#x2F;存储存档数据</span><br><span class="line">var a &#x3D; cc.sys.localStorage.getItem(&#39;存储标识名&#39;);&#x2F;&#x2F;读取存档数据</span><br><span class="line">cc.sys.localStorage.removeItem(&#39;存储标识名&#39;);&#x2F;&#x2F;擦除存档数据</span><br><span class="line">userData &#x3D; &#123;</span><br><span class="line">    name: &#39;Tracer&#39;,</span><br><span class="line">    level: 1,</span><br><span class="line">    gold: 100</span><br><span class="line">&#125;;</span><br><span class="line">cc.sys.localStorage.setItem(&#39;userData&#39;, JSON.stringify(userData));&#x2F;&#x2F;存取复杂对象数据</span><br><span class="line">var userData &#x3D; JSON.parse(cc.sys.localStorage.getItem(&#39;userData&#39;));&#x2F;&#x2F;读取复杂对象数据</span><br></pre></td></tr></table></figure>
+<span class="keyword">this</span>.node.removeChild(newNode);<span class="comment">//移除节点中指定的子节点</span>
+<span class="keyword">this</span>.node.removeChildByTag(<span class="number">1001</span>);<span class="comment">//通过标签移除节点中指定的子节点</span>
+<span class="keyword">this</span>.node.removeAllChildren();<span class="comment">//移除所有子节点</span>
+<span class="keyword">this</span>.node.destroyAllChildren();<span class="comment">//销毁所有子节点</span>
+<span class="keyword">this</span>.node.cleanup();<span class="comment">//停止所有正在播放的动作和计时器</span>
+<span class="keyword">var</span> sprites = <span class="keyword">this</span>.node.getComponentsInChildren(cc.Label);<span class="comment">//递归查找自身及所有子节点中指定类型的组件</span></code></pre>
+<h2 id="获取节点位置，设置节点"><a href="#获取节点位置，设置节点" class="headerlink" title="获取节点位置，设置节点"></a>获取节点位置，设置节点</h2><pre><code class="javascript"><span class="keyword">var</span> a = node.getPositionX();或 getPositionY() <span class="comment">//获取节点的X轴或Y轴坐标</span>
+<span class="keyword">var</span> a = node.getScaleX(); 或getScaleY() <span class="comment">//获取节点的X轴或Y轴缩放比例</span>
+node.x = <span class="number">100</span>;<span class="comment">//设置节点x轴坐标</span>
+node.y = <span class="number">100</span>;<span class="comment">//设置节点y轴坐标</span>
+node.setPosition(x,y); <span class="comment">//设置节点坐标</span>
+node.rotation = <span class="number">90</span>; <span class="comment">//设置节点旋转角度</span>
+node.scaleX = <span class="number">2</span>; <span class="comment">//设置节点x轴缩放倍数</span>
+node.scaleY = <span class="number">2</span>; <span class="comment">//设置节点y轴缩放倍数</span>
+node.setScale(<span class="number">2</span>); <span class="comment">//设置节点整体缩放倍数</span>
+node.width = <span class="number">100</span>; <span class="comment">//设置节点宽度大小</span>
+node.height = <span class="number">100</span>;  <span class="comment">//设置节点高度大小</span>
+node.setContentSize(<span class="number">100</span>, <span class="number">100</span>); <span class="comment">//设置节点宽高尺寸大小</span>
+node.anchorX = <span class="number">1</span>; <span class="comment">//设置节点x轴锚点坐标</span>
+node.anchorY = <span class="number">0</span>; <span class="comment">//设置节点y轴锚点坐标</span>
+node.setAnchorPoint(<span class="number">1</span>, <span class="number">0</span>); <span class="comment">//设置节点锚点坐标</span>
+node.opacity = <span class="number">128</span>; <span class="comment">//设置节点透明度大小（0-255）</span>
+node.setOpacity(<span class="number">20</span>); <span class="comment">//设置节点透明度（0~255）</span>
+node.color = <span class="keyword">new</span> cc.color(<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>,<span class="number">255</span>); <span class="comment">//设置节点颜色（R,G,B,透明度）</span>
+<span class="keyword">if</span> (cc.isValid(<span class="keyword">this</span>.label.node) ) <span class="comment">//判定节点是否存在</span>
+node.destroy(); <span class="comment">//销毁节点</span>
+<span class="keyword">this</span>.cannons = [];
+<span class="keyword">this</span>.cannons = node.getChildren(); <span class="comment">//获取所有子节点</span>
+<span class="keyword">this</span>.cannons = node.getChildrenCount(); <span class="comment">//获取子节点数量</span>
+node.active = <span class="literal">false</span>; <span class="comment">//关闭节点(隐藏节点)</span>
+cc.game.addPersistRootNode(myNode); <span class="comment">//常驻节点（全局变量）</span>
+cc.game.removePersistRootNode(myNode); <span class="comment">//取消常驻节点</span></code></pre>
+<h2 id="动作操作"><a href="#动作操作" class="headerlink" title="动作操作"></a>动作操作</h2><pre><code>cc.show()//立即显示
+cc.hide ()//立即隐藏
+cc.toggleVisibility()//显隐切换
+cc.fadeIn(1)//渐显效果
+cc.fadeOut(1)//渐隐效果
+cc.delayTime(1)//等待1秒
+node.runAction(cc.moveTo(1,0,0)); //移动到当前节点（时间（s），X轴坐标，Y 轴坐标）
+node.runAction(cc.scaleTo(1,0.7,0.8));//缩放到当前倍数节点（时间（s），X轴倍数，Y 轴倍数）
+node.runAction(cc.rotateTo(1,160,160));//旋转到指定角度（时间（s），X轴角度，Y 轴角度）
+node.runAction(cc.skewTo(1,5,-5));//变化节点倾斜度（时间（s），X轴倾斜度，Y 轴倾斜度）
 
-<h2 id="判断平台"><a href="#判断平台" class="headerlink" title="判断平台"></a>判断平台</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cc.sys.isNative  &#x2F;&#x2F;是否是本地</span><br><span class="line">cc.sys.isBrowser  &#x2F;&#x2F;是否是网页</span><br><span class="line">cc.sys.isMobile  &#x2F;&#x2F;是否是移动系统</span><br><span class="line">cc.sys.platform  &#x2F;&#x2F;正在运行的平台</span><br><span class="line">cc.sys.language  &#x2F;&#x2F;当前运行系统的语言</span><br><span class="line">cc.sys.os  &#x2F;&#x2F;当前正在运行的系统</span><br><span class="line">cc.sys.OS_IOS  &#x2F;&#x2F;是否是IOS系统</span><br><span class="line">cc.sys.OS_ANDROID  &#x2F;&#x2F;是否是android系统</span><br><span class="line">cc.sys.OS_WINDOWS  &#x2F;&#x2F;是否是windows系统</span><br><span class="line">cc.sys.openURL(&#39;Http:&#x2F;&#x2F;www.baidu.com&#39;);  &#x2F;&#x2F;打开网页</span><br></pre></td></tr></table></figure>
+node.runAction(cc.fadeTo(2,0));//变化当前节点的透明度（时间（s），透明度）
 
-<h2 id="监听和发射事件"><a href="#监听和发射事件" class="headerlink" title="监听和发射事件"></a>监听和发射事件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">this.node.pauseSystemEvents(true);&#x2F;&#x2F;暂停节点系统事件</span><br><span class="line">this.node.resumeSystemEvents(true);&#x2F;&#x2F;恢复节点系统事件</span><br><span class="line">this.node.targetOff(this);&#x2F;&#x2F;移除所有注册事件</span><br><span class="line"></span><br><span class="line">触摸监听：开始&#39;touchstart&#39;,移动&#39;touchmove&#39;,结束&#39;touchend&#39;,取消&#39;touchcancel&#39;</span><br><span class="line">var pos &#x3D; event.getLocation();&#x2F;&#x2F;获取触摸点的坐标(包含X和Y)</span><br><span class="line">var x &#x3D; event.getLocationX();&#x2F;&#x2F;获取触摸点的X坐标</span><br><span class="line">var y &#x3D; event.getLocationY();&#x2F;&#x2F;获取触摸点的Y坐标</span><br><span class="line">var a &#x3D; event.getID();&#x2F;&#x2F;获取触点的ID</span><br><span class="line"></span><br><span class="line">鼠标监听：鼠标按下&#39;mousedown&#39;,移入节点&#39;mouseenter&#39;,节点中移动&#39;mousemove&#39;,移出节点&#39;mouseleave,&#39;松开鼠标&#39;mouseup&#39;</span><br><span class="line">var a &#x3D; event.getScrollY();&#x2F;&#x2F;获取滚轮滚动的 Y 轴距离，只有滚动时才有效</span><br><span class="line">var a &#x3D; event.getLocation();&#x2F;&#x2F;获取鼠标位置对象，对象包含 x 和 y 属性</span><br><span class="line"></span><br><span class="line">输入框监听：获得焦点&#39;editing-did-began&#39;,文字变化&#39;text-changed&#39;,失去焦点&#39;editing-did-ended&#39;,按下回车&#39;editing-return&#39;</span><br><span class="line"></span><br><span class="line">属性变化监听：位置&#39;position-changed&#39;,宽高 &#39;size-changed&#39;,旋转&#39;rotation-changed&#39;,缩放&#39;scale-changed&#39;</span><br><span class="line"></span><br><span class="line">ScrollView控件监听：滚动中&#39;scrolling&#39;,停止滚动&#39;scroll-ended&#39;</span><br><span class="line"></span><br><span class="line">用户自定义事件:</span><br><span class="line">this.node.on(&#39;事件名&#39;,function,this);&#x2F;&#x2F;注册监听</span><br><span class="line">this.node.emit(&#39;事件名&#39;);&#x2F;&#x2F;发送监听广播</span><br><span class="line">this.node.off(&#39;事件名&#39;,function,this);&#x2F;&#x2F;关闭监听</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;注册带参数监听</span><br><span class="line">this.node.on(&#39;事件名&#39;,function(event)&#123;</span><br><span class="line"></span><br><span class="line">“具体方法函数内容”</span><br><span class="line"></span><br><span class="line">&#125;,this);</span><br><span class="line">&#x2F;&#x2F;发送带参数的监听</span><br><span class="line">this.node.emit(&#39;事件名&#39;,&#123;id:1001&#125;);</span><br><span class="line">cc.eventManager.addListener(listener, node);&#x2F;&#x2F;添加事件</span><br><span class="line">cc.eventManager.removeListener((listener);&#x2F;&#x2F;移除事件</span><br></pre></td></tr></table></figure>
+node.runAction(cc.tintTo(2,255,255,0));//变化当前节点颜色（时间，R,G,B）
+node.stopAllActions();//停止所有动作
+//自定义动作
+var action = cc.moveTo(2, 100, 100);// 创建一个移动动作
+node.runAction(action);// 执行动作
+node.stopAction(action);// 停止一个动作
 
-<h2 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">cc.director.pause();&#x2F;&#x2F;暂停</span><br><span class="line">cc.director.resume();&#x2F;&#x2F;继续</span><br><span class="line">cc.director.end();&#x2F;&#x2F;退出整个应用</span><br><span class="line">cc.log(变量)  或 console.log(something);&#x2F;&#x2F;输出想要的信息</span><br><span class="line">let self &#x3D; this;&#x2F;&#x2F;锁定当前使用的this指向</span><br><span class="line">node.getLocalZOrder();&#x2F;&#x2F;层级获取</span><br><span class="line">node.setLocalZOrder(1);&#x2F;&#x2F;层级改变</span><br><span class="line">cc.find(&#39;canvas&#x2F;map&#39; + num)&#x2F;&#x2F;读取带变量的路径</span><br><span class="line">cc.sys.openURL(&#39;Http:&#x2F;&#x2F;www.baidu.com&#39;);&#x2F;&#x2F;打开网页</span><br></pre></td></tr></table></figure>
+cc.sequence(action1,action2); //按顺序连续执行，先action1，后action2
 
-<h2 id="全屏"><a href="#全屏" class="headerlink" title="全屏"></a>全屏</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if (cc.screen.fullScreen()) &#123;</span><br><span class="line">     cc.screen.exitFullScreen();</span><br><span class="line">&#125;else cc.screen.requestFullScreen();</span><br></pre></td></tr></table></figure>
+cc.spawn(action1，action2); //同时执行，action1和action2一起执行
+
+cc.repeatForever(cc.sequence(action1,action2)); //一直重复括号里的动作
+</code></pre><h2 id="计时器"><a href="#计时器" class="headerlink" title="计时器"></a>计时器</h2><pre><code>//只用1次的计时器,2秒后执行
+        this.scheduleOnce(function(){
+            //一条或多条执行语句  
+
+        },2); //(function(){},时间（s）)
+
+//每隔5秒执行1次
+        this.schedule(function(){
+            //一条或多条执行语句  
+
+        },5);
+
+//计算多次的计时器（1秒后，以0.1秒的执行间隔，执行10次）
+        this.schedule(function(){
+            //一条或多条执行语句
+
+        },0.1,10,1); //(function(){},间隔时间，次数，多久后开始)
+
+this.unscheduleAllCallbacks(this);//停止某组件的所有计时器
+
+//自定义定时器执行内容（相比常规使用的定时器优势是：方便随时开启或关闭）
+var cb= function(){
+    //do something
+};
+this.schedule(cb,1);//启动定时器
+this.unschedule(cb);//取消定时器</code></pre><h2 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a>事件监听</h2><pre><code>(开始：&apos;touchstart&apos;，移动：&apos;touchmove&apos;，结束：&apos;touchend&apos;，取消：&apos;touchcancel&apos;)
+node.on(&apos;touchstart&apos;,function(event){
+    this.doSomething();
+},this);  
+var a = event.getID();//获取触点的ID
+var a = event.getLocationX();//获取触摸点的坐标X
+var b = event.getLocationY();//获取触摸点的坐标Y
+
+cc.eventManager.addListener({
+            event: cc.EventListener.KEYBOARD/TOUCH_ONE_BY_ONE,myfunction},self.node);
+
+</code></pre><h2 id="分辨率"><a href="#分辨率" class="headerlink" title="分辨率"></a>分辨率</h2><pre><code>//获得设备分辨率
+var b = cc.director.getWinSizeInPixels()
+var bx = b.width
+var by = b.height
+
+cc.view.getCanvasSize().width;//获得设备分辨率的宽度
+cc.view.getCanvasSize().height;//获得设备分辨率的高度
+cc.director.setDisplayStats(true);//显示帧数信息</code></pre><h2 id="音频控制"><a href="#音频控制" class="headerlink" title="音频控制"></a>音频控制</h2><pre><code>cc.audioEngine.playMusic(this.BGAudio,true);//播放音乐（true代表循环）
+cc.audioEngine.stopMusic()//停止播放背景音乐
+cc.audioEngine.playEffect(this.ClickAudio,false);//播放音效（false代表只播放一次）
+cc.audioEngine.stopEffect(音效变量名);//停止指定音效（需要先把音效赋值给变量）
+cc.audioEngine.AllEffects();//停止所有音效
+cc.audioEngine.setMusicVolume(参数);  //设置背景音乐的音量（该参数范围是0到1）
+cc.audioEngine.setEffectsVolume(参数);  //设置音效的音量（该参数范围是0到1）</code></pre><h2 id="存档操作"><a href="#存档操作" class="headerlink" title="存档操作"></a>存档操作</h2><pre><code>cc.sys.localStorage.setItem(&apos;存储标识名&apos;,变量名);//存储存档数据
+var a = cc.sys.localStorage.getItem(&apos;存储标识名&apos;);//读取存档数据
+cc.sys.localStorage.removeItem(&apos;存储标识名&apos;);//擦除存档数据
+userData = {
+    name: &apos;Tracer&apos;,
+    level: 1,
+    gold: 100
+};
+cc.sys.localStorage.setItem(&apos;userData&apos;, JSON.stringify(userData));//存取复杂对象数据
+var userData = JSON.parse(cc.sys.localStorage.getItem(&apos;userData&apos;));//读取复杂对象数据</code></pre><h2 id="判断平台"><a href="#判断平台" class="headerlink" title="判断平台"></a>判断平台</h2><pre><code>cc.sys.isNative  //是否是本地
+cc.sys.isBrowser  //是否是网页
+cc.sys.isMobile  //是否是移动系统
+cc.sys.platform  //正在运行的平台
+cc.sys.language  //当前运行系统的语言
+cc.sys.os  //当前正在运行的系统
+cc.sys.OS_IOS  //是否是IOS系统
+cc.sys.OS_ANDROID  //是否是android系统
+cc.sys.OS_WINDOWS  //是否是windows系统
+cc.sys.openURL(&apos;Http://www.baidu.com&apos;);  //打开网页</code></pre><h2 id="监听和发射事件"><a href="#监听和发射事件" class="headerlink" title="监听和发射事件"></a>监听和发射事件</h2><pre><code>this.node.pauseSystemEvents(true);//暂停节点系统事件
+this.node.resumeSystemEvents(true);//恢复节点系统事件
+this.node.targetOff(this);//移除所有注册事件
+
+触摸监听：开始&apos;touchstart&apos;,移动&apos;touchmove&apos;,结束&apos;touchend&apos;,取消&apos;touchcancel&apos;
+var pos = event.getLocation();//获取触摸点的坐标(包含X和Y)
+var x = event.getLocationX();//获取触摸点的X坐标
+var y = event.getLocationY();//获取触摸点的Y坐标
+var a = event.getID();//获取触点的ID
+
+鼠标监听：鼠标按下&apos;mousedown&apos;,移入节点&apos;mouseenter&apos;,节点中移动&apos;mousemove&apos;,移出节点&apos;mouseleave,&apos;松开鼠标&apos;mouseup&apos;
+var a = event.getScrollY();//获取滚轮滚动的 Y 轴距离，只有滚动时才有效
+var a = event.getLocation();//获取鼠标位置对象，对象包含 x 和 y 属性
+
+输入框监听：获得焦点&apos;editing-did-began&apos;,文字变化&apos;text-changed&apos;,失去焦点&apos;editing-did-ended&apos;,按下回车&apos;editing-return&apos;
+
+属性变化监听：位置&apos;position-changed&apos;,宽高 &apos;size-changed&apos;,旋转&apos;rotation-changed&apos;,缩放&apos;scale-changed&apos;
+
+ScrollView控件监听：滚动中&apos;scrolling&apos;,停止滚动&apos;scroll-ended&apos;
+
+用户自定义事件:
+this.node.on(&apos;事件名&apos;,function,this);//注册监听
+this.node.emit(&apos;事件名&apos;);//发送监听广播
+this.node.off(&apos;事件名&apos;,function,this);//关闭监听
+
+//注册带参数监听
+this.node.on(&apos;事件名&apos;,function(event){
+
+“具体方法函数内容”
+
+},this);
+//发送带参数的监听
+this.node.emit(&apos;事件名&apos;,{id:1001});
+cc.eventManager.addListener(listener, node);//添加事件
+cc.eventManager.removeListener((listener);//移除事件
+</code></pre><h2 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h2><pre><code>cc.director.pause();//暂停
+cc.director.resume();//继续
+cc.director.end();//退出整个应用
+cc.log(变量)  或 console.log(something);//输出想要的信息
+let self = this;//锁定当前使用的this指向
+node.getLocalZOrder();//层级获取
+node.setLocalZOrder(1);//层级改变
+cc.find(&apos;canvas/map&apos; + num)//读取带变量的路径
+cc.sys.openURL(&apos;Http://www.baidu.com&apos;);//打开网页</code></pre><h2 id="全屏"><a href="#全屏" class="headerlink" title="全屏"></a>全屏</h2><pre><code>if (cc.screen.fullScreen()) {
+     cc.screen.exitFullScreen();
+}else cc.screen.requestFullScreen();</code></pre>
+</article>
+
+
+  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;"></div>
+  
+</div>
+
+<script src="/js/layout/index.js"></script>
 
 
 
-</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined" rel="external nofollow noopener noreferrer" target="_blank">西风吹盛夏</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://xieyaxin.top/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/">https://xieyaxin.top/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external nofollow noopener noreferrer">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://xieyaxin.top" target="_blank">时光之城</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/cocos/">cocos</a></div><div class="post_share"><div class="social-share" data-image="/top/8.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2020/04/20/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/"><img class="prev-cover" data-src="/top/5.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">git本地多账号配置</div></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
-  var from = from
-  var setting = set.split(',').filter(function(item){
-  return from.indexOf(item) > -1
+  <script>
+    var script = document.createElement('script');
+    script.async = true;
+    script.src="//unpkg.com/valine/dist/Valine.min.js"
+    script.onload = function(){
+      new Valine({
+        el: '#vcomments',
+        appId: 'WtelXWOsz6zEJvXGl3LToHOK-MdYXbMMI',
+        appKey: 'B9X5fQyROCs2pFu7yt0NeLIP'
+      })
+      var el = document.getElementById('vcomments');
+      if (el) {
+        el.classList.add("animate__fadeIn");
+        el.setAttribute("data-wow-duration","1s");
+        el.classList.add("wow");
+      }
+    }
+    document.body.appendChild(script)
+  </script>
+
+<script>
+  var wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
   });
-  setting = setting.length == 0 ? from :setting;
-  return setting
-}
+  wow.init(); 
+</script>
 
-var guestInfo = requestSetting(['nick','mail','link'],'nick,mail,link')
-var requiredFields = requestSetting(['nick','mail'],'nick,mail')
 
-window.valine = new Valine({
-  el:'#vcomment',
-  appId: 'WtelXWOsz6zEJvXGl3LToHOK-MdYXbMMI',
-  appKey: 'B9X5fQyROCs2pFu7yt0NeLIP',
-  placeholder: '说点什么呢？',
-  avatar: 'monsterid',
-  meta: guestInfo,
-  pageSize: '10',
-  lang: 'zh-CN',
-  recordIP: true,
-  serverURLs: '',
-  emojiCDN: '',
-  emojiMaps: "",
-  enableQQ: true,
-  requiredFields: requiredFields
-});</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By 西风吹盛夏</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="external nofollow noopener noreferrer"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="external nofollow noopener noreferrer"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button id="readmode" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" title="缩小字体"><i class="fas fa-minus"></i></button><button class="translate_chn_to_cht" id="translateLink" title="简繁转换">繁</button><button id="darkmode" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fas fa-comments"></i></a><button class="close" id="mobile-toc-button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="external nofollow noopener noreferrer" style="color:#49B1F5;">hexo-generator-search</a>
- <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/third-party/ClickShowText.js"></script><script src="/js/search/local-search.js"></script></body></html>

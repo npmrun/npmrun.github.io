@@ -1,175 +1,455 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>时光之城</title><meta name="description"><meta name="author" content="西风吹盛夏"><meta name="copyright" content="西风吹盛夏"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://xieyaxin.top/page/2/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"><link rel="preconnect" href="//busuanzi.ibruce.info"><meta property="og:type" content="website"><meta property="og:title" content="时光之城"><meta property="og:url" content="https://xieyaxin.top/page/2/"><meta property="og:site_name" content="时光之城"><meta property="og:description"><meta property="og:image" content="https://xieyaxin.top/static/avatar.jpg"><meta property="article:published_time" content="2020-08-17T13:57:49.469Z"><meta property="article:modified_time" content="2020-08-17T13:57:49.469Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
-  }
-}
-var activateLightMode = function () {
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
-  }
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>时光👎</title>
+    <!-- 响应式的关键，不设置的话页面会自动缩小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href>
+    
+<script src="/lib/highlight.min.js"></script>
+ 
+    <!-- 
+<script src="/lib/highlightjs-line-numbers.min.js"></script>
+  -->
+    <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+      // hljs.initLineNumbersOnLoad();
+    </script>
+    
+<link rel="stylesheet" href="/assets/init.css">
+ 
+    
+<link rel="stylesheet" href="/assets/scroll.css">
 
-var getCookies = function (name) {
-  const value = `; ${document.cookie}`
-  const parts = value.split(`; ${name}=`)
-  if (parts.length === 2) return parts.pop().split(';').shift()
-}
+    
+<link rel="stylesheet" href="/assets/github.css">
+ 
+    
+<link rel="stylesheet" href="/assets/gitcode.css">
+ 
+    
+<link rel="stylesheet" href="/assets/index.css">
 
-var autoChangeMode = 'false'
-var t = getCookies('theme')
-if (autoChangeMode === '1') {
-  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    <script src="https://cdn.bootcdn.net/ajax/libs/graingert-wow/1.1.2/wow.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    
+    
+      
+<link rel="stylesheet" href="/css/index/index.css">
 
-  if (t === undefined) {
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport) {
-      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      var now = new Date()
-      var hour = now.getHours()
-      var isNight = hour <= 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
-    }
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-      if (Cookies.get('theme') === undefined) {
-        e.matches ? activateDarkMode() : activateLightMode()
-      }
-    })
-  } else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else if (autoChangeMode === '2') {
-  now = new Date()
-  hour = now.getHours()
-  isNight = hour <= 6 || hour >= 18
-  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else {
-  if (t === 'dark') activateDarkMode()
-  else if (t === 'light') activateLightMode()
-}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
-  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  bookmark: {
-    message_prev: '按',
-    message_next: '键将本页加入书签'
-  },
-  runtime_unit: '天',
-  runtime: true,
-  copyright: undefined,
-  ClickShowText: {"text":"I,LOVE,YOU","fontSize":"15px"},
-  medium_zoom: false,
-  fancybox: true,
-  Snackbar: undefined,
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
-  },
-  baiduPush: false,
-  highlightCopy: true,
-  highlightLang: true,
-  isPhotoFigcaption: false,
-  islazyload: true,
-  isanchor: false    
-}</script><script>var GLOBAL_CONFIG_SITE = { 
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isSidebar: false
-  }</script><noscript><style>
-#nav {
-  opacity: 1
-}
-.justified-gallery img{
-  opacity: 1
-}
-</style></noscript><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="时光之城" type="application/atom+xml">
-</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/static/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">13</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">2</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">12</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> 特色</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 留言板</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/top/7.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">时光之城</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> 特色</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 留言板</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">时光之城</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/npmrun" target="_blank" title="Github" rel="external nofollow noopener noreferrer"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1549469775@qq.com" target="_blank" title="Email" rel="external nofollow noopener noreferrer"><i class="fas fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/04/23/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" title="内网穿透">     <img class="post_bg" data-src="/top/8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="内网穿透"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/04/23/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" title="内网穿透">内网穿透</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-04-23 13:32:36"><i class="far fa-calendar-alt"></i>2020-04-23</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a></span></div><div class="content">
-主题：内网穿透概述：这是工具推荐类文章，推荐的是frp库，经由国人开发，主要是把内网的网页进行映射，使得可以再公网访问，前提是有一个公网服务器。
+    
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="时光之城" type="application/atom+xml">
+</head>
+  <body>
+    </body></html>
+
+<div class="page-wrapper">
+  <header class="header-wrapper session-wrapper wow animate__slideInDown" data-wow-duration="1s">
+  <a href="/" class="title" title="home">home</a>
+  <ol class="right-menu">  
+  
+    <li title="首页"><a href="/">首页</a></li>
+  
+    <li title="关于"><a href="/about">关于</a></li>
+  
+    <li title="友情链接"><a href="/link">友情链接</a></li>
+   
+  
+</ol></header>
+  <ol class="article-list session-wrapper">
+  
+    
+    
+    
+    
+    
+    
+    
+      <li style="border: 3px dotted rgba(222, 167, 194, 0.9228757461742847);padding: 20px 30px;" class="article-list__item wow animate__slideInLeft" data-wow-duration=".5s">
+        <a href="/2020/07/19/animation/TweenMax动画教程/">
+          <h2 class="article-list__title">TweenMax动画教程</h2>
+          <div class="article-list__meta">
+            <p class="article-list__author">作者:西风吹盛夏</p>
+            <p class="article-list__time">更新:2020-09-17</p>
+          </div>
+          <!-- <span class="article-list__label">-1</span> -->
+          <div class="article-list__content markdown-body"><blockquote>
+<p>主题：<a href="https://www.tweenmax.com.cn/api/tweenmax/" target="_blank" rel="external nofollow noopener noreferrer">TweenMax</a>动画教程<br>
+概述：主要进行对<a href="https://www.tweenmax.com.cn/api/tweenmax/" target="_blank" rel="external nofollow noopener noreferrer">TweenMax</a>的学习</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2>简单使用</h2>
+<ul>
+<li>
+<p>第一步，自然是引入TweenMax库了，这个官方可以找到。</p>
+</li>
+<li>
+<p>最基础的使用，我们制作一个逐渐隐藏的红色方块吧。</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=
+</code></pre>
+</li>
+</ul>
+</div>
+        </a>
+      </li>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <li style="border: 3px dotted rgba(250, 185, 136, 0.8940414177510722);padding: 20px 30px;" class="article-list__item wow animate__slideInRight" data-wow-duration=".5s">
+        <a href="/2020/07/12/虚拟机/有关vmware中主机访问虚拟机端口/">
+          <h2 class="article-list__title">有关vmware中主机访问虚拟机端口</h2>
+          <div class="article-list__meta">
+            <p class="article-list__author">作者:西风吹盛夏</p>
+            <p class="article-list__time">更新:2020-09-17</p>
+          </div>
+          <!-- <span class="article-list__label">-1</span> -->
+          <div class="article-list__content markdown-body"><blockquote>
+<p>主题：主要是为了试一下nginx配置rtmp的网络推拉流<br>
+概述：了解以下虚拟机与主机的端口映射基本操作</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<ol>
+<li>
+<p>确认你的虚拟机的网络适配器是<code>NAT</code></p>
+<p><img src="/static/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E6%9C%89%E5%85%B3vmware%E4%B8%AD%E4%B8%BB%E6%9C%BA%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AB%AF%E5%8F%A3/images/image-20200712231430886.png" alt="image-20200712231430886"></p>
+</li>
+<li>
+<p>当然，我们首先打开<code>VMware </code>中的虚拟机，我用的是<code>elementoryOS中文版</code></p>
+<p>![image-20200712230538875](/static/虚拟机/有关vmw</p>
+</li>
+</ol>
+</div>
+        </a>
+      </li>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <li style="border: 3px dotted rgba(212, 148, 11, 0.5610906783218593);padding: 20px 30px;" class="article-list__item wow animate__slideInLeft" data-wow-duration=".5s">
+        <a href="/2020/07/08/前端/关于移动端h5页面不能滑动问题的解决办法/">
+          <h2 class="article-list__title">关于移动端h5页面不能滑动问题的解决办法</h2>
+          <div class="article-list__meta">
+            <p class="article-list__author">作者:西风吹盛夏</p>
+            <p class="article-list__time">更新:2020-09-17</p>
+          </div>
+          <!-- <span class="article-list__label">-1</span> -->
+          <div class="article-list__content markdown-body"><blockquote>
+<p>主题：<br>
+概述：</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>有的人说如果我写很多个p标签不写任何样式看能不能滑动，如果能滑动说明是样式的原因，要是也不能滑动那就应该是js的原因，是有一定的道理的，但是先别忘了看一下你的html或body是不是加了<code>height：100%；overflow：hidden</code></p>
+<ol>
+<li>
+<p>下面分先说css的问题，主要排查<code>overflow：hidden</code>；</p>
+<p>检查也有一定的顺序，检查超出高度的标签是否用了<code>overflow：hidden</code>；最好先检查<code>html</code>或<code>body</code>是不是加了<code>height：100%</code>；<code>overflow：hidden</code>；然</p>
+</li>
+</ol>
+</div>
+        </a>
+      </li>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <li style="border: 3px dotted rgba(38, 66, 244, 0.6944326061554585);padding: 20px 30px;" class="article-list__item wow animate__slideInRight" data-wow-duration=".5s">
+        <a href="/2020/07/05/前端/网络相关/Ajax简述/">
+          <h2 class="article-list__title">Ajax简述</h2>
+          <div class="article-list__meta">
+            <p class="article-list__author">作者:西风吹盛夏</p>
+            <p class="article-list__time">更新:2020-09-17</p>
+          </div>
+          <!-- <span class="article-list__label">-1</span> -->
+          <div class="article-list__content markdown-body"><blockquote>
+<p>主题：Ajax的使用与意义<br>
+概述：为了加深基础的理解，能够在不借助库的情况下实现不同方式的请求才能够更好的理解那些异步请求库的工作流程</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><strong>AJAX 是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。</strong></p>
+<p>如上，我们不需要重新加载页面就能够更新页面的数据，AJAX的出现意味着颠覆了传统的开发模式，使得页面更加的流畅，用户体验能够做到极致。</p>
+<p>其中，<strong>XMLHttpRequest 是 AJAX 的基础。</strong></p>
+<h2>什么是XMLHttpRequest 呢？</h2>
+<p>所有现代浏览器均支持 <code>XMLHttpRequest</code> 对象（I</p>
+</div>
+        </a>
+      </li>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <li style="border: 3px dotted rgba(166, 238, 55, 0.9330578471786346);padding: 20px 30px;" class="article-list__item wow animate__slideInLeft" data-wow-duration=".5s">
+        <a href="/2020/07/04/前端/知识/html的加载事件DOMContentLoaded和load/">
+          <h2 class="article-list__title">html的加载事件DOMContentLoaded和load</h2>
+          <div class="article-list__meta">
+            <p class="article-list__author">作者:西风吹盛夏</p>
+            <p class="article-list__time">更新:2020-09-17</p>
+          </div>
+          <!-- <span class="article-list__label">-1</span> -->
+          <div class="article-list__content markdown-body"><blockquote>
+<p>主题：html的加载事件DOMContentLoaded和load<br>
+概述：有关html的加载事件的粗略整理，用于后面快速理解</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2>页面加载方式</h2>
+<ol>
+<li>解析HTML结构。</li>
+<li>加载并解析外部脚本。</li>
+<li>DOM树构建完成，执行脚本。//DOMInteractive –&gt; DOMContentLoaded</li>
+<li>加载图片、样式表文件等外部文件。</li>
+<li>页面加载完毕。//window.onload</li>
+</ol>
+<h2>涉及到的事件</h2>
+<ol>
+<li>window.onload:<br>
+当页面全部加载完成（包括所有资源）</li>
+<li>document.onload</li>
+</ol>
+</div>
+        </a>
+      </li>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <li style="border: 3px dotted rgba(88, 151, 127, 0.821230157375744);padding: 20px 30px;" class="article-list__item wow animate__slideInRight" data-wow-duration=".5s">
+        <a href="/2020/05/14/前端/scss主题切换功能/">
+          <h2 class="article-list__title">scss主题切换功能</h2>
+          <div class="article-list__meta">
+            <p class="article-list__author">作者:西风吹盛夏</p>
+            <p class="article-list__time">更新:2020-09-17</p>
+          </div>
+          <!-- <span class="article-list__label">-1</span> -->
+          <div class="article-list__content markdown-body"><blockquote>
+<p>主题：scss主题切换功能<br>
+概述：该文章主要为了实现css切换主题的功能，这只是一种方法，别的方式也可以实现。</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>结构类似下面这样：</p>
+<p><img src="/static/%E5%89%8D%E7%AB%AF/scss%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2%E5%8A%9F%E8%83%BD/images/image-20200514140159247.png" alt="image-20200514140159247"></p>
+<p><strong><code>index.html</code></strong></p>
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;zh&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot;
+ 
+</code></pre>
+</div>
+        </a>
+      </li>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <li style="border: 3px dotted rgba(113, 88, 245, 0.6851674281383283);padding: 20px 30px;" class="article-list__item wow animate__slideInLeft" data-wow-duration=".5s">
+        <a href="/2020/04/23/工具/内网穿透/">
+          <h2 class="article-list__title">内网穿透</h2>
+          <div class="article-list__meta">
+            <p class="article-list__author">作者:西风吹盛夏</p>
+            <p class="article-list__time">更新:2020-09-17</p>
+          </div>
+          <!-- <span class="article-list__label">-1</span> -->
+          <div class="article-list__content markdown-body"><blockquote>
+<p>主题：内网穿透<br>
+概述：这是工具推荐类文章，推荐的是<a href="https://github.com/fatedier/frp/blob/master/README_zh.md" target="_blank" rel="external nofollow noopener noreferrer">frp</a>库，经由国人开发，主要是把内网的网页进行映射，使得可以再公网访问，前提是有一个公网服务器。</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3>准备</h3>
+<ul>
+<li>
+<p>公网服务器 IP 140.140.192.192</p>
+</li>
+<li>
+<p>域名 www.good.com 解析至上面的服务器</p>
+</li>
+<li>
+<p>本地运行的服务</p>
+</li>
+</ul>
+<h3>效果</h3>
+<p>利用<code>frp</code>，可以实现任何人都可以通过配置的端口如 <code>www.good.com:7001</code> 访问我本机的`</p>
+</div>
+        </a>
+      </li>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <li style="border: 3px dotted rgba(204, 22, 81, 0.9933501911069877);padding: 20px 30px;" class="article-list__item wow animate__slideInRight" data-wow-duration=".5s">
+        <a href="/2020/04/20/git/git本地多账号配置/">
+          <h2 class="article-list__title">git本地多账号配置</h2>
+          <div class="article-list__meta">
+            <p class="article-list__author">作者:西风吹盛夏</p>
+            <p class="article-list__time">更新:2020-09-17</p>
+          </div>
+          <!-- <span class="article-list__label">-1</span> -->
+          <div class="article-list__content markdown-body"><h3>前提条件</h3>
+<ul>
+<li><code>git环境</code></li>
+</ul>
+<!-- raw HTML omitted -->
+<h3>生成第一个账号的密钥</h3>
+<p>先确保你已经有多个git账号（如：一个github的账号、一个码云的账号、…）。</p>
+<p>在Git Bash Here的控制台里输入：</p>
+<p><code>git config --global user.name &quot;你的名称&quot;  </code></p>
+<p><code>git config --global user.email &quot;你的邮箱&quot;  </code></p>
+<p>这里的邮箱是你申请git账号时的邮箱，不报错就是正确的，继续往下走</p>
+<p>输入 <code>ssh-keygen -t rsa -C &quot;你的邮箱&quot;</code>  回车，再连续3次回车见下图：</p>
+<p>此时看下图中有一行</p>
+</div>
+        </a>
+      </li>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <li style="border: 3px dotted rgba(236, 173, 184, 0.8314635600314022);padding: 20px 30px;" class="article-list__item wow animate__slideInLeft" data-wow-duration=".5s">
+        <a href="/2020/04/07/cocos/cocos-creator常用api/">
+          <h2 class="article-list__title">cocos creator常用api</h2>
+          <div class="article-list__meta">
+            <p class="article-list__author">作者:西风吹盛夏</p>
+            <p class="article-list__time">更新:2020-09-17</p>
+          </div>
+          <!-- <span class="article-list__label">-1</span> -->
+          <div class="article-list__content markdown-body"><blockquote>
+<p>主题：cocos creator常用api<br>
+概述：收集cocos creator常用的函数，防止老年痴呆，记得东西太多会使自己混乱，写下来才是王道。</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<blockquote>
+<p>https://blog.csdn.net/sotmwhat/article/details/93884076</p>
+</blockquote>
+<h3>给自己的忠告</h3>
+<ol>
+<li>异步读取的必须要判断节点或者组件是否isValid可用</li>
+<li>龙骨动画节点中途中断并重新执行，异步的情况下并不会触发结束，导致后面的代码无法执行，处理时开一个定时器当作判断，而不是用动画结束判断</li>
+<li>文件名就算在不同文件夹最好也不要一样</li>
+<li></li>
+</ol>
+</div>
+        </a>
+      </li>
+    
+  
+</ol>
+<div class="pagination session-wrapper wow animate__slideInUp" data-wow-duration="1s">
+  <ul class="pagination-list">
+    
+      <li class="pagination-list__item">
+        <a href="/">上一页</a>
+      </li>
+    
+    
+    
+    
+    
+      <li class="pagination-list__item ">
+        
+        
+          <a href="/">1</a>
+        
+      </li>
+    
+      <li class="pagination-list__item active">
+        
+          <a href="/page/2/">2</a>
+        
+        
+      </li>
+    
+    
+    
+  </ul>
+</div>
+</div>
+
+<script src="/js/layout/index.js"></script>
 
 
 
-
-准备
-公网服务器 IP 140.140.192.192
-
-域名 www.good.com 解析至上面的服务器
-
-本地运行的服务
-
-
-效果利用frp，可以实现任何人都可以通过配置的端口如 www.good.com:7001 访问我本机的hbuilder网页应用
-方法服务器和内网本机分别下载对应系统平台的frp，这里ubuntu服务器需要下载linux_arm_64， mac本机是frp_0.32.1_windows_amd64.zip
-
-先配服务端
-linux_arm_64文件包在服务器上下载解压，编辑 frps.ini， 然后启动 ./frps -c ./frps.ini，放后台启动命令 nohup ./frps -c ./frps.ini &amp;，配置修改如下
-1234[common]bind_port = 7000 # 自己设定的frp服务端端口# 客户端定义的端口,自己设定的http访问端口，通过这里就能访问内网了vhos ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/04/20/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/" title="git本地多账号配置">     <img class="post_bg" data-src="/top/5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="git本地多账号配置"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/04/20/git/git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/" title="git本地多账号配置">git本地多账号配置</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-04-20 10:59:02"><i class="far fa-calendar-alt"></i>2020-04-20</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/git/">git</a></span></div><div class="content">前提条件
-git环境
-
-
-
-生成第一个账号的密钥先确保你已经有多个git账号（如：一个github的账号、一个码云的账号、…）。
-在Git Bash Here的控制台里输入：
-git config --global user.name &quot;你的名称&quot;
-git config --global user.email &quot;你的邮箱&quot;
-这里的邮箱是你申请git账号时的邮箱，不报错就是正确的，继续往下走
-输入 ssh-keygen -t rsa -C &quot;你的邮箱&quot;  回车，再连续3次回车见下图：
-此时看下图中有一行提示：Your public key has been saved in /c/Users/xxx/.ssh/id_rsa.pub
-到该路径（C/Users/xxx/.ssh）可以看见两个文件：id_rsa、id_rsa.pub 。
-
-把密钥添加进git账号中：
-用编辑器打开id_rsa.pub，推荐使用Notepad++，不要使用记事本打开，因为记事本的默认编码不是utf-8，拷贝里面的全部内容，登录你其中一个git 账号，例如 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/" title="cocos creator常用api">     <img class="post_bg" data-src="/top/2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="cocos creator常用api"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/04/07/cocos/cocos-creator%E5%B8%B8%E7%94%A8api/" title="cocos creator常用api">cocos creator常用api</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-04-07 13:41:11"><i class="far fa-calendar-alt"></i>2020-04-07</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/cocos/">cocos</a></span></div><div class="content">
-主题：cocos creator常用api概述：收集cocos creator常用的函数，防止老年痴呆，记得东西太多会使自己混乱，写下来才是王道。
-
-
-
-
-
-https://blog.csdn.net/sotmwhat/article/details/93884076
-
-给自己的忠告
-异步读取的必须要判断节点或者组件是否isValid可用
-龙骨动画节点中途中断并重新执行，异步的情况下并不会触发结束，导致后面的代码无法执行，处理时开一个定时器当作判断，而不是用动画结束判断
-文件名就算在不同文件夹最好也不要一样
-文件名里面注意可能手贱多打的空格，cocos不会帮你清掉
-处理每一个需求的时候先考虑高可用性，而不是性能，毕竟手机越来越好，放弃低端机
-ts文件只导出一个对象的时候，游戏可能报错，这时候在这个文件中随便改点东西保存就好了
-依赖的路径一定要写对，最好全部用绝对路径，按住ctrl能打开的那种
-
-场景加载123cc.director.loadScene('场景名称');//场景跳转cc.director.preloadScene('场景名称');//预加载场景cc.director.g ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/static/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"><div class="author-info__name">西风吹盛夏</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">13</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">2</div></a></div><div class="card-info-data-item is-center">     <a href="/categories"><div class="headline">分类</div><div class="length_num">12</div></a></div></div><div class="card-info-bookmark is-center"><button class="button--animated" id="bookmark-it" title="加入书签"><i class="fas fa-bookmark"></i><span>加入书签</span></button></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/npmrun" target="_blank" title="Github" rel="external nofollow noopener noreferrer"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1549469775@qq.com" target="_blank" title="Email" rel="external nofollow noopener noreferrer"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">欢迎来到时光之城！</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a href="/2020/08/15/font/CSS3.0%E4%BD%BF%E7%94%A8@font-face%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/top/8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="CSS3.0使用@font-face自定义字体" alt="CSS3.0使用@font-face自定义字体"></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/08/15/font/CSS3.0%E4%BD%BF%E7%94%A8@font-face%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93/" title="CSS3.0使用@font-face自定义字体">CSS3.0使用@font-face自定义字体</div><time class="aside-post_meta post-meta__date" title="发表于 2020-08-15 10:34:04">2020-08-15</time></div></a></div><div class="aside-recent-post"><a href="/2020/08/14/vue/vue/vue%E4%B8%AD%E8%BF%9B%E8%A1%8C%E5%A4%9A%E5%B1%82%E7%BB%84%E4%BB%B6%E7%9B%91%E5%90%AC/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/top/8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="vue中进行多层组件监听" alt="vue中进行多层组件监听"></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/08/14/vue/vue/vue%E4%B8%AD%E8%BF%9B%E8%A1%8C%E5%A4%9A%E5%B1%82%E7%BB%84%E4%BB%B6%E7%9B%91%E5%90%AC/" title="vue中进行多层组件监听">vue中进行多层组件监听</div><time class="aside-post_meta post-meta__date" title="发表于 2020-08-14 18:12:07">2020-08-14</time></div></a></div><div class="aside-recent-post"><a href="/2020/08/13/storybook/%E6%9C%89%E5%85%B3storybookreadme%E7%9A%84%E5%9C%A8vue%E8%A7%A3%E6%9E%90docss%E6%A0%87%E7%AD%BE%E7%9A%84%E9%97%AE%E9%A2%98/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/top/8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="有关storybookreadme的在vue解析docs标签的问题" alt="有关storybookreadme的在vue解析docs标签的问题"></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/08/13/storybook/%E6%9C%89%E5%85%B3storybookreadme%E7%9A%84%E5%9C%A8vue%E8%A7%A3%E6%9E%90docss%E6%A0%87%E7%AD%BE%E7%9A%84%E9%97%AE%E9%A2%98/" title="有关storybookreadme的在vue解析docs标签的问题">有关storybookreadme的在vue解析docs标签的问题</div><time class="aside-post_meta post-meta__date" title="发表于 2020-08-13 22:24:38">2020-08-13</time></div></a></div><div class="aside-recent-post"><a href="/2020/08/06/vue/vue/%E6%9C%89%E5%85%B3%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84vuex%E6%A8%A1%E5%BC%8F%EF%BC%8C%E8%80%8C%E4%B8%8D%E5%BC%95%E5%85%A5%E6%95%B4%E4%B8%AAvuex/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/top/4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="有关构建一个简单的vuex模式，而不引入整个vuex" alt="有关构建一个简单的vuex模式，而不引入整个vuex"></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/08/06/vue/vue/%E6%9C%89%E5%85%B3%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84vuex%E6%A8%A1%E5%BC%8F%EF%BC%8C%E8%80%8C%E4%B8%8D%E5%BC%95%E5%85%A5%E6%95%B4%E4%B8%AAvuex/" title="有关构建一个简单的vuex模式，而不引入整个vuex">有关构建一个简单的vuex模式，而不引入整个vuex</div><time class="aside-post_meta post-meta__date" title="发表于 2020-08-06 16:30:46">2020-08-06</time></div></a></div><div class="aside-recent-post"><a href="/2020/07/19/animation/TweenMax%E5%8A%A8%E7%94%BB%E6%95%99%E7%A8%8B/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/top/3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="TweenMax动画教程" alt="TweenMax动画教程"></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/07/19/animation/TweenMax%E5%8A%A8%E7%94%BB%E6%95%99%E7%A8%8B/" title="TweenMax动画教程">TweenMax动画教程</div><time class="aside-post_meta post-meta__date" title="发表于 2020-07-19 00:05:05">2020-07-19</time></div></a></div></div></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/cocos/" style="font-size: 16px; color: #999">cocos</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 16px; color: #999">工具</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/05/"><span class="card-archive-list-date">五月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/04/"><span class="card-archive-list-date">四月 2020</span><span class="card-archive-list-count">3</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">13</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已运行时间 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" publish_date="2018/5/10">     </div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By 西风吹盛夏</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="external nofollow noopener noreferrer"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="external nofollow noopener noreferrer"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button class="translate_chn_to_cht" id="translateLink" title="简繁转换">繁</button><button id="darkmode" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="external nofollow noopener noreferrer" style="color:#49B1F5;">hexo-generator-search</a>
- <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/third-party/ClickShowText.js"></script><script src="/js/search/local-search.js"></script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var subtitleType = function () {
-  loadScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js',function () {
-      var subtitleEffect = true
-      jinrishici.load(function (result) {
-        if (subtitleEffect) {
-          var sub = "今日事&#44;今日畢,Never put off till tomorrow what you can do today".length == 0 ? new Array() : "今日事&#44;今日畢,Never put off till tomorrow what you can do today".split(',')
-          var content = result.data.content
-          var both = sub.unshift(content)
-          var typed = new Typed('#subtitle', {
-            strings: sub,
-            startDelay: 300,
-            typeSpeed: 150,
-            loop: true,
-            backSpeed: 50,
-          })
-        } else {
-          document.getElementById('subtitle').innerHTML = result.data.content
-        }
+  <script>
+    var script = document.createElement('script');
+    script.async = true;
+    script.src="//unpkg.com/valine/dist/Valine.min.js"
+    script.onload = function(){
+      new Valine({
+        el: '#vcomments',
+        appId: 'WtelXWOsz6zEJvXGl3LToHOK-MdYXbMMI',
+        appKey: 'B9X5fQyROCs2pFu7yt0NeLIP'
       })
+      var el = document.getElementById('vcomments');
+      if (el) {
+        el.classList.add("animate__fadeIn");
+        el.setAttribute("data-wow-duration","1s");
+        el.classList.add("wow");
+      }
     }
-  )
-}
-window.addEventListener('load', subtitleType)
-</script></body></html>
+    document.body.appendChild(script)
+  </script>
+
+<script>
+  var wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+  });
+  wow.init(); 
+</script>
+
+

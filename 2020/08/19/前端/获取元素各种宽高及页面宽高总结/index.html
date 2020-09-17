@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>时光👎</title>
+    <!-- 响应式的关键，不设置的话页面会自动缩小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href>
+    
+<script src="/lib/highlight.min.js"></script>
+ 
+    <!-- 
+<script src="/lib/highlightjs-line-numbers.min.js"></script>
+  -->
+    <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+      // hljs.initLineNumbersOnLoad();
+    </script>
+    
+<link rel="stylesheet" href="/assets/init.css">
+ 
+    
+<link rel="stylesheet" href="/assets/scroll.css">
+
+    
+<link rel="stylesheet" href="/assets/github.css">
+ 
+    
+<link rel="stylesheet" href="/assets/gitcode.css">
+ 
+    
+<link rel="stylesheet" href="/assets/index.css">
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/graingert-wow/1.1.2/wow.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    
+    
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="时光之城" type="application/atom+xml">
+</head>
+  <body>
+    </body></html>
+
+<div class="page-wrapper">
+  <header class="header-wrapper session-wrapper wow animate__slideInDown" data-wow-duration="1s">
+  <a href="/" class="title" title="home">home</a>
+  <ol class="right-menu">  
+  
+    <li title="首页"><a href="/">首页</a></li>
+  
+    <li title="关于"><a href="/about">关于</a></li>
+  
+    <li title="友情链接"><a href="/link">友情链接</a></li>
+   
+  
+</ol></header>
+  <div class="article-list session-wrapper" style="min-height: auto;margin-top:40px;">
+  <!-- <h2 class="article-list__title">获取元素各种宽高及页面宽高总结</h2> -->
+  <div class="article-list__meta">
+    <p class="article-list__author">author西风吹盛夏</p>
+    <p class="article-list__time">updated:2020-09-17</p>
+  </div>
+</div>
+<article class="markdown-body article  session-wrapper wow animate__fadeIn " data-wow-duration="1s">
+  <blockquote>
+<p>主题：获取元素各种宽高及页面宽高总结<br>概述：获取元素各种宽高及页面宽高总结</p>
+</blockquote>
+<!--正文-->
+<!--more-->
+
+<p>当网页并没有设置overflow:hidden而被卷曲时，卷曲的就是html，可以用document.documentElement.scrollTop获取被卷曲的高度</p>
+<pre><code>window.onload=function(){
+    var a = $(&quot;#div&quot;).width(),//width()返回元素的宽高，不包括padding/border/margin
+        b = $(&quot;#div&quot;).innerWidth(),//innerWidth()返回元素的宽高 + padding
+        c = $(&quot;#div&quot;).outerWidth(),//outerWidth()返回元素的宽高 + padding + border
+        d = $(&quot;#div&quot;).outerWidth(true);//outerWidth(true)返回元素宽高 + padding + border + margin
+    console.log(a,b,c,d);
+}</code></pre><p><strong>获取浏览器显示区域（可视区域）的高度 ：</strong><br><code>$(window).height();</code> </p>
+<p><strong>获取浏览器显示区域（可视区域）的宽度 ：</strong><br><code>$(window).width();</code></p>
+<p><strong>获取页面的文档高度</strong><br><code>$(document).height();</code></p>
+<p><strong>获取页面的文档宽度</strong><br><code>$(document).width();</code></p>
+<p><strong>浏览器当前窗口文档body的高度</strong><br><code>$(document.body).height();</code> </p>
+<p><strong>浏览器当前窗口文档body的宽度</strong><br><code>$(document.body).width();</code> </p>
+<p><strong>获取滚动条到顶部的垂直高度(即网页被卷上去的高度)</strong><br><code>$(document).scrollTop();</code></p>
+<p><strong>获取滚动条到左边的垂直宽度</strong><br><code>$(document).scrollLeft();</code>   </p>
+<p><strong>获取或设置元素的宽度</strong><br><code>$(obj).width();</code></p>
+<p><strong>获取或设置元素的高度</strong> </p>
+<p><code>$(obj).height();</code></p>
+<p><strong>某个元素的上边界到body最顶部的距离</strong><br><code>obj.offset().top;</code>（在元素的包含元素不含滚动条的情况下） </p>
+<p><strong>某个元素的左边界到body最左边的距离</strong><br><code>obj.offset().left;</code>（在元素的包含元素不含滚动条的情况下）  </p>
+<p><strong>返回当前元素的上边界到它的包含元素的上边界的偏移量</strong><br><code>obj.offset().top</code>（在元素的包含元素含滚动条的情况下）  </p>
+<p><strong>返回当前元素的左边界到它的包含元素的左边界的偏移量</strong><br><code>obj.offset().left</code>（在元素的包含元素含滚动条的情况下）  </p>
+<blockquote>
+<p><code>Element.getBoundingClientRect()</code> 方法返回元素的大小及其相对于视口的位置。</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect</a></p>
+<p><a href="https://blog.csdn.net/gs6511/article/details/53900761" target="_blank" rel="external nofollow noopener noreferrer">https://blog.csdn.net/gs6511/article/details/53900761</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/1106529" target="_blank" rel="external nofollow noopener noreferrer">https://cloud.tencent.com/developer/article/1106529</a></p>
+</blockquote>
+
+</article>
+
+
+  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;"></div>
+  
+</div>
+
+<script src="/js/layout/index.js"></script>
+
+
+
+  <script>
+    var script = document.createElement('script');
+    script.async = true;
+    script.src="//unpkg.com/valine/dist/Valine.min.js"
+    script.onload = function(){
+      new Valine({
+        el: '#vcomments',
+        appId: 'WtelXWOsz6zEJvXGl3LToHOK-MdYXbMMI',
+        appKey: 'B9X5fQyROCs2pFu7yt0NeLIP'
+      })
+      var el = document.getElementById('vcomments');
+      if (el) {
+        el.classList.add("animate__fadeIn");
+        el.setAttribute("data-wow-duration","1s");
+        el.classList.add("wow");
+      }
+    }
+    document.body.appendChild(script)
+  </script>
+
+<script>
+  var wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+  });
+  wow.init(); 
+</script>
+
+

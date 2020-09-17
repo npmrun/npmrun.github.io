@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>时光👎</title>
+    <!-- 响应式的关键，不设置的话页面会自动缩小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href>
+    
+<script src="/lib/highlight.min.js"></script>
+ 
+    <!-- 
+<script src="/lib/highlightjs-line-numbers.min.js"></script>
+  -->
+    <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+      // hljs.initLineNumbersOnLoad();
+    </script>
+    
+<link rel="stylesheet" href="/assets/init.css">
+ 
+    
+<link rel="stylesheet" href="/assets/scroll.css">
+
+    
+<link rel="stylesheet" href="/assets/github.css">
+ 
+    
+<link rel="stylesheet" href="/assets/gitcode.css">
+ 
+    
+<link rel="stylesheet" href="/assets/index.css">
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/graingert-wow/1.1.2/wow.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    
+    
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="时光之城" type="application/atom+xml">
+</head>
+  <body>
+    </body></html>
+
+<div class="page-wrapper">
+  <header class="header-wrapper session-wrapper wow animate__slideInDown" data-wow-duration="1s">
+  <a href="/" class="title" title="home">home</a>
+  <ol class="right-menu">  
+  
+    <li title="首页"><a href="/">首页</a></li>
+  
+    <li title="关于"><a href="/about">关于</a></li>
+  
+    <li title="友情链接"><a href="/link">友情链接</a></li>
+   
+  
+</ol></header>
+  <div class="article-list session-wrapper" style="min-height: auto;margin-top:40px;">
+  <!-- <h2 class="article-list__title">scrollWidth,clientWidth,offsetWidth的区别</h2> -->
+  <div class="article-list__meta">
+    <p class="article-list__author">author西风吹盛夏</p>
+    <p class="article-list__time">updated:2020-09-17</p>
+  </div>
+</div>
+<article class="markdown-body article  session-wrapper wow animate__fadeIn " data-wow-duration="1s">
+  <blockquote>
+<p>主题：scrollWidth,clientWidth,offsetWidth的区别<br>概述：scrollWidth,clientWidth,offsetWidth的区别</p>
+</blockquote>
+<!--正文-->
+<!--more-->
+
+<ul>
+<li><code>scrollWidth</code>：对象的实际内容的宽度，不包边线宽度，会随对象中内容超过可视区后而变大。</li>
+<li><code>clientWidth</code>：对象内容的可视区的宽度，不包滚动条等边线，会随对象显示大小的变化而改变。</li>
+<li><code>offsetWidth</code>：对象整体的实际宽度，包滚动条等边线，会随对象显示大小的变化而改变。</li>
+</ul>
+<p>示例展示：</p>
+<p>该demo就在页面中放一个textarea元素，采用默认宽高显示。</p>
+<p>情况1：</p>
+<p>元素内无内容或者内容不超过可视区，滚动不出现或不可用的情况下。</p>
+<p>scrollWidth=clientWidth，两者皆为内容可视区的宽度。</p>
+<p>offsetWidth为元素的实际宽度。</p>
+<p><img src="/static/%E5%89%8D%E7%AB%AF/scrollWidth,clientWidth,offsetWidth%E7%9A%84%E5%8C%BA%E5%88%AB/images/dd81f5ea107d46c3a87894408db35355.png" alt="img"></p>
+<p>情况2：</p>
+<p>元素的内容超过可视区，滚动条出现和可用的情况下。</p>
+<p>scrollWidth&gt;clientWidth。</p>
+<p>scrollWidth为实际内容的宽度。</p>
+<p>clientWidth是内容可视区的宽度。</p>
+<p>offsetWidth是元素的实际宽度。</p>
+<p><img src="/static/%E5%89%8D%E7%AB%AF/scrollWidth,clientWidth,offsetWidth%E7%9A%84%E5%8C%BA%E5%88%AB/images/32163def3f0742049681f4a7b258e28f.png" alt="img"></p>
+
+</article>
+
+
+  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;"></div>
+  
+</div>
+
+<script src="/js/layout/index.js"></script>
+
+
+
+  <script>
+    var script = document.createElement('script');
+    script.async = true;
+    script.src="//unpkg.com/valine/dist/Valine.min.js"
+    script.onload = function(){
+      new Valine({
+        el: '#vcomments',
+        appId: 'WtelXWOsz6zEJvXGl3LToHOK-MdYXbMMI',
+        appKey: 'B9X5fQyROCs2pFu7yt0NeLIP'
+      })
+      var el = document.getElementById('vcomments');
+      if (el) {
+        el.classList.add("animate__fadeIn");
+        el.setAttribute("data-wow-duration","1s");
+        el.classList.add("wow");
+      }
+    }
+    document.body.appendChild(script)
+  </script>
+
+<script>
+  var wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+  });
+  wow.init(); 
+</script>
+
+
