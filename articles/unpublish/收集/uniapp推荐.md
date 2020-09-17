@@ -40,3 +40,13 @@ top: false
 				  })
 ```
 
+### wxqrcode
+
+```
+import QR from '@/components/wxqrcode/wxqrcode.js'
+
+						let img = QR.createQrCodeImg(text, {
+							size: parseInt(300) //二维码大小  
+						})
+```
+

@@ -1,5 +1,5 @@
 ---
-typora-root-url: webpack中的require.context
+.browserslistrctypora-root-url: webpack中的require.context
 title: webpack中的require.context
 date: 2020-08-01 00:41:15
 tags:

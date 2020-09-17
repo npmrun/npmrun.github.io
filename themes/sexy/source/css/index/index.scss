@@ -1,0 +1,40 @@
+@import "../../assets/_global";
+
+.pagination{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  .pagination-list{
+    display:inline-flex;
+    align-items: center;
+    >*+*{
+      margin-left:10px;
+    }
+    &__item{
+      // width: 40px;
+      list-style: none;
+      height: 40px;
+      background-color: white;
+      border: 1px solid transparent;
+      &:hover{
+        border: 1px solid rgba(0, 0, 0, 0.329);
+      }
+      color: black;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 8%;
+      cursor: pointer;
+      a{
+        padding: 0 18px;
+        height: 40px;
+        display:block;
+      }
+      &.active{
+        a{
+          color: red !important;
+        }
+      }
+    }
+  }
+}
+

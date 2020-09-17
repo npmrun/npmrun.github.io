@@ -1,0 +1,59 @@
+<ol class="article-list session-wrapper">
+  <% site.posts.data.slice((page.current-1)*(config.per_page),page.current*(config.per_page)).forEach(function(post,ik){ %>
+    <% moreIndex = post._content.indexOf(`<!-- more -->`); %>
+    <% index = moreIndex!==-1?moreIndex:theme.auto_more_length?theme.auto_more_length:300; %>
+    <% a = ~~(Math.random()*255) %>
+    <% b = ~~(Math.random()*255) %>
+    <% c = ~~(Math.random()*255) %>
+    <% d = Math.random()*0.5 + 0.5 %>
+    <% if(post.published){ %>
+      <li style="border: 3px dotted rgba(<%-a%>, <%-b%>, <%-c%>, <%-d%>);padding: 20px 30px;" class="article-list__item wow <%- ik%2==0?'animate__slideInLeft':'animate__slideInRight' %>" data-wow-duration=".5s">
+        <a href="/<%- post.path %>">
+          <h2 class="article-list__title"><%- post.title %></h2>
+          <div class="article-list__meta">
+            <p class="article-list__author">作者:<%- config.author %></p>
+            <p class="article-list__time">更新:<%- date(post.updated) %></p>
+          </div>
+          <!-- <span class="article-list__label"><%-moreIndex%></span> -->
+          <div class="article-list__content markdown-body"><%- github_markdown(post._content.slice(0,index)); %></div>
+        </a>
+      </li>
+    <% } %>
+  <% }) %>
+</ol>
+<div class="pagination session-wrapper wow animate__slideInUp" data-wow-duration="1s">
+  <ul class="pagination-list">
+    <% if(page.prev>0&&page.prev<page.current){ %>
+      <li class="pagination-list__item">
+        <a href="/<%- page.prev_link %>">上一页</a>
+      </li>
+    <% } %>
+    <% if(page.current-2>1){ %>
+      <li class="pagination-list__item">
+        <a href="/">首页</a>
+      </li>
+    <% } %>
+    <% first = page.current-2<=0?1:page.current-2 %>
+    <% last = page.current+2>=page.total+1?page.total+1:page.current+3 %>
+    <% for(var i = first; i < last; i++){ %>
+      <li class="pagination-list__item <%- i==page.current?'active':'' %>">
+        <% if(i!=1){ %>
+          <a href="/page/<%- i %>/"><%- i %></a>
+        <% } %>
+        <% if(i==1){ %>
+          <a href="/"><%- i %></a>
+        <% } %>
+      </li>
+    <% } %>
+    <% if(page.current+3<page.total+1){ %>
+      <li class="pagination-list__item">
+        <a href="/page/<%- page.total %>">尾页</a>
+      </li>
+    <% } %>
+    <% if(page.next>page.current){ %>
+      <li class="pagination-list__item">
+        <a href="/<%- page.next_link %>">下一页</a>
+      </li>
+    <% } %>
+  </ul>
+</div>

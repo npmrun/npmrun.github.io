@@ -7,8 +7,19 @@ const {
 const replace = require('gulp-replace');
 const del = require('del');
 function replaceMD() {
-    // , `!${sourceDir}/**/${ignoreDir}/*`
+    // , `!${sourceDir}/**/${ignoreDir}/*` 
     return src([`./articles/**/*.md`,`!./articles/unpublish/**/*.md`])
+        .pipe(replace(new RegExp("typora-root-url\\:(.*?)\\r", 'gi'),function(match){
+            console.log(match);
+            return match.replace(new RegExp("typora-root-url\\:(.*?)\\r", 'gi'),function($1,$2){
+                return `typora-root-url: '${$2}'`
+            });
+        }))
+        .pipe(replace(new RegExp("title\\:(.*?)\\r", 'gi'),function(match){
+            return match.replace(new RegExp("title\\:(.*?)\\r", 'gi'),function($1,$2){
+                return `title: '${$2}'`
+            });
+        }))
         .pipe(replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.png\\)", 'gi'),function(match){
             let pp = this.file.relative.replace(/\\/gi,"/").replace(".md","");
             return match.replace(new RegExp("\\!\\[(.*?)\\]\\(\/(.*?)images/(.*?)\\.png\\)", 'gi'), `![$1](/static/${pp}$2/images/$3.png)`) 

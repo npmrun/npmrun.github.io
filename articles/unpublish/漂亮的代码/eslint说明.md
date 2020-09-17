@@ -76,5 +76,6 @@ top: false
 
 ```
 
+`.eslintignore`
 
-
+`node_modules/*`

@@ -7,6 +7,10 @@ categories:
 comments: true
 ---
 
+### 源管理
+
+* nrm
+
 ### 数学计算库
 
 * [math.js](https://www.npmjs.com/package/mathjs)
@@ -18,6 +22,7 @@ comments: true
 ### 打包工具
 
 * `webpack` (大名鼎鼎的模块打包工具)
+* [parceljs](https://www.parceljs.cn/code_splitting.html)
 
 ### 文件匹配库
 
@@ -52,6 +57,10 @@ comments: true
 ### 日期库
 
 Moment.js，[dayjs](https://github.com/iamkun/dayjs)
+
+### 文件操作简便
+
+fs-extra
 
 ## Webpack常用库
 

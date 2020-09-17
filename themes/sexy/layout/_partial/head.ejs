@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%- titlecase(theme.title) || titlecase(config.title) %></title>
+    <!-- 响应式的关键，不设置的话页面会自动缩小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="<%- theme.favicon || config.favicon%>" />
+    <%- js('lib/highlight.min.js')%> 
+    <!-- <%- js('lib/highlightjs-line-numbers.min.js')%>  -->
+    <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+      // hljs.initLineNumbersOnLoad();
+    </script>
+    <%- css('assets/init')%> 
+    <%- css('assets/scroll') %>
+    <%- css('assets/github')%> 
+    <%- css('assets/gitcode')%> 
+    <%- css('assets/index') %>
+    <script src="https://cdn.bootcdn.net/ajax/libs/graingert-wow/1.1.2/wow.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <% if(page.type == "link"){ %>
+      <%- css('css/flink/index.css') %>
+    <% } %>
+    <% if(/^(index\.html|page\/(\d+)\/index.html)$/.test(page.path)){ %>
+      <%- css('css/index/index') %>
+    <% } %>
+  </head>
+  <body>
+    

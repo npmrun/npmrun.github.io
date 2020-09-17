@@ -1,0 +1,15 @@
+
+<% str1 = page.v=='center'&&"display:flex;align-items:center;" %>
+<% str2 = page.h=='center'&&"display:flex;justify-content:center" %>
+<article class="markdown-body article <%- page.font&&'custom-font' %> session-wrapper wow animate__fadeIn" data-wow-duration="1s" style="<%- str1 %> <%- str2 %>">
+  <% if(page.type == "link"){ %>
+    <%- partial('./flink.ejs') %>
+  <% } %>
+  <% if(page.type == undefined){ %>
+    <%- github_markdown(page._content,page.type) %>
+  <% } %>
+</article>
+
+<% if(page.comments == undefined?true:page.comments){ %>
+  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;"></div>
+<% } %>  

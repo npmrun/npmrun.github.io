@@ -1,0 +1,22 @@
+
+<div class="row wow animate__fadeIn" data-wow-duration="1s">
+  <% theme.links.forEach(function(link,index){ %>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow animate__bounceIn" data-wow-duration="1s">
+    <a href="<%- link.link %>" style="text-decoration:none;color: black;">
+      <div class="card" title="<%- link.title %>">
+        <div class="card__title">
+          <img class="card__logo" src="<%- link.avatar %>" alt="">
+          <%- link.title %>
+        </div>
+        <div class="card__content">
+          <%- link.content %>
+        </div>
+      </div>
+    </a>
+  </div>
+  <% }); %>
+</div>
+
+<% if(page.comments == undefined?true:page.comments){ %>
+  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;"></div>
+<% } %>  

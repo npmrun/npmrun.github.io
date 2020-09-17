@@ -11,11 +11,14 @@ comments: true
 
 
 
-
-
-
-
-
+```
+console.log(`屏幕宽度：1920px`);
+console.log(`希望根节点字体是100px`);
+console.log(`按设计稿计算视口宽度100vw==1920px;`);
+console.log(`于是1vw = 19.2px`);
+console.log(`然后就要计算100px对应的是多少vw,除一下就好了`);
+console.log(100/19.2);
+```
 
 
 
