@@ -33,13 +33,15 @@
 <div id="line" style="position:fixed;top:0;left:0;right:0;height:2px;width:0;background-color:black;"></div>
 <div class="wrapper" id="page">
   <header class="header-wrapper session-wrapper wow animate__slideInDown" data-wow-duration="1s">
-  <a href="/" class="title" title="home">home</a>
+  <a href="/" class="title" title="黑白梦境">黑白梦境</a>
   <!-- <div class="sub">记得吗？过去的你深陷泥沼！</div> -->
   <ol class="menu">  
   
     <li class="menu-item" title="首页"><a href="/">首页</a></li>
   
     <li class="menu-item" title="关于"><a href="/about">关于</a></li>
+  
+    <li class="menu-item" title="归档"><a href="/archives">归档</a></li>
   
     <li class="menu-item" title="友情链接"><a href="/link">友情链接</a></li>
    
@@ -53,8 +55,70 @@
   <article class="markdown-body article session-wrapper wow animate__fadeIn" data-wow-duration="1s">
     
     
-      <p>关关雎鸠，在河之洲。<br>窈窕淑女，君子好逑。<br>参差荇菜，左右流之。<br>窈窕淑女，寤寐求之。<br>求之不得，寤寐思服。<br>悠哉悠哉，辗转反侧。<br>参差荇菜，左右采之。<br>窈窕淑女，琴瑟友之。<br>参差荇菜，左右芼之。<br>窈窕淑女，钟鼓乐之。</p>
+      <html>
 
+<body>
+<div id="maindddd" style="width:100%;height:400px;"></div>
+
+ <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+<script>
+        setTimeout(function(){
+            (function(){
+                    var myChart = echarts.init(document.getElementById('maindddd'));
+                var option = {
+                    title : {
+                        text: '',
+                        subtext: '',
+                        x:'center'
+                    },
+                    tooltip : {
+                        trigger: 'item',
+                        formatter: '{a}<br/>{b} : {c} ({d}%)'
+                    },
+                    legend: {
+                        x : 'center',
+                        y : 'bottom',
+                        data:['HTML','CSS','Javascript','Node','vue','react','Webpack','Gulp','Python']
+                    },
+                    toolbox: {
+                        show : true,
+                        feature : {
+                            mark : {show: true},
+                            dataView : {show: true, readOnly: false},
+                            magicType : {
+                                show: true,
+                                type: ['pie', 'funnel']
+                            },
+                            restore : {show: true},
+                            saveAsImage : {show: true}
+                        }
+                    },
+                    calculable : true,
+                        series: [{
+                        name:'熟练度',
+                        type:'pie',
+                        radius : [30, 110],
+                        center : ['50%', '50%'],
+                        roseType : 'area',
+                        data:[
+                            {value:80, name:'HTML'},
+                            {value:80, name:'CSS'},
+                            {value:80, name:'Javascript'},
+                            {value:70, name:'Node'},
+                            {value:80, name:'vue'},
+                            {value:30, name:'react'},
+                            {value:60, name:'Webpack'},
+                            {value:60, name:'Gulp'},
+                            {value:20, name:'Python'}
+                        ]
+                    }]
+                };
+                myChart.setOption(option);
+                })();
+        },0)
+</script>
+</body>
+</html>
     
   </article>
 </div>
