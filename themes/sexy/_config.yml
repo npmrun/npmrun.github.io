@@ -1,29 +1,27 @@
-title: 时光👎
-favicon: 
+less:
+  paths: []
+  options:
 
-# 自动截取文章的前x长度作为摘要
-auto_more_length: 300
+title: 黑白梦境
+favicon: /avatar.jpg
 
 menu:
   首页: /
   关于: /about
   友情链接: /link
 
+  
+  
 links:
   - title:
       onestar
     link:
       https://onestar.newstar.net.cn/
     content:
-      ONESTAR
+      欢迎来到我的客栈，我是一颗星，夜空中最亮的那颗
     avatar:
       https://onestar.newstar.net.cn/images/me.jpg
 
 valine:
   appId: WtelXWOsz6zEJvXGl3LToHOK-MdYXbMMI # leancloud application app id
   appKey: B9X5fQyROCs2pFu7yt0NeLIP # leancloud application app key
-
-node_sass:
-  outputStyle: nested
-  precision: 5
-  sourceComments: false

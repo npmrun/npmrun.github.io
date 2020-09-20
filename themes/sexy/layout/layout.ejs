@@ -1,9 +1,23 @@
-<%- partial('_partial/head') %>
-
-<div class="page-wrapper">
-  <%- partial('ui/header') %>
+<%- partial('./_partial/head') %>
+<div id="line" style="position:fixed;top:0;left:0;right:0;height:2px;width:0;background-color:black;"></div>
+<div class="wrapper" id="page">
+  <%- partial("./_widget/header") %>
   <%- body %>
+  <div class="license">
+    <div class="txt">Powered by <a class="exturl" href="http://">Hexo</a></div>
+    <div class="txt">Themes by <a class="exturl" href="http://">Sexy</a></div>
+    <div class="txt">Welcome to White And Black Dream</div>
+  </div>
 </div>
-<%- js('js/layout/index.js') %>
+<div id="toTop" hidden style="z-index:999;cursor:pointer;color:white;position:fixed;right:50px;bottom:50px;width:30px;height:30px;line-height:30px;text-align:center;background-color:black;border-radius:5%;">0</div>
+<%- partial('./_partial/foot') %>
 
-<%- partial('_partial/foot') %>
+<div id="search_dialog" class="search_dialog" style="display:none;">
+  <div class="mask" onclick="search_dialog.style.display='none'"></div>
+  <div class="content">
+    <input placeholder="搜索" class="input__search" id="local-search-input" type="text">
+    <div class="input__content noscroll" id="input__content">
+    <ul class="article-list"></ul>
+    </div>
+  </div>
+</div>

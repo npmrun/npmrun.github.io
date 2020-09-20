@@ -1,14 +1,16 @@
-<div class="article-list session-wrapper" style="min-height: auto;margin-top:40px;">
-  <!-- <h2 class="article-list__title"><%- page.title %></h2> -->
-  <div class="article-list__meta">
-    <p class="article-list__author"><%- _p('author') %><%- config.author %></p>
-    <p class="article-list__time"><%- _p('updated') %>:<%- date(page.updated) %></p>
+<%- css('css/post') %>
+<div class="middle">
+  <div class="article-list session-wrapper" style="min-height: auto;margin-top:40px;padding-left: 25px;">
+    <h2 class="article-list__title"><%- page.title %></h2>
+    <div class="article-list__meta">
+      <p class="article-list__author"><%- _p('author') %><%- config.author %></p>
+      <p class="article-list__time"><%- _p('updated') %>:<%- date(page.updated) %></p>
+    </div>
   </div>
+  <article id="write" class="markdown-body article <%- page.font&&'custom-font' %> session-wrapper wow animate__fadeIn " data-wow-duration="1s">
+    <%- markdown(page._content,page.type) %>
+  </article>
 </div>
-<article class="markdown-body article <%- page.font&&'custom-font' %> session-wrapper wow animate__fadeIn " data-wow-duration="1s">
-  <%- markdown(page._content,page.type) %>
-</article>
-
 <% if(page.comments == undefined?true:page.comments){ %>
-  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;"></div>
+  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;width: 100%;margin-top:30px;"></div>
 <% } %>  

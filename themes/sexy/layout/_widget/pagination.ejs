@@ -1,0 +1,36 @@
+<div class="pagination wow animate__slideInUp" data-wow-duration="1s">
+  <ul class="pagination-list">
+    <% if(page.prev>0&&page.prev<page.current){ %>
+      <li class="pagination-list__item">
+        <a href="/<%- page.prev_link %>">上一页</a>
+      </li>
+    <% } %>
+    <% if(page.current-2>1){ %>
+      <li class="pagination-list__item">
+        <a href="/">首页</a>
+      </li>
+    <% } %>
+    <% first = page.current-2<=0?1:page.current-2 %>
+    <% last = page.current+2>=page.total+1?page.total+1:page.current+3 %>
+    <% for(var i = first; i < last; i++){ %>
+      <li class="pagination-list__item <%- i==page.current?'active':'' %>">
+        <% if(i!=1){ %>
+          <a href="/page/<%- i %>/"><%- i %></a>
+        <% } %>
+        <% if(i==1){ %>
+          <a href="/"><%- i %></a>
+        <% } %>
+      </li>
+    <% } %>
+    <% if(page.current+3<page.total+1){ %>
+      <li class="pagination-list__item">
+        <a href="/page/<%- page.total %>">尾页</a>
+      </li>
+    <% } %>
+    <% if(page.next>page.current){ %>
+      <li class="pagination-list__item">
+        <a href="/<%- page.next_link %>">下一页</a>
+      </li>
+    <% } %>
+  </ul>
+</div>

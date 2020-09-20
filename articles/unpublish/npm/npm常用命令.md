@@ -85,3 +85,9 @@ comments: true
 
 - `npm owner add npm @noderun/common-util`
 - `npm owner rm noderun @noderun/common-util`
+
+### 命令行本地软链接测试
+
+`npm link` 链接`package.json`中的`bin`字段当作可执行对象。注意，该文件必须以`#!/usr/bin/env node`为首行，然后再执行`npm link`
+
+`npm unlink`
