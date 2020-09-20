@@ -1,81 +1,136 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>时光👎</title>
+    <title>黑白梦境</title>
     <!-- 响应式的关键，不设置的话页面会自动缩小 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="shortcut icon" href>
+    <link rel="shortcut icon" href="/avatar.jpg">
     
-<script src="/lib/highlight.min.js"></script>
- 
-    <!-- 
-<script src="/lib/highlightjs-line-numbers.min.js"></script>
-  -->
-    <script type="text/javascript">
-      hljs.initHighlightingOnLoad();
-      // hljs.initLineNumbersOnLoad();
-    </script>
-    
-<link rel="stylesheet" href="/assets/init.css">
- 
-    
-<link rel="stylesheet" href="/assets/scroll.css">
+<link rel="stylesheet" href="/css/lib/scroll.css">
 
     
-<link rel="stylesheet" href="/assets/github.css">
- 
-    
-<link rel="stylesheet" href="/assets/gitcode.css">
- 
-    
-<link rel="stylesheet" href="/assets/index.css">
+<link rel="stylesheet" href="/css/lib/normalize.css">
 
-    <script src="https://cdn.bootcdn.net/ajax/libs/graingert-wow/1.1.2/wow.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     
+<link rel="stylesheet" href="/css/lib/media.css">
+
+    
+<link rel="stylesheet" href="/css/lib/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/global.css">
+
+    
+      
+<link rel="stylesheet" href="/css/index.css">
+
     
   <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="时光之城" type="application/atom+xml">
 </head>
   <body>
-    </body></html>
-
-<div class="page-wrapper">
+</body></html>
+<div id="line" style="position:fixed;top:0;left:0;right:0;height:2px;width:0;background-color:black;"></div>
+<div class="wrapper" id="page">
   <header class="header-wrapper session-wrapper wow animate__slideInDown" data-wow-duration="1s">
   <a href="/" class="title" title="home">home</a>
-  <ol class="right-menu">  
+  <!-- <div class="sub">记得吗？过去的你深陷泥沼！</div> -->
+  <ol class="menu">  
   
-    <li title="首页"><a href="/">首页</a></li>
+    <li class="menu-item" title="首页"><a href="/">首页</a></li>
   
-    <li title="关于"><a href="/about">关于</a></li>
+    <li class="menu-item" title="关于"><a href="/about">关于</a></li>
   
-    <li title="友情链接"><a href="/link">友情链接</a></li>
+    <li class="menu-item" title="友情链接"><a href="/link">友情链接</a></li>
    
+  <li class="menu-item" title="搜索" onclick="search_dialog.style.display=search_dialog.style.display!=='none'?'none':'block';"><a href="javascript:void 0;">搜索</a></li>
+  </ol>
+</header>
   
-</ol></header>
-  
+<link rel="stylesheet" href="/css/post.css">
 
+<div class="middle">
+  <article class="markdown-body article session-wrapper wow animate__fadeIn" data-wow-duration="1s">
+    
+    
+      <html>
 
-<article class="markdown-body article  session-wrapper wow animate__fadeIn" data-wow-duration="1s" style="false false">
-  
-  
-    <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<body>
+<div id="maindddd" style="width:100%;height:400px;"></div>
 
-  
-</article>
-
-
-  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;"></div>
-  
+ <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+<script>
+        setTimeout(function(){
+            (function(){
+                    var myChart = echarts.init(document.getElementById('maindddd'));
+                var option = {
+                    title : {
+                        text: '',
+                        subtext: '',
+                        x:'center'
+                    },
+                    tooltip : {
+                        trigger: 'item',
+                        formatter: '{a}<br/>{b} : {c} ({d}%)'
+                    },
+                    legend: {
+                        x : 'center',
+                        y : 'bottom',
+                        data:['HTML','CSS','Javascript','Node','vue','react','Webpack','Gulp','Python']
+                    },
+                    toolbox: {
+                        show : true,
+                        feature : {
+                            mark : {show: true},
+                            dataView : {show: true, readOnly: false},
+                            magicType : {
+                                show: true,
+                                type: ['pie', 'funnel']
+                            },
+                            restore : {show: true},
+                            saveAsImage : {show: true}
+                        }
+                    },
+                    calculable : true,
+                        series: [{
+                        name:'熟练度',
+                        type:'pie',
+                        radius : [30, 110],
+                        center : ['50%', '50%'],
+                        roseType : 'area',
+                        data:[
+                            {value:80, name:'HTML'},
+                            {value:80, name:'CSS'},
+                            {value:80, name:'Javascript'},
+                            {value:70, name:'Node'},
+                            {value:80, name:'vue'},
+                            {value:30, name:'react'},
+                            {value:60, name:'Webpack'},
+                            {value:60, name:'Gulp'},
+                            {value:20, name:'Python'}
+                        ]
+                    }]
+                };
+                myChart.setOption(option);
+                })();
+        },0)
+</script>
+</body>
+</html>
+    
+  </article>
 </div>
 
-<script src="/js/layout/index.js"></script>
 
-
+  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;width: 100%;margin-top:30px;"></div>
+  
+  <div class="license">
+    <div class="txt">Powered by <a class="exturl" href="http://">Hexo</a></div>
+    <div class="txt">Themes by <a class="exturl" href="http://">Sexy</a></div>
+    <div class="txt">Welcome to White And Black Dream</div>
+  </div>
+</div>
+<div id="toTop" hidden style="z-index:999;cursor:pointer;color:white;position:fixed;right:50px;bottom:50px;width:30px;height:30px;line-height:30px;text-align:center;background-color:black;border-radius:5%;">0</div>
 
   <script>
     var script = document.createElement('script');
@@ -97,15 +152,19 @@
     document.body.appendChild(script)
   </script>
 
-<script>
-  var wow = new WOW({
-    boxClass: 'wow',
-    animateClass: 'animated',
-    offset: 0,
-    mobile: true,
-    live: true
-  });
-  wow.init(); 
-</script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+ 
+<script src="/js/index.js"></script>
+
+  
 
 
+<div id="search_dialog" class="search_dialog" style="display:none;">
+  <div class="mask" onclick="search_dialog.style.display='none'"></div>
+  <div class="content">
+    <input placeholder="搜索" class="input__search" id="local-search-input" type="text">
+    <div class="input__content noscroll" id="input__content">
+    <ul class="article-list"></ul>
+    </div>
+  </div>
+</div>

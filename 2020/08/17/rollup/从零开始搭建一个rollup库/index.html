@@ -1,67 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>时光👎</title>
+    <title>黑白梦境</title>
     <!-- 响应式的关键，不设置的话页面会自动缩小 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="shortcut icon" href>
+    <link rel="shortcut icon" href="/avatar.jpg">
     
-<script src="/lib/highlight.min.js"></script>
- 
-    <!-- 
-<script src="/lib/highlightjs-line-numbers.min.js"></script>
-  -->
-    <script type="text/javascript">
-      hljs.initHighlightingOnLoad();
-      // hljs.initLineNumbersOnLoad();
-    </script>
-    
-<link rel="stylesheet" href="/assets/init.css">
- 
-    
-<link rel="stylesheet" href="/assets/scroll.css">
+<link rel="stylesheet" href="/css/lib/scroll.css">
 
     
-<link rel="stylesheet" href="/assets/github.css">
- 
-    
-<link rel="stylesheet" href="/assets/gitcode.css">
- 
-    
-<link rel="stylesheet" href="/assets/index.css">
+<link rel="stylesheet" href="/css/lib/normalize.css">
 
-    <script src="https://cdn.bootcdn.net/ajax/libs/graingert-wow/1.1.2/wow.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     
+<link rel="stylesheet" href="/css/lib/media.css">
+
+    
+<link rel="stylesheet" href="/css/lib/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/global.css">
+
     
   <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="时光之城" type="application/atom+xml">
 </head>
   <body>
-    </body></html>
-
-<div class="page-wrapper">
+</body></html>
+<div id="line" style="position:fixed;top:0;left:0;right:0;height:2px;width:0;background-color:black;"></div>
+<div class="wrapper" id="page">
   <header class="header-wrapper session-wrapper wow animate__slideInDown" data-wow-duration="1s">
   <a href="/" class="title" title="home">home</a>
-  <ol class="right-menu">  
+  <!-- <div class="sub">记得吗？过去的你深陷泥沼！</div> -->
+  <ol class="menu">  
   
-    <li title="首页"><a href="/">首页</a></li>
+    <li class="menu-item" title="首页"><a href="/">首页</a></li>
   
-    <li title="关于"><a href="/about">关于</a></li>
+    <li class="menu-item" title="关于"><a href="/about">关于</a></li>
   
-    <li title="友情链接"><a href="/link">友情链接</a></li>
+    <li class="menu-item" title="友情链接"><a href="/link">友情链接</a></li>
    
+  <li class="menu-item" title="搜索" onclick="search_dialog.style.display=search_dialog.style.display!=='none'?'none':'block';"><a href="javascript:void 0;">搜索</a></li>
+  </ol>
+</header>
   
-</ol></header>
-  <div class="article-list session-wrapper" style="min-height: auto;margin-top:40px;">
-  <!-- <h2 class="article-list__title">从零开始搭建一个rollup库</h2> -->
-  <div class="article-list__meta">
-    <p class="article-list__author">author西风吹盛夏</p>
-    <p class="article-list__time">updated:2020-09-17</p>
+<link rel="stylesheet" href="/css/post.css">
+
+<div class="middle">
+  <div class="article-list session-wrapper" style="min-height: auto;margin-top:40px;padding-left: 25px;">
+    <h2 class="article-list__title">从零开始搭建一个rollup库</h2>
+    <div class="article-list__meta">
+      <p class="article-list__author">author西风吹盛夏</p>
+      <p class="article-list__time">updated:2020-09-20</p>
+    </div>
   </div>
-</div>
-<article class="markdown-body article  session-wrapper wow animate__fadeIn " data-wow-duration="1s">
-  <blockquote>
+  <article id="write" class="markdown-body article  session-wrapper wow animate__fadeIn " data-wow-duration="1s">
+    <blockquote>
 <p>主题：从零开始搭建一个rollup库<br>概述：从零开始搭建一个rollup库</p>
 </blockquote>
 <!--正文-->
@@ -71,16 +64,18 @@
 <p>全局安装</p>
 <pre><code>npm install --global rollup</code></pre></blockquote>
 <h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2>
-</article>
-
-
-  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;"></div>
-  
+  </article>
 </div>
 
-<script src="/js/layout/index.js"></script>
-
-
+  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;width: 100%;margin-top:30px;"></div>
+  
+  <div class="license">
+    <div class="txt">Powered by <a class="exturl" href="http://">Hexo</a></div>
+    <div class="txt">Themes by <a class="exturl" href="http://">Sexy</a></div>
+    <div class="txt">Welcome to White And Black Dream</div>
+  </div>
+</div>
+<div id="toTop" hidden style="z-index:999;cursor:pointer;color:white;position:fixed;right:50px;bottom:50px;width:30px;height:30px;line-height:30px;text-align:center;background-color:black;border-radius:5%;">0</div>
 
   <script>
     var script = document.createElement('script');
@@ -102,15 +97,19 @@
     document.body.appendChild(script)
   </script>
 
-<script>
-  var wow = new WOW({
-    boxClass: 'wow',
-    animateClass: 'animated',
-    offset: 0,
-    mobile: true,
-    live: true
-  });
-  wow.init(); 
-</script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+ 
+<script src="/js/index.js"></script>
+
+  
 
 
+<div id="search_dialog" class="search_dialog" style="display:none;">
+  <div class="mask" onclick="search_dialog.style.display='none'"></div>
+  <div class="content">
+    <input placeholder="搜索" class="input__search" id="local-search-input" type="text">
+    <div class="input__content noscroll" id="input__content">
+    <ul class="article-list"></ul>
+    </div>
+  </div>
+</div>
