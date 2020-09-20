@@ -10,7 +10,6 @@ function replaceMD() {
     // , `!${sourceDir}/**/${ignoreDir}/*` 
     return src([`./articles/**/*.md`,`!./articles/unpublish/**/*.md`])
         .pipe(replace(new RegExp("typora-root-url\\:(.*?)\\r", 'gi'),function(match){
-            console.log(match);
             return match.replace(new RegExp("typora-root-url\\:(.*?)\\r", 'gi'),function($1,$2){
                 return `typora-root-url: '${$2}'`
             });

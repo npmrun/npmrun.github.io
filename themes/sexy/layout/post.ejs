@@ -1,13 +1,18 @@
 <%- css('css/post') %>
+<% str = page.align=="center"?'display:flex;align-items:center;flex-direction: column;':''; %>
 <div class="middle">
   <div class="article-list session-wrapper" style="min-height: auto;margin-top:40px;padding-left: 25px;">
     <h2 class="article-list__title"><%- page.title %></h2>
     <div class="article-list__meta">
       <p class="article-list__author"><%- _p('author') %><%- config.author %></p>
       <p class="article-list__time"><%- _p('updated') %>:<%- date(page.updated) %></p>
+      <% if(page.top){ %>
+        <p class="article-list__top" style="color:green;">置顶</p>
+      <% } %>
     </div>
   </div>
-  <article id="write" class="markdown-body article <%- page.font&&'custom-font' %> session-wrapper wow animate__fadeIn " data-wow-duration="1s">
+  <article id="write" class="markdown-body article <%- page.font&&'custom-font' %> session-wrapper wow animate__fadeIn " style="<%- str %>"
+  data-wow-duration="1s">
     <%- markdown(page._content,page.type) %>
   </article>
 </div>
