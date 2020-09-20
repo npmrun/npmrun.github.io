@@ -47,50 +47,27 @@
   
 <link rel="stylesheet" href="/css/post.css">
 
+
 <div class="middle">
   <div class="article-list session-wrapper" style="min-height: auto;margin-top:40px;padding-left: 25px;">
-    <h2 class="article-list__title">获取元素各种宽高及页面宽高总结</h2>
+    <h2 class="article-list__title">高标准博客指南</h2>
     <div class="article-list__meta">
       <p class="article-list__author">作者西风吹盛夏</p>
       <p class="article-list__time">更新:2020-09-20</p>
+      
+        <p class="article-list__top" style="color:green;">置顶</p>
+      
     </div>
   </div>
-  <article id="write" class="markdown-body article  session-wrapper wow animate__fadeIn " data-wow-duration="1s">
+  <article id="write" class="markdown-body article  session-wrapper wow animate__fadeIn " style="display:flex;align-items:center;flex-direction: column;" data-wow-duration="1s">
     <blockquote>
-<p>主题：获取元素各种宽高及页面宽高总结<br>概述：获取元素各种宽高及页面宽高总结</p>
+<p>概述：博客重新整理，筛选出能够过关的博文！</p>
 </blockquote>
 <!--正文-->
 <!--more-->
 
-<p>当网页并没有设置overflow:hidden而被卷曲时，卷曲的就是html，可以用document.documentElement.scrollTop获取被卷曲的高度</p>
-<pre><code>window.onload=function(){
-    var a = $(&quot;#div&quot;).width(),//width()返回元素的宽高，不包括padding/border/margin
-        b = $(&quot;#div&quot;).innerWidth(),//innerWidth()返回元素的宽高 + padding
-        c = $(&quot;#div&quot;).outerWidth(),//outerWidth()返回元素的宽高 + padding + border
-        d = $(&quot;#div&quot;).outerWidth(true);//outerWidth(true)返回元素宽高 + padding + border + margin
-    console.log(a,b,c,d);
-}</code></pre><p><strong>获取浏览器显示区域（可视区域）的高度 ：</strong><br><code>$(window).height();</code> </p>
-<p><strong>获取浏览器显示区域（可视区域）的宽度 ：</strong><br><code>$(window).width();</code></p>
-<p><strong>获取页面的文档高度</strong><br><code>$(document).height();</code></p>
-<p><strong>获取页面的文档宽度</strong><br><code>$(document).width();</code></p>
-<p><strong>浏览器当前窗口文档body的高度</strong><br><code>$(document.body).height();</code> </p>
-<p><strong>浏览器当前窗口文档body的宽度</strong><br><code>$(document.body).width();</code> </p>
-<p><strong>获取滚动条到顶部的垂直高度(即网页被卷上去的高度)</strong><br><code>$(document).scrollTop();</code></p>
-<p><strong>获取滚动条到左边的垂直宽度</strong><br><code>$(document).scrollLeft();</code>   </p>
-<p><strong>获取或设置元素的宽度</strong><br><code>$(obj).width();</code></p>
-<p><strong>获取或设置元素的高度</strong> </p>
-<p><code>$(obj).height();</code></p>
-<p><strong>某个元素的上边界到body最顶部的距离</strong><br><code>obj.offset().top;</code>（在元素的包含元素不含滚动条的情况下） </p>
-<p><strong>某个元素的左边界到body最左边的距离</strong><br><code>obj.offset().left;</code>（在元素的包含元素不含滚动条的情况下）  </p>
-<p><strong>返回当前元素的上边界到它的包含元素的上边界的偏移量</strong><br><code>obj.offset().top</code>（在元素的包含元素含滚动条的情况下）  </p>
-<p><strong>返回当前元素的左边界到它的包含元素的左边界的偏移量</strong><br><code>obj.offset().left</code>（在元素的包含元素含滚动条的情况下）  </p>
-<blockquote>
-<p><code>Element.getBoundingClientRect()</code> 方法返回元素的大小及其相对于视口的位置。</p>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect" target="_blank" rel="external nofollow noopener noreferrer">https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect</a></p>
-<p><a href="https://blog.csdn.net/gs6511/article/details/53900761" target="_blank" rel="external nofollow noopener noreferrer">https://blog.csdn.net/gs6511/article/details/53900761</a></p>
-<p><a href="https://cloud.tencent.com/developer/article/1106529" target="_blank" rel="external nofollow noopener noreferrer">https://cloud.tencent.com/developer/article/1106529</a></p>
-</blockquote>
 
+<h3 id="不写毫无意义的文章"><a href="#不写毫无意义的文章" class="headerlink" title="不写毫无意义的文章"></a>不写毫无意义的文章</h3><h3 id="需要加入自己的思考"><a href="#需要加入自己的思考" class="headerlink" title="需要加入自己的思考"></a>需要加入自己的思考</h3><h3 id="文章必须简洁易懂精炼"><a href="#文章必须简洁易懂精炼" class="headerlink" title="文章必须简洁易懂精炼"></a>文章必须简洁易懂精炼</h3><h3 id="高质量文必须深入原理"><a href="#高质量文必须深入原理" class="headerlink" title="高质量文必须深入原理"></a>高质量文必须深入原理</h3><h3 id="教程专栏必须以实践为基础"><a href="#教程专栏必须以实践为基础" class="headerlink" title="教程专栏必须以实践为基础"></a>教程专栏必须以实践为基础</h3>
   </article>
 </div>
 
