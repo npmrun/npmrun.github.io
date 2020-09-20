@@ -14,8 +14,8 @@
             <a href="/<%- post.path %>">
               <h2 class="article-list__title"><%- post.title %></h2>
               <div class="article-list__meta">
-                <p class="article-list__author">作者:<%- config.author %></p>
-                <p class="article-list__time">更新:<%- date(post.updated) %></p>
+                <p class="article-list__author">作者: <%- config.author %></p>
+                <p class="article-list__time">更新: <%- date(post.updated) %></p>
                 <% if(post.top){ %>
                   <p class="article-list__top" style="color:green;">置顶</p>
                 <% } %>

@@ -4,8 +4,8 @@
   <div class="article-list session-wrapper" style="min-height: auto;margin-top:40px;padding-left: 25px;">
     <h2 class="article-list__title"><%- page.title %></h2>
     <div class="article-list__meta">
-      <p class="article-list__author"><%- _p('author') %><%- config.author %></p>
-      <p class="article-list__time"><%- _p('updated') %>:<%- date(page.updated) %></p>
+      <p class="article-list__author"><%- _p('author') %>: <%- config.author %></p>
+      <p class="article-list__time"><%- _p('updated') %>: <%- date(page.updated) %></p>
       <% if(page.top){ %>
         <p class="article-list__top" style="color:green;">置顶</p>
       <% } %>
