@@ -130,7 +130,7 @@ ready(function () {
               // show search results
               if (isMatch) {
                 str +=
-                  "<li style='padding: 20px 30px;' class='article-list__item' ><a href='/" +
+                  "<li style='padding: 20px 30px;' class='article-list__item' ><a href='" +
                   data_url +
                   "'>" +`<h2 style="white-space:nowrap;" class='article-list__title'>${data_title}</h2>`
                   "</a>";
