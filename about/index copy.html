@@ -22,10 +22,6 @@
 <link rel="stylesheet" href="/css/global.css">
 
     
-      
-<link rel="stylesheet" href="/css/index.css">
-
-    
   <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="时光之城" type="application/atom+xml">
 </head>
   <body>
@@ -55,7 +51,72 @@
   <article class="markdown-body article session-wrapper wow animate__fadeIn" data-wow-duration="1s">
     
     
-      <blockquote>
+      <html>
+
+<body>
+<div id="maindddd" style="width:100%;height:400px;"></div>
+
+ <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+<script>
+        setTimeout(function(){
+            (function(){
+                    var myChart = echarts.init(document.getElementById('maindddd'));
+                var option = {
+                    title : {
+                        text: '',
+                        subtext: '',
+                        x:'center'
+                    },
+                    tooltip : {
+                        trigger: 'item',
+                        formatter: '{a}<br/>{b} : {c} ({d}%)'
+                    },
+                    legend: {
+                        x : 'center',
+                        y : 'bottom',
+                        data:['HTML','CSS','Javascript','Node','vue','react','Webpack','Gulp','Python']
+                    },
+                    toolbox: {
+                        show : true,
+                        feature : {
+                            mark : {show: true},
+                            dataView : {show: true, readOnly: false},
+                            magicType : {
+                                show: true,
+                                type: ['pie', 'funnel']
+                            },
+                            restore : {show: true},
+                            saveAsImage : {show: true}
+                        }
+                    },
+                    calculable : true,
+                        series: [{
+                        name:'熟练度',
+                        type:'pie',
+                        radius : [30, 110],
+                        center : ['50%', '50%'],
+                        roseType : 'area',
+                        data:[
+                            {value:80, name:'HTML'},
+                            {value:80, name:'CSS'},
+                            {value:80, name:'Javascript'},
+                            {value:70, name:'Node'},
+                            {value:80, name:'vue'},
+                            {value:30, name:'react'},
+                            {value:60, name:'Webpack'},
+                            {value:60, name:'Gulp'},
+                            {value:20, name:'Python'}
+                        ]
+                    }]
+                };
+                myChart.setOption(option);
+                })();
+        },0)
+</script>
+</body>
+</html>
+
+<blockquote>
 <p>评论出问题可以发邮箱: <a href="mailto:1549469775@qq.com" rel="external nofollow noopener noreferrer" target="_blank">1549469775@qq.com</a>！抱歉！</p>
 </blockquote>
 
