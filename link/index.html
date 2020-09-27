@@ -94,26 +94,6 @@
 </div>
 <div id="toTop" hidden style="z-index:999;cursor:pointer;color:white;position:fixed;right:50px;bottom:50px;width:30px;height:30px;line-height:30px;text-align:center;background-color:black;border-radius:5%;">0</div>
 
-  <script>
-    var script = document.createElement('script');
-    script.async = true;
-    script.src="//unpkg.com/valine/dist/Valine.min.js"
-    script.onload = function(){
-      new Valine({
-        el: '#vcomments',
-        appId: 'WtelXWOsz6zEJvXGl3LToHOK-MdYXbMMI',
-        appKey: 'B9X5fQyROCs2pFu7yt0NeLIP'
-      })
-      var el = document.getElementById('vcomments');
-      if (el) {
-        el.classList.add("animate__fadeIn");
-        el.setAttribute("data-wow-duration","1s");
-        el.classList.add("wow");
-      }
-    }
-    document.body.appendChild(script)
-  </script>
-
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
  
 <script src="/js/index.js"></script>
