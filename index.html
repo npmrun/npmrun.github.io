@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>黑白梦境</title>
+    <title>一方天地</title>
     <!-- 响应式的关键，不设置的话页面会自动缩小 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -26,14 +26,20 @@
 <link rel="stylesheet" href="/css/index.css">
 
     
-  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="时光之城" type="application/atom+xml">
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="一方天地" type="application/atom+xml">
 </head>
   <body>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  
+<script src="/js/util.js"></script>
+
+  
+<script src="/js/common.js"></script>
 </body></html>
 <div id="line" style="position:fixed;top:0;left:0;right:0;height:2px;width:0;background-color:black;"></div>
 <div class="wrapper" id="page">
   <header class="header-wrapper session-wrapper wow animate__slideInDown" data-wow-duration="1s">
-  <a href="/" class="title" title="黑白梦境">黑白梦境</a>
+  <a href="/" class="title" title="一方天地">一方天地</a>
   <!-- <div class="sub">记得吗？过去的你深陷泥沼！</div> -->
   <ol class="menu">  
   
@@ -56,23 +62,19 @@
         
         
         
-        
-        
-        
-        
           <li style="padding: 20px 30px;" class="article-list__item wow animate__slideInLeft" data-wow-duration=".5s">
             <a href="/2020/09/21/公告/">
               <h2 class="article-list__title">公告</h2>
               <div class="article-list__meta">
-                <p class="article-list__author">作者: 西风吹盛夏</p>
-                <p class="article-list__time">更新: 2020-09-27</p>
+                <p class="article-list__author">作者: 小牧童</p>
+                <p class="article-list__time">更新: 2020-10-09</p>
                 
                   <p class="article-list__top" style="color:green;">置顶</p>
                 
               </div>
-              <!-- <span class="article-list__label">32</span> -->
+              <!-- <span class="article-list__label">63</span> -->
               <div class="article-list__content markdown-body"><blockquote>
-<p>概述：公告!!! 博文再次进行筛选</p>
+<p>概述：公告!!! 该博客处于整理状态，推荐访问我的新地址，<a href="https://poorman.top" target="_blank" rel="external nofollow noopener noreferrer">https://poorman.top</a></p>
 </blockquote>
 <!--正文-->
 </div>
@@ -83,16 +85,12 @@
         
         
         
-        
-        
-        
-        
           <li style="padding: 20px 30px;" class="article-list__item wow animate__slideInRight" data-wow-duration=".5s">
             <a href="/2020/04/23/工具/内网穿透/">
               <h2 class="article-list__title">内网穿透</h2>
               <div class="article-list__meta">
-                <p class="article-list__author">作者: 西风吹盛夏</p>
-                <p class="article-list__time">更新: 2020-09-27</p>
+                <p class="article-list__author">作者: 小牧童</p>
+                <p class="article-list__time">更新: 2020-10-09</p>
                 
               </div>
               <!-- <span class="article-list__label">150</span> -->
@@ -108,16 +106,12 @@
         
         
         
-        
-        
-        
-        
           <li style="padding: 20px 30px;" class="article-list__item wow animate__slideInLeft" data-wow-duration=".5s">
             <a href="/2020/09/20/高标准博客指南/">
               <h2 class="article-list__title">高标准博客指南</h2>
               <div class="article-list__meta">
-                <p class="article-list__author">作者: 西风吹盛夏</p>
-                <p class="article-list__time">更新: 2020-09-27</p>
+                <p class="article-list__author">作者: 小牧童</p>
+                <p class="article-list__time">更新: 2020-10-09</p>
                 
                   <p class="article-list__top" style="color:green;">置顶</p>
                 
@@ -151,6 +145,9 @@
   </ul>
 </div>
 
+
+<script src="/js/index.js"></script>
+
   <div class="license">
     <div class="txt">Powered by <a class="exturl" href="http://">Hexo</a></div>
     <div class="txt">Themes by <a class="exturl" href="http://">Sexy</a></div>
@@ -159,9 +156,25 @@
 </div>
 <div id="toTop" hidden style="z-index:999;cursor:pointer;color:white;position:fixed;right:50px;bottom:50px;width:30px;height:30px;line-height:30px;text-align:center;background-color:black;border-radius:5%;">0</div>
 
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
- 
-<script src="/js/index.js"></script>
+  <script>
+    var script = document.createElement('script');
+    script.async = true;
+    script.src="//unpkg.com/valine/dist/Valine.min.js"
+    script.onload = function(){
+      new Valine({
+        el: '#vcomments',
+        appId: 'WtelXWOsz6zEJvXGl3LToHOK-MdYXbMMI',
+        appKey: 'B9X5fQyROCs2pFu7yt0NeLIP'
+      })
+      var el = document.getElementById('vcomments');
+      if (el) {
+        el.classList.add("animate__fadeIn");
+        el.setAttribute("data-wow-duration","1s");
+        el.classList.add("wow");
+      }
+    }
+    document.body.appendChild(script)
+  </script>
 
   
 

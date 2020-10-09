@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>黑白梦境</title>
+    <title>一方天地</title>
     <!-- 响应式的关键，不设置的话页面会自动缩小 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -22,14 +22,20 @@
 <link rel="stylesheet" href="/css/global.css">
 
     
-  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="时光之城" type="application/atom+xml">
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="一方天地" type="application/atom+xml">
 </head>
   <body>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  
+<script src="/js/util.js"></script>
+
+  
+<script src="/js/common.js"></script>
 </body></html>
 <div id="line" style="position:fixed;top:0;left:0;right:0;height:2px;width:0;background-color:black;"></div>
 <div class="wrapper" id="page">
   <header class="header-wrapper session-wrapper wow animate__slideInDown" data-wow-duration="1s">
-  <a href="/" class="title" title="黑白梦境">黑白梦境</a>
+  <a href="/" class="title" title="一方天地">一方天地</a>
   <!-- <div class="sub">记得吗？过去的你深陷泥沼！</div> -->
   <ol class="menu">  
   
@@ -135,9 +141,25 @@
 </div>
 <div id="toTop" hidden style="z-index:999;cursor:pointer;color:white;position:fixed;right:50px;bottom:50px;width:30px;height:30px;line-height:30px;text-align:center;background-color:black;border-radius:5%;">0</div>
 
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
- 
-<script src="/js/index.js"></script>
+  <script>
+    var script = document.createElement('script');
+    script.async = true;
+    script.src="//unpkg.com/valine/dist/Valine.min.js"
+    script.onload = function(){
+      new Valine({
+        el: '#vcomments',
+        appId: 'WtelXWOsz6zEJvXGl3LToHOK-MdYXbMMI',
+        appKey: 'B9X5fQyROCs2pFu7yt0NeLIP'
+      })
+      var el = document.getElementById('vcomments');
+      if (el) {
+        el.classList.add("animate__fadeIn");
+        el.setAttribute("data-wow-duration","1s");
+        el.classList.add("wow");
+      }
+    }
+    document.body.appendChild(script)
+  </script>
 
   
 
