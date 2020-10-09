@@ -15,3 +15,7 @@
     <% temp = p; %>
   <% }) %>
 </div>
+
+<% if(page.comments == undefined?true:page.comments){ %>
+  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;width: 100%;margin-top:30px;"></div>
+<% } %>

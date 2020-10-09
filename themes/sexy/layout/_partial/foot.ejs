@@ -1,5 +1,23 @@
-
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
- <%- js('js/index') %>
+<% if(page.comments == undefined?true:page.comments){ %>
+  <script>
+    var script = document.createElement('script');
+    script.async = true;
+    script.src="//unpkg.com/valine/dist/Valine.min.js"
+    script.onload = function(){
+      new Valine({
+        el: '#vcomments',
+        appId: '<%- theme.valine.appId %>',
+        appKey: '<%- theme.valine.appKey %>'
+      })
+      var el = document.getElementById('vcomments');
+      if (el) {
+        el.classList.add("animate__fadeIn");
+        el.setAttribute("data-wow-duration","1s");
+        el.classList.add("wow");
+      }
+    }
+    document.body.appendChild(script)
+  </script>
+<% } %>
   </body>
 </html>

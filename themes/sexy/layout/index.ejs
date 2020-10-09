@@ -5,10 +5,6 @@
       <% site.posts.data.slice((page.current-1)*(config.per_page),page.current*(config.per_page)).forEach(function(post,ik){ %>
         <% moreIndex = post._content.indexOf(`<!--more-->`); %>
         <% index = moreIndex!==-1?moreIndex:theme.auto_more_length?theme.auto_more_length:300; %>
-        <% a = ~~(Math.random()*255) %>
-        <% b = ~~(Math.random()*255) %>
-        <% c = ~~(Math.random()*255) %>
-        <% d = Math.random()*0.5 + 0.5 %>
         <% if(post.published){ %>
           <li style="padding: 20px 30px;" class="article-list__item wow <%- ik%2==0?'animate__slideInLeft':'animate__slideInRight' %>" data-wow-duration=".5s">
             <a href="/<%- post.path %>">
@@ -32,3 +28,4 @@
   <% } %>
 </div>
 <%- partial("./_widget/pagination") %>
+<%- js('js/index') %>
