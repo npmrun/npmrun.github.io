@@ -22,10 +22,6 @@
 <link rel="stylesheet" href="/css/global.css">
 
     
-      
-<link rel="stylesheet" href="/css/index.css">
-
-    
   <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="一方天地" type="application/atom+xml">
 </head>
   <body>
@@ -55,96 +51,59 @@
   </ol>
 </header>
   
+<link rel="stylesheet" href="/css/post.css">
+
+
 <div class="middle">
-  
-    <ol class="article-list session-wrapper">
+  <div class="article-list session-wrapper" style="min-height: auto;margin-top:40px;padding-left: 25px;">
+    <h2 class="article-list__title">node后端解决跨域</h2>
+    <div class="article-list__meta">
+      <p class="article-list__author">作者: 小牧童</p>
+      <p class="article-list__time">更新: 2020-10-16</p>
       
-        
-        
-        
-          <li style="padding: 20px 30px;" class="article-list__item wow animate__slideInLeft" data-wow-duration=".5s">
-            <a href="/2020/04/23/工具/内网穿透/">
-              <h2 class="article-list__title">内网穿透</h2>
-              <div class="article-list__meta">
-                <p class="article-list__author">作者: 小牧童</p>
-                <p class="article-list__time">更新: 2020-10-16</p>
-                
-              </div>
-              <!-- <span class="article-list__label">150</span> -->
-              <div class="article-list__content markdown-body"><blockquote>
-<p>主题：内网穿透<br>概述：这是工具推荐类文章，推荐的是<a href="https://github.com/fatedier/frp/blob/master/README_zh.md" target="_blank" rel="external nofollow noopener noreferrer">frp</a>库，经由国人开发，主要是把内网的网页进行映射，使得可以再公网访问，前提是有一个公网服务器。</p>
-</blockquote>
-<!--正文-->
-</div>
-            </a>
-          </li>
-        
-      
-        
-        
-        
-          <li style="padding: 20px 30px;" class="article-list__item wow animate__slideInRight" data-wow-duration=".5s">
-            <a href="/2020/04/11/正则表达式/正则表达式/">
-              <h2 class="article-list__title">正则表达式</h2>
-              <div class="article-list__meta">
-                <p class="article-list__author">作者: 小牧童</p>
-                <p class="article-list__time">更新: 2020-10-16</p>
-                
-              </div>
-              <!-- <span class="article-list__label">8</span> -->
-              <div class="article-list__content markdown-body"><p>正则表达式</p>
-</div>
-            </a>
-          </li>
-        
-      
-        
-        
-        
-          <li style="padding: 20px 30px;" class="article-list__item wow animate__slideInLeft" data-wow-duration=".5s">
-            <a href="/2020/04/25/跨域/node后端解决跨域/">
-              <h2 class="article-list__title">node后端解决跨域</h2>
-              <div class="article-list__meta">
-                <p class="article-list__author">作者: 小牧童</p>
-                <p class="article-list__time">更新: 2020-10-16</p>
-                
-              </div>
-              <!-- <span class="article-list__label">-1</span> -->
-              <div class="article-list__content markdown-body"><blockquote>
+    </div>
+  </div>
+  <article id="write" class="markdown-body article  session-wrapper wow animate__fadeIn " style data-wow-duration="1s">
+    <blockquote>
 <p>注意这个Access-Control-Allow-Headers,当然也可以设置为*</p>
 </blockquote>
-<p>```<br>const express = require(‘express’);<br>const app= express();</p>
-<p>//设置允许跨域访问该服务.<br>app.all(‘<em>‘, function (req, res, next) {<br>  res.header(‘Access-Control-Allow-Origin’, ‘</em>‘);<br>//   Access-Control-Allow-Headers ,可根据浏览器的F12查看,把对应的粘贴在这里就行<br>  res.header(‘Access-C</p>
+<pre><code>const express = require(&apos;express&apos;);
+const app= express();
+
+//设置允许跨域访问该服务.
+app.all(&apos;*&apos;, function (req, res, next) {
+  res.header(&apos;Access-Control-Allow-Origin&apos;, &apos;*&apos;);
+//   Access-Control-Allow-Headers ,可根据浏览器的F12查看,把对应的粘贴在这里就行
+  res.header(&apos;Access-Control-Allow-Headers&apos;, &apos;Content-Type,token&apos;);
+  res.header(&apos;Access-Control-Allow-Methods&apos;, &apos;*&apos;);
+  res.header(&apos;Content-Type&apos;, &apos;application/json;charset=utf-8&apos;);
+  next();
+});
+
+//这里虽说省略也可以，但是改成404就不行，因为会自动返回200
+app.options(&apos;/member/api/game/authorization&apos;, (req, res)=&gt;{
+    res.sendStatus(200);
+});
+app.post(&apos;/member/api/game/authorization&apos;, (req, res)=&gt;{
+    res.send({aa:123});
+});
+app.listen(8083, ()=&gt;{
+    console.log(&apos;Server is running at http://localhost:8083&apos;)
+})</code></pre><p>后端针对跨域的两个条件：</p>
+<ul>
+<li><p>options请求返回200 （复杂请求会有预检请求）</p>
+</li>
+<li><p>响应携带允许跨域的请求头</p>
+<pre><code>Access-Control-Allow-Origin
+Access-Control-Allow-Headers
+Access-Control-Allow-Methods</code></pre></li>
+</ul>
+
+  </article>
 </div>
-            </a>
-          </li>
-        
-      
-    </ol>
+
+  <div id="vcomments" class="session-wrapper" style="animation-duration: 2s;animation-delay: 0ms;width: 100%;margin-top:30px;"></div>
   
-</div>
-<div class="pagination wow animate__slideInUp" data-wow-duration="1s">
-  <ul class="pagination-list">
-    
-    
-    
-    
-    
-      <li class="pagination-list__item active">
-        
-        
-          <a href="/">1</a>
-        
-      </li>
-    
-    
-    
-  </ul>
-</div>
-
-
-<script src="/js/index.js"></script>
-
   <div class="license">
     <div class="txt">Powered by <a class="exturl" href="http://">Hexo</a></div>
     <div class="txt">Themes by <a class="exturl" href="http://">Sexy</a></div>
