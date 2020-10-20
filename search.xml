@@ -64,7 +64,7 @@
 </blockquote>
 <p>如果本机的web项目用了webpack server(目前vue cli, react cli, angular 本地开发用的都是这个) , 这个是webpack server的安全策略，如果是angular项目，需要在启动配置中加上 <code>--disable-host-check</code> 类似 <code>ng serve --open --host $IP --port $PORT --disable-host-check</code>。</p>
 <p>如果是<code>uniapp</code>项目，进行如下配置：</p>
-<p><img src= "/img/loading.gif" data-src="/static/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/images/image-20200423140150925.png" alt="image-20200423140150925"></p>
+<p><img src="/static/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/images/image-20200423140150925.png" alt="image-20200423140150925"></p>
 <blockquote>
 <p>参考文档</p>
 <p><a href="https://github.com/fatedier/frp/blob/master/README_zh.md#%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/fatedier/frp/blob/master/README_zh.md#%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81</a></p>
