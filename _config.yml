@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 开满花的油菜地
+title: Wiki知识库
 subtitle: ''
 description: ''
 keywords:
-author: 小小牧童
+author: 马踏流星
 language: zh-CN
 timezone: ''
 
@@ -129,7 +129,7 @@ jsonContent:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: butterfly
-theme: butterfly
+theme: Wikitten
 
 
 # Deployment
