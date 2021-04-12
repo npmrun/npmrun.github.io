@@ -130,7 +130,7 @@ jsonContent:
 ## Themes: https://hexo.io/themes/
 # theme: butterfly
 # theme: Wikitten
-theme: sexy
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
